@@ -1,0 +1,39 @@
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\csc.exe
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\System.Collections.Immutable.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\System.Reflection.Metadata.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\vbc.exe
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\VBCSCompiler.exe
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\VBCSCompiler.exe.config
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\AngularAzureSearch.WebRole.dll.config
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\AngularAzureSearch.WebRole.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\AngularAzureSearch.WebRole.pdb
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\obj\Debug\AngularAzureSearch.WebRole.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebRole\obj\Debug\AngularAzureSearch.WebRole.pdb
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\csc.exe
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\vbc.exe
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\AngularAzureSearch.WebRole.dll.config
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\AngularAzureSearch.WebRole.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\AngularAzureSearch.WebRole.pdb
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\obj\Debug\AngularAzureSearch.WebRole.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\obj\Debug\AngularAzureSearch.WebRole.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebRole\obj\Debug\AngularAzureSearch.WebRole.pdb

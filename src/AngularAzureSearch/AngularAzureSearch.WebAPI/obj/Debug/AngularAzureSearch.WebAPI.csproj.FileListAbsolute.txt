@@ -1,0 +1,182 @@
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\obj\Debug\AngularAzureSearch.WebAPI.csprojResolveAssemblyReference.cache
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\csc.exe
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\vbc.exe
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\AngularAzureSearch.WebAPI.dll.config
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\AngularAzureSearch.WebAPI.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\AngularAzureSearch.WebAPI.pdb
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Antlr3.Runtime.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\DocumentDB.AspNet.Identity.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\EntityFramework.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Azure.Documents.Client.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Google.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Newtonsoft.Json.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.Web.Common.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.WebApi.DependencyResolver.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Owin.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Cors.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Helpers.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.Cors.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.Owin.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Mvc.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Optimization.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Razor.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\WebActivator.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\WebGrease.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Azure.Documents.Client.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Newtonsoft.Json.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.pdb
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.Web.Common.pdb
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.Web.Common.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.Cors.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Helpers.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Mvc.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Optimization.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Razor.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Antlr3.Runtime.pdb
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\EntityFramework.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Google.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.Owin.xml
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\obj\Debug\AngularAzureSearch.WebAPI.dll
+D:\Source\Workspaces\Learning\AngularAzureSearch\AngularAzureSearch.WebAPI\obj\Debug\AngularAzureSearch.WebAPI.pdb
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\csc.exe
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\vbc.exe
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\AngularAzureSearch.WebAPI.dll.config
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\AngularAzureSearch.WebAPI.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\AngularAzureSearch.WebAPI.pdb
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Antlr3.Runtime.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\DocumentDB.AspNet.Identity.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\EntityFramework.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Azure.Documents.Client.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.Web.Common.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.WebApi.DependencyResolver.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Owin.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Cors.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Helpers.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Mvc.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Optimization.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Razor.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\WebActivator.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\WebGrease.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Azure.Documents.Client.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.pdb
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.Web.Common.pdb
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Ninject.Web.Common.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Helpers.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Mvc.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Optimization.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Razor.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Antlr3.Runtime.pdb
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\EntityFramework.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\obj\Debug\AngularAzureSearch.WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\obj\Debug\AngularAzureSearch.WebAPI.dll
+C:\Users\Mark\Desktop\New folder\AngularAzureSearch\AngularAzureSearch.WebAPI\obj\Debug\AngularAzureSearch.WebAPI.pdb
