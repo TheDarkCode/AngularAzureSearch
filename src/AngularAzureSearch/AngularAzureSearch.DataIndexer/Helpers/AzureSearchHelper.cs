@@ -18,12 +18,18 @@ using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
+using System.Configuration;
 
-namespace AngularAzureSearch.DataIndexer
+namespace AngularAzureSearch.DataIndexer.Helpers
 {
     public class AzureSearchHelper
     {
-        public const string ApiVersionString = "api-version=2015-02-28";
+        //public const string ApiVersionString = "api-version=2015-02-28";
+
+        /// <summary>
+        /// The API Version used with Azure Search Service.
+        /// </summary>
+        public static string ApiVersionString { get { return ConfigurationManager.AppSettings["apiVersionString"]; } }
 
         private static readonly JsonSerializerSettings _jsonSettings;
 

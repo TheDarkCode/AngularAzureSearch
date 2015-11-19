@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AngularAzureSearch.DataIndexer.Helpers
 {
-    class AppSettingsConfig
+    public static class AppSettingsConfig
     {
         /// <summary>
         /// The name of your Azure Search Service.
