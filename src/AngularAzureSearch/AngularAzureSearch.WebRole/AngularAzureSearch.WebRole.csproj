@@ -88,6 +88,16 @@
     <Content Include="js\app\signupCtrl\signup.html" />
     <Content Include="js\app\signupCtrl\signupCtrl.js" />
     <Content Include="js\app\templates\templates.js" />
+    <Content Include="js\app\trailsCtrl\config\trailsConfig.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailFacets.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailDetail.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailRepeater.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailSearchForm.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailsMap.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailsRoute.js" />
+    <Content Include="js\app\trailsCtrl\controllers\trailSort.js" />
+    <Content Include="js\app\trailsCtrl\trails.html" />
+    <Content Include="js\app\trailsCtrl\trailsCtrl.js" />
     <Content Include="js\external-modules\azureSearch\azureSearch.js" />
     <Content Include="js\external-modules\azureSearch\factories\facetUrl.js" />
     <Content Include="js\external-modules\azureSearch\factories\filterFacet.js" />
@@ -151,6 +161,7 @@
     <Content Include="favicon-96x96.png" />
     <Content Include="favicon.ico" />
     <Content Include="index.html" />
+    <Content Include="js\site - Copy.js" />
     <Content Include="js\site.js" />
     <Content Include="ms-icon-144x144.png" />
     <Content Include="ms-icon-150x150.png" />
@@ -163,7 +174,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="js\app\trailsCtrl\filter\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
