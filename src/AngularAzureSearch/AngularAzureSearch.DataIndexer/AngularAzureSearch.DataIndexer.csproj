@@ -102,7 +102,8 @@
     <Reference Include="System.Net.Http.WebRequest" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AzureSearchHelper.cs" />
+    <Compile Include="Helpers\AppSettingsConfig.cs" />
+    <Compile Include="Helpers\AzureSearchHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
