@@ -45,6 +45,9 @@ namespace AngularAzureSearch.WebAPI.App_Start
             kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
             
             RegisterServices(kernel);
+
+            System.Web.Http.GlobalConfiguration.Configuration.DependencyResolver = new Ninject.WebApi.DependencyResolver.NinjectDependencyResolver(kernel);
+
             return kernel;
         }
 
@@ -56,6 +59,7 @@ namespace AngularAzureSearch.WebAPI.App_Start
         {
             // Template where **** equals the naming convention you used.
             //kernel.Bind<I****Repository>().To<****Repository>();
+            kernel.Bind<ITrailRepository>().To<TrailRepository>();
         }        
     }
 }

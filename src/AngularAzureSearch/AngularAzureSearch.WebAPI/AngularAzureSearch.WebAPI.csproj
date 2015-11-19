@@ -240,11 +240,13 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\api\TrailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Cors\CorsPolicyFactory.cs" />
     <Compile Include="Cors\MyCustomCorsPolicyProvider.cs" />
     <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="Entities\Trails\Trail.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -259,7 +261,9 @@
     <Compile Include="Repositories\Disposable.cs" />
     <Compile Include="Repositories\DocumentDbClient.cs" />
     <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\ITrailRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\TrailRepository.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -321,6 +325,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Trail\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
