@@ -30,8 +30,8 @@
 
             var suggestResult = suggest('homes', {
                 search: $scope.model.query.q,
-                $select: 'city,state,zip,count',
-                $orderby: 'count desc',
+                $select: 'city,state,zip',
+                //$orderby: 'count desc',
                 suggesterName: 'homes-sg',
                 highlightPreTag: '<strong>',
                 highlightPostTag: '</strong>'

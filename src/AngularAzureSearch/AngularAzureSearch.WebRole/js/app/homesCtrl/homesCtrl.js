@@ -1,3 +1,3 @@
 ﻿(function () {
-    "use strict"; angular.module('homesCtrl', ['mapping', 'html', 'userInput']);
+    "use strict"; angular.module('homesCtrl', ['azureSearch', 'mapping', 'html', 'userInput']);
 })();

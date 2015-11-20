@@ -3,7 +3,7 @@ Sample full-featured web application containing separate WebRole (Front-End Clie
 
 Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps, Web API 2,  Azure DocumentDB.
 
-####Current Version: Build 11, 11/20/2015
+####Current Version: Build 12, 11/20/2015
 #####Status: 
   - WebRole is in transition to full utilization of dlFramework.
   - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings)
