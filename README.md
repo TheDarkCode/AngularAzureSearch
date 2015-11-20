@@ -80,12 +80,14 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ##Helpful Links
 
 ######http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx
+######DocumentDB Documentation: https://msdn.microsoft.com/en-us/library/azure/dn781482.aspx
+######Azure Search Documentation: https://msdn.microsoft.com/en-us/library/azure/dn798933.aspx
 
 ##Related Microsoft Virtual Academy Courses
 
 ####Adding Microsoft Azure Search to Your Websites and Apps:
-######https://mva.microsoft.com/en-us/training-courses/adding-microsoft-azure-search-to-your-websites-and-apps-10540?l=ADkxnd97_9304984382
+######https://mva.microsoft.com/en-us/training-courses/adding-microsoft-azure-search-to-your-websites-and-apps-10540
 
-####DocumentDB Microsoft Virtual Academy Series:
+####Developing Solutions with Azure DocumentDB:
 ######https://mva.microsoft.com/en-us/training-courses/developing-solutions-with-azure-documentdb-10554
 
