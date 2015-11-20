@@ -1,5 +1,5 @@
 ﻿(function () {
     "use strict";
 
-    angular.module("app", ["ngRoute", "dlFramework", "ngStorage", "FBAngular", "azureSearch", "homesCtrl"]);
+    angular.module("app", ["ngRoute", "dlFramework", "ngStorage", "FBAngular", "homesCtrl"]);
 })();

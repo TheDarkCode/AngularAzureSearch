@@ -50,7 +50,6 @@
                             minSizeY: 4,
                             template: '<d-search></d-search>',
                             widgetSettings: {
-                                id: 103,
                                 templateUrl: 'app/dialogs/dSelectSearchTemplate.html',
                                 controller: 'dSelectSearchController'
                             }

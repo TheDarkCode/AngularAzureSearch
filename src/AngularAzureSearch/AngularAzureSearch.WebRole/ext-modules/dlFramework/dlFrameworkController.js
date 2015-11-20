@@ -44,7 +44,7 @@
                 });
 
                 var checkWidth = function () {
-                    console.log("checkWidth called");
+                    //console.log("checkWidth called");
                     var width = Math.max($($window).width(), $window.innerWidth);
                     /* If Tablet or Greater (768px) Menu Visible Bool Set True */
                     $scope.isMenuVisible = (width > 1200);

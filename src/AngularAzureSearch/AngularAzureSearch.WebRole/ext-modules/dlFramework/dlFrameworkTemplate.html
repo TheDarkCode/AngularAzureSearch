@@ -1,6 +1,6 @@
 ﻿<div class="dl-title-bar navbar-fixed-top">
     <div class="row">
-        <div class="dl-logo-area col-xs-12 col-sm-6">
+        <div class="dl-logo-area col-xs-12 col-sm-12 col-md-6">
 
             <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()"
                  class="dl-collapsed-menu pull-left">
@@ -29,7 +29,7 @@
 
         </div>
 
-        <div class="dl-right-side-controls hidden-xs col-sm-4 col-md-6 pull-right">
+        <div class="dl-right-side-controls hidden-xs hidden-sm col-md-6 pull-right">
             <dl-user-profile-small></dl-user-profile-small>
         </div>
 
@@ -46,21 +46,21 @@
     </div>
 </div>
 
-<div class="clearfix-navfixed"></div>
+<div style="top: 68px; width: 100%; position: fixed;">
+    <div class="dl-menu-area class animated fadeInLeft"
+         ng-show="isMenuVisible"
+         ng-class="{'dl-menu-area-vertical': isMenuVertical, 'dl-menu-area-horizontal': !isMenuVertical, 'dl-mobile-menu': isMenuButtonVisible, 'dl-menu-fade': !isMenuVisible}">
 
-<div class="dl-menu-area class animated fadeInLeft"
-     ng-show="isMenuVisible"
-     ng-class="{'dl-menu-area-vertical': isMenuVertical, 'dl-menu-area-horizontal': !isMenuVertical, 'dl-mobile-menu': isMenuButtonVisible, 'dl-menu-fade': !isMenuVisible}">
+        <button ng-show="isMenuButtonVisible" ng-click="menuButtonClicked()" type="button" class="dl-mobile-close-button">
+            <i class="fa fa-times"></i>
+        </button>
+        <!-- User Profile -->
+        <dl-user-profile></dl-user-profile>
+        <!-- Menu -->
+        <div ng-transclude></div>
+    </div>
 
-    <button ng-show="isMenuButtonVisible" ng-click="menuButtonClicked()" type="button" class="dl-mobile-close-button">
-        <i class="fa fa-times"></i>
-    </button>
-    <!-- User Profile -->
-    <dl-user-profile></dl-user-profile>
-    <!-- Menu -->
-    <div ng-transclude></div>
-</div>
-
-<!-- Main ng-view -->
-<div ng-view class="dl-view animated" ng-class="{'dl-view-full-width': !isMenuVertical || !isMenuVisible, 'dl-view-mobile': isMenuButtonVisible, 'dl-view-in-left': isMenuVertical && isMenuVisible}">
+    <!-- Main ng-view -->
+    <div ng-view class="dl-view animated" ng-class="{'dl-view-full-width': !isMenuVertical || !isMenuVisible, 'dl-view-mobile': isMenuButtonVisible, 'dl-view-in-left': isMenuVertical && isMenuVisible}">
+    </div>
 </div>

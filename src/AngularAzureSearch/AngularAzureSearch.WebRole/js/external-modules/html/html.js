@@ -1,7 +1,8 @@
 ﻿angular.module('html', [])
           .directive('anchorBottom', function () {
               return {
-                  restrict: 'A',
+                  // Restrict A causes display issue. However, without it divs are not automatically scaled properly.
+                  restrict: 'E',
                   priority: 999,
                   scope: {},
                   link: function (scope, element, attr) {

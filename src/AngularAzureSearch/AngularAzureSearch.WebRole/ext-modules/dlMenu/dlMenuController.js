@@ -30,11 +30,11 @@
 
                 this.setOpenMenuScope = function (scope) {
                     $scope.openMenuScope = scope;
-                    console.log("setOpenMenuScope called on: " + scope)
+                    //console.log("setOpenMenuScope called on: " + scope)
                 };
 
                 $scope.$on('dl-menu-show', function (evt, data) {
-                    console.log("dl-menu show called")
+                    //console.log("dl-menu show called")
                     $scope.showMenu = data.show;
                     $scope.isVerticle = data.isVerticle;
                     $scope.allowHorizontalToggle = data.allowHorizontalToggle;
@@ -43,7 +43,7 @@
                 $scope.toggleMenuOrientation = function () {
                     /* close any open menus */
                     if ($scope.openMenuScope) {
-                        console.log("$scope.openMenuScope: " + $scope.openMenuScope)
+                        //console.log("$scope.openMenuScope: " + $scope.openMenuScope)
                         $scope.openMenuScope.closeMenu();
                     }
 
@@ -56,11 +56,11 @@
                 angular.element(document).bind('click', function (e) {
                     if ($scope.openMenuScope && !$scope.isVertical) {
                         if ($(e.target).parent().hasClass('dl-selectable-item')) {
-                            console.log("has selectable-item and returned");
+                            //console.log("has selectable-item and returned");
                             return;
                         }
                         $scope.$apply(function () {
-                            console.log("$scope.openMenuScope.closeMenu called")
+                            //console.log("$scope.openMenuScope.closeMenu called")
                             $scope.openMenuScope.closeMenu();
                         });
                         e.preventDefault();
