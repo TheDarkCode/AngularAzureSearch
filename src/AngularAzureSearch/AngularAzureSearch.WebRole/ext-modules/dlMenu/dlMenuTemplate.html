@@ -1,0 +1,29 @@
+﻿<div>
+    <ul class="dl-menu" ng-transclude></ul>
+
+    <!-- Horizontal Toggle Button Disabled -->
+    <!--<a class="btn dl-menu-layout-button"
+       ng-show="allowHorizontalToggle"
+       ng-class="{'dl-layout-button-horizontal': !isVertical}"
+       ng-click="toggleMenuOrientation()">
+        <i class="fa"
+           ng-class="{'fa-chevron-up': isVertical, 'fa-chevron-left': !isVertical}"></i>
+    </a>-->
+
+    <!-- Disabled on Horizontal Layout -->
+    <div ng-show="footer && isVertical">
+        <div class="dl-menu-footer">
+                    <button class="btn btn-warning dl-menu-footer-btn">
+                        <i class="fa fa-gears"></i>
+                    </button>
+
+                    <button class="btn btn-warning dl-menu-footer-btn">
+                        <i class="fa fa-eye-slash"></i>
+                    </button>
+
+                    <button class="btn btn-warning dl-menu-footer-btn">
+                        <i class="fa fa-power-off"></i>
+                    </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+﻿<footer class="dl-footer">
+    <div class="container dl-footer-callout text-center">
+        <div class="dl-footer-text-vertical-center">
+            <h4>Follow {{socialname}} on Social Media</h4>
+            <p>
+                <a ng-if="twitter" class="btn btn-default btn-lg footer-btn" href="//twitter.com/{{twitter}}"><i class="fa fa-twitter"></i></a>
+                <a ng-if="facebook" class="btn btn-default btn-lg footer-btn" href="//facebook.com/{{facebook}}"><i class="fa fa-facebook"></i></a>
+                <a ng-if="linkedin" class="btn btn-default btn-lg footer-btn" href="//linkedin.com/company/{{linkedin}}"><i class="fa fa-linkedin"></i></a>
+                <a ng-if="angellist" class="btn btn-default btn-lg footer-btn" href="//angel.co/{{angellist}}"><i class="fa fa-angellist"></i></a>
+                <a ng-if="instagram" class="btn btn-default btn-lg footer-btn" href="//instagram.com/{{instagram}}"><i class="fa fa-instagram"></i></a>
+                <a ng-if="bizspark" class="btn btn-default btn-lg footer-btn" href="//www.microsoft.com/bizspark/startup/profile.aspx?startup={{bizspark}}">BizSpark</a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="dl-footer-callout dl-copyright">
+            <div class="dl-footer-text-vertical-center">
+                <h6 class="text-center">
+                    Copyright &copy; {{protectedYears}} {{copyright}}. All Rights Reserved.
+                </h6>
+            </div>
+        </div>
+    </div>
+</footer>

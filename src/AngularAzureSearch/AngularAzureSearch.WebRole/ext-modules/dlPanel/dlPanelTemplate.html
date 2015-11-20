@@ -1,0 +1,15 @@
+﻿<div ng-switch="type">
+    <div ng-switch-default>
+        <div class="{{layout}}">
+            <div class="panel panel-{{color}}">
+                <div class="panel-heading text-center">
+                    <h3><i class="fa {{icon}}"></i> {{title}}</h3>
+                </div>
+                <div class="panel-body {{bodyclasses}}">
+                    <div ng-transclude></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

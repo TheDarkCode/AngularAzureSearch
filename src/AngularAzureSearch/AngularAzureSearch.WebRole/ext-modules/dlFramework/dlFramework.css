@@ -1,0 +1,601 @@
+﻿.dl-title-bar {
+    color: #555459;
+    background: #eceff1;
+    padding: 0 20px;
+    border-bottom: 3px solid rgba(255,255,255,0.6);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    -moz-transition: linear 0.2s all;
+    -o-transition: linear 0.2s all;
+    -webkit-transition: linear 0.2s all;
+    transition: linear 0.2s all;
+}
+
+.clearfix-navfixed {
+    height: 68px;
+    width: 100%;
+}
+
+.dl-logo-area {
+    /*text-align: center;*/
+}
+
+.dl-title-area {
+    display: inline-block;
+    text-align: center;
+}
+
+.dl-icon {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    vertical-align: top;
+    /* fallback support */
+    border: 4px solid #999;
+    border: 4px solid rgba(0,0,0,0.1);
+}
+
+.dl-icon-xs-separator {
+    position: relative;
+    width: 10px;
+    font-size: 2em;
+    left: 4px;
+    top: 10px;
+    display: inline-block;
+    color: rgba(0,0,0,0.2);
+}
+
+.dl-logo-title {
+    /*color: #111;*/
+    margin-top: 6px;
+    font-size: 22px;
+    font-weight: 800;
+    font-variant: small-caps;
+}
+
+.dl-logo-subtitle {
+    font-size: 13px;
+    margin-top: -13px;
+}
+
+@media screen and (max-width: 768) {
+    .dl-logo-title {
+        margin-top: 0px;
+    }
+
+    .dl-icon {
+        height: auto;
+        width: 40px;
+    }
+
+    .dl-title-bar {
+        height: 54px;
+    }
+
+    .dl-user-profile-small {
+        padding-top: 0px;
+    }
+}
+
+
+/* Breakpoint dl-logo-area --- update the max-width
+   or adjust the display commenting on the subtitle and icon */
+@media screen and (max-width: 305px) {
+    .dl-icon {
+        /*display: none;*/
+    }
+    /* If using title and subtitle instead of xs-logo */
+    .dl-logo-title {
+        /*margin-top: 10px;
+        margin-left: 20px;
+        font-size: 18px;*/
+        display: none;
+    }
+
+    .dl-logo-subtitle {
+        display: none;
+        /*margin-left: 20px;*/
+    }
+}
+
+/* Comment if using title and subtitle instead of xs-logo */
+/*@media screen and (max-width: 300px) {
+    .dl-icon {
+        display: none;
+    }
+
+    .dl-logo-title {
+        display:none;
+    }
+    .dl-logo-subtitle {
+        display: none;
+    }
+    .dl-icon-xs {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 301px) {
+    .dl-icon-xs {
+        display: none;
+    }
+}*/
+
+/*.dl-search-area {
+    display: inline-block;
+    text-align: center;
+}
+
+.dl-search-area form {
+    border: none;
+
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
+
+    .floating-label-form-group input,
+    .floating-label-form-group textarea {
+        z-index: 1;
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        border: 0;
+        border-radius: 0;
+        font-size: 1.5em;
+        background: 0 0;
+        box-shadow: none !important;
+        resize: none;
+    }
+
+    .floating-label-form-group label {
+        display: block;
+        z-index: 0;
+        position: relative;
+        top: 2em;
+        margin: 0;
+        font-size: .85em;
+        line-height: 1.764705882em;
+        vertical-align: middle;
+        vertical-align: baseline;
+        opacity: 0;
+        -webkit-transition: top .3s ease,opacity .3s ease;
+        -moz-transition: top .3s ease,opacity .3s ease;
+        -ms-transition: top .3s ease,opacity .3s ease;
+        transition: top .3s ease,opacity .3s ease;
+    }
+
+    .floating-label-form-group::not(:first-child) {
+        padding-left: 14px;
+        border-left: 1px solid #eee;
+    }
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #18bc9c;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}*/
+
+
+.dl-right-side-controls {
+    line-height: 60px;
+}
+
+    .dl-right-side-controls > div {
+        text-align: center;
+    }
+
+@media screen and (min-width: 768px) {
+    .dl-right-side-controls > div {
+        text-align: right;
+    }
+
+    .dl-title-area {
+        text-align: left;
+    }
+
+    .dl-logo-area {
+        text-align: left;
+    }
+}
+
+.dl-collapsed-menu {
+    display: inline-block;
+    height: 100%;
+}
+
+.dl-nav-button {
+    width: 60px;
+    margin-top: 6px;
+    /*border: 1px solid #888;*/
+    background: none;
+    font-size: 28px;
+    color: #777;
+}
+
+.dl-view {
+    /* Size of Menu on Left Side */
+    /*margin-left: 200px;*/
+    padding: 20px;
+    /*background-color: rgba(255,255,255,0.8);*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.dl-view-mobile {
+    margin-left: 0px !important;
+}
+
+.dl-view-full-width {
+    margin-left: 0;
+}
+
+.dl-view:fullscreen {
+    width: calc(100vw-200px);
+}
+
+.dl-user-profile {
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    /*width: 200px;*/
+    min-height: 120px;
+}
+
+    .dl-user-profile > div {
+        display: inline-block;
+        padding-top: 10px;
+        margin-left: 5px;
+    }
+
+        .dl-user-profile > div > p {
+            margin-bottom: 2px;
+        }
+
+        .dl-user-profile > div > button {
+            margin-top: 8px;
+        }
+
+    .dl-user-profile img {
+        float: left;
+        margin: 20px 20px 0px;
+        width: 80px;
+        height: 80px;
+        border: 2px inset rgba(255,255,255,0.2);
+    }
+
+.dl-user-profile-small {
+    color: #333;
+}
+
+    .dl-user-profile-small > span {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .dl-user-profile-small img {
+        width: 40px;
+        height: 40px;
+        border: 2px inset rgba(255,255,255,0.2);
+    }
+
+.dl-profile-image {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 100%;
+    vertical-align: bottom;
+}
+
+.dl-profile-image-side {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 100%;
+    vertical-align: bottom;
+}
+
+.dl-profile-image i {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+.dl-profile-image-side i {
+    position: absolute;
+    right: 22px;
+    bottom: 9px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+.dl-profile-online {
+}
+
+    .dl-profile-online i {
+        background-color: green;
+    }
+
+.dl-profile-offline i {
+    background-color: red;
+}
+
+.dl-user-profile-btn {
+    background: transparent;
+    border: none !important;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-size: 2em;
+}
+
+.dl-user-profile-small-name {
+    top: 5px;
+    line-height: 50px;
+    font-size: 24px;
+    display: inline;
+    position: relative;
+}
+
+/* Transformicons
+
+    USAGE :::
+
+    <button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
+        <span class="tcon-menu__lines" aria-hidden="true"></span>
+        <span class="tcon-visuallyhidden">toggle menu</span>
+    </button>
+    <button type="button" class="tcon tcon-remove tcon-remove--chevron-left" aria-label="remove item">
+      <span class="tcon-visuallyhidden">remove item</span>
+    </button>
+    <span class="tcon-loader--spinner360" aria-label="loading">
+      <span class="tcon-visuallyhidden">loading</span>
+    </span>
+
+*/
+.tcon {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 40px;
+    transition: 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 40px;
+    background: transparent;
+    outline: none;
+}
+
+    .tcon > * {
+        display: block;
+    }
+
+    .tcon:hover, .tcon:focus {
+        outline: none;
+    }
+
+    .tcon::-moz-focus-inner {
+        border: 0;
+    }
+
+.tcon-menu__lines {
+    display: inline-block;
+    height: 5.71429px;
+    width: 40px;
+    border-radius: 2.85714px;
+    transition: 0.3s;
+    background: black;
+    position: relative;
+}
+
+    .tcon-menu__lines::before, .tcon-menu__lines::after {
+        display: inline-block;
+        height: 5.71429px;
+        width: 40px;
+        border-radius: 2.85714px;
+        transition: 0.3s;
+        background: black;
+        content: '';
+        position: absolute;
+        left: 0;
+        -webkit-transform-origin: 2.85714px center;
+        transform-origin: 2.85714px center;
+        width: 100%;
+    }
+
+    .tcon-menu__lines::before {
+        top: 10px;
+    }
+
+    .tcon-menu__lines::after {
+        top: -10px;
+    }
+
+.tcon-transform .tcon-menu__lines {
+    -webkit-transform: scale3d(.8, .8, .8);
+    transform: scale3d(.8, .8, .8);
+}
+
+.tcon-menu--xcross {
+    width: auto;
+}
+
+    .tcon-menu--xcross.tcon-transform .tcon-menu__lines {
+        background: transparent;
+    }
+
+        .tcon-menu--xcross.tcon-transform .tcon-menu__lines::before, .tcon-menu--xcross.tcon-transform .tcon-menu__lines::after {
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            top: 0;
+            width: 40px;
+        }
+
+        .tcon-menu--xcross.tcon-transform .tcon-menu__lines::before {
+            -webkit-transform: rotate3d(0, 0, 1, 45deg);
+            transform: rotate3d(0, 0, 1, 45deg);
+        }
+
+        .tcon-menu--xcross.tcon-transform .tcon-menu__lines::after {
+            -webkit-transform: rotate3d(0, 0, 1, -45deg);
+            transform: rotate3d(0, 0, 1, -45deg);
+        }
+
+.tcon-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+    .tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+.tcon-remove {
+    height: 40px;
+    position: relative;
+    -webkit-transform: scale(.75);
+    transform: scale(.75);
+    width: 40px;
+}
+
+    .tcon-remove::before, .tcon-remove::after {
+        content: "";
+        display: block;
+        border-radius: 2px;
+        width: 85%;
+        height: 25%;
+        position: absolute;
+        top: 37%;
+        left: 8%;
+        transition: 0.3s;
+        background: black;
+    }
+
+    .tcon-remove::before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .tcon-remove::after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+.tcon-remove--chevron-left.tcon-transform::before {
+    left: 20%;
+    -webkit-transform: translate(0, -55%) rotate(-45deg);
+    transform: translate(0, -55%) rotate(-45deg);
+    width: 62%;
+}
+
+.tcon-remove--chevron-left.tcon-transform::after {
+    left: 20%;
+    -webkit-transform: translate(0, 55%) rotate(45deg);
+    transform: translate(0, 55%) rotate(45deg);
+    width: 62%;
+}
+
+.tcon-loader--spinner360 {
+    border-radius: 80%;
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    -webkit-animation: tcon-spin360 0.675s linear infinite forwards;
+    animation: tcon-spin360 0.675s linear infinite forwards;
+    background: lightgray;
+}
+
+    .tcon-loader--spinner360:before, .tcon-loader--spinner360:after {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+
+    .tcon-loader--spinner360:before {
+        border-radius: 0 90px 90px 0;
+        height: 40px;
+        width: 50%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background: black;
+        background-image: linear-gradient(lightgray, black);
+    }
+
+    .tcon-loader--spinner360:after {
+        border-radius: 80%;
+        height: 30px;
+        width: 30px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        background: white;
+    }
+
+@-webkit-keyframes tcon-spin360 {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes tcon-spin360 {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

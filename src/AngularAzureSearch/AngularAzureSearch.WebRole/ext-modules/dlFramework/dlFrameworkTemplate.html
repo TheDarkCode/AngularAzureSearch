@@ -1,0 +1,66 @@
+﻿<div class="dl-title-bar navbar-fixed-top">
+    <div class="row">
+        <div class="dl-logo-area col-xs-12 col-sm-6">
+
+            <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()"
+                 class="dl-collapsed-menu pull-left">
+                <!-- Regular Bars Icon -->
+                <button type="button" class="btn dl-nav-button">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!--<button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
+                    <span class="tcon-menu__lines" aria-hidden="true"></span>
+                    <span class="tcon-visuallyhidden">toggle menu</span>
+                </button>-->
+            </div>
+            <img class="dl-icon" ng-src="{{ iconFile }}" />
+            <div class="dl-title-area">
+                <p class="dl-logo-title">{{ title }}</p>
+                <p class="dl-logo-subtitle">{{ subtitle }}</p>
+                <!--If using iconXs uncomment-->
+                <!--<img class="dl-icon-xs" ng-src="{-{ iconXs }-}" />-->
+            </div>
+            <!--<div class="dl-search-area">
+                <form>
+                    <input type="text" name="search" />
+                </form>
+            </div>-->
+
+
+        </div>
+
+        <div class="dl-right-side-controls hidden-xs col-sm-4 col-md-6 pull-right">
+            <dl-user-profile-small></dl-user-profile-small>
+        </div>
+
+
+        <!--<div class="dl-right-side-controls col-xs-7 col-sm-3 pull-right">
+            <div>
+                <a class="btn btn-danger" href="//twitter.com/dryverless"><i class="fa fa-twitter-square"></i></a>
+                <a class="btn btn-warning" href="//linkedin.com/company/dryverless"><i class="fa fa-linkedin-square"></i></a>
+                <a class="btn btn-success" href="//facebook.com/dryverless"><i class="fa fa-facebook-square"></i></a>
+                <a class="btn btn-info" href="//angel.co/dryverless"><i class="fa fa-angellist"></i></a>
+                <a class="btn btn-default" href="//instagram.com/dryverless"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>-->
+    </div>
+</div>
+
+<div class="clearfix-navfixed"></div>
+
+<div class="dl-menu-area class animated fadeInLeft"
+     ng-show="isMenuVisible"
+     ng-class="{'dl-menu-area-vertical': isMenuVertical, 'dl-menu-area-horizontal': !isMenuVertical, 'dl-mobile-menu': isMenuButtonVisible, 'dl-menu-fade': !isMenuVisible}">
+
+    <button ng-show="isMenuButtonVisible" ng-click="menuButtonClicked()" type="button" class="dl-mobile-close-button">
+        <i class="fa fa-times"></i>
+    </button>
+    <!-- User Profile -->
+    <dl-user-profile></dl-user-profile>
+    <!-- Menu -->
+    <div ng-transclude></div>
+</div>
+
+<!-- Main ng-view -->
+<div ng-view class="dl-view animated" ng-class="{'dl-view-full-width': !isMenuVertical || !isMenuVisible, 'dl-view-mobile': isMenuButtonVisible, 'dl-view-in-left': isMenuVertical && isMenuVisible}">
+</div>

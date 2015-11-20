@@ -1,4 +1,4 @@
-﻿angular.module('myApp', ['ngRoute', 'azureSearch', 'templates', 'homesCtrl', 'indexCtrl', 'trailsCtrl'])
+﻿angular.module('myApp', ['ngRoute', 'azureSearch', 'homesCtrl', 'indexCtrl', 'trailsCtrl'])
 
   /**
    * Configuration

@@ -120,10 +120,10 @@
                             </ul>
                         </span>          <a href="{{toggleDirUrl()}}" style="font-size:8px;">
 
-                            <span ng-if="orderDir = ='asc'" class="glyphicon glyphicon-triangle-top" title="ascending (low to high)">
+                            <span ng-if="orderDir =='asc'" class="glyphicon glyphicon-triangle-top" title="ascending (low to high)">
                             </span>
 
-                            <span ng-if="orderDir = ='desc'" class="glyphicon glyphicon-triangle-bottom" title="descending (high to low)">
+                            <span ng-if="orderDir == 'desc'" class="glyphicon glyphicon-triangle-bottom" title="descending (high to low)">
                             </span>
                         </a>
                     </div>
@@ -139,7 +139,7 @@
                             <a href="">{{doc.street}}</a>            <small style="padding-left:1em;">
                                 {{doc.city}}
 
-                                <span ng-if="doc.city! =doc.neighborhood">
+                                <span ng-if="doc.city != doc.neighborhood">
                                     ({{doc.neighborhood}})
                                 </span>
                             </small>

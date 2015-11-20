@@ -1,0 +1,9 @@
+﻿<li class="dl-selectable-item" ng-class="{'dl-item-horizontal': !isVertical(), 'dl-menu-active-item-indicator': isActive() && isVertical()}">
+    <div class="dl-noselect">
+        <i class="fa {{ icon }} dl-menu-icon"></i>
+        <span>
+            {{ label }}
+        </span>
+    </div>
+    <i ng-if="isActive() && isVertical()" class="fa fa-2x fa-caret-left dl-menu-active-indicator"></i>
+</li>
