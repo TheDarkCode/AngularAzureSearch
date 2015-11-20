@@ -8,7 +8,21 @@
                 config: {
                     template: '<d-dashboard></d-dashboard>'
                 }
-            }
+            },
+            {
+                url: '/homes',
+                config: {
+                    template: '<d-homes></d-homes>',
+                    reloadOnSearch: false
+                }
+            },
+            //{
+            //    url: '/trails',
+            //    config: {
+            //        template: '<d-trails></d-trails>',
+            //        reloadOnSearch: false
+            //    }
+            //}
         ];
 
         routes.forEach(function (route) {

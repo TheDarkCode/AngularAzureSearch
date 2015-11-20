@@ -25,7 +25,52 @@
                 ];
 
                 scope.widgets = $localStorage.widgets || [
-
+                    // WIDGET SETTINGS TEMPLATE ::
+                    //{
+                    //    title: 'Search',
+                    //    settings: {
+                    //        sizeX: 4,
+                    //        sizeY: 4,
+                    //        minSizeX: 4,
+                    //        minSizeY: 4,
+                    //        template: '<d-search></d-search>',
+                    //        widgetSettings: {
+                    //            id: 103,
+                    //            templateUrl: 'app/dialogs/dSelectSearchTemplate.html',
+                    //            controller: 'dSelectSearchController'
+                    //        }
+                    //    }
+                    //}
+                    {
+                        title: 'Search',
+                        settings: {
+                            sizeX: 4,
+                            sizeY: 4,
+                            minSizeX: 4,
+                            minSizeY: 4,
+                            template: '<d-search></d-search>',
+                            widgetSettings: {
+                                id: 103,
+                                templateUrl: 'app/dialogs/dSelectSearchTemplate.html',
+                                controller: 'dSelectSearchController'
+                            }
+                        }
+                    },
+                    {
+                        title: 'Search',
+                        settings: {
+                            sizeX: 4,
+                            sizeY: 4,
+                            minSizeX: 4,
+                            minSizeY: 4,
+                            template: '<d-search></d-search>',
+                            widgetSettings: {
+                                id: 103,
+                                templateUrl: 'app/dialogs/dSelectSearchTemplate.html',
+                                controller: 'dSelectSearchController'
+                            }
+                        }
+                    },
                 ];
 
 

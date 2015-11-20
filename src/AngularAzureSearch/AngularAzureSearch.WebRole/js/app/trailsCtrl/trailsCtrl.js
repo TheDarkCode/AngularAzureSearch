@@ -1,5 +1,12 @@
 ﻿angular.module('trailsCtrl', ['mapping', 'html', 'userInput'])
-
+    .directive('dlTrails', [function () {
+        return {
+            scope: {
+                controller: 'trailsRoute'
+            },
+            templateUrl: 'app/templates/dTrailsTemplate.html'
+        }
+    }])
     /**
      * Controller for each trail in list
      */
@@ -416,15 +423,4 @@
         $scope.model.query = $location.search();
         $scope.model.query.order = $scope.model.query.order;
         $scope.refreshResults();
-    })
-
-    /**
-     * Trails Configuration
-     */
-    .config(function ($routeProvider) {
-        $routeProvider.when('/trails', {
-            controller: 'trailsRoute',
-            templateUrl: '/js/app/trailsCtrl/trails.html',
-            reloadOnSearch: false
-        });
     });
