@@ -38,7 +38,6 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
   - Url still contains filters and orderby parameters after leaving Homes page.
   - Signup, Manage, and other related membership views are not completed.
   - Existing template for geosearches are not configured for mobile.
-  - Main content body of WebRole extends beyond visible area even when not filled. It is offset by the height of the navbar.
   - Build-related components for minifying WebRole's JS files are not included yet.
   - Current file structure for root of WebRole is in transition.
 
