@@ -30,7 +30,7 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
   - WebRole has multiple CSS-related display issues in Firefox.
   - Widget selector is incomplete/broken.
   - WebRole is not configured for use with WebAPI yet.
-  - "Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes.
+  - "Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes. Limited to anchorBottom issue. However in current build, renders on first load of page fine.
   - "Trails" page is disabled.
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
   - Login form is disabled but still displays upon first load.
