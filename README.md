@@ -1,4 +1,6 @@
 # AngularAzureSearch
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/TheDarkCode/AngularAzureSearch/LICENSE.md)
+
 Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).
 
 Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps, Web API 2,  Azure DocumentDB.
