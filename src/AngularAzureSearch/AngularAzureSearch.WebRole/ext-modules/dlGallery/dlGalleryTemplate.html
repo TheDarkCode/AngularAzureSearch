@@ -1,0 +1,42 @@
+﻿<div>
+
+    <div class="btn-group">
+        <span class="btn btn-default">
+            <label>
+                Any:
+                <input ng-model="search.$">
+            </label>
+        </span>
+        <span class="btn btn-default">
+            <label>
+                Name only
+                <input ng-model="search.name">
+            </label>
+        </span>
+        <span class="btn btn-default">
+            <label>
+                Category only
+                <input ng-model="search.category">
+            </label>
+        </span>
+        <span class="btn btn-default clearfilter-btn" ng-click="clearFilters()">clear filter</span>
+
+    </div>
+    <hr />
+    <div class="gallery-wrapper text-center" ng-repeat="item in items | filter:search:strict">
+        <div class="tilt picture">
+            <a class="gallery-item" ng-click="openLightboxModal($index)">
+                <img alt="item.name" class="grow img-thumbnail" src="{{item.url}}">
+            </a>
+        </div>
+        <hr />
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" ng-click="$parent.search.$ = item.name">
+                <strong>{{item.name}}</strong>
+
+            </button>
+            <button type="button" class="btn btn-default" ng-click="$parent.search.$ = item.category">{{item.category}}</button>
+        </div>
+    </div>
+
+</div>

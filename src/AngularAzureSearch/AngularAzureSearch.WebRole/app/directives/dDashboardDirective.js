@@ -22,6 +22,36 @@
                 };
 
                 scope.widgetDefinitions = [
+                    {
+                        title: 'Homes',
+                        settings: {
+                            sizeX: 4,
+                            sizeY: 4,
+                            minSizeX: 4,
+                            minSizeY: 4,
+                            template: '<d-trails></d-trails>',
+                            widgetSettings: {
+                                id: 103,
+                                templateUrl: 'app/dialogs/dSelectSearchTemplate.html',
+                                controller: 'dSelectSearchController'
+                            }
+                        }
+                    },
+                    {
+                        title: 'Trails',
+                        settings: {
+                            sizeX: 4,
+                            sizeY: 4,
+                            minSizeX: 4,
+                            minSizeY: 4,
+                            template: '<d-trails></d-trails>',
+                            widgetSettings: {
+                                id: 103,
+                                templateUrl: 'app/dialogs/dSelectSearchTemplate.html',
+                                controller: 'dSelectSearchController'
+                            }
+                        }
+                    },
                 ];
 
                 scope.widgets = $localStorage.widgets || [
@@ -42,34 +72,25 @@
                     //    }
                     //}
                     {
-                        title: 'Search',
+                        title: 'Homes',
                         settings: {
                             sizeX: 4,
                             sizeY: 4,
                             minSizeX: 4,
                             minSizeY: 4,
-                            template: '<d-search></d-search>',
-                            widgetSettings: {
-                                templateUrl: 'app/dialogs/dSelectSearchTemplate.html',
-                                controller: 'dSelectSearchController'
-                            }
-                        }
-                    },
-                    {
-                        title: 'Search',
-                        settings: {
-                            sizeX: 4,
-                            sizeY: 4,
-                            minSizeX: 4,
-                            minSizeY: 4,
-                            template: '<d-search></d-search>',
+                            template: '<d-trails></d-trails>',
                             widgetSettings: {
                                 id: 103,
                                 templateUrl: 'app/dialogs/dSelectSearchTemplate.html',
                                 controller: 'dSelectSearchController'
                             }
                         }
-                    },
+                    }
+                ];
+                
+
+                scope.widgets = $localStorage.widgets || [
+
                 ];
 
 
