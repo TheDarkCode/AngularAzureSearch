@@ -28,18 +28,17 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ######Known Issues/Warnings:
   - WebRole has multiple CSS-related display issues in Firefox.
-  - Widget selector is incomplete/broken.
-  - WebRole is not configured for use with WebAPI yet.
+  - WebRole will be resolved to work with WebAPI in next update.
   - "Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes. Limited to anchorBottom issue. However in current build, renders on first load of page fine.
   - "Trails" page is disabled.
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
   - Login form is disabled but still displays upon first load.
-  - UserProfile elements are hardcoded as part of dlFramework, but will be reconfigured.
+  - UserProfile elements are hardcoded as part of dlFramework. Will be resolved to WebAPI auth in next update.
   - Url still contains filters and orderby parameters after leaving Homes page.
-  - Signup, Manage, and other related membership views are not completed.
+  - Signup, Manage, and other related membership views will be added in next update.
   - Existing template for geosearches are not configured for mobile.
   - Build-related components for minifying WebRole's JS files are not included yet.
-  - Current file structure for root of WebRole is in transition.
+  - Current file structure for root of WebRole will be changed in next update to reflect format going forward.
 
 ####Azure Service Requirements for Deployment
 
