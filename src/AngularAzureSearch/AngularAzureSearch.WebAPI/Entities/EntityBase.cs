@@ -19,14 +19,14 @@ namespace AngularAzureSearch.WebAPI.Entities
         /// <summary>
         /// All root entities inherit this base class.
         /// </summary>
-        /// <param name="type">The name of the type of entity (lowercase).</param>
+        /// <param name="docType">The name of the type of entity (lowercase).</param>
         public EntityBase(string docType)
         {
             this._docType = docType;
         }
 
         /// <summary>
-        /// This is need for querying in the RepositoryBase. Used by DocumentDB.
+        /// This is needed for querying in the RepositoryBase. Used by DocumentDB.
         /// </summary>
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }

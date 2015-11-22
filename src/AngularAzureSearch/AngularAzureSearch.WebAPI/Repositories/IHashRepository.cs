@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace AngularAzureSearch.WebAPI.Repositories
 {
-    public interface IRepository<T>
-         where T : EntityBase
+    public interface IHashRepository<T>
+         where T : ItemBase
     {
         Task<Microsoft.Azure.Documents.Client.ResourceResponse<Microsoft.Azure.Documents.Document>> CreateDocumentAsync(T entity);
         Task<Microsoft.Azure.Documents.Client.ResourceResponse<Microsoft.Azure.Documents.Document>> DeleteDocumentAsync(string id);

@@ -12,26 +12,26 @@ using System.Threading.Tasks;
 namespace AngularAzureSearch.WebAPI.Repositories
 {
     /// <summary>
-    /// All repository classes must inherit from this base class.  This base class 
-    /// contains all the basic CRUD operations.
+    /// All hash repository classes must inherit from this base class.
+    /// This base class contains all the basic CRUD operations.
     /// </summary>
     /// <typeparam name="T">The entity type used for the repository.</typeparam>
-    public class RepositoryBase<T> : DocumentDbClient, IRepository<T> where T : EntityBase
+    public class HashRepositoryBase<T> : DocumentDbClient, IHashRepository<T> where T : ItemBase
     {
         #region ctors
 
-        private Expression<Func<T, bool>> _docTypePredicate = null;
+        private Expression<Func<T, bool>> _tenantIdPredicate = null;
 
         /// <summary>
         /// All Repository classes must inherit this base class.
         /// </summary>
-        /// <param name="docType">The name of the entity (T), which is the same as the name passed into the model (lowercase).</param>
+        /// <param name="type">The name of the entity (T), which is the same as the name passed into the model (lowercase).</param>
         /// <param name="dbName">The name of the database.</param>
         /// <param name="collectionName">The name of the collection.</param>
-        public RepositoryBase(string docType, string dbName, string collectionName)
+        public HashRepositoryBase(string tenantId, string dbName, string collectionName)
             : base(dbName, collectionName)
         {
-            _docTypePredicate = v => v.docType == docType;
+            _tenantIdPredicate = v => v.tenantId == tenantId;
         }
 
         #endregion
@@ -46,7 +46,7 @@ namespace AngularAzureSearch.WebAPI.Repositories
         public IEnumerable<T> Get(Expression<Func<T, bool>> predicate = null)
         {
             var query = Client.CreateDocumentQuery<T>(Collection.DocumentsLink)
-                .Where(_docTypePredicate)
+                .Where(_tenantIdPredicate)
                 .AsQueryable();
 
             if (predicate != null)
@@ -61,7 +61,7 @@ namespace AngularAzureSearch.WebAPI.Repositories
         {
             return Task<T>.Run(() =>
                 Client.CreateDocumentQuery<T>(Collection.DocumentsLink)
-                .Where(_docTypePredicate)
+                .Where(_tenantIdPredicate)
                 .Where(p => p.Id == id)
                 .AsEnumerable()
                 .FirstOrDefault());
