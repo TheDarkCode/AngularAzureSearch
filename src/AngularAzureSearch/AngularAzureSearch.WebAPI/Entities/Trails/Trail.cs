@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Azure.Documents.Spatial;
+using Newtonsoft.Json;
 
 namespace AngularAzureSearch.WebAPI.Entities.Trails
 {
@@ -20,9 +21,15 @@ namespace AngularAzureSearch.WebAPI.Entities.Trails
         }
 
         [Required]
+        [JsonProperty("name")]
         public string Name { get; set; }
+        [JsonProperty("county")]
         public string County { get; set; }
+        [JsonProperty("elevation")]
         public Int64 Elevation { get; set; }
-        public Point location { get; set; }
+        [JsonProperty("location")]
+        public Point Location { get; set; }
+        [JsonProperty("type")]
+        public string Type { get; set; }
     }
 }
