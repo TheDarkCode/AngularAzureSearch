@@ -8,7 +8,7 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 ####Current Version: Build 12, 11/20/2015
 #####Status: 
   - WebRole is in transition to full utilization of dlFramework.
-  - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings)
+  - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample.
   - DataIndexer is set to Trails data schema.
 
 ######Current To Do List:
@@ -77,6 +77,10 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ###GolfTracker.DocumentDB by King Wilder, Gizmo Beach
 ######https://github.com/kahanu/GolfTracker.DocumentDB/
 ######(Video / Article Series found here: http://www.nosqlcentral.net/Story/Details/videos/kahanu/1-documentdb-golf-tracker-overview)
+
+###azure-documentdb-dotnet by Ryan CrawCour & Aravind Ramachandran, Microsoft
+######https://github.com/Azure/azure-documentdb-dotnet/
+######(Article found here: https://azure.microsoft.com/en-us/documentation/articles/documentdb-sharding/)
 
 ##Helpful Links
 
