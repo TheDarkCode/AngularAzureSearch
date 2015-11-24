@@ -139,8 +139,6 @@ body {
 .panel-heading {
     padding: 10px 15px;
     border-bottom: 1px solid transparent;
-    border-top-right-radius: -1;
-    border-top-left-radius: -1;
 }
 
     .panel-heading > .dropdown .dropdown-toggle {

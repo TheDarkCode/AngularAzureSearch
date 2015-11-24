@@ -9,6 +9,14 @@
                 $scope.isMenuButtonVisible = true;
                 $scope.isMenuVertical = true;
                 $scope.isFullScreen = false;
+                $scope.userName = $rootScope.userName;
+                $scope.isAuthenticated = $rootScope.isAuthenticated;
+
+                $scope.$on('user-authenticated', function (evt, data) {
+                    console.log("user authenticated called")
+                    $scope.isAuthenticated = data.isAuthenticated;
+                    $scope.userName = data.userName;
+                });
 
                 $scope.$on('dl-menu-item-selected-event', function (evt, data) {
                     $scope.routeString = data.route;

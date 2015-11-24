@@ -6,7 +6,8 @@
             {
                 url: '/dashboard',
                 config: {
-                    template: '<d-dashboard></d-dashboard>'
+                    template: '<d-dashboard></d-dashboard>',
+                    reloadOnSearch: false
                 }
             },
             {
@@ -23,6 +24,27 @@
             //        reloadOnSearch: false
             //    }
             //}
+            {
+                url: '/login',
+                config: {
+                    controller: "loginCtrl",
+                    templateUrl: "/app/loginCtrl/login.html"
+                }
+            },
+            {
+                url: '/signup',
+                config: {
+                    controller: "signupCtrl",
+                    templateUrl: "/app/signupCtrl/signup.html"
+                }
+            },
+            {
+                url: '/confirmemail',
+                config: {
+                    controller: "confirmEmailCtrl",
+                    templateUrl: "/app/confirmEmailCtrl/confirmEmail.html"
+                }
+            }
         ];
 
         routes.forEach(function (route) {
@@ -30,6 +52,5 @@
         });
 
         $routeProvider.otherwise({ redirectTo: '/dashboard' });
-
     }]);
 })();

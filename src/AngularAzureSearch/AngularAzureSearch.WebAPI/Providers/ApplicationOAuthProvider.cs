@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using AngularAzureSearch.WebAPI.Models;
+using AngularAzureSearch.WebAPI.Helpers;
 
 namespace AngularAzureSearch.WebAPI.Providers
 {
@@ -29,6 +28,12 @@ namespace AngularAzureSearch.WebAPI.Providers
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
+            // http://www.codeproject.com/Articles/742532/Using-Web-API-Individual-User-Account-plus-CORS-En
+            // "This article helped me track down the issue that even though CORS is enabled application-wide, 
+            // it still doesn't affect this OWIN component, so we have to enable it here also." - King Wilder
+            string origins = AppSettingsConfig.CorsPolicyOrigins;
+            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new string[] { origins });
+
             var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
 
             ApplicationUser user = await userManager.FindAsync(context.UserName, context.Password);
@@ -39,10 +44,7 @@ namespace AngularAzureSearch.WebAPI.Providers
                 return;
             }
 
-            // Return error to client if user has not confirmed their email address.
-            // If you do not set up your SMTP settings correctly in Web.config you may
-            // not be receiving confirmation messages because there is an error when
-            // sending the message.
+            // I needed to add this in order to check if the email was confirmed when a user log on.
             if (!user.EmailConfirmed)
             {
                 context.SetError("email_not_confirmed", "User did not confirm email.");

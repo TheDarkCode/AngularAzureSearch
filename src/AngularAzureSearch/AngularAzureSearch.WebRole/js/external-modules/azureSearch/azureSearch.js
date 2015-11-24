@@ -1,6 +1,6 @@
 ﻿angular.module('azureSearch', ['ngResource'])
-  .constant('searchKey', '7244003F2B881848BB13CA6CA2565533')
-  .constant('searchService', 'github')
+  .constant('searchKey', 'YOUR SEARCH KEY')
+  .constant('searchService', 'YOUR SEARCH SERVICE')
   .constant('searchVersion', '2015-02-28')
   .constant('dateFormat', 'YYYY-MM-DDTHH:mm:ssZ')
 

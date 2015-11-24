@@ -8,7 +8,7 @@
             element.height(500);
             var map = new Microsoft.Maps.Map(element.get(0), {
                 // Bing Maps Credentials
-                credentials: 'ApY6ryzQcES0Kh7L3NaWvIgDsR1yXr5ACW5MvO5aYV1hTYYqD0vVMu1gs07wwfFd',
+                credentials: 'YOUR BING MAPS KEY',
                 showDashboard: false,
                 showCopyright: false,
                 showScalebar: false,
