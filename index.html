@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>AngularAzureSearch by TheDarkCode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">AngularAzureSearch</h1>
+      <h2 class="project-tagline">Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).</h2>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch" class="btn">View on GitHub</a>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="angularazuresearch" class="anchor" href="#angularazuresearch" aria-hidden="true"><span class="octicon octicon-link"></span></a>AngularAzureSearch</h1>
+
+<p><a href="https://github.com/TheDarkCode/AngularAzureSearch/LICENSE.md"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="Packagist"></a></p>
+
+<p>Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).</p>
+
+<p>Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps, Web API 2,  Azure DocumentDB.</p>
+
+<h4>
+<a id="current-version-build-14-11242015" class="anchor" href="#current-version-build-14-11242015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Version: Build 14, 11/24/2015</h4>
+
+<h5>
+<a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status:</h5>
+
+<ul>
+<li>WebRole works for basic functions. Being tweaked to handle User Accounts and permissions. dlFramework still in development.</li>
+<li>WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100%.</li>
+<li>DataIndexer is set to Trails data schema.</li>
+</ul>
+
+<h6>
+<a id="current-to-do-list" class="anchor" href="#current-to-do-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current To Do List:</h6>
+
+<pre><code>    Mapping Module Additions ::
+    1. Fixing touch events and layout for mobile users (ie: drawPolygon).
+    2. Adding info boxes, mapType toggle, save (grab existing url, save to scope, export to User factory) / share search function (grab existing url, save to scope, display textbox with value, and select social button with baseUrl - Twitter, FB, Whatsapp, Email, etc), and add (toggleable) custom zoom controls. Also show # of pins if they are stacked close together when zoomed out (port PinClusterer - http://rtsinani.github.io/PinClusterer/).
+    3. Adding other standard shapes for searching by polygon (ie: square, circle).
+    4. Modifying CSS to create alternative theme(s).
+
+    View Modifications ::
+    5. Creating a UI similar to Apartments.com with additional sample for all types of locations (not just homes). Example being to make an alternative that used people or businesses and their phone / address instead of homes.
+    6. Integrating it with a sample DocumentDB/Web API project for management of a DocumentDB "Locations" collection that is indexed by the search service.
+
+    Boilerplate ::
+    7. Updating to latest versions of angularjs, bootstrap, etc.
+    8. Creating sample with AngularUI Router (ui-router) in place of ngRoute.
+    9. Adding additional commenting.
+   10. Re-adding file merging / compilation (ie: generating a new site.js with full comments).
+</code></pre>
+
+<h6>
+<a id="known-issueswarnings" class="anchor" href="#known-issueswarnings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Known Issues/Warnings:</h6>
+
+<ul>
+<li>WebRole has multiple CSS-related display issues in Firefox.</li>
+<li>WebRole will be resolved to work with WebAPI in next update.</li>
+<li>"Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes. Limited to anchorBottom issue. However in current build, renders on first load of page fine.</li>
+<li>"Trails" page is disabled.</li>
+<li>dlMenu animations do not render properly in all instances. Delayed in some cases.</li>
+<li>Login form is disabled but still displays upon first load.</li>
+<li>UserProfile elements are hardcoded as part of dlFramework. Will be resolved to WebAPI auth in next update.</li>
+<li>Url still contains filters and orderby parameters after leaving Homes page.</li>
+<li>Signup, Manage, and other related membership views will be added in next update.</li>
+<li>Existing template for geosearches are not configured for mobile.</li>
+<li>Build-related components for minifying WebRole's JS files are not included yet.</li>
+<li>Current file structure for root of WebRole will be changed in next update to reflect format going forward.</li>
+</ul>
+
+<h4>
+<a id="azure-service-requirements-for-deployment" class="anchor" href="#azure-service-requirements-for-deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Azure Service Requirements for Deployment</h4>
+
+<p>You must configure the project with your own Azure Search Keys, Azure DocumentDB Database Connection Information, and Bing Maps API Keys.</p>
+
+<h6>
+<a id="if-you-are-new-to-azure-you-can-get-a-free-trial-at-the-following-link" class="anchor" href="#if-you-are-new-to-azure-you-can-get-a-free-trial-at-the-following-link" aria-hidden="true"><span class="octicon octicon-link"></span></a>If you are new to Azure, you can get a free trial at the following link:</h6>
+
+<p><a href="https://azure.microsoft.com/en-us/pricing/free-trial/">https://azure.microsoft.com/en-us/pricing/free-trial/</a></p>
+
+<h6>
+<a id="bing-maps-api-10k-transactionsmo-for-free" class="anchor" href="#bing-maps-api-10k-transactionsmo-for-free" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bing Maps API (10k transactions/mo for free)</h6>
+
+<p><a href="http://www.microsoft.com/maps/Licensing/licensing.aspx#mainTab2">http://www.microsoft.com/maps/Licensing/licensing.aspx#mainTab2</a></p>
+
+<h6>
+<a id="azure-search-service-are-free-excluding-outbound-data-transfers-3-data-connections--indexes--indexers-50-mb-total-storage-10000-documents" class="anchor" href="#azure-search-service-are-free-excluding-outbound-data-transfers-3-data-connections--indexes--indexers-50-mb-total-storage-10000-documents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Azure Search Service are free excluding outbound data transfers (3 data connections / indexes / indexers, 50 MB Total Storage, 10,000 Documents).</h6>
+
+<p><a href="https://azure.microsoft.com/en-us/pricing/details/search/">https://azure.microsoft.com/en-us/pricing/details/search/</a></p>
+
+<h6>
+<a id="azure-documentdb-requires-at-least-an-s1-plan-25mo--250-rusec-10-gb-storage-for-each-collection-used-even-empty-ones" class="anchor" href="#azure-documentdb-requires-at-least-an-s1-plan-25mo--250-rusec-10-gb-storage-for-each-collection-used-even-empty-ones" aria-hidden="true"><span class="octicon octicon-link"></span></a>Azure DocumentDB requires at least an S1 plan ($25/mo = 250 RU/sec, 10 GB Storage) for each collection used (even empty ones).</h6>
+
+<p><a href="https://azure.microsoft.com/en-us/pricing/details/documentdb/">https://azure.microsoft.com/en-us/pricing/details/documentdb/</a></p>
+
+<h6>
+<a id="data-transfers-pricing-details" class="anchor" href="#data-transfers-pricing-details" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Transfers Pricing Details</h6>
+
+<p><a href="https://azure.microsoft.com/en-us/pricing/details/data-transfers/">https://azure.microsoft.com/en-us/pricing/details/data-transfers/</a></p>
+
+<h2>
+<a id="related-github-projects--credits" class="anchor" href="#related-github-projects--credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related GitHub Projects / Credits</h2>
+
+<h3>
+<a id="azure-search-demos-by-liam-cavanagh-microsoft" class="anchor" href="#azure-search-demos-by-liam-cavanagh-microsoft" aria-hidden="true"><span class="octicon octicon-link"></span></a>Azure Search Demos by Liam Cavanagh, Microsoft</h3>
+
+<h6>
+<a id="httpsgithubcomliamcaazuresearchdemos" class="anchor" href="#httpsgithubcomliamcaazuresearchdemos" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/liamca/AzureSearchDemos">https://github.com/liamca/AzureSearchDemos</a>
+</h6>
+
+<h6>
+<a id="httpazuremicrosoftcomen-usdocumentationservicessearch" class="anchor" href="#httpazuremicrosoftcomen-usdocumentationservicessearch" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://azure.microsoft.com/en-us/documentation/services/search/">http://azure.microsoft.com/en-us/documentation/services/search/</a>
+</h6>
+
+<h3>
+<a id="documentdb-with-web-api-by-richard-j-leopold" class="anchor" href="#documentdb-with-web-api-by-richard-j-leopold" aria-hidden="true"><span class="octicon octicon-link"></span></a>DocumentDb with Web API by Richard J. Leopold</h3>
+
+<h6>
+<a id="httpsgithubcomrleopolddocdbwebapi" class="anchor" href="#httpsgithubcomrleopolddocdbwebapi" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/rleopold/DocDbWebApi/">https://github.com/rleopold/DocDbWebApi/</a>
+</h6>
+
+<h6>
+<a id="article-found-here-http4rjlnetpostazure-documentdb-with-web-api" class="anchor" href="#article-found-here-http4rjlnetpostazure-documentdb-with-web-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Article found here: <a href="http://4rjl.net/post/azure-documentdb-with-web-api">http://4rjl.net/post/azure-documentdb-with-web-api</a>)</h6>
+
+<h3>
+<a id="documentdbaspnetidentity-by-adrian-fernandez-microsoft" class="anchor" href="#documentdbaspnetidentity-by-adrian-fernandez-microsoft" aria-hidden="true"><span class="octicon octicon-link"></span></a>DocumentDB.AspNet.Identity by Adrian Fernandez, Microsoft</h3>
+
+<h6>
+<a id="httpsgithubcomtracker086documentdbaspnetidentity" class="anchor" href="#httpsgithubcomtracker086documentdbaspnetidentity" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/tracker086/DocumentDB.AspNet.Identity">https://github.com/tracker086/DocumentDB.AspNet.Identity</a>
+</h6>
+
+<h3>
+<a id="golftrackerdocumentdb-by-king-wilder-gizmo-beach" class="anchor" href="#golftrackerdocumentdb-by-king-wilder-gizmo-beach" aria-hidden="true"><span class="octicon octicon-link"></span></a>GolfTracker.DocumentDB by King Wilder, Gizmo Beach</h3>
+
+<h6>
+<a id="httpsgithubcomkahanugolftrackerdocumentdb" class="anchor" href="#httpsgithubcomkahanugolftrackerdocumentdb" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/kahanu/GolfTracker.DocumentDB/">https://github.com/kahanu/GolfTracker.DocumentDB/</a>
+</h6>
+
+<h6>
+<a id="video--article-series-found-here-httpwwwnosqlcentralnetstorydetailsvideoskahanu1-documentdb-golf-tracker-overview" class="anchor" href="#video--article-series-found-here-httpwwwnosqlcentralnetstorydetailsvideoskahanu1-documentdb-golf-tracker-overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Video / Article Series found here: <a href="http://www.nosqlcentral.net/Story/Details/videos/kahanu/1-documentdb-golf-tracker-overview">http://www.nosqlcentral.net/Story/Details/videos/kahanu/1-documentdb-golf-tracker-overview</a>)</h6>
+
+<h3>
+<a id="azure-documentdb-dotnet-by-ryan-crawcour--aravind-ramachandran-microsoft" class="anchor" href="#azure-documentdb-dotnet-by-ryan-crawcour--aravind-ramachandran-microsoft" aria-hidden="true"><span class="octicon octicon-link"></span></a>azure-documentdb-dotnet by Ryan CrawCour &amp; Aravind Ramachandran, Microsoft</h3>
+
+<h6>
+<a id="httpsgithubcomazureazure-documentdb-dotnet" class="anchor" href="#httpsgithubcomazureazure-documentdb-dotnet" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/Azure/azure-documentdb-dotnet/">https://github.com/Azure/azure-documentdb-dotnet/</a>
+</h6>
+
+<h6>
+<a id="article-found-here-httpsazuremicrosoftcomen-usdocumentationarticlesdocumentdb-sharding" class="anchor" href="#article-found-here-httpsazuremicrosoftcomen-usdocumentationarticlesdocumentdb-sharding" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Article found here: <a href="https://azure.microsoft.com/en-us/documentation/articles/documentdb-sharding/">https://azure.microsoft.com/en-us/documentation/articles/documentdb-sharding/</a>)</h6>
+
+<h2>
+<a id="helpful-links" class="anchor" href="#helpful-links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Helpful Links</h2>
+
+<h6>
+<a id="httpblogsmsdncombdocumentdbarchive20141203scaling-a-multi-tenant-application-with-azure-documentdbaspx" class="anchor" href="#httpblogsmsdncombdocumentdbarchive20141203scaling-a-multi-tenant-application-with-azure-documentdbaspx" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx">http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx</a>
+</h6>
+
+<h6>
+<a id="documentdb-documentation-httpsmsdnmicrosoftcomen-uslibraryazuredn781482aspx" class="anchor" href="#documentdb-documentation-httpsmsdnmicrosoftcomen-uslibraryazuredn781482aspx" aria-hidden="true"><span class="octicon octicon-link"></span></a>DocumentDB Documentation: <a href="https://msdn.microsoft.com/en-us/library/azure/dn781482.aspx">https://msdn.microsoft.com/en-us/library/azure/dn781482.aspx</a>
+</h6>
+
+<h6>
+<a id="azure-search-documentation-httpsmsdnmicrosoftcomen-uslibraryazuredn798933aspx" class="anchor" href="#azure-search-documentation-httpsmsdnmicrosoftcomen-uslibraryazuredn798933aspx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Azure Search Documentation: <a href="https://msdn.microsoft.com/en-us/library/azure/dn798933.aspx">https://msdn.microsoft.com/en-us/library/azure/dn798933.aspx</a>
+</h6>
+
+<h2>
+<a id="related-microsoft-virtual-academy-courses" class="anchor" href="#related-microsoft-virtual-academy-courses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related Microsoft Virtual Academy Courses</h2>
+
+<h4>
+<a id="adding-microsoft-azure-search-to-your-websites-and-apps" class="anchor" href="#adding-microsoft-azure-search-to-your-websites-and-apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adding Microsoft Azure Search to Your Websites and Apps:</h4>
+
+<h6>
+<a id="httpsmvamicrosoftcomen-ustraining-coursesadding-microsoft-azure-search-to-your-websites-and-apps-10540" class="anchor" href="#httpsmvamicrosoftcomen-ustraining-coursesadding-microsoft-azure-search-to-your-websites-and-apps-10540" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://mva.microsoft.com/en-us/training-courses/adding-microsoft-azure-search-to-your-websites-and-apps-10540">https://mva.microsoft.com/en-us/training-courses/adding-microsoft-azure-search-to-your-websites-and-apps-10540</a>
+</h6>
+
+<h4>
+<a id="developing-solutions-with-azure-documentdb" class="anchor" href="#developing-solutions-with-azure-documentdb" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developing Solutions with Azure DocumentDB:</h4>
+
+<h6>
+<a id="httpsmvamicrosoftcomen-ustraining-coursesdeveloping-solutions-with-azure-documentdb-10554" class="anchor" href="#httpsmvamicrosoftcomen-ustraining-coursesdeveloping-solutions-with-azure-documentdb-10554" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://mva.microsoft.com/en-us/training-courses/developing-solutions-with-azure-documentdb-10554">https://mva.microsoft.com/en-us/training-courses/developing-solutions-with-azure-documentdb-10554</a>
+</h6>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/TheDarkCode/AngularAzureSearch">AngularAzureSearch</a> is maintained by <a href="https://github.com/TheDarkCode">TheDarkCode</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
