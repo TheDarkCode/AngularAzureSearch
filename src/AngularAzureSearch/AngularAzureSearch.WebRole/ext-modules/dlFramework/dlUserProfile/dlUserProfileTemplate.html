@@ -1,15 +1,15 @@
 ﻿<div class="dl-user-profile" ng-if="isMenuVertical">
-    <span class="dl-profile-image-side dl-profile-online">
+    <!--<span class="dl-profile-image-side dl-profile-online">
         <img src="images/employee.jpg" alt="user image" style="border-radius: 100%" />
         <i></i>
-    </span>
+    </span>-->
     <div style="position: absolute;">
         <h6 style="margin-bottom: -5px;">
             <span ng-switch="isAuthenticated">
                 <span ng-switch-when="true">
                     {{userName}} /
                     <!--logout button-->
-                    <a href="logOut()">Log Out</a>
+                    <!--<a href="logOut()">Log Out</a>-->
                 </span>
                 <span ng-switch-default>
                    <a href="#/login">Sign In</a> / <a href="#/signup">Sign Up</a>
@@ -19,7 +19,7 @@
         <!--<button class="btn btn-info btn-sm">
             <i class="fa fa-chevron-down"></i>
         </button>-->
-        <div class="btn-group">
+        <!--<div class="btn-group">
             <button class="btn dl-user-profile-btn dropdown-toggle" data-toggle="dropdown">
                 <i class="fa fa-ellipsis-h"></i>
             </button>
@@ -37,6 +37,6 @@
                     <a tabindex="-1" href="javascript:void(0)">Edit Profile..</a>
                 </li>
             </ul>
-        </div>
+        </div>-->
     </div>
 </div>

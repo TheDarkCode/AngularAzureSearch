@@ -38,7 +38,7 @@
 
     Comments included for development. Use minified version for production.
 
-    Current version:: Build 14 / 11/24/2015
+    Current version:: Build 15 / 11/25/2015
 
 -->
 
@@ -57,7 +57,7 @@
 
     <title>Angular Azure Search</title>
 
-    <meta name="description" content="Angular Azure Search - Build 14 - 11/24/2015">
+    <meta name="description" content="Angular Azure Search - Build 15 - 11/25/2015">
     <meta name="author" content="Mark Hamilton | Liam Cavanagh - GitHub.com/TheDarkCode/AngularAzureSearch">
     
     <!-- Browser Icons (Create your own at: http://www.favicon-generator.org/ - Save extracted .zip contents to root.) -->
@@ -93,6 +93,7 @@
     <link href="Content/angular-gridster.min.css" rel="stylesheet" />
     <link href="Content/loading-bar.min.css" rel="stylesheet" />
     <link href="Content/angular-bootstrap-lightbox.min.css" rel="stylesheet" />
+    <link href="Content/xeditable.css" rel="stylesheet" />
 
     <!-- App Specific CSS Files -->
     <link href="app/app.css" rel="stylesheet" />
@@ -143,6 +144,26 @@
                 </ul>-->
                 <div data-dl-menu style="margin-left: -40px;">
                     <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
+                    <dl-menu-item label="Homes" icon="fa-home" route="homes"></dl-menu-item>
+                    <dl-menu-item label="Login" icon="fa-user" route="login"></dl-menu-item>
+                    <dl-menu-group label="Tables" icon="fa-table">
+                        <dl-menu-item label="Basic Tables" icon="hidden" route="basic-tables"></dl-menu-item>
+                        <dl-menu-item label="Price Tables" icon="hidden" route="price-tables"></dl-menu-item>
+                    </dl-menu-group>
+                    <dl-menu-item label="Typography" icon="fa-font" route="typography"></dl-menu-item>
+                    <dl-menu-group label="Icons" icon="fa-paperclip">
+                        <dl-menu-item label="Font Awesome" icon="fa-pencil" route="font-awesome"></dl-menu-item>
+                    </dl-menu-group>
+                    <dl-menu-item label="Gallery" icon="fa-picture-o" route="gallery"></dl-menu-item>
+                    <dl-menu-item label="UI Kit" icon="fa-briefcase" route="ui-kit"></dl-menu-item>
+                    <dl-menu-group label="Components" icon="fa-magic">
+                        <dl-menu-item label="Form Elements" icon="hidden" route="form-elements"></dl-menu-item>
+                        <dl-menu-item label="Grids" icon="hidden" route="grids"></dl-menu-item>
+                    </dl-menu-group>
+                    <dl-menu-group label="Extras" icon="fa-cubes">
+                        <dl-menu-item label="404 Error" icon="fa-question-circle" route="error"></dl-menu-item>
+                        <dl-menu-item label="500 Error" icon="fa-exclamation-circle" route="error-server"></dl-menu-item>
+                    </dl-menu-group>
                 </div>
             </div>
         </aside>
@@ -175,8 +196,8 @@
                                     <h2 style="font-weight: 900; font-variant: small-caps;">
                                         Angular Azure Search
                                     </h2>
-                                    <h4>Sign In</h4>
-                                    <!-- Dummy Form for debugging
+                                    <!--<h4>Sign In</h4>
+                                     Dummy Form for debugging
                                         <form>
                                         <div class="form-group">
                                             <label>Email Address</label>
@@ -198,6 +219,7 @@
                                             <input type="password" ng-model="login.password" required class="form-control" />
                                         </div>
                                         <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">Login</button>
+                                        <br/><br />
                                         <div data-ng-hide="message == ''" data-ng-class="(success) ? 'alert alert-success' : 'alert alert-danger'">
                                             {{message}} <div ng-show="resendEmailConfirmationLinkIsVisible"><a href="" ng-click="resendConfirmEmail(login.userName)">Re-send confirmation email</a></div>
                                         </div>
@@ -211,13 +233,31 @@
                 </div>
                 <div ng-switch-when="true">
                     <dl-framework title="Angular Azure Search"
-                                  subtitle="Application Framework - Build 14 - 11/24/2015"
+                                  subtitle="Application Framework - Build 15 - 11/25/2015"
                                   icon-file="apple-icon-152x152.png">
                         <!-- If strict HTML, use attr forms, if not use dl-menu element form -->
                         <div data-dl-menu footer="true">
                             <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
                             <dl-menu-item label="Homes" icon="fa-home" route="homes"></dl-menu-item>
                             <dl-menu-item label="Login" icon="fa-user" route="login"></dl-menu-item>
+                            <dl-menu-group label="Tables" icon="fa-table">
+                                <dl-menu-item label="Basic Tables" icon="hidden" route="basic-tables"></dl-menu-item>
+                                <dl-menu-item label="Price Tables" icon="hidden" route="price-tables"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-item label="Typography" icon="fa-font" route="typography"></dl-menu-item>
+                            <dl-menu-group label="Icons" icon="fa-paperclip">
+                                <dl-menu-item label="Font Awesome" icon="fa-pencil" route="font-awesome"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-item label="Gallery" icon="fa-picture-o" route="gallery"></dl-menu-item>
+                            <dl-menu-item label="UI Kit" icon="fa-briefcase" route="ui-kit"></dl-menu-item>
+                            <dl-menu-group label="Components" icon="fa-magic">
+                                <dl-menu-item label="Form Elements" icon="hidden" route="form-elements"></dl-menu-item>
+                                <dl-menu-item label="Grids" icon="hidden" route="grids"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-group label="Extras" icon="fa-cubes">
+                                <dl-menu-item label="404 Error" icon="fa-question-circle" route="error"></dl-menu-item>
+                                <dl-menu-item label="500 Error" icon="fa-exclamation-circle" route="error-server"></dl-menu-item>
+                            </dl-menu-group>
                             <!--<dl-menu-item label="Trails" icon="fa-tree" route="trails"></dl-menu-item>-->
                             <!-- MENU TEMPLATE ::
                                 <dl-menu-group label="****" icon="fa-****">
@@ -289,6 +329,7 @@
     <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
     <script src="Scripts/ngStorage.min.js"></script>
     <script src="Scripts/angular-bootstrap-lightbox.min.js"></script>
+    <script src="Scripts/xeditable.min.js"></script>
     <script src="Scripts/angular-fullscreen.min.js"></script>
 
     <!--
@@ -316,6 +357,17 @@
     <script src="ext-modules/dlFooter/dlFooterModule.js"></script>
     <script src="ext-modules/dlFooter/dlFooterController.js"></script>
     <script src="ext-modules/dlFooter/dlFooterDirective.js"></script>
+
+    <!-- Ext Price Table Module -->
+    <script src="ext-modules/dlPriceTable/dlPriceTableModule.js"></script>
+    <script src="ext-modules/dlPriceTable/dlPriceTableController.js"></script>
+    <script src="ext-modules/dlPriceTable/dlPriceTableDirective.js"></script>
+
+    <!-- Ext Gallery Module -->
+    <script src="ext-modules/dlGallery/dlGalleryModule.js"></script>
+    <script src="ext-modules/dlGallery/dlGalleryController.js"></script>
+    <script src="ext-modules/dlGallery/dlGalleryDirective.js"></script>
+    <!--<script src="ext-modules/dlGallery/dlGalleryItemDirective.js"></script>-->
 
     <!-- Ext Panel Module -->
     <script src="ext-modules/dlPanel/dlPanelModule.js"></script>
@@ -358,9 +410,20 @@
 
     <!-- App Directives -->
     <!--Template:: <script src="app/directives/d****Directive.js"></script>-->
+    <script src="app/directives/dIndexDirective.js"></script>
     <script src="app/directives/dDashboardDirective.js"></script>
     <script src="app/directives/dHomesDirective.js"></script>
     <script src="app/directives/dTrailsDirective.js"></script>
+    <script src="app/directives/dBasicTablesDirective.js"></script>
+    <script src="app/directives/dErrorDirective.js"></script>
+    <script src="app/directives/dErrorServerDirective.js"></script>
+    <script src="app/directives/dFontAwesomeDirective.js"></script>
+    <script src="app/directives/dGridsDirective.js"></script>
+    <script src="app/directives/dFormElementsDirective.js"></script>
+    <script src="app/directives/dPriceTablesDirective.js"></script>
+    <script src="app/directives/dUiKitDirective.js"></script>
+    <script src="app/directives/dTypographyDirective.js"></script>
+    <script src="app/directives/dGalleryDirective.js"></script>
 
     <!-- Widget Directives -->
     <!--Template:: <script src="app/widgets/d****/d****Directive.js"></script>-->

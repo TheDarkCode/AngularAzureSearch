@@ -15,13 +15,16 @@
                 $scope.resendEmailConfirmationLinkIsVisible = false;
                 $scope.resend = {};
 
-                $scope.isAuthenticated = authService.authentication.isAuth;
+                $scope.isAuthenticated = $rootScope.isAuthenticated = authService.authentication.isAuth;
+                $scope.userName = $rootScope.userName = authService.authentication.userName;
 
                 $scope.submitLoginForm = function (isValid) {
                     authService.login($scope.login).then(function (response) {
                         $scope.success = true;
                         //eventAggregator.trigger("isAuthenticated", true);
                         $scope.isAuthenticated = true;
+                        $rootScope.isAuthenticated = true;
+                        $rootScope.userName = authService.authentication.userName;
                         broadcastAuthenticationStatus();
                         console.log("appController/$scope.submitLoginForm().$scope.isAuthenticated: " + $scope.isAuthenticated);
                         $location.path("/home");
