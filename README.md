@@ -5,7 +5,7 @@ Sample full-featured web application containing separate WebRole (Front-End Clie
 
 Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps, Web API 2,  Azure DocumentDB.
 
-####Current Version: Build 14, 11/24/2015
+####Current Version: Build 15, 11/25/2015
 #####Status: 
   - WebRole works for basic functions. Being tweaked to handle User Accounts and permissions. dlFramework still in development.
   - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100%.
@@ -30,17 +30,15 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ######Known Issues/Warnings:
   - WebRole has multiple CSS-related display issues in Firefox.
-  - WebRole will be resolved to work with WebAPI in next update.
   - "Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes. Limited to anchorBottom issue. However in current build, renders on first load of page fine.
   - "Trails" page is disabled.
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
-  - Login form is disabled but still displays upon first load.
-  - UserProfile elements are hardcoded as part of dlFramework. Will be resolved to WebAPI auth in next update.
   - Url still contains filters and orderby parameters after leaving Homes page.
   - Signup, Manage, and other related membership views will be added in next update.
   - Existing template for geosearches are not configured for mobile.
   - Build-related components for minifying WebRole's JS files are not included yet.
-  - Current file structure for root of WebRole will be changed in next update to reflect format going forward.
+  - Template cache causes issues when doing local debugging. Thus new or reconfigured default routes may not render the appropriate template.
+  - Handling long user names is somewhat problematic. Will be updated to tweak how usernames are handled in WebAPI / Client.
 
 ####Azure Service Requirements for Deployment
 
