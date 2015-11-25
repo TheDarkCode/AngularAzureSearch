@@ -17,7 +17,7 @@ namespace AngularAzureSearch.WebAPI.Entities.Items
         /// This is used in the repository for storage and querying,
         /// to organize documents by this type name.
         /// </summary>
-        public Item() : base("item")
+        public Item() : base( "item")
         {
 
         }

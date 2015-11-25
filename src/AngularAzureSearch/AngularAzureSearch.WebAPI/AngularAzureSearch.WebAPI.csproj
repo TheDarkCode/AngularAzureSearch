@@ -246,16 +246,28 @@
     <Compile Include="Cors\CorsPolicyFactory.cs" />
     <Compile Include="Cors\MyCustomCorsPolicyProvider.cs" />
     <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="Entities\ItemBase.cs" />
+    <Compile Include="Entities\Items\Item.cs" />
     <Compile Include="Entities\Trails\Trail.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\AppSettingsConfig.cs" />
+    <Compile Include="Helpers\DocumentClientHashPartitioningManager.cs" />
+    <Compile Include="Helpers\DocumentClientHelper.cs" />
+    <Compile Include="Helpers\DocumentCollectionSpec.cs" />
     <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\UnixDateTimeConverter.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DateEpoch.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="PartitionResolvers\EnumLookupPartitionResolver.cs" />
+    <Compile Include="PartitionResolvers\LookupPartitionResolver.cs" />
+    <Compile Include="PartitionResolvers\ManagedHashPartitionResolver.cs" />
+    <Compile Include="PartitionResolvers\SpilloverPartitionResolver.cs" />
+    <Compile Include="PartitionResolvers\TransitionHashPartitionResolver.cs" />
+    <Compile Include="PartitionResolvers\TransitionReadMode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Repositories\Disposable.cs" />

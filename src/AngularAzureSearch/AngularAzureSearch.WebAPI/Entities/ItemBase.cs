@@ -17,6 +17,7 @@ namespace AngularAzureSearch.WebAPI.Entities
     {
         private readonly string _docType;
         private readonly string _tenantId;
+        private string v;
 
         /// <summary>
         /// All root entities inherit this base class.
@@ -26,6 +27,11 @@ namespace AngularAzureSearch.WebAPI.Entities
         {
             this._tenantId = tenantId;
             this._docType = docType;
+        }
+
+        public ItemBase(string v)
+        {
+            this.v = v;
         }
 
         /// <summary>
