@@ -29,53 +29,52 @@
 <p>Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps, Web API 2,  Azure DocumentDB.</p>
 
 <h4>
-<a id="current-version-build-14-11242015" class="anchor" href="#current-version-build-14-11242015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Version: Build 14, 11/24/2015</h4>
+<a id="current-version-build-15-11252015" class="anchor" href="#current-version-build-15-11252015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Version: Build 15, 11/25/2015</h4>
 
 <h5>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status:</h5>
 
 <ul>
-<li>WebRole works for basic functions. Being tweaked to handle User Accounts and permissions. dlFramework still in development.</li>
+<li>WebRole works for User login/signup. Confirm Email not tested. dlFramework still in development.</li>
 <li>WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100%.</li>
-<li>DataIndexer is set to Trails data schema.</li>
+<li>DataIndexer is set to Trails data schema. Must configure via app settings config file.</li>
 </ul>
 
 <h6>
 <a id="current-to-do-list" class="anchor" href="#current-to-do-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current To Do List:</h6>
 
 <pre><code>    Mapping Module Additions ::
-    1. Fixing touch events and layout for mobile users (ie: drawPolygon).
+    1. Fixing touch events and layout for mobile users (ie: drawPolygon). (Touch events will be resolved in next update)
     2. Adding info boxes, mapType toggle, save (grab existing url, save to scope, export to User factory) / share search function (grab existing url, save to scope, display textbox with value, and select social button with baseUrl - Twitter, FB, Whatsapp, Email, etc), and add (toggleable) custom zoom controls. Also show # of pins if they are stacked close together when zoomed out (port PinClusterer - http://rtsinani.github.io/PinClusterer/).
     3. Adding other standard shapes for searching by polygon (ie: square, circle).
-    4. Modifying CSS to create alternative theme(s).
+    4. Modifying CSS to create alternative theme(s). (Some prep work done in dlFramework)
 
     View Modifications ::
     5. Creating a UI similar to Apartments.com with additional sample for all types of locations (not just homes). Example being to make an alternative that used people or businesses and their phone / address instead of homes.
     6. Integrating it with a sample DocumentDB/Web API project for management of a DocumentDB "Locations" collection that is indexed by the search service.
 
     Boilerplate ::
-    7. Updating to latest versions of angularjs, bootstrap, etc.
-    8. Creating sample with AngularUI Router (ui-router) in place of ngRoute.
-    9. Adding additional commenting.
-   10. Re-adding file merging / compilation (ie: generating a new site.js with full comments).
+    7. Updating to latest versions of angularjs, bootstrap, etc. (Angular 2? Bootstrap 4? Fonts and Icons to be continuously updated in future commits.)
+    8. Creating sample with AngularUI Router (ui-router) in place of ngRoute. (Low Priority)
+    9. Adding additional commenting. (Continuous)
+   10. Re-adding file merging / compilation (ie: generating a new site.js with full comments). (Will be added by Build 20)
 </code></pre>
 
 <h6>
 <a id="known-issueswarnings" class="anchor" href="#known-issueswarnings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Known Issues/Warnings:</h6>
 
 <ul>
-<li>WebRole has multiple CSS-related display issues in Firefox.</li>
-<li>WebRole will be resolved to work with WebAPI in next update.</li>
+<li>WebRole css issues with Firefox only impact Homes page currently.</li>
 <li>"Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes. Limited to anchorBottom issue. However in current build, renders on first load of page fine.</li>
-<li>"Trails" page is disabled.</li>
+<li>"Trails" page is disabled. Will be resolved as part of "Manage DocDB via Client" updates (Build 16+).</li>
 <li>dlMenu animations do not render properly in all instances. Delayed in some cases.</li>
-<li>Login form is disabled but still displays upon first load.</li>
-<li>UserProfile elements are hardcoded as part of dlFramework. Will be resolved to WebAPI auth in next update.</li>
 <li>Url still contains filters and orderby parameters after leaving Homes page.</li>
-<li>Signup, Manage, and other related membership views will be added in next update.</li>
+<li>Confirm Email not tested. Manage user account and logout functions will be resolved in next update.</li>
 <li>Existing template for geosearches are not configured for mobile.</li>
 <li>Build-related components for minifying WebRole's JS files are not included yet.</li>
-<li>Current file structure for root of WebRole will be changed in next update to reflect format going forward.</li>
+<li>Local cache causes issues when doing debugging. Thus new or reconfigured default routes may not render the appropriate template. During debug (when at localhost:port/index.html) it would either not render the ng-view or go to '/dashboard' when set to '/index'.</li>
+<li>Handling long usernames is partially fixed. Improvements will be made.</li>
+<li>External login providers (Facebook / Twitter / Google / Microsoft) are not implemented yet. Will be added in the coming updates.</li>
 </ul>
 
 <h4>
