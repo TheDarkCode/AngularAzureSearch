@@ -96,8 +96,9 @@
     <link href="Content/xeditable.css" rel="stylesheet" />
 
     <!-- App Specific CSS Files -->
-    <link href="app/app.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
+
 
     <!-- Framework Specific CSS Files -->
     <link href="ext-modules/dlFramework/dlFramework.css" rel="stylesheet" />
@@ -209,21 +210,50 @@
                                         </div>
                                     </form>
                                     <button class="btn btn-warning textshadow-light-black" ng-click="signIn()">Sign In</button>-->
-                                    <form name="loginForm" novalidate ng-submit="submitLoginForm(loginForm.$valid)">
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" ng-model="login.userName" required class="form-control" autofocus />
+                                    <div>
+                                        <div ng-if="newUser">
+                                            <button class="btn btn-warning textshadow-light-black" ng-click="toggleNewUser()">Already Registered?</button>
+                                            <hr />
+                                            <form name="signupForm" novalidate ng-submit="submitSignupForm(signupForm.$valid)">
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="email" class="form-control" required ng-model="registration.email" autofocus />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Password</label>
+                                                    <input type="password" class="form-control" required ng-model="registration.password" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Confirm Password</label>
+                                                    <input type="password" class="form-control" required ng-model="registration.confirmpassword" />
+                                                </div>
+                                                <button type="submit" class="btn btn-primary" ng-disabled="signupForm.$invalid">Sign Up</button>
+                                                <br/><br/>
+                                                <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+                                                    {{message}}
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div class="form-group">
-                                            <label>Password</label>
-                                            <input type="password" ng-model="login.password" required class="form-control" />
+                                        <div ng-if="!newUser">
+                                            <button class="btn btn-warning textshadow-light-black" ng-click="toggleNewUser()">Create New Account?</button>
+                                            <hr />
+                                            <form name="loginForm" novalidate ng-submit="submitLoginForm(loginForm.$valid)">
+                                                <div class="form-group">
+                                                    <label>Email</label>
+                                                    <input type="email" ng-model="login.userName" required class="form-control" autofocus />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Password</label>
+                                                    <input type="password" ng-model="login.password" required class="form-control" />
+                                                </div>
+                                                <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">Login</button>
+                                                <br /><br />
+                                                <div data-ng-hide="message == ''" data-ng-class="(success) ? 'alert alert-success' : 'alert alert-danger'">
+                                                    {{message}} <div ng-show="resendEmailConfirmationLinkIsVisible"><a href="" ng-click="resendConfirmEmail(login.userName)">Re-send confirmation email</a></div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">Login</button>
-                                        <br/><br />
-                                        <div data-ng-hide="message == ''" data-ng-class="(success) ? 'alert alert-success' : 'alert alert-danger'">
-                                            {{message}} <div ng-show="resendEmailConfirmationLinkIsVisible"><a href="" ng-click="resendConfirmEmail(login.userName)">Re-send confirmation email</a></div>
-                                        </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +266,7 @@
                                   subtitle="Application Framework - Build 15 - 11/25/2015"
                                   icon-file="apple-icon-152x152.png">
                         <!-- If strict HTML, use attr forms, if not use dl-menu element form -->
-                        <div data-dl-menu footer="true">
+                        <div data-dl-menu>
                             <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
                             <dl-menu-item label="Homes" icon="fa-home" route="homes"></dl-menu-item>
                             <dl-menu-item label="Login" icon="fa-user" route="login"></dl-menu-item>

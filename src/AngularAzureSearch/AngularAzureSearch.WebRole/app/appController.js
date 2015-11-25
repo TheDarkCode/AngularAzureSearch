@@ -14,14 +14,17 @@
                 $scope.message = "";
                 $scope.resendEmailConfirmationLinkIsVisible = false;
                 $scope.resend = {};
+                $scope.registration = {};
+                $scope.savedSuccessfully = false;
 
                 $scope.isAuthenticated = $rootScope.isAuthenticated = authService.authentication.isAuth;
                 $scope.userName = $rootScope.userName = authService.authentication.userName;
 
+                $scope.newUser = $rootScope.newUser = true;
+
                 $scope.submitLoginForm = function (isValid) {
                     authService.login($scope.login).then(function (response) {
                         $scope.success = true;
-                        //eventAggregator.trigger("isAuthenticated", true);
                         $scope.isAuthenticated = true;
                         $rootScope.isAuthenticated = true;
                         $rootScope.userName = authService.authentication.userName;
@@ -46,6 +49,38 @@
                     }, function (err) {
                         $scope.message = err.error_description;
                     });
+                };
+
+                $scope.submitSignupForm = function (isValid) {
+
+                    authService.saveRegistration($scope.registration).then(function (response) {
+
+                        $scope.savedSuccessfully = true;
+                        $scope.message = "You have registered successfully!  Please check your email to activate your account.";
+
+                    },
+                     function (response) {
+                         console.log(angular.toJson(response));
+                         var errors = [];
+                         for (var key in response.data.ModelState) {
+                             for (var i = 0; i < response.data.ModelState[key].length; i++) {
+                                 errors.push(response.data.ModelState[key][i]);
+                             }
+                         }
+                         $scope.message = errors.join(' ');
+                     });
+                };
+
+                $scope.toggleNewUser = function () {
+                    $scope.newUser = $scope.newUser === false ? true : false;
+                    broadcastUserState();
+                };
+
+                var broadcastUserState = function () {
+                    $rootScope.$broadcast('user-state-updated',
+                        {
+                            newUser: $scope.newUser
+                        });
                 };
 
                 var broadcastAuthenticationStatus = function () {

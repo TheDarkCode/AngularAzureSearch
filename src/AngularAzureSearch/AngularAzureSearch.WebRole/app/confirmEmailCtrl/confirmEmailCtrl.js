@@ -2,9 +2,9 @@
     'use strict';
 
     angular.module('myApp')
-        .controller('confirmEmailCtrl', ['$scope', '$routeParams', 'authService', function ($scope, $routeParams, authService) {
+        .controller('confirmEmailCtrl', ['$scope', '$rootScope', '$routeParams', 'authService', function ($scope, $rootScope, $routeParams, authService) {
             $scope.title = "Processing request... please wait.";
-            $scope.message = "";
+            $scope.message = $rootScope.message;
 
             var userId = $routeParams.userId;
             var code = $routeParams.code;

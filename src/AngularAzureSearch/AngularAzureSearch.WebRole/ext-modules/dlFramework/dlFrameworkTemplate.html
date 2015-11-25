@@ -13,7 +13,7 @@
                     <span class="tcon-visuallyhidden">toggle menu</span>
                 </button>-->
             </div>
-            <img class="dl-icon" ng-src="{{ iconFile }}" />
+            <a href="#/index"><img class="dl-icon" ng-src="{{ iconFile }}" /></a>
             <div class="dl-title-area">
                 <p class="dl-logo-title">{{ title }}</p>
                 <p class="dl-logo-subtitle">{{ subtitle }}</p>
@@ -46,7 +46,7 @@
     </div>
 </div>
 
-<div style="top: 68px; width: 100%; position: fixed; z-index: 1035;">
+<div style="top: 68px; width: 100%; position: relative;">
     <div class="dl-menu-area class animated fadeInLeft"
          ng-show="isMenuVisible"
          ng-class="{'dl-menu-area-vertical': isMenuVertical, 'dl-menu-area-horizontal': !isMenuVertical, 'dl-mobile-menu': isMenuButtonVisible, 'dl-menu-fade': !isMenuVisible}">

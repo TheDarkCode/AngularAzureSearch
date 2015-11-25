@@ -34,14 +34,12 @@
             {
                 url: '/login',
                 config: {
-                    controller: "loginCtrl",
                     templateUrl: "/app/loginCtrl/login.html"
                 }
             },
             {
                 url: '/signup',
                 config: {
-                    controller: "signupCtrl",
                     templateUrl: "/app/signupCtrl/signup.html"
                 }
             },

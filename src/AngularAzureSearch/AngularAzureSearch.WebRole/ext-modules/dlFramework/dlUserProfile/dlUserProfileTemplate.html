@@ -4,10 +4,11 @@
         <i></i>
     </span>-->
     <div style="position: absolute;">
-        <h6 style="margin-bottom: -5px;">
+        <h6>
             <span ng-switch="isAuthenticated">
-                <span ng-switch-when="true">
-                    {{userName}} /
+                <span ng-switch-when="true" class="text-center">
+                    <h6>Logged in as:</h6>
+                    <h3 style="margin-top:0px;">{{userName}}</h3>
                     <!--logout button-->
                     <!--<a href="logOut()">Log Out</a>-->
                 </span>
