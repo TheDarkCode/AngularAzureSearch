@@ -7,38 +7,39 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ####Current Version: Build 15, 11/25/2015
 #####Status: 
-  - WebRole works for basic functions. Being tweaked to handle User Accounts and permissions. dlFramework still in development.
+  - WebRole works for User login/signup. Confirm Email not tested. dlFramework still in development.
   - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100%.
-  - DataIndexer is set to Trails data schema.
+  - DataIndexer is set to Trails data schema. Must configure via app settings config file.
 
 ######Current To Do List:
         Mapping Module Additions ::
-        1. Fixing touch events and layout for mobile users (ie: drawPolygon).
+        1. Fixing touch events and layout for mobile users (ie: drawPolygon). (Touch events will be resolved in next update)
         2. Adding info boxes, mapType toggle, save (grab existing url, save to scope, export to User factory) / share search function (grab existing url, save to scope, display textbox with value, and select social button with baseUrl - Twitter, FB, Whatsapp, Email, etc), and add (toggleable) custom zoom controls. Also show # of pins if they are stacked close together when zoomed out (port PinClusterer - http://rtsinani.github.io/PinClusterer/).
         3. Adding other standard shapes for searching by polygon (ie: square, circle).
-        4. Modifying CSS to create alternative theme(s).
+        4. Modifying CSS to create alternative theme(s). (Some prep work done in dlFramework)
 
         View Modifications ::
         5. Creating a UI similar to Apartments.com with additional sample for all types of locations (not just homes). Example being to make an alternative that used people or businesses and their phone / address instead of homes.
         6. Integrating it with a sample DocumentDB/Web API project for management of a DocumentDB "Locations" collection that is indexed by the search service.
 
         Boilerplate ::
-        7. Updating to latest versions of angularjs, bootstrap, etc.
-        8. Creating sample with AngularUI Router (ui-router) in place of ngRoute.
-        9. Adding additional commenting.
-       10. Re-adding file merging / compilation (ie: generating a new site.js with full comments).
+        7. Updating to latest versions of angularjs, bootstrap, etc. (Angular 2? Bootstrap 4? Fonts and Icons to be continuously updated in future commits.)
+        8. Creating sample with AngularUI Router (ui-router) in place of ngRoute. (Low Priority)
+        9. Adding additional commenting. (Continuous)
+       10. Re-adding file merging / compilation (ie: generating a new site.js with full comments). (Will be added by Build 20)
 
 ######Known Issues/Warnings:
-  - WebRole has multiple CSS-related display issues in Firefox.
+  - WebRole css issues with Firefox only impact Homes page currently.
   - "Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes. Limited to anchorBottom issue. However in current build, renders on first load of page fine.
-  - "Trails" page is disabled.
+  - "Trails" page is disabled. Will be resolved as part of "Manage DocDB via Client" updates (Build 16+).
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
   - Url still contains filters and orderby parameters after leaving Homes page.
-  - Signup, Manage, and other related membership views will be added in next update.
+  - Confirm Email not tested. Manage user account and logout functions will be resolved in next update.
   - Existing template for geosearches are not configured for mobile.
   - Build-related components for minifying WebRole's JS files are not included yet.
-  - Template cache causes issues when doing local debugging. Thus new or reconfigured default routes may not render the appropriate template.
-  - Handling long user names is somewhat problematic. Will be updated to tweak how usernames are handled in WebAPI / Client.
+  - Local cache causes issues when doing debugging. Thus new or reconfigured default routes may not render the appropriate template. During debug (when at localhost:port/index.html) it would either not render the ng-view or go to '/dashboard' when set to '/index'.
+  - Handling long usernames is partially fixed. Improvements will be made.
+  - External login providers (Facebook / Twitter / Google / Microsoft) are not implemented yet. Will be added in the coming updates.
 
 ####Azure Service Requirements for Deployment
 
