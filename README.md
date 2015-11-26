@@ -90,6 +90,8 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ###angular-parallax by Brett Donohoo 
 ######https://github.com/brettdonohoo/angular-parallax
 
+###MailService by James Bisiar
+
 ##Helpful Links
 
 ######http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx
