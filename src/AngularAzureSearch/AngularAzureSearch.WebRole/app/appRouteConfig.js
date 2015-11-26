@@ -1,10 +1,10 @@
 ﻿(function () {
     "use strict";
 
-    angular.module('app').config(['$routeProvider', function ($routeProvider) {
+    angular.module('app').config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         var routes = [
             {
-                url: '/index',
+                url: '/welcome',
                 config: {
                     template: '<d-index></d-index>',
                     reloadOnSearch: false
@@ -122,6 +122,11 @@
             $routeProvider.when(route.url, route.config);
         });
 
-        $routeProvider.otherwise({ redirectTo: '/index' });
+        $routeProvider.otherwise({ redirectTo: '/welcome' });
+
+        // use the HTML5 History API
+        //$locationProvider.html5Mode({
+        //    enabled: true, requireBase: false
+        //});
     }]);
 })();

@@ -79,7 +79,7 @@
                     $location.path('/index');
                 };
 
-                $scope.toggleNewUser = function () {
+                $scope.toggleNewUser = $rootScope.toggleNewUser = function () {
                     $scope.newUser = $scope.newUser === false ? true : false;
                     broadcastUserState();
                 };

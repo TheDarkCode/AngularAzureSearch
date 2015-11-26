@@ -85,6 +85,9 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ######https://github.com/Azure/azure-documentdb-dotnet/
 ######(Article found here: https://azure.microsoft.com/en-us/documentation/articles/documentdb-sharding/)
 
+###angular-parallax by Brett Donohoo 
+######https://github.com/brettdonohoo/angular-parallax
+
 ##Helpful Links
 
 ######http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx

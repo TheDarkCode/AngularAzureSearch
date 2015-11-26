@@ -3,9 +3,7 @@
 
     angular.module('app').directive('dLoginForm', [function () {
         return {
-            scope: {
-
-            },
+            scope: false,
             templateUrl: 'app/templates/dLoginFormTemplate.html'
         }
     }]);
