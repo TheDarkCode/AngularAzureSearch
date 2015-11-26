@@ -2,9 +2,9 @@
     'use strict';
 
     angular.module('app')
-    .factory('authService', ['$http', '$q', 'localStorageService', 'apiSettings', function ($http, $q, localStorageService, mySettings) {
+    .factory('authService', ['$http', '$q', 'localStorageService', 'apiSettings', function ($http, $q, localStorageService, apiSettings) {
 
-        var serviceBase = mySettings.apiUriBase;
+        var serviceBase = apiSettings.apiUriBase;
         var authServiceFactory = {};
 
         var _authentication = {
@@ -28,7 +28,7 @@
             var data = "grant_type=password&username=" + loginData.userName + "&password=" + loginData.password;
 
             if (loginData.useRefreshTokens) {
-                data = data + "&client_id=" + mySettings.clientId;
+                data = data + "&client_id=" + apiSettings.clientId;
             }
 
             var deferred = $q.defer();
@@ -86,7 +86,7 @@
 
                 if (authData.useRefreshTokens) {
 
-                    var data = "grant_type=refresh_token&refresh_token=" + authData.refreshToken + "&client_id=" + mySettings.clientId;
+                    var data = "grant_type=refresh_token&refresh_token=" + authData.refreshToken + "&client_id=" + apiSettings.clientId;
 
                     localStorageService.remove('authorizationData');
 

@@ -11,6 +11,7 @@ namespace AngularAzureSearch.WebAPI.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using Services;
 
     public static class NinjectWebCommon 
     {
@@ -59,6 +60,7 @@ namespace AngularAzureSearch.WebAPI.App_Start
         {
             // Template where **** equals the naming convention you used.
             //kernel.Bind<I****Repository>().To<****Repository>();
+            kernel.Bind<IMailService>().To<MailService>().InRequestScope();
             kernel.Bind<ITrailRepository>().To<TrailRepository>();
         }        
     }

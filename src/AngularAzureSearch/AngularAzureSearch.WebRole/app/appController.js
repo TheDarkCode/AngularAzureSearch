@@ -2,8 +2,8 @@
     "use strict";
 
     angular.module('app').controller('appController',
-        ['$scope', '$rootScope', '$location', 'authService',
-            function ($scope, $rootScope, $location, authService) {
+        ['$scope', '$rootScope', '$location', 'authService', 'tokensManagerService',
+            function ($scope, $rootScope, $location, authService, tokensManagerService) {
                 //$scope.state = 'unauthorized';
                 //$scope.signIn = function () {
                 //    $scope.state = 'authorized';
@@ -21,6 +21,10 @@
                 $scope.userName = $rootScope.userName = authService.authentication.userName;
 
                 $scope.newUser = $rootScope.newUser = true;
+
+                $scope.refreshTokens = $rootScope.refreshTokens = [];
+                $scope.tokenRefreshed = $rootScope.tokenRefreshed = false;
+                $scope.tokenResponse = $rootScope.tokenResponse = null;
 
                 $scope.submitLoginForm = $rootScope.submitLoginForm = function (isValid) {
                     authService.login($scope.login).then(function (response) {
@@ -82,6 +86,38 @@
                 $scope.toggleNewUser = $rootScope.toggleNewUser = function () {
                     $scope.newUser = $scope.newUser === false ? true : false;
                     broadcastUserState();
+                };
+
+                tokensManagerService.getRefreshTokens().then(function (results) {
+
+                    $scope.refreshTokens = $rootScope.refreshTokens = results.data;
+
+                }, function (error) {
+                    alert(error.data.message);
+                });
+
+                $scope.deleteRefreshTokens = $rootScope.deleteRefreshTokens = function (index, tokenid) {
+
+                    tokenid = window.encodeURIComponent(tokenid);
+
+                    tokensManagerService.deleteRefreshTokens(tokenid).then(function (results) {
+
+                        $scope.refreshTokens.splice(index, 1);
+
+                    }, function (error) {
+                        alert(error.data.message);
+                    });
+                };
+
+                $scope.refreshToken = $rootScope.refreshToken = function () {
+
+                    authService.refreshToken().then(function (response) {
+                        $scope.tokenRefreshed = true;
+                        $scope.tokenResponse = response;
+                    },
+                     function (err) {
+                         $location.path('/');
+                     });
                 };
 
                 var broadcastUserState = function () {

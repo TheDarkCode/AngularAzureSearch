@@ -1,0 +1,79 @@
+﻿@model AngularAzureSearch.WebAPI.Models.ContactModels
+@{
+    ViewBag.Title = "Contact";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h3 class="section-title">Send us a message</h3>
+            <p style="padding:10px;">
+                Don't forget to set your SMTP settings correctly.
+            </p>
+            <hr />
+            @if (ViewBag.MailSent != null && ViewBag.MailSent)
+            {
+                <div class="success alert-success alert">Thank you for your message!</div>
+            }
+            @if (ViewBag.Error != null && ViewBag.Error)
+            {
+                <div class="warning alert-warning alert">@ViewBag.ErrorMessage</div>
+
+            }
+
+            <div class="col-xs-12 col-sm-12 col-md-12" align="justify" width="100%">
+                @using (Html.BeginForm(new { @class = "form-light mt-20" }))
+                {
+                    @Html.ValidationSummary(true)
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Subject, "Subject:", new { @class = "h4" })
+                        @Html.EditorFor(model => model.Subject, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Subject)
+                    </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.FirstName, "First Name:", new { @class = "h4" })
+                                @Html.EditorFor(model => model.FirstName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.FirstName)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LastName, "Last Name:", new { @class = "h4" })
+                                @Html.EditorFor(model => model.LastName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.LastName)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Email, "Email:", new { @class = "h4" })
+                                @Html.EditorFor(model => model.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Email)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Comment, "Comments:", new { @class = "h4" })
+                                @Html.TextAreaFor(model => model.Comment, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Comment)
+                            </div>
+                            <div class="buttons">
+                                <div class="form-group">
+                                    <input type="submit" value="submit" class="btn btn-primary" />
+                                    <input type="reset" value="reset" class="btn btn-primary" />
+                                </div>
+                            </div>
+                }
+            </div>
+
+            <style>
+                #form-control {
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+                #form-light.mt-20 {
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+                #form-group {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            </style>
+        </div>
+        </div>
+</div>
