@@ -4,16 +4,16 @@
     angular.module('app').config(['$routeProvider', function ($routeProvider) {
         var routes = [
             {
-                url: '/dashboard',
+                url: '/index',
                 config: {
-                    template: '<d-dashboard></d-dashboard>',
+                    template: '<d-index></d-index>',
                     reloadOnSearch: false
                 }
             },
             {
-                url: '/index',
+                url: '/dashboard',
                 config: {
-                    template: '<d-index></d-index>',
+                    template: '<d-dashboard></d-dashboard>',
                     reloadOnSearch: false
                 }
             },
@@ -68,12 +68,12 @@
                     template: '<d-ui-kit></d-ui-kit>'
                 }
             },
-            {
-                url: '/buttons',
-                config: {
-                    template: '<d-buttons></d-buttons>'
-                }
-            },
+            //{
+            //    url: '/buttons',
+            //    config: {
+            //        template: '<d-buttons></d-buttons>'
+            //    }
+            //},
             {
                 url: '/typography',
                 config: {
@@ -102,6 +102,18 @@
                 url: '/form-elements',
                 config: {
                     template: '<d-form-elements></d-form-elements>'
+                }
+            },
+            {
+                url: '/error',
+                config: {
+                    template: '<d-error></d-error>'
+                }
+            },
+            {
+                url: '/error-server',
+                config: {
+                    template: '<d-error-server></d-error-server>'
                 }
             }
         ];

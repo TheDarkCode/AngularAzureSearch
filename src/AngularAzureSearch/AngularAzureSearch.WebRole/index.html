@@ -35,6 +35,7 @@
         - King Wilder @ Gizmo Beach (https://github.com/kahanu/GolfTracker.DocumentDB/)
         - Richard J. Leopold (https://github.com/rleopold/DocDbWebApi/)
         - Adrian Fernandez @ Microsoft (https://github.com/tracker086/DocumentDB.AspNet.Identity)
+        - Ryan CrawCour & Aravind Ramachandran @  Microsoft (https://github.com/Azure/azure-documentdb-dotnet/)
 
     Comments included for development. Use minified version for production.
 
@@ -211,47 +212,11 @@
                                     </form>
                                     <button class="btn btn-warning textshadow-light-black" ng-click="signIn()">Sign In</button>-->
                                     <div>
-                                        <div ng-if="newUser">
-                                            <button class="btn btn-warning textshadow-light-black" ng-click="toggleNewUser()">Already Registered?</button>
-                                            <hr />
-                                            <form name="signupForm" novalidate ng-submit="submitSignupForm(signupForm.$valid)">
-                                                <div class="form-group">
-                                                    <label>Email</label>
-                                                    <input type="email" class="form-control" required ng-model="registration.email" autofocus />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Password</label>
-                                                    <input type="password" class="form-control" required ng-model="registration.password" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Confirm Password</label>
-                                                    <input type="password" class="form-control" required ng-model="registration.confirmpassword" />
-                                                </div>
-                                                <button type="submit" class="btn btn-primary" ng-disabled="signupForm.$invalid">Sign Up</button>
-                                                <br/><br/>
-                                                <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
-                                                    {{message}}
-                                                </div>
-                                            </form>
+                                        <div ng-show="newUser" ng-cloak>
+                                            <d-sign-up-form></d-sign-up-form>
                                         </div>
-                                        <div ng-if="!newUser">
-                                            <button class="btn btn-warning textshadow-light-black" ng-click="toggleNewUser()">Create New Account?</button>
-                                            <hr />
-                                            <form name="loginForm" novalidate ng-submit="submitLoginForm(loginForm.$valid)">
-                                                <div class="form-group">
-                                                    <label>Email</label>
-                                                    <input type="email" ng-model="login.userName" required class="form-control" autofocus />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Password</label>
-                                                    <input type="password" ng-model="login.password" required class="form-control" />
-                                                </div>
-                                                <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">Login</button>
-                                                <br /><br />
-                                                <div data-ng-hide="message == ''" data-ng-class="(success) ? 'alert alert-success' : 'alert alert-danger'">
-                                                    {{message}} <div ng-show="resendEmailConfirmationLinkIsVisible"><a href="" ng-click="resendConfirmEmail(login.userName)">Re-send confirmation email</a></div>
-                                                </div>
-                                            </form>
+                                        <div ng-show="!newUser" ng-cloak>
+                                            <d-login-form></d-login-form>
                                         </div>
                                     </div>
                                 </div>
@@ -262,8 +227,8 @@
 
                 </div>
                 <div ng-switch-when="true">
-                    <dl-framework title="Angular Azure Search"
-                                  subtitle="Application Framework - Build 15 - 11/25/2015"
+                    <dl-framework title="AngularAzureSearch"
+                                  subtitle="Application Framework - Build 15"
                                   icon-file="apple-icon-152x152.png">
                         <!-- If strict HTML, use attr forms, if not use dl-menu element form -->
                         <div data-dl-menu>
@@ -454,6 +419,8 @@
     <script src="app/directives/dUiKitDirective.js"></script>
     <script src="app/directives/dTypographyDirective.js"></script>
     <script src="app/directives/dGalleryDirective.js"></script>
+    <script src="app/directives/dLoginFormDirective.js"></script>
+    <script src="app/directives/dSignUpFormDirective.js"></script>
 
     <!-- Widget Directives -->
     <!--Template:: <script src="app/widgets/d****/d****Directive.js"></script>-->

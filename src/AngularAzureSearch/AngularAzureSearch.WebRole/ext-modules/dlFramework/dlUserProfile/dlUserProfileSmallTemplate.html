@@ -1,17 +1,17 @@
 ﻿<div class="dl-user-profile-small pull-right">
-    <div ng-switch="isAuthenticated">
-        <div ng-switch-when="true">
+    <div ng-switch="isAuthenticated" class="btn-group">
+        <button class="btn dl-user-profile-btn dropdown-toggle" ng-switch-when="true" ng-click="logOut()">
             <!--<span class="dl-profile-image dl-profile-online">
                 <img src="images/employee.jpg" alt="user image" style="border-radius: 100%" />
                 <i></i>
             </span>-->
 
-            <div class="dl-user-profile-small-name">{{userName}}</div>
+            <div class="dl-user-profile-small-name" style="color:#000000;">{{userName}}</div>
             <!--logout button-->
-        </div>
-        <div ng-switch-default>
+        </button>
+        <button class="btn dl-user-profile-btn dropdown-toggle" ng-switch-default>
             <div class="dl-user-profile-small-name"><a href="#/login">Sign In</a> / <a href="#/signup">Sign Up</a></div>
-        </div>
+        </button>
     </div>
 
     <!--<button class="btn btn-info btn-sm">

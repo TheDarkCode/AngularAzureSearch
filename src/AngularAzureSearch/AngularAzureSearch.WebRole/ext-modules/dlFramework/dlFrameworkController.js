@@ -18,6 +18,8 @@
                     $scope.userName = data.userName;
                 });
 
+                $scope.logOut = $rootScope.logOut;
+
                 $scope.$on('dl-menu-item-selected-event', function (evt, data) {
                     $scope.routeString = data.route;
                     $location.path(data.route);

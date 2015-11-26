@@ -22,7 +22,7 @@
 
                 $scope.newUser = $rootScope.newUser = true;
 
-                $scope.submitLoginForm = function (isValid) {
+                $scope.submitLoginForm = $rootScope.submitLoginForm = function (isValid) {
                     authService.login($scope.login).then(function (response) {
                         $scope.success = true;
                         $scope.isAuthenticated = true;
@@ -39,7 +39,7 @@
                     });
                 };
 
-                $scope.resendConfirmEmail = function (userName) {
+                $scope.resendConfirmEmail = $rootScope.resendConfirmEmail = function (userName) {
                     $scope.resend.Email = userName;
 
                     authService.resendConfirmEmail($scope.resend).then(function (response) {
@@ -51,7 +51,7 @@
                     });
                 };
 
-                $scope.submitSignupForm = function (isValid) {
+                $scope.submitSignupForm = $rootScope.submitSignupForm = function (isValid) {
 
                     authService.saveRegistration($scope.registration).then(function (response) {
 
@@ -69,6 +69,14 @@
                          }
                          $scope.message = errors.join(' ');
                      });
+                };
+
+                $scope.logOut = $rootScope.logOut = function () {
+                    authService.logOut();
+                    $scope.isAuthenticated = false;
+                    console.log("logOut()/scope.isAuthenticated: " + $scope.isAuthenticated);
+
+                    $location.path('/index');
                 };
 
                 $scope.toggleNewUser = function () {

@@ -6,17 +6,18 @@
     <div style="position: absolute;">
         <h6>
             <span ng-switch="isAuthenticated">
-                <span ng-switch-when="true" class="text-center">
+                <span ng-switch-when="true" class="text-center" alt="LogOut" ng-click="logOut()">
                     <h6>Logged in as:</h6>
-                    <h3 style="margin-top:0px;">{{userName}}</h3>
+                    <h4 style="margin-top:0px;">{{userName}}</h4>
                     <!--logout button-->
-                    <!--<a href="logOut()">Log Out</a>-->
+                    <!--<button ng-click="logOut()">Log Out</button>-->
                 </span>
                 <span ng-switch-default>
                    <a href="#/login">Sign In</a> / <a href="#/signup">Sign Up</a>
                 </span>
             </span>
         </h6>
+
         <!--<button class="btn btn-info btn-sm">
             <i class="fa fa-chevron-down"></i>
         </button>-->

@@ -83,7 +83,7 @@
 
 /* Breakpoint dl-logo-area --- update the max-width
    or adjust the display commenting on the subtitle and icon */
-@media screen and (max-width: 305px) {
+@media screen and (max-width: 400px) {
     .dl-icon {
         /*display: none;*/
     }
