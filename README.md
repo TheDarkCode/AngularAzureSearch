@@ -91,6 +91,10 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ######https://github.com/brettdonohoo/angular-parallax
 
 ###MailService by James Bisiar
+######https://github.com/bisiar
+
+###angular-fullscreen by  Fabio Biondi
+######https://github.com/fabiobiondi/angular-fullscreen
 
 ##Helpful Links
 
