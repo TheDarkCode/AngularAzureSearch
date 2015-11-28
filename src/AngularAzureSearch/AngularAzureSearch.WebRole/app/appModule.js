@@ -3,10 +3,10 @@
 
     angular.module("app", ["ngRoute", "dlFramework", "ngStorage", "FBAngular", "LocalStorageModule"])
 
-    // Change to your WebAPI's location. Debug :: http://localhost:10716/
-    // GitHub Demo API Endpoint: http://githubapi.azurewebsites.net/
+    // Change to your WebAPI's location. Debug :: https://localhost:44301/
+    // GitHub Demo API Endpoint: https://githubapi.azurewebsites.net/
     .constant('apiSettings', {
-        apiUriBase: 'http://githubapi.azurewebsites.net',
+        apiUriBase: 'https://githubapi.azurewebsites.net/',
     });
 
 })();

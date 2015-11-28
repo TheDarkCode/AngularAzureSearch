@@ -9,6 +9,8 @@
                 //    $scope.state = 'authorized';
                 //};
 
+                $location.absUrl().replace(/http/g, 'https');
+
                 $scope.login = {};
                 $scope.success = false;
                 $scope.message = "";

@@ -181,8 +181,6 @@
     <Content Include="ext-modules\dlPriceTable\dlPriceTableModule.js" />
     <Content Include="ext-modules\dlPriceTable\dlPriceTableTemplate.html" />
     <Content Include="ext-modules\dlSearch\dlSearch.css" />
-    <Content Include="ext-modules\dlSearch\dlSearch.html" />
-    <Content Include="ext-modules\dlSearch\dlSearchController.js" />
     <Content Include="ext-modules\dlSearch\dlSearchDetailController.js" />
     <Content Include="ext-modules\dlSearch\dlSearchDirective.js" />
     <Content Include="ext-modules\dlSearch\dlSearchFacetsController.js" />
@@ -207,65 +205,35 @@
     <Content Include="index.html" />
     <Content Include="app\confirmEmailCtrl\confirmEmail.html" />
     <Content Include="app\confirmEmailCtrl\confirmEmailCtrl.js" />
-    <Content Include="js\app\homesCtrl\config\homesConfig.js" />
-    <Content Include="js\app\homesCtrl\controllers\homeDetail.js" />
-    <Content Include="js\app\homesCtrl\controllers\homeFacets.js" />
-    <Content Include="js\app\homesCtrl\controllers\homeRepeater.js" />
-    <Content Include="js\app\homesCtrl\controllers\homeSearchForm.js" />
-    <Content Include="js\app\homesCtrl\controllers\homesMap.js" />
-    <Content Include="js\app\homesCtrl\controllers\homeSort.js" />
-    <Content Include="js\app\homesCtrl\controllers\homesRoute.js" />
-    <Content Include="js\app\homesCtrl\directives\homesDirective.js" />
-    <Content Include="js\app\homesCtrl\filter\dollars.js" />
-    <Content Include="js\app\homesCtrl\homes.html" />
-    <Content Include="js\app\homesCtrl\homesCtrl.js" />
-    <Content Include="js\app\indexCtrl\config\indexConfig.js" />
-    <Content Include="js\app\indexCtrl\index.html" />
-    <Content Include="js\app\indexCtrl\indexCtrl.js" />
     <Content Include="app\loginCtrl\login.html" />
     <Content Include="app\loginCtrl\loginCtrl.js" />
-    <Content Include="js\app\myApp.js" />
     <Content Include="app\services\authInterceptorService.js" />
     <Content Include="app\services\authService.js" />
     <Content Include="app\signupCtrl\signup.html" />
     <Content Include="app\signupCtrl\signupCtrl.js" />
-    <Content Include="js\app\trailsCtrl\config\trailsConfig.js" />
-    <Content Include="js\app\trailsCtrl\controllers\trailFacets.js" />
-    <Content Include="js\app\trailsCtrl\controllers\trailDetail.js" />
-    <Content Include="js\app\trailsCtrl\controllers\trailRepeater.js" />
-    <Content Include="js\app\trailsCtrl\controllers\trailSearchForm.js" />
-    <Content Include="js\app\trailsCtrl\controllers\trailsMap.js" />
-    <Content Include="js\app\trailsCtrl\controllers\trailsRoute.js" />
-    <Content Include="js\app\trailsCtrl\controllers\trailSort.js" />
-    <Content Include="js\app\trailsCtrl\trails.html" />
-    <Content Include="js\app\trailsCtrl\trailsCtrl.js" />
-    <Content Include="js\external-modules\azureSearch\azureSearch.js" />
-    <Content Include="js\external-modules\azureSearch\factories\facetUrl.js" />
-    <Content Include="js\external-modules\azureSearch\factories\filterFacet.js" />
-    <Content Include="js\external-modules\azureSearch\factories\filterUrl.js" />
-    <Content Include="js\external-modules\azureSearch\factories\formatFilter.js" />
-    <Content Include="js\external-modules\azureSearch\factories\groupFilters.js" />
-    <Content Include="js\external-modules\azureSearch\factories\parseFilter.js" />
-    <Content Include="js\external-modules\azureSearch\factories\search.js" />
-    <Content Include="js\external-modules\azureSearch\factories\suggest.js" />
-    <Content Include="js\external-modules\azureSearch\factories\tokenizeFilters.js" />
-    <Content Include="js\external-modules\html\directives\anchorBottom.js" />
-    <Content Include="js\external-modules\html\html.js" />
-    <Content Include="js\external-modules\mapping\directives\map.js" />
-    <Content Include="js\external-modules\mapping\factories\bestView.js" />
-    <Content Include="js\external-modules\mapping\factories\currentLocation.js" />
-    <Content Include="js\external-modules\mapping\factories\drawPolygon.js" />
-    <Content Include="js\external-modules\mapping\factories\searchBounds.js" />
-    <Content Include="js\external-modules\mapping\mapping.js" />
-    <Content Include="js\external-modules\userInput\factories\cancelInput.js" />
-    <Content Include="js\external-modules\userInput\userInput.js" />
-    <Content Include="lib\css\bootstrap.css" />
-    <Content Include="lib\js\angular-resource.js" />
-    <Content Include="lib\js\angular-route.js" />
-    <Content Include="lib\js\angular.js" />
-    <Content Include="lib\js\bootstrap.js" />
-    <Content Include="lib\js\jquery.js" />
-    <Content Include="lib\js\lodash.js" />
+    <Content Include="ext-modules\azureSearch\azureSearch.js" />
+    <Content Include="ext-modules\azureSearch\factories\facetUrl.js" />
+    <Content Include="ext-modules\azureSearch\factories\filterFacet.js" />
+    <Content Include="ext-modules\azureSearch\factories\filterUrl.js" />
+    <Content Include="ext-modules\azureSearch\factories\formatFilter.js" />
+    <Content Include="ext-modules\azureSearch\factories\groupFilters.js" />
+    <Content Include="ext-modules\azureSearch\factories\parseFilter.js" />
+    <Content Include="ext-modules\azureSearch\factories\search.js" />
+    <Content Include="ext-modules\azureSearch\factories\suggest.js" />
+    <Content Include="ext-modules\azureSearch\factories\tokenizeFilters.js" />
+    <Content Include="ext-modules\html\directives\anchorBottom.js" />
+    <Content Include="ext-modules\html\html.js" />
+    <Content Include="ext-modules\mapping\directives\map.js" />
+    <Content Include="ext-modules\mapping\factories\bestView.js" />
+    <Content Include="ext-modules\mapping\factories\currentLocation.js" />
+    <Content Include="ext-modules\mapping\factories\drawPolygon.js" />
+    <Content Include="ext-modules\mapping\factories\searchBounds.js" />
+    <Content Include="ext-modules\mapping\mapping.js" />
+    <Content Include="ext-modules\userInput\factories\cancelInput.js" />
+    <Content Include="ext-modules\userInput\userInput.js" />
+    <Content Include="Scripts\angular-resource.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\lodash.js" />
     <Content Include="packages.config" />
     <Content Include="manifest.json" />
     <Content Include="fonts\fontawesome-webfont.eot" />
@@ -313,8 +281,8 @@
     <Content Include="apple-icon-precomposed.png" />
     <Content Include="apple-icon.png" />
     <Content Include="browserconfig.xml" />
-    <Content Include="css\navbar.css" />
-    <Content Include="css\site.css" />
+    <Content Include="Content\navbar.css" />
+    <Content Include="Content\site.css" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
     <Content Include="favicon-96x96.png" />
@@ -361,7 +329,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\controllers\" />
-    <Folder Include="js\app\trailsCtrl\filter\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -378,7 +345,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>24546</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:15449/</IISUrl>
+          <IISUrl>https://localhost:44300/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
