@@ -241,7 +241,8 @@ form .row:first-child .floating-label-form-group {
     background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-    min-height: 100vh;
+    min-height: calc(100vh - 68px);
+    max-height: calc(100vh - 68px);
     overflow: auto;
 }
 
@@ -254,7 +255,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .dl-view:fullscreen {
-    width: calc(100vw-200px);
+    width: calc(100vw - 320px);
 }
 
 .dl-user-profile {
@@ -285,6 +286,18 @@ form .row:first-child .floating-label-form-group {
         height: 80px;
         border: 2px inset rgba(255,255,255,0.2);
     }
+    @media (max-width:400px){
+        dl-user-profile-btn-group {
+            float:right;
+            margin-right: 25px;
+        }
+    }
+    @media (min-width:401px){
+        dl-user-profile-btn-group {
+            float:right;
+        }
+    }
+
 
 .dl-user-profile-small {
     color: #333;
@@ -359,7 +372,6 @@ form .row:first-child .floating-label-form-group {
 }
 
 .dl-user-profile-small-name {
-    top: 5px;
     line-height: 50px;
     font-size: 24px;
     display: inline;

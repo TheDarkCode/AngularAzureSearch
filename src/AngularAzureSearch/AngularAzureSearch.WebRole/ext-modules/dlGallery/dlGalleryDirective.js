@@ -15,7 +15,8 @@
                 random: '@',
                 title: '@',
                 subtitle: '@',
-                longdesc: '@'
+                longdesc: '@',
+                items: '='
             },
             transclude: true,
             templateUrl: 'ext-modules/dlGallery/dlGalleryTemplate.html',

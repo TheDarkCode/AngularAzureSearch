@@ -24,6 +24,13 @@
                           scope.$applyAsync(map.dispose);
                       });
 
+                      Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', { callback: trafficModuleLoaded });
+
+                      function trafficModuleLoaded() {
+                          var trafficManager = new Microsoft.Maps.Traffic.TrafficManager(map);
+                          trafficManager.show();
+                      }
+
                       scope.ready({ map: map });
                   }
               };

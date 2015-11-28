@@ -1,44 +1,44 @@
-﻿<div class="dl-user-profile" ng-if="isMenuVertical">
-    <!--<span class="dl-profile-image-side dl-profile-online">
+﻿<div class="dl-user-profile" ng-if="isMenuVertical && isAuthenticated">
+    <span class="dl-profile-image-side dl-profile-online">
         <img src="images/employee.jpg" alt="user image" style="border-radius: 100%" />
         <i></i>
-    </span>-->
-    <div style="position: absolute;">
-        <h6>
-            <span ng-switch="isAuthenticated">
-                <span ng-switch-when="true" class="text-center" alt="LogOut" ng-click="logOut()">
-                    <h6>Logged in as:</h6>
-                    <h4 style="margin-top:0px;">{{userName}}</h4>
-                    <!--logout button-->
-                    <!--<button ng-click="logOut()">Log Out</button>-->
-                </span>
-                <span ng-switch-default>
-                   <a href="#/login">Sign In</a> / <a href="#/signup">Sign Up</a>
-                </span>
+    </span>
+    <div style="position: absolute; left: 100px;">
+        <div class="text-center">
+            <div class="dl-user-profile-btn-group btn-group" style="display:inline;">
+                <button class="btn dl-user-profile-btn dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-h" style=" padding:5px;"></i>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li class="dropdown-header">Profile</li>
+                    <li>
+                        <a tabindex="-1" ng-click="logOut()"><span class="badge pull-right"><i class="fa fa-lock"></i></span> Logout</a>
+                    </li>
+                    <li>
+                        <a tabindex="-1" ng-click="goFullscreen()"><span class="badge pull-right"><i class="fa fa-arrows-alt"></i></span> Fullscreen</a>
+                    </li>
+                    <!--<li>
+                <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">3</span>News</a>
+            </li>
+            <li>
+                <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">1</span>Messages</a>
+            </li>-->
+                    <!--<li class="divider"></li>
+            <li class="dropdown-header">More</li>
+            <li>
+                <a tabindex="-1" href="#/manage">Edit Profile..</a>
+            </li>-->
+                </ul>
+            </div>
+            <span class="text-left" style="margin-left: -20px; margin-top: -10px;">
+                <p>Logged in as:</p>
+                <p>{{userName}}</p>
             </span>
-        </h6>
+        </div>
 
-        <!--<button class="btn btn-info btn-sm">
+        <!--<button class="btn btn-info btn-xs">
             <i class="fa fa-chevron-down"></i>
         </button>-->
-        <!--<div class="btn-group">
-            <button class="btn dl-user-profile-btn dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-ellipsis-h"></i>
-            </button>
-            <ul class="dropdown-menu pull-right">
-                <li class="dropdown-header">Profile</li>
-                <li>
-                    <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">3</span>News</a>
-                </li>
-                <li>
-                    <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">1</span>Messages</a>
-                </li>
-                <li class="divider"></li>
-                <li class="dropdown-header">More</li>
-                <li>
-                    <a tabindex="-1" href="javascript:void(0)">Edit Profile..</a>
-                </li>
-            </ul>
-        </div>-->
+
     </div>
 </div>

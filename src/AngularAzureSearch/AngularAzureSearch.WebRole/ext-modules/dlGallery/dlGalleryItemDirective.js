@@ -15,10 +15,11 @@
                 ismap: '@',
                 longdesc: '@',
                 usemap: '@',
-                route: '@'
+                array: '@'
             },
             templateUrl: 'ext-modules/dlGallery/dlGalleryItemTemplate.html',
             link: function (scope, el, attr, ctrl) {
+                scope.array.toArray() = ctrl.items;
             }
         };
     });

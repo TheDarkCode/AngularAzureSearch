@@ -11,8 +11,8 @@
 
 .dl-menu-area-vertical {
     float: left;
-    min-width: 200px;
-    height: 100vh;
+    min-width: 320px;
+    min-height: 100vh;
     /*padding-top: 30px;*/
 }
 
@@ -179,6 +179,7 @@
     }
 
     .dl-mobile-close-button {
+        z-index: 9999;
         float: right;
         border: none;
         background: transparent;
@@ -211,7 +212,7 @@
     bottom: 0;
     display: block;
     z-index: 1400;
-    min-width: 200px;
+    min-width: 320px;
     margin: 0;
     border-top: 2px solid rgba(255,255,255,0.2);
 }
@@ -247,21 +248,21 @@
 @keyframes fadeOutLeft {
     0% {
         opacity: 1;
-        -webkit-transform: translateX(200);
-        -moz-transform: translateX(200);
-        -ms-transform: translateX(200);
-        -o-transform: translateX(200);
+        -webkit-transform: translateX(320);
+        -moz-transform: translateX(320);
+        -ms-transform: translateX(320);
+        -o-transform: translateX(320);
         transform: translateX();
     }
 
     100% {
         background: transparent;
         opacity: 0;
-        -webkit-transform: translateX(-200px);
-        -moz-transform: translateX(-200px);
-        -ms-transform: translateX(-200px);
-        -o-transform: translateX(-200px);
-        transform: translateX(-200px);
+        -webkit-transform: translateX(-320px);
+        -moz-transform: translateX(-320px);
+        -ms-transform: translateX(-320px);
+        -o-transform: translateX(-320px);
+        transform: translateX(-320px);
     }
 }
 
@@ -544,7 +545,7 @@
 
 @keyframes dlViewGrowLeft {
     0% {
-        margin-left: 200px;
+        margin-left: 320px;
     }
 
     100% {
@@ -558,7 +559,7 @@
     }
 
     100% {
-        margin-left: 200px;
+        margin-left: 320px;
     }
 }
 
@@ -614,7 +615,7 @@
     -o-animation-name: dlViewInLeft;
     animation-name: dlViewInLeft;*/
 
-      /*margin-left: 200px !important;
+      /*margin-left: 320px !important;
   -webkit-transition: margin 1s ease;
      -moz-transition: margin 1s ease;
        -o-transition: margin 1s ease;

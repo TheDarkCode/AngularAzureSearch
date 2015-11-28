@@ -1,43 +1,47 @@
 ﻿<div class="dl-user-profile-small pull-right">
-    <div ng-switch="isAuthenticated" class="btn-group">
-        <button class="btn dl-user-profile-btn dropdown-toggle" ng-switch-when="true" ng-click="logOut()">
-            <!--<span class="dl-profile-image dl-profile-online">
-                <img src="images/employee.jpg" alt="user image" style="border-radius: 100%" />
-                <i></i>
-            </span>-->
-
-            <div class="dl-user-profile-small-name" style="color:#000000;">{{userName}}</div>
-            <!--logout button-->
-        </button>
-        <button class="btn dl-user-profile-btn dropdown-toggle" ng-switch-default>
-            <div class="dl-user-profile-small-name"><a href="#/login">Sign In</a> / <a href="#/signup">Sign Up</a></div>
-        </button>
-    </div>
 
     <!--<button class="btn btn-info btn-sm">
         <i class="fa fa-chevron-down"></i>
     </button>-->
 
-    <!--<div class="btn-group">
-        <button class="btn dl-user-profile-btn dropdown-toggle" ng-click="goFullscreen()">
-            <i class="fa fa-arrows-alt"></i>
-        </button>
-        <button class="btn btn-default dl-user-profile-btn dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-ellipsis-v"></i>
-        </button>
-        <ul class="dropdown-menu pull-right">
-            <li class="dropdown-header">Profile</li>
-            <li>
-                <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">3</span>News</a>
-            </li>
-            <li>
-                <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">1</span>Messages</a>
-            </li>
-            <li class="divider"></li>
-            <li class="dropdown-header">More</li>
-            <li>
-                <a tabindex="-1" href="javascript:void(0)">Edit Profile..</a>
-            </li>
-        </ul>
-    </div>-->
+    <div class="btn-group">
+        <div ng-switch="isAuthenticated">
+            <div class="btn-group" ng-switch-when="true">
+                <button class="btn dl-user-profile-btn">
+                    <span class="dl-profile-image dl-profile-online">
+                    <img src="images/employee.jpg" alt="user image" style="border-radius: 100%" />
+                    <i></i>
+                    </span>
+
+                    <span class="dl-user-profile-small-name">{{userName}}</span>
+                </button>
+                <button class="btn btn-default dl-user-profile-btn dropdown-toggle" data-toggle="dropdown">
+                    <!--fa-ellipsis-v-->
+                    <span class="dl-user-profile-small-name"><i class="fa fa-gears"></i></span>
+</button>
+                <ul class="dropdown-menu pull-right">
+                    <li class="dropdown-header">Profile</li>
+                    <li>
+                        <a tabindex="-1" ng-click="logOut()"><span class="badge pull-right"><i class="fa fa-lock"></i></span> Logout</a>
+                    </li>
+                    <li>
+                        <a tabindex="-1" ng-click="goFullscreen()"><span class="badge pull-right"><i class="fa fa-arrows-alt"></i></span> Fullscreen</a>
+                    </li>
+                    <!--<li>
+                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">3</span>News</a>
+                    </li>
+                    <li>
+                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">1</span>Messages</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">More</li>
+                    <li>
+                        <a tabindex="-1" href="javascript:void(0)">Edit Profile..</a>
+                    </li>-->
+                </ul>
+            </div>
+            <div ng-switch-default>
+            </div>
+        </div>
+    </div>
 </div>
