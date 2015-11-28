@@ -11,10 +11,12 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ####LIVE API DEMO: http://githubapi.azurewebsites.net/
 
-####Current Version: Build 15, 11/25/2015
+######NOTICE: YOU MUST UPDATE SETTINGS FOR SSL and ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS.
+
+####Current Version: Build 16, 11/27/2015
 #####Status: 
   - WebRole works for User login/signup. Confirm Email not tested. dlFramework still in development.
-  - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100%.
+  - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100% with dynamic CORS.
   - DataIndexer is set to Trails data schema. Must configure via app settings config file.
 
 ######Current To Do List:
@@ -36,16 +38,15 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ######Known Issues/Warnings:
   - WebRole css issues with Firefox only impact Homes page currently.
-  - "Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes. Limited to anchorBottom issue. However in current build, renders on first load of page fine.
-  - "Trails" page is disabled. Will be resolved as part of "Manage DocDB via Client" updates (Build 16+).
+  - Search page scrolls down slightly on load, but subsequent loads when scroll position is unaltered are not affected.
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
   - Url still contains filters and orderby parameters after leaving Homes page.
-  - Confirm Email not tested. Manage user account and logout functions will be resolved in next update.
+  - Confirm Email not tested. Manage user account view will be resolved in next update.
   - Existing template for geosearches are not configured for mobile.
-  - Build-related components for minifying WebRole's JS files are not included yet.
-  - Local cache causes issues when doing debugging. Thus new or reconfigured default routes may not render the appropriate template. During debug (when at localhost:port/index.html) it would either not render the ng-view or go to '/dashboard' when set to '/index'.
+  - Gulp file to be added in next update.
   - Handling long usernames is partially fixed. Improvements will be made.
   - External login providers (Facebook / Twitter / Google / Microsoft) are not implemented yet. Will be added in the coming updates.
+  - Limitation for Cors is that it must have the correct URI syntax. Do not add "www." if it is not necessary. Future updates will address this.
 
 ####Azure Service Requirements for Deployment
 
