@@ -5,13 +5,13 @@ Sample full-featured web application containing separate WebRole (Front-End Clie
 
 Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps, Web API 2,  Azure DocumentDB.
 
-####LIVE CLIENT DEMO: http://angularazuresearch.azurewebsites.net/
+####LIVE CLIENT DEMO: https://angularazuresearch.azurewebsites.net/
 #####LOGIN: demo@github.com
 #####PASSWORD: $Ecret123
 
-####LIVE API DEMO: http://githubapi.azurewebsites.net/
+####LIVE API DEMO: https://githubapi.azurewebsites.net/
 
-######NOTICE: YOU MUST UPDATE SETTINGS FOR SSL and ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS.
+######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
 ####Current Version: Build 16, 11/27/2015
 #####Status: 
