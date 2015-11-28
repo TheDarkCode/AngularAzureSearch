@@ -25,6 +25,7 @@ namespace AngularAzureSearch.WebAPI.Controllers
     public class AccountController : ApiController
     {
         private const string LocalLoginProvider = "Local";
+        //private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
         public AccountController()
@@ -37,6 +38,24 @@ namespace AngularAzureSearch.WebAPI.Controllers
             UserManager = userManager;
             AccessTokenFormat = accessTokenFormat;
         }
+
+        //public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
+        //{
+        //    UserManager = userManager;
+        //    SignInManager = signInManager;
+        //}
+
+        //public ApplicationSignInManager SignInManager
+        //{
+        //    get
+        //    {
+        //        return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
+        //    }
+        //    private set
+        //    {
+        //        _signInManager = value;
+        //    }
+        //}
 
         public ApplicationUserManager UserManager
         {
