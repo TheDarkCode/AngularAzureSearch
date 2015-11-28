@@ -25,6 +25,24 @@ namespace AngularAzureSearch.WebAPI.Helpers
             return (int)epochTimeSpan.TotalSeconds;
         }
 
+        /// <summary>
+        /// Handy function to remove a suffix from the end of a string (ie: Urls).
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="suffix"></param>
+        /// <returns></returns>
+        public static string RemoveFromEnd(this string s, string suffix)
+        {
+            if (s.EndsWith(suffix))
+            {
+                return s.Substring(0, s.Length - suffix.Length);
+            }
+            else
+            {
+                return s;
+            }
+        }
+
         public static string FormatBody(string contactName, string contactEmail, string contactMessage)
         {
             StringWriter stringWriter = new StringWriter();

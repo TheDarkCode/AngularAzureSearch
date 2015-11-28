@@ -19,14 +19,15 @@ namespace AngularAzureSearch.WebAPI.Cors
             {
                 AllowAnyHeader = true,
                 AllowAnyMethod = true
+                // Optionally ::
+                //,AllowAnyOrigin = true
             };
 
-            string origins = AppSettingsConfig.CorsPolicyOrigins;
-            string[] originsList = origins.Split(',');
+            string[] origins = AppSettingsConfig.CorsPolicyOrigins.Split(',');
 
-            foreach (var item in originsList)
+            foreach (var origin in origins)
             {
-                corsPolicy.Origins.Add(item);
+                corsPolicy.Origins.Add(origin);
             }
 
             return Task.FromResult(corsPolicy);
