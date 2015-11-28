@@ -43,15 +43,18 @@
 <a id="live-api-demo-httpgithubapiazurewebsitesnet" class="anchor" href="#live-api-demo-httpgithubapiazurewebsitesnet" aria-hidden="true"><span class="octicon octicon-link"></span></a>LIVE API DEMO: <a href="http://githubapi.azurewebsites.net/">http://githubapi.azurewebsites.net/</a>
 </h4>
 
+<h6>
+<a id="notice-you-must-update-settings-for-ssl-and-endpoint-uris-prior-to-production-deployments" class="anchor" href="#notice-you-must-update-settings-for-ssl-and-endpoint-uris-prior-to-production-deployments" aria-hidden="true"><span class="octicon octicon-link"></span></a>NOTICE: YOU MUST UPDATE SETTINGS FOR SSL and ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS.</h6>
+
 <h4>
-<a id="current-version-build-15-11252015" class="anchor" href="#current-version-build-15-11252015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Version: Build 15, 11/25/2015</h4>
+<a id="current-version-build-16-11272015" class="anchor" href="#current-version-build-16-11272015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Version: Build 16, 11/27/2015</h4>
 
 <h5>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status:</h5>
 
 <ul>
 <li>WebRole works for User login/signup. Confirm Email not tested. dlFramework still in development.</li>
-<li>WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100%.</li>
+<li>WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100% with dynamic CORS.</li>
 <li>DataIndexer is set to Trails data schema. Must configure via app settings config file.</li>
 </ul>
 
@@ -80,16 +83,15 @@
 
 <ul>
 <li>WebRole css issues with Firefox only impact Homes page currently.</li>
-<li>"Homes" page requires resize to trigger render of results/map. Does not render properly in all window sizes. Limited to anchorBottom issue. However in current build, renders on first load of page fine.</li>
-<li>"Trails" page is disabled. Will be resolved as part of "Manage DocDB via Client" updates (Build 16+).</li>
+<li>Search page scrolls down slightly on load, but subsequent loads when scroll position is unaltered are not affected.</li>
 <li>dlMenu animations do not render properly in all instances. Delayed in some cases.</li>
 <li>Url still contains filters and orderby parameters after leaving Homes page.</li>
-<li>Confirm Email not tested. Manage user account and logout functions will be resolved in next update.</li>
+<li>Confirm Email not tested. Manage user account view will be resolved in next update.</li>
 <li>Existing template for geosearches are not configured for mobile.</li>
-<li>Build-related components for minifying WebRole's JS files are not included yet.</li>
-<li>Local cache causes issues when doing debugging. Thus new or reconfigured default routes may not render the appropriate template. During debug (when at localhost:port/index.html) it would either not render the ng-view or go to '/dashboard' when set to '/index'.</li>
+<li>Gulp file to be added in next update.</li>
 <li>Handling long usernames is partially fixed. Improvements will be made.</li>
 <li>External login providers (Facebook / Twitter / Google / Microsoft) are not implemented yet. Will be added in the coming updates.</li>
+<li>Limitation for Cors is that it must have the correct URI syntax. Do not add "www." if it is not necessary. Future updates will address this.</li>
 </ul>
 
 <h4>
