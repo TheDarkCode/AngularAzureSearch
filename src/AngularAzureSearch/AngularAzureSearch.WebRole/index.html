@@ -40,7 +40,7 @@
 
     Comments included for development. Use minified version for production.
 
-    Current version:: Build 15 / 11/25/2015
+    Current version:: Build 16 / 11/27/2015
 
 -->
 
@@ -59,7 +59,7 @@
 
     <title>Angular Azure Search</title>
 
-    <meta name="description" content="Angular Azure Search - Build 15 - 11/25/2015">
+    <meta name="description" content="Angular Azure Search - Build 16 - 11/27/2015">
     <meta name="author" content="Mark Hamilton | Liam Cavanagh - GitHub.com/TheDarkCode/AngularAzureSearch">
     
     <!-- Browser Icons (Create your own at: http://www.favicon-generator.org/ - Save extracted .zip contents to root.) -->
@@ -98,7 +98,7 @@
     <link href="Content/xeditable.css" rel="stylesheet" />
 
     <!-- App Specific CSS Files -->
-    <link href="css/site.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
     <link href="app/app.css" rel="stylesheet" />
 
 
@@ -109,10 +109,11 @@
     <link href="ext-modules/dlFooter/dlFooter.css" rel="stylesheet" />
     <link href="ext-modules/dlPanel/dlPanel.css" rel="stylesheet" />
     <link href="ext-modules/dlParallax/dlParallax.css" rel="stylesheet" />
+    <link href="ext-modules/dlSearch/dlSearch.css"rel="stylesheet" />
 
     <!-- Widget Specific CSS Files -->
     <!--TEMPLATE:: <link href="app/widgets/d****/d****.css" rel="stylesheet" /> -->
-    <link href="app/widgets/dSearch/dSearch.css" rel="stylesheet" />
+    <!--<link href="app/widgets/dSearch/dSearch.css" rel="stylesheet" />-->
 
     <link href="Content/spacedout-css.css" rel="stylesheet" />
     <script src="Scripts/spacedout-js.js"></script>
@@ -146,7 +147,7 @@
                         <a href="//facebook.com/****"><i class="fa fa-facebook"></i></a>
                     </li>
                 </ul>-->
-                <div data-dl-menu style="margin-left: -40px;">
+                <!--<div data-dl-menu style="margin-left: -40px;">
                     <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
                     <dl-menu-item label="Homes" icon="fa-home" route="homes"></dl-menu-item>
                     <dl-menu-item label="Login" icon="fa-user" route="login"></dl-menu-item>
@@ -168,7 +169,7 @@
                         <dl-menu-item label="404 Error" icon="fa-question-circle" route="error"></dl-menu-item>
                         <dl-menu-item label="500 Error" icon="fa-exclamation-circle" route="error-server"></dl-menu-item>
                     </dl-menu-group>
-                </div>
+                </div>-->
             </div>
         </aside>
         <div class="so-content-overlay">
@@ -230,12 +231,13 @@
                 </div>
                 <div ng-switch-when="true">
                     <dl-framework title="AngularAzureSearch"
-                                  subtitle="Application Framework - Build 15"
+                                  subtitle="Application Framework - Build 16"
                                   icon-file="apple-icon-152x152.png">
                         <!-- If strict HTML, use attr forms, if not use dl-menu element form -->
                         <div data-dl-menu>
+                            <dl-menu-item label="Welcome" icon="fa-home" route="index"></dl-menu-item>
                             <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
-                            <dl-menu-item label="Homes" icon="fa-home" route="homes"></dl-menu-item>
+                            <dl-menu-item label="Search" icon="fa-search" route="search"></dl-menu-item>
                             <dl-menu-item label="Login" icon="fa-user" route="login"></dl-menu-item>
                             <dl-menu-group label="Tables" icon="fa-table">
                                 <dl-menu-item label="Basic Tables" icon="hidden" route="basic-tables"></dl-menu-item>
@@ -306,7 +308,7 @@
     <script src="Scripts/angular-local-storage.min.js"></script>
     <script src="Scripts/angular-animate.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
-    <script src="lib/js/angular-resource.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
@@ -318,7 +320,7 @@
 
 
     <!-- lodash v3.10.1 -->
-    <script src="lib/js/lodash.js"></script>
+    <script src="Scripts/lodash.js"></script>
 
     <script src="Scripts/bootstrap.min.js"></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
@@ -386,6 +388,19 @@
     <script src="ext-modules/dlMenu/dlMenuItemDirective.js"></script>
     <script src="ext-modules/dlMenu/dlMenuGroupDirective.js"></script>
 
+    <!-- Ext Search Module -->
+    <script src="ext-modules/dlSearch/dlSearchModule.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchFilters.js"></script>
+    <!--<script src="ext-modules/dlSearch/dlSearchController.js"></script>-->
+    <script src="ext-modules/dlSearch/dlSearchDetailController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchFacetsController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchRepeaterController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchFormController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchMapController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchSortController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchRouteController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchDirective.js"></script>
+
     <!-- Ext Dashboard Module -->
     <script src="ext-modules/dlDashboard/dlDashboardModule.js"></script>
     <script src="ext-modules/dlDashboard/dlDashboardDirective.js"></script>
@@ -412,14 +427,14 @@
     <!-- Template:: <script src="app/services/****.js"></script>-->
     <script src="app/services/authInterceptorService.js"></script>
     <script src="app/services/authService.js"></script>
-    <script src="app/services/tokensManagerService.js"></script>
+    <!--<script src="app/services/tokensManagerService.js"></script>-->
 
     <!-- App Directives -->
     <!--Template:: <script src="app/directives/d****Directive.js"></script>-->
     <script src="app/directives/dIndexDirective.js"></script>
     <script src="app/directives/dDashboardDirective.js"></script>
-    <script src="app/directives/dHomesDirective.js"></script>
-    <script src="app/directives/dTrailsDirective.js"></script>
+    <!--<script src="app/directives/dHomesDirective.js"></script>-->
+    <!--<script src="app/directives/dTrailsDirective.js"></script>-->
     <script src="app/directives/dBasicTablesDirective.js"></script>
     <script src="app/directives/dErrorDirective.js"></script>
     <script src="app/directives/dErrorServerDirective.js"></script>
@@ -432,69 +447,43 @@
     <script src="app/directives/dGalleryDirective.js"></script>
     <script src="app/directives/dLoginFormDirective.js"></script>
     <script src="app/directives/dSignUpFormDirective.js"></script>
+    <script src="app/directives/dSearchDirective.js"></script>
 
     <!-- Widget Directives -->
     <!--Template:: <script src="app/widgets/d****/d****Directive.js"></script>-->
-    <script src="app/widgets/dSearch/dSearchDirective.js"></script>
+    <!--<script src="app/widgets/dSearch/dSearchDirective.js"></script>-->
 
     <!-- Dialogs -->
     <!--Template:: <script src="app/dialogs/dSelect****Controller.js"></script>-->
     <script src="app/dialogs/dSelectSearchController.js"></script>
 
     <!-- Azure Search Core Module-->
-    <script src="js/external-modules/azureSearch/azureSearch.js"></script>
-    <!--<script src="js/external-modules/azureSearch/factories/facetUrl.js"></script>
-    <script src="js/external-modules/azureSearch/factories/filterFacet.js"></script>
-    <script src="js/external-modules/azureSearch/factories/filterUrl.js"></script>
-    <script src="js/external-modules/azureSearch/factories/formatFilter.js"></script>
-    <script src="js/external-modules/azureSearch/factories/groupFilters.js"></script>
-    <script src="js/external-modules/azureSearch/factories/parseFilter.js"></script>
-    <script src="js/external-modules/azureSearch/factories/search.js"></script>
-    <script src="js/external-modules/azureSearch/factories/suggest.js"></script>
-    <script src="js/external-modules/azureSearch/factories/tokenizeFilters.js"></script>-->
+    <script src="ext-modules/azureSearch/azureSearch.js"></script>
+    <!--<script src="ext-modules/azureSearch/factories/facetUrl.js"></script>
+    <script src="ext-modules/azureSearch/factories/filterFacet.js"></script>
+    <script src="ext-modules/azureSearch/factories/filterUrl.js"></script>
+    <script src="ext-modules/azureSearch/factories/formatFilter.js"></script>
+    <script src="ext-modules/azureSearch/factories/groupFilters.js"></script>
+    <script src="ext-modules/azureSearch/factories/parseFilter.js"></script>
+    <script src="ext-modules/azureSearch/factories/search.js"></script>
+    <script src="ext-modules/azureSearch/factories/suggest.js"></script>
+    <script src="ext-modules/azureSearch/factories/tokenizeFilters.js"></script>-->
+    
     <!-- Bing Maps Core Module -->
-    <script src="js/external-modules/mapping/mapping.js"></script>
-    <!--<script src="js/external-modules/mapping/directives/map.js"></script>
-    <script src="js/external-modules/mapping/factories/bestView.js"></script>
-    <script src="js/external-modules/mapping/factories/currentLocation.js"></script>
-    <script src="js/external-modules/mapping/factories/drawPolygon.js"></script>
-    <script src="js/external-modules/mapping/factories/searchBounds.js"></script>-->
+    <script src="ext-modules/mapping/mapping.js"></script>
+    <!--<script src="ext-modules/mapping/directives/map.js"></script>
+    <script src="ext-modules/mapping/factories/bestView.js"></script>
+    <script src="ext-modules/mapping/factories/currentLocation.js"></script>
+    <script src="ext-modules/mapping/factories/drawPolygon.js"></script>
+    <script src="ext-modules/mapping/factories/searchBounds.js"></script>-->
+    
     <!-- Anchor Bottom Directive to Auto Resize -->
-    <script src="js/external-modules/html/html.js"></script>
-    <!--<script src="js/external-modules/html/directives/anchorBottom.js"></script>-->
+    <script src="ext-modules/html/html.js"></script>
+    <!--<script src="ext-modules/html/directives/anchorBottom.js"></script>-->
+    
     <!-- Cancel Input Factory -->
-    <script src="js/external-modules/userInput/userInput.js"></script>
-    <!--<script src="js/external-modules/userInput/factories/cancelInput.js"></script>-->
-    <!-- Angular Services -->
-    <!--<script src="js/app/services/authInterceptorService.js"></script>
-    <script src="js/app/services/authService.js"></script>-->
-    <!--  Login Controller (Login View) -->
-    <!--<script src="js/app/loginCtrl/loginCtrl.js"></script>-->
-    <!-- Signup Controller (Signup View) -->
-    <!--<script src="js/app/signupCtrl/signupCtrl.js"></script>-->
-    <!-- Confirm Email Controller (Confirm Email View) -->
-    <!--<script src="js/app/confirmEmailCtrl/confirmEmailCtrl.js"></script>-->
-    <!-- Homes Controller (Homes Geospatial Search View) -->
-    <script src="js/app/homesCtrl/homesCtrl.js"></script>
-    <script src="js/app/homesCtrl/filter/dollars.js"></script>
-    <script src="js/app/homesCtrl/controllers/homeDetail.js"></script>
-    <script src="js/app/homesCtrl/controllers/homeFacets.js"></script>
-    <script src="js/app/homesCtrl/controllers/homeRepeater.js"></script>
-    <script src="js/app/homesCtrl/controllers/homeSearchForm.js"></script>
-    <script src="js/app/homesCtrl/controllers/homesMap.js"></script>
-    <script src="js/app/homesCtrl/controllers/homeSort.js"></script>
-    <script src="js/app/homesCtrl/controllers/homesRoute.js"></script>
-    <script src="js/app/homesCtrl/directives/homesDirective.js"></script>
-
-    <!-- Trails Controller (Trails Geospatial Search View) -->
-    <!--<script src="js/app/trailsCtrl/trailsCtrl.js"></script>-->
-    <!--<script src="js/app/trailsCtrl/controllers/trailDetail.js"></script>
-    <script src="js/app/trailsCtrl/controllers/trailFacets.js"></script>
-    <script src="js/app/trailsCtrl/controllers/trailRepeater.js"></script>
-    <script src="js/app/trailsCtrl/controllers/trailSearchForm.js"></script>
-    <script src="js/app/trailsCtrl/controllers/trailsMap.js"></script>
-    <script src="js/app/trailsCtrl/controllers/trailSort.js"></script>
-    <script src="js/app/trailsCtrl/controllers/trailsRoute.js"></script>-->
+    <script src="ext-modules/userInput/userInput.js"></script>
+    <!--<script src="ext-modules/userInput/factories/cancelInput.js"></script>-->
 
 </body>
 </html>

@@ -4,7 +4,14 @@
     angular.module('app').config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         var routes = [
             {
-                url: '/welcome',
+                url: '/',
+                config: {
+                    template: '<d-index></d-index>',
+                    reloadOnSearch: false
+                }
+            },
+            {
+                url: '/index',
                 config: {
                     template: '<d-index></d-index>',
                     reloadOnSearch: false
@@ -18,12 +25,19 @@
                 }
             },
             {
-                url: '/homes',
+                url: '/search',
                 config: {
-                    template: '<d-homes></d-homes>',
+                    template: '<d-search></d-search>',
                     reloadOnSearch: false
                 }
             },
+            //{
+            //    url: '/homes',
+            //    config: {
+            //        template: '<d-homes></d-homes>',
+            //        reloadOnSearch: false
+            //    }
+            //},
             //{
             //    url: '/trails',
             //    config: {
@@ -122,7 +136,7 @@
             $routeProvider.when(route.url, route.config);
         });
 
-        $routeProvider.otherwise({ redirectTo: '/welcome' });
+        $routeProvider.otherwise({ redirectTo: '/' });
 
         // use the HTML5 History API
         //$locationProvider.html5Mode({

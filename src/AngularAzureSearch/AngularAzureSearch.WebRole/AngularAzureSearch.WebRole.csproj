@@ -85,6 +85,7 @@
     <Content Include="app\directives\dIndexDirective.js" />
     <Content Include="app\directives\dLoginFormDirective.js" />
     <Content Include="app\directives\dPriceTablesDirective.js" />
+    <Content Include="app\directives\dSearchDirective.js" />
     <Content Include="app\directives\dSignUpFormDirective.js" />
     <Content Include="app\directives\dTrailsDirective.js" />
     <Content Include="app\directives\dTypographyDirective.js" />
@@ -92,6 +93,7 @@
     <Content Include="app\services\recursionHelper.js" />
     <Content Include="app\services\searchService.js" />
     <Content Include="app\services\templateService.js" />
+    <Content Include="app\services\tokensManagerService.js" />
     <Content Include="app\services\trailService.js" />
     <Content Include="app\templates\dBasicTablesTemplate.html" />
     <Content Include="app\templates\dErrorServerTemplate.html" />
@@ -104,6 +106,7 @@
     <Content Include="app\templates\dIndexTemplate.html" />
     <Content Include="app\templates\dLoginFormTemplate.html" />
     <Content Include="app\templates\dPriceTablesTemplate.html" />
+    <Content Include="app\templates\dSearchTemplate.html" />
     <Content Include="app\templates\dSignUpFormTemplate.html" />
     <Content Include="app\templates\dTrailsTemplate.html" />
     <Content Include="app\templates\dTypographyTemplate.html" />
@@ -166,6 +169,10 @@
     <Content Include="ext-modules\dlPanel\dlPanelDirective.js" />
     <Content Include="ext-modules\dlPanel\dlPanelModule.js" />
     <Content Include="ext-modules\dlPanel\dlPanelTemplate.html" />
+    <Content Include="ext-modules\dlParallax\dlParallax.css" />
+    <Content Include="ext-modules\dlParallax\dlParallaxBackgroundDirective.js" />
+    <Content Include="ext-modules\dlParallax\dlParallaxDirective.js" />
+    <Content Include="ext-modules\dlParallax\dlParallaxModule.js" />
     <Content Include="ext-modules\dlPriceTable\dlPriceItemDirective.js" />
     <Content Include="ext-modules\dlPriceTable\dlPriceItemTemplate.html" />
     <Content Include="ext-modules\dlPriceTable\dlPriceTable.css" />
@@ -173,6 +180,20 @@
     <Content Include="ext-modules\dlPriceTable\dlPriceTableDirective.js" />
     <Content Include="ext-modules\dlPriceTable\dlPriceTableModule.js" />
     <Content Include="ext-modules\dlPriceTable\dlPriceTableTemplate.html" />
+    <Content Include="ext-modules\dlSearch\dlSearch.css" />
+    <Content Include="ext-modules\dlSearch\dlSearch.html" />
+    <Content Include="ext-modules\dlSearch\dlSearchController.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchDetailController.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchDirective.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchFacetsController.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchFilters.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchFormController.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchMapController.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchModule.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchRepeaterController.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchRouteController.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchSortController.js" />
+    <Content Include="ext-modules\dlSearch\dlSearchTemplate.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\cloudproviders.png" />

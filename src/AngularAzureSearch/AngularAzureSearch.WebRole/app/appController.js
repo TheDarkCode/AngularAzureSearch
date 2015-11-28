@@ -2,8 +2,8 @@
     "use strict";
 
     angular.module('app').controller('appController',
-        ['$scope', '$rootScope', '$location', 'authService', 'tokensManagerService',
-            function ($scope, $rootScope, $location, authService, tokensManagerService) {
+        ['$scope', '$rootScope', '$location', 'authService',
+            function ($scope, $rootScope, $location, authService) {
                 //$scope.state = 'unauthorized';
                 //$scope.signIn = function () {
                 //    $scope.state = 'authorized';
@@ -88,37 +88,37 @@
                     broadcastUserState();
                 };
 
-                tokensManagerService.getRefreshTokens().then(function (results) {
+                //tokensManagerService.getRefreshTokens().then(function (results) {
 
-                    $scope.refreshTokens = $rootScope.refreshTokens = results.data;
+                //    $scope.refreshTokens = $rootScope.refreshTokens = results.data;
 
-                }, function (error) {
-                    alert(error.data.message);
-                });
+                //}, function (error) {
+                //    alert(error.data.message);
+                //});
 
-                $scope.deleteRefreshTokens = $rootScope.deleteRefreshTokens = function (index, tokenid) {
+                //$scope.deleteRefreshTokens = $rootScope.deleteRefreshTokens = function (index, tokenid) {
 
-                    tokenid = window.encodeURIComponent(tokenid);
+                //    tokenid = window.encodeURIComponent(tokenid);
 
-                    tokensManagerService.deleteRefreshTokens(tokenid).then(function (results) {
+                //    tokensManagerService.deleteRefreshTokens(tokenid).then(function (results) {
 
-                        $scope.refreshTokens.splice(index, 1);
+                //        $scope.refreshTokens.splice(index, 1);
 
-                    }, function (error) {
-                        alert(error.data.message);
-                    });
-                };
+                //    }, function (error) {
+                //        alert(error.data.message);
+                //    });
+                //};
 
-                $scope.refreshToken = $rootScope.refreshToken = function () {
+                //$scope.refreshToken = $rootScope.refreshToken = function () {
 
-                    authService.refreshToken().then(function (response) {
-                        $scope.tokenRefreshed = true;
-                        $scope.tokenResponse = response;
-                    },
-                     function (err) {
-                         $location.path('/');
-                     });
-                };
+                //    authService.refreshToken().then(function (response) {
+                //        $scope.tokenRefreshed = true;
+                //        $scope.tokenResponse = response;
+                //    },
+                //     function (err) {
+                //         $location.path('/');
+                //     });
+                //};
 
                 var broadcastUserState = function () {
                     $rootScope.$broadcast('user-state-updated',

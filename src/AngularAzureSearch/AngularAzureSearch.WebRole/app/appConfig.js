@@ -17,7 +17,7 @@
     //})
 
     .run(['authService', function (authService) {
-        authService.fillAuthData();
+        authService.fillAuthData;
     }]);
 
 })();
