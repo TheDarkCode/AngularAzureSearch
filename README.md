@@ -43,7 +43,6 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
   - Url still contains filters and orderby parameters after leaving Homes page.
   - Confirm Email not tested. Manage user account view will be resolved in next update.
   - Existing template for geosearches are not configured for mobile.
-  - Gulp file to be added in next update.
   - Handling long usernames is partially fixed. Improvements will be made.
   - External login providers (Facebook / Twitter / Google / Microsoft) are not implemented yet. Will be added in the coming updates.
   - Limitation for Cors is that it must have the correct URI syntax. Do not add "www." if it is not necessary. Future updates will address this.
