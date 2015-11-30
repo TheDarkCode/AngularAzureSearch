@@ -82,5 +82,15 @@ namespace AngularAzureSearch.WebAPI.Helpers
         /// Twilio From Phone (the phone number to send text messages).
         /// </summary>
         public static string TwilioFromPhone { get { return ConfigurationManager.AppSettings["twilioFromPhone"]; } }
+
+        /// <summary>
+        /// Blob Storage Connection String
+        /// </summary>
+        public static string BlobStorageConnectionString { get { return ConfigurationManager.AppSettings["blobStorageConnectionString"]; } }
+        
+        /// <summary>
+        /// Blob Storage Container Name
+        /// </summary>
+        public static string BlobStorageContainerName { get { return ConfigurationManager.AppSettings["blobStorageContainerName"]; } }
     }
 }

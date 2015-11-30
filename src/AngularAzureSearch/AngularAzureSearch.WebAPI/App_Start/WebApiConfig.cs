@@ -6,6 +6,7 @@ using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 using AngularAzureSearch.WebAPI.Cors;
+using System.Web.Routing;
 
 namespace AngularAzureSearch.WebAPI
 {
@@ -30,6 +31,20 @@ namespace AngularAzureSearch.WebAPI
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
+            );
+
+           config.Routes.MapHttpRoute(
+                "PostBlobUpload",
+                "blobs/upload",
+                new { controller = "Blobs", action = "PostBlobUpload" },
+                new { httpMethod = new HttpMethodConstraint("POST") }
+            );
+            
+            config.Routes.MapHttpRoute(
+                "GetBlobDownload",
+                "blobs/{blobId}/download",
+                new { controller = "Blobs", action = "GetBlobDownload" },
+                new { httpMethod = new HttpMethodConstraint("GET") }
             );
         }
     }
