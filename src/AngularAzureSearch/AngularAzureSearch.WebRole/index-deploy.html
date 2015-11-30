@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<!--
+    ANGULAR AZURE SEARCH
+    https://github.com/TheDarkCode/AngularAzureSearch
+-->
+
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Angular Azure Search</title>
+
+    <meta name="description" content="Angular Azure Search - Build 16 - 11/27/2015">
+    <meta name="author" content="Mark Hamilton | Liam Cavanagh - GitHub.com/TheDarkCode/AngularAzureSearch">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+    <link href="Content/angular-gridster.min.css" rel="stylesheet" />
+    <link href="Content/loading-bar.min.css" rel="stylesheet" />
+    <link href="Content/angular-bootstrap-lightbox.min.css" rel="stylesheet" />
+    <link href="Content/xeditable.css" rel="stylesheet" />
+
+    <link href="Content/site.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
+
+    <link href="dist/dlFramework.css.min" rel="stylesheet" />
+
+    <link href="Content/spacedout-css.css" rel="stylesheet" />
+    <script src="Scripts/spacedout-js.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    <!-- Modernizr -->
+    <script src="Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body class="container-fluid" ng-controller="appController" style="padding-left: 0px; padding-right: 0px;">
+
+    <div class="so-page-wrapper">
+        <aside class="so-page-menu">
+            <div class="so-menu-content" style="min-width: 300px; color: white;">
+            </div>
+        </aside>
+        <div class="so-content-overlay">
+        </div>
+        <div class="so-content">
+            <div ng-switch="isAuthenticated">
+                <div ng-switch-default class="sign-in-form">
+                    <style scoped>
+                        body {
+                            height: 100%;
+                            width: 100%;
+                            background: #32383f;
+                            color: white;
+                            text-shadow: 1px 1px rgba(0,0,0,0.6);
+                        }
+                    </style>
+                    <div style="display: table; height: 100%; width: 100%;">
+                        <div style="display: table-cell; text-align: center; vertical-align: middle; width: 100%; height: 100%;">
+                            <div class="col-xs-col-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4" style="padding-top: 20px; border: 2px solid rgba(255,255,255,0.2);">
+                                <div class="col-xs-12 col-sm-12 col-md-12 sign-in-form-image-wrapper">
+                                    <div class="sign-in-image-shadow">
+                                        <img class="img-responsive sign-in-form-image" src="apple-icon-152x152.png" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 sign-in-form-entry-wrapper">
+                                    <h2 style="font-weight: 900; font-variant: small-caps;">
+                                        Angular Azure Search
+                                    </h2>
+                                    <hr />
+                                    <div>
+                                        <div ng-show="newUser" ng-cloak>
+                                            <d-sign-up-form></d-sign-up-form>
+                                        </div>
+                                        <div ng-show="!newUser" ng-cloak>
+                                            <d-login-form></d-login-form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div ng-switch-when="true">
+                    <dl-framework title="AngularAzureSearch"
+                                  subtitle="Application Framework - Build 16"
+                                  icon-file="apple-icon-152x152.png">
+                        <!-- If strict HTML, use attr forms, if not use dl-menu element form -->
+                        <div data-dl-menu>
+                            <dl-menu-item label="Welcome" icon="fa-home" route="index"></dl-menu-item>
+                            <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
+                            <dl-menu-item label="Search" icon="fa-search" route="search"></dl-menu-item>
+                            <dl-menu-item label="Login" icon="fa-user" route="login"></dl-menu-item>
+                            <dl-menu-group label="Tables" icon="fa-table">
+                                <dl-menu-item label="Basic Tables" icon="hidden" route="basic-tables"></dl-menu-item>
+                                <dl-menu-item label="Price Tables" icon="hidden" route="price-tables"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-item label="Typography" icon="fa-font" route="typography"></dl-menu-item>
+                            <dl-menu-group label="Icons" icon="fa-paperclip">
+                                <dl-menu-item label="Font Awesome" icon="fa-pencil" route="font-awesome"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-item label="Gallery" icon="fa-picture-o" route="gallery"></dl-menu-item>
+                            <dl-menu-item label="UI Kit" icon="fa-briefcase" route="ui-kit"></dl-menu-item>
+                            <dl-menu-group label="Components" icon="fa-magic">
+                                <dl-menu-item label="Form Elements" icon="hidden" route="form-elements"></dl-menu-item>
+                                <dl-menu-item label="Grids" icon="hidden" route="grids"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-group label="Extras" icon="fa-cubes">
+                                <dl-menu-item label="404 Error" icon="fa-question-circle" route="error"></dl-menu-item>
+                                <dl-menu-item label="500 Error" icon="fa-exclamation-circle" route="error-server"></dl-menu-item>
+                            </dl-menu-group>
+                        </div>
+                    </dl-framework>
+                    <dl-footer copyright="Mark Hamilton"
+                               protected-years="2015"
+                               socialname="Mark"
+                               twitter="MarksMars"
+                               linkedin="in/driverlesscars"
+                               angellist="driverlessinnovation"></dl-footer>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        SpacedOutMenu.install();
+    </script>
+
+
+    <script src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=en-us&s=1"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-local-storage.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+
+    <script src="Scripts/loading-bar.min.js"></script>
+    <script src="Scripts/angular-touch.min.js"></script>
+    <script src="Scripts/angular-gridster.min.js"></script>
+
+
+    <script src="Scripts/lodash.js"></script>
+
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="Scripts/ngStorage.min.js"></script>
+    <script src="Scripts/angular-bootstrap-lightbox.min.js"></script>
+    <script src="Scripts/xeditable.min.js"></script>
+    <script src="Scripts/angular-fullscreen.min.js"></script>
+
+    <script src="dist/dlFramework.min.js"></script>
+
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+    <script src="app/appController.js"></script>
+    <script src="app/services/recursionHelper.js"></script>
+    <script src="app/services/searchService.js"></script>
+
+    <script src="app/services/authInterceptorService.js"></script>
+    <script src="app/services/authService.js"></script>
+    <script src="app/directives/dIndexDirective.js"></script>
+    <script src="app/directives/dDashboardDirective.js"></script>
+    <script src="app/directives/dBasicTablesDirective.js"></script>
+    <script src="app/directives/dErrorDirective.js"></script>
+    <script src="app/directives/dErrorServerDirective.js"></script>
+    <script src="app/directives/dFontAwesomeDirective.js"></script>
+    <script src="app/directives/dGridsDirective.js"></script>
+    <script src="app/directives/dFormElementsDirective.js"></script>
+    <script src="app/directives/dPriceTablesDirective.js"></script>
+    <script src="app/directives/dUiKitDirective.js"></script>
+    <script src="app/directives/dTypographyDirective.js"></script>
+    <script src="app/directives/dGalleryDirective.js"></script>
+    <script src="app/directives/dLoginFormDirective.js"></script>
+    <script src="app/directives/dSignUpFormDirective.js"></script>
+    <script src="app/directives/dSearchDirective.js"></script>
+    <script src="app/dialogs/dSelectSearchController.js"></script>
+
+    <script src="ext-modules/azureSearch/azureSearch.js"></script>
+    <script src="ext-modules/mapping/mapping.js"></script>
+    <script src="ext-modules/html/html.js"></script>
+    <script src="ext-modules/userInput/userInput.js"></script>
+
+</body>
+</html>
