@@ -3,6 +3,8 @@
 
     angular.module('dlSearch').controller('dlSearchRoute', ['$scope', '$location', '$sce', 'currentLocation', 'search', 'bestView', 'groupFilters', function ($scope, $location, $sce, currentLocation, search, bestView, groupFilters) {
 
+        $scope.searchResultMode = "fullMaps";
+
         // return cleansed HTML
         $scope.html = function (text) {
             return $sce.trustAsHtml(text);

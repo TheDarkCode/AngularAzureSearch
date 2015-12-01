@@ -16,7 +16,7 @@
                 bodyclasses: '@'
             },
             transclude: true,
-            templateUrl: 'ext-modules/dlSearch/dlSearchTemplate.html',
+            templateUrl: 'ext-modules/dlSearch/dlSearchFullMapTemplate.html',
             controller: 'dlSearchRoute',
             reloadOnSearch: false,
             link: function (scope, el, attr) {

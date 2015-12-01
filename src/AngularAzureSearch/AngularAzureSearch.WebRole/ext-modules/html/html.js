@@ -2,7 +2,7 @@
           .directive('anchorBottom', function () {
               return {
                   // Restrict A causes display issue. However, without it divs are not automatically scaled properly.
-                  restrict: 'E',
+                  restrict: 'AE',
                   priority: 999,
                   scope: {},
                   link: function (scope, element, attr) {
