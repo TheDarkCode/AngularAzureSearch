@@ -37,13 +37,9 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
        10. Re-adding file merging / compilation (ie: generating a new site.js with full comments). (Will be added by Build 20)
 
 ######Known Issues/Warnings:
-  - WebRole css issues with Firefox only impact Homes page currently.
-  - Search page scrolls down slightly on load, but subsequent loads when scroll position is unaltered are not affected.
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
   - Url still contains filters and orderby parameters after leaving Homes page.
   - Confirm Email not tested. Manage user account view will be resolved in next update.
-  - Existing template for geosearches are not configured for mobile.
-  - Handling long usernames is partially fixed. Improvements will be made.
   - External login providers (Facebook / Twitter / Google / Microsoft) are not implemented yet. Will be added in the coming updates.
   - Limitation for Cors is that it must have the correct URI syntax. Do not add "www." if it is not necessary. Future updates will address this.
 
