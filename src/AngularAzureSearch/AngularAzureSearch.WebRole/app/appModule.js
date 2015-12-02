@@ -7,6 +7,6 @@
     // GitHub Demo API Endpoint: https://githubapi.azurewebsites.net/
     .constant('apiSettings', {
         apiUriBase: 'https://githubapi.azurewebsites.net/',
-    });
+    })
 
 })();

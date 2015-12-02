@@ -22,11 +22,17 @@
                 $scope.isAuthenticated = $rootScope.isAuthenticated = authService.authentication.isAuth;
                 $scope.userName = $rootScope.userName = authService.authentication.userName;
 
-                $scope.newUser = $rootScope.newUser = true;
+                if ($scope.isAuthenticated == false)
+                {
+                    $scope.newUser = $rootScope.newUser = true;
+                }
+                else {
+                    $scope.newUser = false;
+                }
 
-                $scope.refreshTokens = $rootScope.refreshTokens = [];
-                $scope.tokenRefreshed = $rootScope.tokenRefreshed = false;
-                $scope.tokenResponse = $rootScope.tokenResponse = null;
+                //$scope.refreshTokens = $rootScope.refreshTokens = [];
+                //$scope.tokenRefreshed = $rootScope.tokenRefreshed = false;
+                //$scope.tokenResponse = $rootScope.tokenResponse = null;
 
                 $scope.submitLoginForm = $rootScope.submitLoginForm = function (isValid) {
                     authService.login($scope.login).then(function (response) {

@@ -46,7 +46,12 @@
     </div>
 </div>
 
-<div style="top: 68px; max-height: calc(100% - 68px); width: 100%; position: relative;">
+<div style="width: 100%; position: relative;">
+    <style scoped>
+        .btn {
+            padding: 3px 12px; !important;
+        }
+    </style>
     <div class="dl-menu-area class animated fadeInLeft"
          ng-show="isMenuVisible"
          ng-class="{'dl-menu-area-vertical': isMenuVertical, 'dl-menu-area-horizontal': !isMenuVertical, 'dl-mobile-menu': isMenuButtonVisible, 'dl-menu-fade': !isMenuVisible}">

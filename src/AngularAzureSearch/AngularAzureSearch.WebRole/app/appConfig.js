@@ -10,14 +10,10 @@
         }]);
 
         $httpProvider.interceptors.push('authInterceptorService');
-    })
+    });
 
     //.config(function ($httpProvider) {
     //    $httpProvider.interceptors.push('authInterceptorService');
     //})
-
-    .run(['authService', function (authService) {
-        authService.fillAuthData;
-    }]);
 
 })();

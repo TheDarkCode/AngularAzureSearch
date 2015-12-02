@@ -13,8 +13,7 @@
             {
                 url: '/index',
                 config: {
-                    template: '<d-index></d-index>',
-                    reloadOnSearch: false
+                    redirectTo: '/'
                 }
             },
             {

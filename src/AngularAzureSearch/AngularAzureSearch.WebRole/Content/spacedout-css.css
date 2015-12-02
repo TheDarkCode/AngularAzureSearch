@@ -1,7 +1,7 @@
 ﻿/* line 1, /Users/ace/Projects/spaced-out/source/stylesheets/components/_spaced_out_menu.sass */
 .so-page-wrapper {
   position: absolute;
-  top: 0;
+  top: 68px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -20,7 +20,7 @@
     bottom: 0;
     width: auto;
     height: auto;
-    overflow-y: auto; }
+    overflow-y: hidden; }
   /* line 24, /Users/ace/Projects/spaced-out/source/stylesheets/components/_spaced_out_menu.sass */
   .so-page-wrapper .so-content,
   .so-page-wrapper .so-content-overlay {

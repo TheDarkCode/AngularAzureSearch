@@ -1,4 +1,9 @@
-﻿html {
+﻿/* SpacedOut Fix for Scroll Issues */
+.so-page-wrapper > .so-content-overlay, .so-page-wrapper > .so-content, .so-page-wrapper > .so-page-menu {
+    overflow-y: visible; !important
+}
+
+html {
     height: 100%;
 }
 

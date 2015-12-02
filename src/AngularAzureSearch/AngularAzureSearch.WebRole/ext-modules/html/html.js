@@ -19,7 +19,7 @@
                       });
 
                       $(window).on('resize', resize);
-                      setTimeout(resize, 200);
+                      setTimeout(resize, 1000);
                   }
               };
           });
