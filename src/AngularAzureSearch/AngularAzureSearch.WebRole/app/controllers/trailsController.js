@@ -48,9 +48,9 @@
                 };
 
                 $scope.cancelTrailForm = function () {
-                    $("#trailform input").removeAttr("required");
-
+                    //$("#trailform input").removeAttr("required");
                     $scope.trailFormIsVisible = false;
+                    $scope.trail = {};
                 };
 
                 $scope.update = function (idx) {
