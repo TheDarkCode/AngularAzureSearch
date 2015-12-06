@@ -13,7 +13,7 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
-####Current Version: Build 16, 11/27/2015
+####Current Version: Build 17, 12/06/2015
 #####Status: 
   - WebRole works for User login/signup. Confirm Email not tested. dlFramework still in development.
   - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100% with dynamic CORS.
@@ -21,20 +21,19 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ######Current To Do List:
         Mapping Module Additions ::
-        1. Fixing touch events and layout for mobile users (ie: drawPolygon). (Touch events will be resolved in next update)
-        2. Adding info boxes, mapType toggle, save (grab existing url, save to scope, export to User factory) / share search function (grab existing url, save to scope, display textbox with value, and select social button with baseUrl - Twitter, FB, Whatsapp, Email, etc), and add (toggleable) custom zoom controls. Also show # of pins if they are stacked close together when zoomed out (port PinClusterer - http://rtsinani.github.io/PinClusterer/).
-        3. Adding other standard shapes for searching by polygon (ie: square, circle).
-        4. Modifying CSS to create alternative theme(s). (Some prep work done in dlFramework)
+        1. Adding info boxes, mapType toggle, save (grab existing url, save to scope, export to User factory) / share search function (grab existing url, save to scope, display textbox with value, and select social button with baseUrl - Twitter, FB, Whatsapp, Email, etc), and add (toggleable) custom zoom controls. Also show # of pins if they are stacked close together when zoomed out (port PinClusterer - http://rtsinani.github.io/PinClusterer/).
+        2. Adding other standard shapes for searching by polygon (ie: square, circle).
+        3. Modifying CSS to create alternative theme(s). (Some prep work done in dlFramework)
 
         View Modifications ::
-        5. Creating a UI similar to Apartments.com with additional sample for all types of locations (not just homes). Example being to make an alternative that used people or businesses and their phone / address instead of homes.
-        6. Integrating it with a sample DocumentDB/Web API project for management of a DocumentDB "Locations" collection that is indexed by the search service.
+        4. Creating a UI similar to Apartments.com with additional sample for all types of locations (not just homes). Example being to make an alternative that used people or businesses and their phone / address instead of homes.
+        5. Integrating it with a sample DocumentDB/Web API project for management of a DocumentDB "Locations" collection that is indexed by the search service.
 
         Boilerplate ::
-        7. Updating to latest versions of angularjs, bootstrap, etc. (Angular 2? Bootstrap 4? Fonts and Icons to be continuously updated in future commits.)
-        8. Creating sample with AngularUI Router (ui-router) in place of ngRoute. (Low Priority)
-        9. Adding additional commenting. (Continuous)
-       10. Re-adding file merging / compilation (ie: generating a new site.js with full comments). (Will be added by Build 20)
+        6. Updating to latest versions of angularjs, bootstrap, etc. (Angular 2? Bootstrap 4? Fonts and Icons to be continuously updated in future commits.)
+        7. Creating sample with AngularUI Router (ui-router) in place of ngRoute. (Low Priority)
+        8. Adding additional commenting. (Continuous)
+        9. Re-adding file merging / compilation (ie: generating a new site.js with full comments). (Will be added by Build 20)
 
 ######Known Issues/Warnings:
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
