@@ -5,7 +5,7 @@
 </p>
 
 <div class="row" ng-controller="trailsController">
-    <div class="col-md-8">
+    <div  ng-class="{'col-md-8': trailFormIsVisible, 'col-md-12': !trailFormIsVisible}">
         <button class="btn btn-success" type="button" ng-click="showAddTrailForm()">
             <span class="glyphicon glyphicon-plus"></span> Add Trail
         </button>
@@ -34,9 +34,9 @@
             </tbody>
         </table>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" ng-show="trailFormIsVisible">
         <!-- Show the form to add a new trail. -->
-        <div class="panel panel-primary" ng-show="trailFormIsVisible">
+        <div class="panel panel-primary">
             <div class="panel-heading">
                 {{ dialogTitle }} Trail
             </div>
