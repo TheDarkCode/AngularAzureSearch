@@ -15,14 +15,16 @@ namespace AngularAzureSearch.WebAPI.Entities
     public class EntityBase
     {
         private readonly string _docType;
+        private readonly string _type;
 
         /// <summary>
         /// All root entities inherit this base class.
         /// </summary>
         /// <param name="docType">The name of the type of entity (lowercase).</param>
-        public EntityBase(string docType)
+        public EntityBase(string docType, string Type)
         {
             this._docType = docType;
+            this._type = Type;
         }
 
         /// <summary>
@@ -38,5 +40,12 @@ namespace AngularAzureSearch.WebAPI.Entities
         /// </summary>
         [JsonProperty(PropertyName = "docType")]
         public string docType { get { return _docType; } }
+
+        /// <summary>
+        /// This type field will be used to organize the documents by "type" in 
+        /// DocumentDB in a single-collection scenario. 
+        /// </summary>
+        [JsonProperty(PropertyName = "type")]
+        public string Type { get { return _type; } }
     }
 }

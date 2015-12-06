@@ -71,6 +71,8 @@
     <Content Include="app\appController.js" />
     <Content Include="app\appModule.js" />
     <Content Include="app\appRouteConfig.js" />
+    <Content Include="app\appRun.js" />
+    <Content Include="app\controllers\trailsController.js" />
     <Content Include="app\dialogs\dSelectSearchController.js" />
     <Content Include="app\dialogs\dSelectSearchTemplate.html" />
     <Content Include="app\directives\dBasicTablesDirective.js" />
@@ -84,10 +86,12 @@
     <Content Include="app\directives\dHomesDirective.js" />
     <Content Include="app\directives\dIndexDirective.js" />
     <Content Include="app\directives\dLoginFormDirective.js" />
+    <Content Include="app\directives\dManageTrailsDirective.js" />
     <Content Include="app\directives\dPriceTablesDirective.js" />
     <Content Include="app\directives\dSearchDirective.js" />
     <Content Include="app\directives\dSignUpFormDirective.js" />
     <Content Include="app\directives\dTrailsDirective.js" />
+    <Content Include="app\directives\dTrailsIndexDirective.js" />
     <Content Include="app\directives\dTypographyDirective.js" />
     <Content Include="app\directives\dUiKitDirective.js" />
     <Content Include="app\services\recursionHelper.js" />
@@ -105,9 +109,11 @@
     <Content Include="app\templates\dHomesTemplate.html" />
     <Content Include="app\templates\dIndexTemplate.html" />
     <Content Include="app\templates\dLoginFormTemplate.html" />
+    <Content Include="app\templates\dManageTrailsTemplate.html" />
     <Content Include="app\templates\dPriceTablesTemplate.html" />
     <Content Include="app\templates\dSearchTemplate.html" />
     <Content Include="app\templates\dSignUpFormTemplate.html" />
+    <Content Include="app\templates\dTrailsIndexTemplate.html" />
     <Content Include="app\templates\dTrailsTemplate.html" />
     <Content Include="app\templates\dTypographyTemplate.html" />
     <Content Include="app\templates\dUiKitTemplate.html" />
@@ -155,6 +161,10 @@
     <Content Include="ext-modules\dlFramework\dlUserProfile\dlUserProfileSmallTemplate.html" />
     <Content Include="ext-modules\dlFramework\dlUserProfile\dlUserProfileTemplate.html" />
     <Content Include="ext-modules\dlFramework\templates.js" />
+    <Content Include="ext-modules\dlFullscreen\dlFullscreen.css" />
+    <Content Include="ext-modules\dlFullscreen\dlFullscreenDirective.js" />
+    <Content Include="ext-modules\dlFullscreen\dlFullscreenFactory.js" />
+    <Content Include="ext-modules\dlFullscreen\dlFullscreenModule.js" />
     <Content Include="ext-modules\dlGallery\dlGallery.css" />
     <Content Include="ext-modules\dlGallery\dlGalleryController.js" />
     <Content Include="ext-modules\dlGallery\dlGalleryDirective.js" />
@@ -350,7 +360,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".node_modules_global\etc\" />
-    <Folder Include="app\controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -26,9 +26,9 @@ namespace AngularAzureSearch.WebAPI.Controllers.api
         #region Standard CRUD
 
         [AllowAnonymous]
-        public IEnumerable<Trail> Get()
+        public IEnumerable<Trail> GetAllInCollection()
         {
-            var result = _repo.Get();
+            var result = _repo.GetAllInCollection();
 
             return result;
         }

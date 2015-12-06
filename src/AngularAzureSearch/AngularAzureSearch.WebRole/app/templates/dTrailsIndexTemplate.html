@@ -1,0 +1,30 @@
+﻿<h1>Trails</h1>
+<p>
+    This is a list of trails.  <a href="#/managetrails" ng-if="isAuthenticated">Manage Trails</a>
+</p>
+
+<div class="row" ng-controller="trailsController">
+    <div class="col-md-12">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>County</th>
+                    <th>Elevation</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="t in trails">
+                    <th scope="row">{{ t.id }}</th>
+                    <td>{{ t.name }}</td>
+                    <td>{{ t.county }}</td>
+                    <td>{{ t.elevation }}</td>
+                    <td>{{ t.location }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

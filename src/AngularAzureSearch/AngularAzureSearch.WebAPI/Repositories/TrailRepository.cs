@@ -10,7 +10,7 @@ namespace AngularAzureSearch.WebAPI.Repositories
 {
     public class TrailRepository : RepositoryBase<Trail>, ITrailRepository
     {
-        public TrailRepository():base("trail", AppSettingsConfig.Db, AppSettingsConfig.MainCollection)
+        public TrailRepository():base("trail", "trail", AppSettingsConfig.Db, AppSettingsConfig.MainCollection)
         {
 
         }

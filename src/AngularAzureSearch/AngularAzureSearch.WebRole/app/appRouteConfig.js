@@ -45,6 +45,20 @@
             //    }
             //}
             {
+                url: '/trails-index',
+                config: {
+                    template: '<d-trails-index></d-trails-index>',
+                    controller: "trailsController"
+                }
+            },
+            {
+                url: '/managetrails',
+                config: {
+                    template: '<d-manage-trails></d-manage-trails>',
+                    controller: "trailsController"
+                }
+            },
+            {
                 url: '/login',
                 config: {
                     templateUrl: "/app/loginCtrl/login.html"

@@ -14,8 +14,10 @@ namespace AngularAzureSearch.WebAPI.Entities.Trails
         /// Pass the lowercase string name of the class to the base class.
         /// This is used in the repository for storage and querying,
         /// to organize documents by this type name.
+        /// 
+        /// Temporary fix for trails data added.
         /// </summary>
-        public Trail() : base("trail")
+        public Trail() : base("trail", "trail")
         {
 
         }
@@ -29,7 +31,5 @@ namespace AngularAzureSearch.WebAPI.Entities.Trails
         public Int64 Elevation { get; set; }
         [JsonProperty("location")]
         public Point Location { get; set; }
-        [JsonProperty("type")]
-        public string Type { get; set; }
     }
 }

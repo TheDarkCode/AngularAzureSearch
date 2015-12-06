@@ -21,6 +21,7 @@ namespace AngularAzureSearch.WebAPI.Repositories
         #region ctors
 
         private Expression<Func<T, bool>> _docTypePredicate = null;
+        private Expression<Func<T, bool>> _typePredicate = null;
 
         /// <summary>
         /// All Repository classes must inherit this base class.
@@ -28,10 +29,13 @@ namespace AngularAzureSearch.WebAPI.Repositories
         /// <param name="docType">The name of the entity (T), which is the same as the name passed into the model (lowercase).</param>
         /// <param name="dbName">The name of the database.</param>
         /// <param name="collectionName">The name of the collection.</param>
-        public RepositoryBase(string docType, string dbName, string collectionName)
+        public RepositoryBase(string docType, string Type, string dbName, string collectionName)
             : base(dbName, collectionName)
         {
             _docTypePredicate = v => v.docType == docType;
+            // Temporary fix for trails
+            _typePredicate = v => v.Type == Type;
+
         }
 
         #endregion
@@ -47,6 +51,43 @@ namespace AngularAzureSearch.WebAPI.Repositories
         {
             var query = Client.CreateDocumentQuery<T>(Collection.DocumentsLink)
                 .Where(_docTypePredicate)
+                .AsQueryable();
+
+            if (predicate != null)
+            {
+                query = query.Where(predicate);
+            }
+
+            return query;
+        }
+
+        /// <summary>
+        /// Get a list of T, with an optional predicate.
+        /// </summary>
+        /// <param name="predicate">The linq expression Where clause.</param>
+        /// <returns>An IEnumerable of T.</returns>
+        public IEnumerable<T> GetAllInCollection(Expression<Func<T, bool>> predicate = null)
+        {
+            var query = Client.CreateDocumentQuery<T>(Collection.DocumentsLink)
+                .AsQueryable();
+
+            if (predicate != null)
+            {
+                query = query.Where(predicate);
+            }
+
+            return query;
+        }
+
+        /// <summary>
+        /// Get a list of T, with an optional predicate.
+        /// </summary>
+        /// <param name="predicate">The linq expression Where clause.</param>
+        /// <returns>An IEnumerable of T.</returns>
+        public IEnumerable<T> GetByType(Expression<Func<T, bool>> predicate = null)
+        {
+            var query = Client.CreateDocumentQuery<T>(Collection.DocumentsLink)
+                .Where(_typePredicate)
                 .AsQueryable();
 
             if (predicate != null)

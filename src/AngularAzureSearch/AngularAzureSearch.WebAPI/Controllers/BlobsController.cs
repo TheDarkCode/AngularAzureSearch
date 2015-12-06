@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AngularAzureSearch.WebAPI.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -52,46 +53,46 @@ namespace AngularAzureSearch.WebAPI.Controllers
         /// </summary>
         /// <param name="blobId">The ID of the blob.</param>
         /// <returns></returns>
-        public async Task<HttpResponseMessage> GetBlobDownload(int blobId)
-        {
-            // IMPORTANT: This must return HttpResponseMessage instead of IHttpActionResult
+        //public async Task<HttpResponseMessage> GetBlobDownload(int blobId)
+        //{
+        //    // IMPORTANT: This must return HttpResponseMessage instead of IHttpActionResult
 
-            try
-            {
-                var result = await _service.DownloadBlob(blobId);
-                if (result == null)
-                {
-                    return new HttpResponseMessage(HttpStatusCode.NotFound);
-                }
+        //    try
+        //    {
+        //        var result = await _service.DownloadBlob(blobId);
+        //        if (result == null)
+        //        {
+        //            return new HttpResponseMessage(HttpStatusCode.NotFound);
+        //        }
 
-                // Reset the stream position; otherwise, download will not work
-                result.BlobStream.Position = 0;
+        //        // Reset the stream position; otherwise, download will not work
+        //        result.BlobStream.Position = 0;
 
-                // Create response message with blob stream as its content
-                var message = new HttpResponseMessage(HttpStatusCode.OK)
-                {
-                    Content = new StreamContent(result.BlobStream)
-                };
+        //        // Create response message with blob stream as its content
+        //        var message = new HttpResponseMessage(HttpStatusCode.OK)
+        //        {
+        //            Content = new StreamContent(result.BlobStream)
+        //        };
 
-                // Set content headers
-                message.Content.Headers.ContentLength = result.BlobLength;
-                message.Content.Headers.ContentType = new MediaTypeHeaderValue(result.BlobContentType);
-                message.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment")
-                {
-                    FileName = HttpUtility.UrlDecode(result.BlobFileName),
-                    Size = result.BlobLength
-                };
+        //        // Set content headers
+        //        message.Content.Headers.ContentLength = result.BlobLength;
+        //        message.Content.Headers.ContentType = new MediaTypeHeaderValue(result.BlobContentType);
+        //        message.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment")
+        //        {
+        //            FileName = HttpUtility.UrlDecode(result.BlobFileName),
+        //            Size = result.BlobLength
+        //        };
 
-                return message;
-            }
-            catch (Exception ex)
-            {
-                return new HttpResponseMessage
-                {
-                    StatusCode = HttpStatusCode.InternalServerError,
-                    Content = new StringContent(ex.Message)
-                };
-            }
-        }
+        //        return message;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return new HttpResponseMessage
+        //        {
+        //            StatusCode = HttpStatusCode.InternalServerError,
+        //            Content = new StringContent(ex.Message)
+        //        };
+        //    }
+        //}
     }
 }

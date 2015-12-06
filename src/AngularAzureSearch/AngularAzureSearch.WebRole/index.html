@@ -230,7 +230,10 @@
                             <dl-menu-item label="Welcome" icon="fa-home" route="index"></dl-menu-item>
                             <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
                             <dl-menu-item label="Search" icon="fa-search" route="search"></dl-menu-item>
-                            <dl-menu-item label="Login" icon="fa-user" route="login"></dl-menu-item>
+                            <dl-menu-group label="Trails" icon="fa-leaf">
+                                <dl-menu-item label="Trails Index" icon="fa-leaf" route="trails-index"></dl-menu-item>
+                                <dl-menu-item label="Manage Trails" icon="fa-wrench" route="managetrails"></dl-menu-item>
+                            </dl-menu-group>
                             <dl-menu-group label="Tables" icon="fa-table">
                                 <dl-menu-item label="Basic Tables" icon="hidden" route="basic-tables"></dl-menu-item>
                                 <dl-menu-item label="Price Tables" icon="hidden" route="price-tables"></dl-menu-item>
@@ -422,12 +425,14 @@
     <script src="app/appConfig.js"></script>
     <script src="app/appRouteConfig.js"></script>
     <script src="app/appController.js"></script>
+    <script src="app/controllers/trailsController.js"></script>
     <script src="app/services/recursionHelper.js"></script>
     <script src="app/services/searchService.js"></script>
     <!-- App Auth Services -->
     <!-- Template:: <script src="app/services/****.js"></script>-->
     <script src="app/services/authInterceptorService.js"></script>
     <script src="app/services/authService.js"></script>
+    <script src="app/services/trailService.js"></script>
     <!--<script src="app/services/tokensManagerService.js"></script>-->
     <script src="app/appRun.js"></script>
 
@@ -450,6 +455,8 @@
     <script src="app/directives/dLoginFormDirective.js"></script>
     <script src="app/directives/dSignUpFormDirective.js"></script>
     <script src="app/directives/dSearchDirective.js"></script>
+    <script src="app/directives/dTrailsIndexDirective.js"></script>
+    <script src="app/directives/dManageTrailsDirective.js"></script>
 
     <!-- Widget Directives -->
     <!--Template:: <script src="app/widgets/d****/d****Directive.js"></script>-->
