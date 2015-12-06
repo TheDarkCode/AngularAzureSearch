@@ -96,8 +96,11 @@
                   map.entities.push(line);
 
                   handlers.push(Maps.Events.addHandler(map, 'mousedown', mapMouseDown));
+                  handlers.push(Maps.Events.addHandler(map, 'touchdown', mapMouseDown));
                   handlers.push(Maps.Events.addHandler(map, 'mousemove', mapMouseMove));
+                  handlers.push(Maps.Events.addHandler(map, 'touchmove', mapMouseMove));
                   handlers.push(Maps.Events.addHandler(map, 'mouseup', mapMouseUp));
+                  handlers.push(Maps.Events.addHandler(map, 'touchup', mapMouseUp));
                   handlers.push(Maps.Events.addHandler(map, 'dblclick', mapDblClick));
                   handlers.push(Maps.Events.addHandler(map, 'keyup', mapKeyUp));
 

@@ -7,6 +7,7 @@
 
                 $scope.isMenuVisible = true;
                 $scope.isMenuButtonVisible = true;
+                $scope.isNavbarMenuButtonVisible = true;
                 $scope.isMenuVertical = true;
                 $scope.isFullScreen = false;
                 $scope.userName = $rootScope.userName;

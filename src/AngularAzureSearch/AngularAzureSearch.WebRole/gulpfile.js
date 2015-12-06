@@ -1,6 +1,4 @@
-﻿
-
-var gulp = require('gulp');
+﻿var gulp = require('gulp');
 var concat = require('gulp-concat');
 var angularFilesort = require('gulp-angular-filesort');
 var strip = require('gulp-strip-comments');
@@ -36,6 +34,22 @@ gulp.task('builddlParallaxTemplateCache', function () {
         .pipe(gulp.dest('./ext-modules/dlParallax/'))
     ;
 });
+
+/* 
+* Currently no templates required for dlFullscreen.
+*/
+//gulp.task('builddlFullscreenTemplateCache', function () {
+//    return gulp
+//        .src([
+//            './ext-modules/dlFullscreen/**/*.html'
+//        ])
+//        .pipe(templateCache({
+//            root: 'ext-modules/dlFullscreen/',
+//            module: 'dlFullscreen'
+//        }))
+//        .pipe(gulp.dest('./ext-modules/dlFullscreen/'))
+//    ;
+//});
 
 gulp.task('builddlPriceTableTemplateCache', function () {
     return gulp

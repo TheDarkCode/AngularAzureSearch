@@ -40,7 +40,7 @@
 
     Comments included for development. Use minified version for production.
 
-    Current version:: Build 16 / 11/27/2015
+    Current version:: Build 17 / 12/06/2015
 
 -->
 
@@ -59,7 +59,7 @@
 
     <title>Angular Azure Search</title>
 
-    <meta name="description" content="Angular Azure Search - Build 16 - 11/27/2015">
+    <meta name="description" content="Angular Azure Search - Build 17 - 12/06/2015">
     <meta name="author" content="Mark Hamilton | Liam Cavanagh - GitHub.com/TheDarkCode/AngularAzureSearch">
     
     <!-- Browser Icons (Create your own at: http://www.favicon-generator.org/ - Save extracted .zip contents to root.) -->
@@ -181,7 +181,7 @@
             </button>-->
             <div ng-switch="isAuthenticated">
                 <div ng-switch-default class="sign-in-form">
-                    <style scoped>
+                    <style>
                         body {
                             height: 100%;
                             width: 100%;
@@ -223,7 +223,7 @@
                 </div>
                 <div ng-switch-when="true">
                     <dl-framework title="AngularAzureSearch"
-                                  subtitle="Application Framework - Build 16"
+                                  subtitle="Application Framework - Build 17"
                                   icon-file="apple-icon-152x152.png">
                         <!-- If strict HTML, use attr forms, if not use dl-menu element form -->
                         <div data-dl-menu>
@@ -361,6 +361,11 @@
     <script src="ext-modules/dlParallax/dlParallaxModule.js"></script>
     <script src="ext-modules/dlParallax/dlParallaxDirective.js"></script>
     <script src="ext-modules/dlParallax/dlParallaxBackgroundDirective.js"></script>
+
+    <!-- Ext Fullscreen Module -->
+    <script src="ext-modules/dlFullscreen/dlFullscreenModule.js"></script>
+    <script src="ext-modules/dlFullscreen/dlFullscreenFactory.js"></script>
+    <script src="ext-modules/dlFullscreen/dlFullscreenDirective.js"></script>
 
     <!-- Ext Price Table Module -->
     <script src="ext-modules/dlPriceTable/dlPriceTableModule.js"></script>
