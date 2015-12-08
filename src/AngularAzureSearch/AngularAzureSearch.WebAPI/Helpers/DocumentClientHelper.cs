@@ -16,6 +16,8 @@ namespace AngularAzureSearch.WebAPI.Helpers
     /// </summary>
     public class DocumentClientHelper
     {
+        public static string defaultOfferType = AppSettingsConfig.DefaultOfferType;
+
         /// <summary>
         /// Get a Database by id, or create a new one if one with the id provided doesn't exist.
         /// </summary>
@@ -136,7 +138,7 @@ namespace AngularAzureSearch.WebAPI.Helpers
 
             if (collection == null)
             {
-                collection = await CreateDocumentCollectionWithRetriesAsync(client, database, new DocumentCollection { Id = collectionId });
+                collection = await CreateDocumentCollectionWithRetriesAsync(client, database, new DocumentCollection { Id = collectionId }, defaultOfferType);
             }
 
             return collection;
@@ -333,7 +335,7 @@ namespace AngularAzureSearch.WebAPI.Helpers
             DocumentClient client,
             Database database,
             DocumentCollection collectionDefinition,
-            string offerType = "S1")
+            string offerType)
         {
             return await ExecuteWithRetries(
                 client,
@@ -454,7 +456,7 @@ namespace AngularAzureSearch.WebAPI.Helpers
         /// <param name="currentIndex">the current number of documents inserted. this marks the starting point for this script</param> 
         /// <param name="maxScriptSize">the maximum number of characters that the script can have</param> 
         /// <returns>Script as a string</returns> 
-        private static string CreateBulkInsertScriptArguments(string[] docFileNames, int currentIndex, int maxCount, int maxScriptSize)
+        public static string CreateBulkInsertScriptArguments(string[] docFileNames, int currentIndex, int maxCount, int maxScriptSize)
         {
             var jsonDocumentArray = new StringBuilder();
             jsonDocumentArray.Append("[");
@@ -478,6 +480,38 @@ namespace AngularAzureSearch.WebAPI.Helpers
 
             jsonDocumentArray.Append("]");
             return jsonDocumentArray.ToString();
+        }
+
+        /// <summary>
+        /// Log the number of documents in each collection within the database to the console.
+        /// </summary>
+        /// <param name="client">The DocumentDB client instance.</param>
+        /// <param name="database">The database to enumerate.</param>
+        /// <returns>The Task for the asynchronous execution.</returns>
+        public async Task<Dictionary<string, int>> LogDocumentCountsPerCollection(DocumentClient client, Database database)
+        {
+            Dictionary<string, int> log = new Dictionary<string, int>();
+
+            foreach (DocumentCollection collection in await client.ReadDocumentCollectionFeedAsync(database.SelfLink))
+            {
+                int numDocuments = 0;
+                foreach (int document in client.CreateDocumentQuery<int>(collection.SelfLink, "SELECT VALUE 1 FROM ROOT"))
+                {
+                    numDocuments++;
+                }
+
+                if (log.ContainsKey(collection.Id))
+                {
+                    log[collection.Id] = numDocuments;
+                }
+                else
+                {
+                    log.Add(collection.Id, numDocuments);
+                }
+                //Console.WriteLine("Collection {0}: {1} documents", collection.Id, numDocuments);
+            }
+
+            return log;
         }
     }
 }

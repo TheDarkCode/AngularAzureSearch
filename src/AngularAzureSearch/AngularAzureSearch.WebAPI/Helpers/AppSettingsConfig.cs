@@ -15,6 +15,11 @@ namespace AngularAzureSearch.WebAPI.Helpers
         public static string Db { get { return ConfigurationManager.AppSettings["db"]; } }
 
         /// <summary>
+        /// The default offer type to set new collections. Ie: S1, S2, S3
+        /// </summary>
+        public static string DefaultOfferType { get { return ConfigurationManager.AppSettings["defaultOfferType"]; } }
+
+        /// <summary>
         /// The DocumentDB collection to store User information.
         /// </summary>
         public static string UserCollection { get { return ConfigurationManager.AppSettings["userCollection"]; } }

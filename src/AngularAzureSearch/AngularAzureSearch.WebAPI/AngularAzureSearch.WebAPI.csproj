@@ -311,9 +311,13 @@
     <Compile Include="Models\ContactModels.cs" />
     <Compile Include="Models\DateEpoch.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\RegionModels.cs" />
+    <Compile Include="Models\UserProfileModels.cs" />
+    <Compile Include="Models\UserStatusModels.cs" />
     <Compile Include="PartitionResolvers\EnumLookupPartitionResolver.cs" />
     <Compile Include="PartitionResolvers\LookupPartitionResolver.cs" />
     <Compile Include="PartitionResolvers\ManagedHashPartitionResolver.cs" />
+    <Compile Include="Initializers\PartitionInitializers.cs" />
     <Compile Include="PartitionResolvers\SpilloverPartitionResolver.cs" />
     <Compile Include="PartitionResolvers\TransitionHashPartitionResolver.cs" />
     <Compile Include="PartitionResolvers\TransitionReadMode.cs" />
