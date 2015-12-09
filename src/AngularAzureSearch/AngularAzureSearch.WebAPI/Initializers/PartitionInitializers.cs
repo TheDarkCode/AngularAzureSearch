@@ -36,15 +36,16 @@ namespace AngularAzureSearch.WebAPI.Initializers
         {
             // Set local to input.
             string[] CollectionNames = collectionNames;
+            int numCollectionNames = CollectionNames.Length;
 
             // Create array of DocumentCollections.
-            DocumentCollection[] collections = new DocumentCollection[CollectionNames.Length];
+            DocumentCollection[] collections = new DocumentCollection[numCollectionNames];
 
             // Create string array of Self Links to Collections.
-            string[] selfLinks = new string[CollectionNames.Length];
+            string[] selfLinks = new string[numCollectionNames];
 
             //Create some collections to partition data.
-            for (int i = 0; i < CollectionNames.Length; i++)
+            for (int i = 0; i < numCollectionNames; i++)
             {
                 collections[i] = await DocumentClientHelper.GetCollectionAsync(client, database, CollectionNames[i]);
                 selfLinks[i] = collections[i].SelfLink;
@@ -73,15 +74,16 @@ namespace AngularAzureSearch.WebAPI.Initializers
         {
             // Set local to input.
             string[] CollectionNames = collectionNames;
+            int numCollectionNames = CollectionNames.Length;
 
             // Create array of DocumentCollections.
-            DocumentCollection[] collections = new DocumentCollection[CollectionNames.Length];
+            DocumentCollection[] collections = new DocumentCollection[numCollectionNames];
 
             // Create string array of Self Links to Collections.
-            string[] selfLinks = new string[CollectionNames.Length];
+            string[] selfLinks = new string[numCollectionNames];
 
             //Create some collections to partition data.
-            for (int i = 0; i < CollectionNames.Length; i++)
+            for (int i = 0; i < numCollectionNames; i++)
             {
                 collections[i] = await DocumentClientHelper.GetCollectionAsync(client, database, CollectionNames[i]);
                 selfLinks[i] = collections[i].SelfLink;
@@ -91,12 +93,12 @@ namespace AngularAzureSearch.WebAPI.Initializers
             string selfLinkString = String.Join(", ", selfLinks);
 
             // If each collection represents a range, it will have both a start and end point in its range, thus there are 2 rangeNames for each collection.
-            string[] rangeNames = new string[CollectionNames.Length * 2];
+            string[] rangeNames = new string[numCollectionNames * 2];
 
             // Keeping track of where in the rangeNames array to add a new start/end of a range.
             int currentRangePosition = 0;
 
-            for (int y = 0; y < CollectionNames.Length; y++)
+            for (int y = 0; y < numCollectionNames; y++)
             {
                 string[] rangeTemp = collectionNames[y].Split('-');
                 for (int z = 0; z < rangeTemp.Length; z++)
@@ -132,15 +134,16 @@ namespace AngularAzureSearch.WebAPI.Initializers
         {
             // Set local to input.
             string[] CollectionNames = collectionNames;
+            int numCollectionNames = CollectionNames.Length;
 
             // Create array of DocumentCollections.
-            DocumentCollection[] collections = new DocumentCollection[CollectionNames.Length];
+            DocumentCollection[] collections = new DocumentCollection[numCollectionNames];
 
             // Create string array of Self Links to Collections.
-            string[] selfLinks = new string[CollectionNames.Length];
+            string[] selfLinks = new string[numCollectionNames];
 
             //Create some collections to partition data.
-            for (int i = 0; i < CollectionNames.Length; i++)
+            for (int i = 0; i < numCollectionNames; i++)
             {
                 collections[i] = await DocumentClientHelper.GetCollectionAsync(client, database, CollectionNames[i]);
                 selfLinks[i] = collections[i].SelfLink;
@@ -170,15 +173,16 @@ namespace AngularAzureSearch.WebAPI.Initializers
 
             // Set local to input.
             string[] CollectionNames = collectionNames;
+            int numCollectionNames = CollectionNames.Length;
 
             // Create array of DocumentCollections.
-            DocumentCollection[] collections = new DocumentCollection[CollectionNames.Length];
+            DocumentCollection[] collections = new DocumentCollection[numCollectionNames];
 
             // Create string array of Self Links to Collections.
-            string[] selfLinks = new string[CollectionNames.Length];
+            string[] selfLinks = new string[numCollectionNames];
 
             //Create some collections to partition data.
-            for (int i = 0; i < CollectionNames.Length; i++)
+            for (int i = 0; i < numCollectionNames; i++)
             {
                 collections[i] = await DocumentClientHelper.GetCollectionAsync(client, database, CollectionNames[i]);
                 selfLinks[i] = collections[i].SelfLink;
