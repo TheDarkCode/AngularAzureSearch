@@ -24,7 +24,7 @@ namespace AngularAzureSearch.WebAPI.Repositories
 
         private readonly string _collectionName;
 
-        public DocumentDbClient(string dbName, string collectionName)
+       public DocumentDbClient(string dbName, string collectionName)
         {
             this._dbName = dbName;
             this._collectionName = collectionName;

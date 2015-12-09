@@ -62,6 +62,7 @@ namespace AngularAzureSearch.WebAPI.App_Start
             //kernel.Bind<I****Repository>().To<****Repository>();
             kernel.Bind<IMailService>().To<MailService>().InRequestScope();
             kernel.Bind<ITrailRepository>().To<TrailRepository>();
+            //kernel.Bind<IDocumentDbPartitioningClient>().To<DocumentDbPartitioningClient>();
         }        
     }
 }

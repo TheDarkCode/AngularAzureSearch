@@ -32,7 +32,7 @@ namespace AngularAzureSearch.WebAPI.Initializers
         /// <param name="database">The database to run the samples on.</param>
         /// <param name="collectionNames">The names of collections used.</param>
         /// <returns>The created HashPartitionResolver.</returns>
-        public async Task<HashPartitionResolver> InitializeHashResolver(string partitionKeyPropertyName, DocumentClient client, Database database, string[] collectionNames)
+        public static async Task<HashPartitionResolver> InitializeHashResolver(string partitionKeyPropertyName, DocumentClient client, Database database, string[] collectionNames)
         {
             // Set local to input.
             string[] CollectionNames = collectionNames;
@@ -70,7 +70,7 @@ namespace AngularAzureSearch.WebAPI.Initializers
         /// <param name="database">The database to run the samples on.</param>
         /// <param name="collectionNames">The names of collections used.</param>
         /// <returns>The created HashPartitionResolver.</returns>
-        public async Task<RangePartitionResolver<string>> InitializeRangeResolver(string partitionKeyPropertyName, DocumentClient client, Database database, string[] collectionNames)
+        public static async Task<RangePartitionResolver<string>> InitializeRangeResolver(string partitionKeyPropertyName, DocumentClient client, Database database, string[] collectionNames)
         {
             // Set local to input.
             string[] CollectionNames = collectionNames;
@@ -125,12 +125,12 @@ namespace AngularAzureSearch.WebAPI.Initializers
         /// <summary>
         /// Initialize a HashPartitionResolver that uses a custom function to extract the partition key.
         /// </summary>
-        /// <param name="partitionKeyExtractor">The partitionKeyExtractor to be used.</param>
+        /// <param name="partitionKeyExtractor">The partition key extractor function.</param>
         /// <param name="client">The DocumentDB client instance to use.</param>
         /// <param name="database">The database to run the samples on.</param>
         /// <param name="collectionNames">The names of collections used.</param>
         /// <returns>The created HashPartitionResolver.</returns>
-        public async Task<HashPartitionResolver> InitializeCustomHashResolver(Func<object, string> partitionKeyExtractor, DocumentClient client, Database database, string[] collectionNames)
+        public static async Task<HashPartitionResolver> InitializeCustomHashResolver(Func<object, string> partitionKeyExtractor, DocumentClient client, Database database, string[] collectionNames)
         {
             // Set local to input.
             string[] CollectionNames = collectionNames;
@@ -168,7 +168,7 @@ namespace AngularAzureSearch.WebAPI.Initializers
         /// <param name="database">The database to run the samples on.</param>
         /// <param name="collectionNames">The names of collections used.</param>
         /// <returns>The created HashPartitionResolver.</returns>
-        private async Task<LookupPartitionResolver<string>> InitializeLookupPartitionResolver(string partitionKeyPropertyName, DocumentClient client, Database database, string[] collectionNames)
+        public static async Task<LookupPartitionResolver<string>> InitializeLookupPartitionResolver(string partitionKeyPropertyName, DocumentClient client, Database database, string[] collectionNames)
         {
 
             // Set local to input.
@@ -209,13 +209,13 @@ namespace AngularAzureSearch.WebAPI.Initializers
         /// Initialize a "managed" HashPartitionResolver that also takes care of creating collections, and cloning collection properties like
         /// stored procedures, offer type and indexing policy.
         /// </summary>
-        /// <param name="partitionKeyExtractor">The partitionKeyExtractor to be used. (Ex: "u => ((UserProfile)u).UserId")</param>
+        /// <param name="partitionKeyExtractor">The partition key extractor function. (Ex: "u => ((UserProfile)u).UserId")</param>
         /// <param name="client">The DocumentDB client instance to use.</param>
         /// <param name="database">The database to run the samples on.</param>
         /// <param name="numCollections">The number of collections to be used.</param>
         /// <param name="collectionSpec">The DocumentCollectionSpec to be used for each collection created. If null returns Spec with defaultOfferType as set in config.</param>
         /// <returns>The created HashPartitionResolver.</returns>
-        private ManagedHashPartitionResolver InitializeManagedHashResolver(Func<object, string> partitionKeyExtractor, DocumentClient client, Database database, int numCollections, DocumentCollectionSpec collectionSpec)
+        public static ManagedHashPartitionResolver InitializeManagedHashResolver(Func<object, string> partitionKeyExtractor, DocumentClient client, Database database, int numCollections, DocumentCollectionSpec collectionSpec)
         {
             // If no collectionSpec used, use a default spec with the offerType (ie: S1, S2, S3) that is specified in config.
             if (collectionSpec == null)

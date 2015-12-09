@@ -9,7 +9,7 @@ using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using AngularAzureSearch.WebAPI.Providers;
-using AngularAzureSearch.WebAPI.Models;
+using AngularAzureSearch.WebAPI.Entities;
 
 namespace AngularAzureSearch.WebAPI
 {

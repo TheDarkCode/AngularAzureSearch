@@ -4,7 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using DocumentDB.AspNet.Identity;
-using AngularAzureSearch.WebAPI.Models;
+using AngularAzureSearch.WebAPI.Entities;
 using AngularAzureSearch.WebAPI.Helpers;
 using System.Security.Claims;
 using Microsoft.Owin.Security;
