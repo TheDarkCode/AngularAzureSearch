@@ -21,7 +21,7 @@ namespace AngularAzureSearch.WebAPI.Controllers
         /// Uploads one or more blob files.
         /// </summary>
         /// <returns></returns>
-        [ResponseType(typeof(List<Models.BlobModels.BlobUploadModel>))]
+        [ResponseType(typeof(List<Entities.BlobModels.BlobUploadModel>))]
         public async Task<IHttpActionResult> PostBlobUpload()
         {
             try

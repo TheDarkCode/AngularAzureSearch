@@ -13,7 +13,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using AngularAzureSearch.WebAPI.Models;
+using AngularAzureSearch.WebAPI.Entities;
 using AngularAzureSearch.WebAPI.Providers;
 using AngularAzureSearch.WebAPI.Results;
 using AngularAzureSearch.WebAPI.Helpers;

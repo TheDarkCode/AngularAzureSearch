@@ -38,7 +38,7 @@ namespace AngularAzureSearch.WebAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Contact(Models.ContactModels model)
+        public ActionResult Contact(Entities.ContactModels model)
         {
             if (ModelState.IsValid)
             {
