@@ -35,7 +35,7 @@ namespace AngularAzureSearch.WebAPI.Cors
             string[] origins = AppSettingsConfig.CorsPolicyOrigins.Split(',');
             
             // To split by multiple types use the following example as a template:
-            // string[] origins = AppSettingsCOnfig.CorsPolicyOrigins.Split(',','+');
+            // string[] origins = AppSettingsConfig.CorsPolicyOrigins.Split(',','+');
 
             foreach (string origin in origins)
             {
