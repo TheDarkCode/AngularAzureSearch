@@ -228,6 +228,7 @@ namespace AngularAzureSearch.WebAPI.Helpers
         /// but this same pattern is introduced here and can be used on other ReadFeed methods.
         /// </summary>
         /// <param name="client">The DocumentDB client instance.</param>
+        /// <param name="databaseSelfLink">The self link for the database.</param>
         /// <returns>A List of Collection entities</returns>
         private static async Task<List<DocumentCollection>> ReadCollectionsFeedAsync(
             DocumentClient client,
@@ -452,9 +453,11 @@ namespace AngularAzureSearch.WebAPI.Helpers
 
         /// <summary> 
         /// Creates the script for insertion 
-        /// </summary> 
-        /// <param name="currentIndex">the current number of documents inserted. this marks the starting point for this script</param> 
-        /// <param name="maxScriptSize">the maximum number of characters that the script can have</param> 
+        /// </summary>
+        /// <param name="docFileNames">The </param>
+        /// <param name="currentIndex">The current number of documents inserted. this marks the starting point for this script</param> 
+        /// <param name="maxCount">The max count.</param>
+        /// <param name="maxScriptSize">The maximum number of characters that the script can have</param>
         /// <returns>Script as a string</returns> 
         public static string CreateBulkInsertScriptArguments(string[] docFileNames, int currentIndex, int maxCount, int maxScriptSize)
         {

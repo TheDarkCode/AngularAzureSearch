@@ -12,6 +12,7 @@ namespace AngularAzureSearch.WebAPI.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using Services;
+    using PartitionRepositories;
 
     public static class NinjectWebCommon 
     {
@@ -62,7 +63,7 @@ namespace AngularAzureSearch.WebAPI.App_Start
             //kernel.Bind<I****Repository>().To<****Repository>();
             kernel.Bind<IMailService>().To<MailService>().InRequestScope();
             kernel.Bind<ITrailRepository>().To<TrailRepository>();
-            //kernel.Bind<IDocumentDbPartitioningClient>().To<DocumentDbPartitioningClient>();
+            kernel.Bind<IItemRepository>().To<ItemRepository>();
         }        
     }
 }

@@ -35,6 +35,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\AngularAzureSearch.WebAPI.XML</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -285,6 +287,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\api\ItemController.cs" />
     <Compile Include="Controllers\api\PartitioningController.cs" />
     <Compile Include="Controllers\api\TrailController.cs" />
     <Compile Include="Controllers\BlobsController.cs" />
@@ -316,6 +319,11 @@
     <Compile Include="Models\RegionModels.cs" />
     <Compile Include="Models\UserProfileModels.cs" />
     <Compile Include="Models\UserStatusModels.cs" />
+    <Compile Include="PartitionRepositories\Disposable.cs" />
+    <Compile Include="PartitionRepositories\IItemRepository.cs" />
+    <Compile Include="PartitionRepositories\IPartitioningRepository.cs" />
+    <Compile Include="PartitionRepositories\ItemRepository.cs" />
+    <Compile Include="PartitionRepositories\PartitioningRepositoryBase.cs" />
     <Compile Include="PartitionResolvers\EnumLookupPartitionResolver.cs" />
     <Compile Include="PartitionResolvers\LookupPartitionResolver.cs" />
     <Compile Include="PartitionResolvers\ManagedHashPartitionResolver.cs" />
@@ -328,8 +336,7 @@
     <Compile Include="Providers\BlobStorageUploadProvider.cs" />
     <Compile Include="Repositories\Disposable.cs" />
     <Compile Include="Repositories\DocumentDbClient.cs" />
-    <Compile Include="Repositories\DocumentDbPartitioningClient.cs" />
-    <Compile Include="Repositories\IDocumentDbPartitioningClient.cs" />
+    <Compile Include="PartitionRepositories\DocumentDbPartitioningClient.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\ITrailRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />

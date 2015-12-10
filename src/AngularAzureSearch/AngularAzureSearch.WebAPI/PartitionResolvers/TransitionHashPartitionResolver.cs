@@ -4,6 +4,7 @@ using Microsoft.Azure.Documents.Client;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AngularAzureSearch.WebAPI.Helpers;
 
 namespace AngularAzureSearch.WebAPI.PartitionResolvers
 {

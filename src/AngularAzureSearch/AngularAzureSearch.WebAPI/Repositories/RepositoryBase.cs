@@ -27,6 +27,7 @@ namespace AngularAzureSearch.WebAPI.Repositories
         /// All Repository classes must inherit this base class.
         /// </summary>
         /// <param name="docType">The name of the entity (T), which is the same as the name passed into the model (lowercase).</param>
+        /// <param name="Type">The type of the document.</param>
         /// <param name="dbName">The name of the database.</param>
         /// <param name="collectionName">The name of the collection.</param>
         public RepositoryBase(string docType, string Type, string dbName, string collectionName)

@@ -17,7 +17,7 @@ namespace AngularAzureSearch.WebAPI.Entities.Items
         /// This is used in the repository for storage and querying,
         /// to organize documents by this type name.
         /// </summary>
-        public Item() : base( "item")
+        public Item() : base("partitionedItem")
         {
 
         }
@@ -27,9 +27,11 @@ namespace AngularAzureSearch.WebAPI.Entities.Items
         public string Name { get; set; }
         [JsonProperty("address")]
         public string Address { get; set; }
+        [JsonProperty("desc")]
+        public string Description { get; set; }
         [JsonProperty("location")]
         public Point Location { get; set; }
-        [JsonProperty("type")]
+        [JsonProperty("_type")]
         public string Type { get; set; }
     }
 }

@@ -21,6 +21,7 @@ namespace AngularAzureSearch.WebAPI.Entities
         /// All root entities inherit this base class.
         /// </summary>
         /// <param name="docType">The name of the type of entity (lowercase).</param>
+        /// <param name="Type">The type of the document.</param>
         public EntityBase(string docType, string Type)
         {
             this._docType = docType;

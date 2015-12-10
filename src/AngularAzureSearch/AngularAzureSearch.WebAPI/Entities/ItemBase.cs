@@ -16,22 +16,14 @@ namespace AngularAzureSearch.WebAPI.Entities
     public class ItemBase
     {
         private readonly string _docType;
-        private readonly string _tenantId;
-        private string v;
 
         /// <summary>
         /// All root entities inherit this base class.
         /// </summary>
         /// <param name="docType">The name of the type of entity (lowercase).</param>
-        public ItemBase(string tenantId, string docType)
+        public ItemBase(string docType)
         {
-            this._tenantId = tenantId;
             this._docType = docType;
-        }
-
-        public ItemBase(string v)
-        {
-            this.v = v;
         }
 
         /// <summary>
@@ -44,7 +36,7 @@ namespace AngularAzureSearch.WebAPI.Entities
         /// This is needed for placing the document in the correct location.
         /// </summary>
         [JsonProperty(PropertyName = "tenantId")]
-        public string tenantId { get { return _tenantId; } }
+        public string tenantId { get; set; }
 
         /// <summary>
         /// This docType field will be used to organize the documents by "docType" in 
