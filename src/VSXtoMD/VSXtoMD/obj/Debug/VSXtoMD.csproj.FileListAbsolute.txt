@@ -1,0 +1,5 @@
+D:\Source\Workspaces\Learning\VSXtoMD\VSXtoMD\bin\Debug\VSXtoMD.exe.config
+D:\Source\Workspaces\Learning\VSXtoMD\VSXtoMD\bin\Debug\VSXtoMD.exe
+D:\Source\Workspaces\Learning\VSXtoMD\VSXtoMD\bin\Debug\VSXtoMD.pdb
+D:\Source\Workspaces\Learning\VSXtoMD\VSXtoMD\obj\Debug\VSXtoMD.exe
+D:\Source\Workspaces\Learning\VSXtoMD\VSXtoMD\obj\Debug\VSXtoMD.pdb
