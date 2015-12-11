@@ -13,11 +13,12 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
-####Current Version: Build 17, 12/06/2015
+####Current Live Demo Version: Build 17, 12/06/2015
+####Current Development Version: Build 18, 12/10/2015
 #####Status: 
-  - WebRole works for User login/signup. Confirm Email not tested. dlFramework still in development.
-  - WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100% with dynamic CORS.
-  - DataIndexer is set to Trails data schema. Must configure via app settings config file.
+  - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.
+  - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
+  - DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.
 
 ######Current To Do List:
         Mapping Module Additions ::
@@ -37,6 +38,10 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
   - Confirm Email not tested. Manage user account view will be resolved in next update.
   - External login providers (Facebook / Twitter / Google / Microsoft) are not implemented yet. Will be added in the coming updates.
   - Limitation for Cors is that it must have the correct URI syntax. Do not add "www." if it is not necessary. Future updates will address this.
+  - Range and Lookup Partition Resolver Initializers are not completed yet. Spillover Resolver is not async.
+  - Multiple partitioning resolvers requires multiple clients. Current implementation is limited to a single resolver per client.
+  - External login support and autopopulating data/profile pictures from FB/Twitter accounts will be added in next round of updates.
+  - Interaction with Blob Storage to upload/download files is not completed. Still needs to be linked up with DocDB.
 
 ####Azure Service Requirements for Deployment
 
