@@ -47,15 +47,18 @@
 <a id="notice-you-must-update-endpoint-uris-prior-to-production-deployments-demo-services-will-throttle-public-users" class="anchor" href="#notice-you-must-update-endpoint-uris-prior-to-production-deployments-demo-services-will-throttle-public-users" aria-hidden="true"><span class="octicon octicon-link"></span></a>NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.</h6>
 
 <h4>
-<a id="current-version-build-17-12062015" class="anchor" href="#current-version-build-17-12062015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Version: Build 17, 12/06/2015</h4>
+<a id="current-live-demo-version-build-17-12062015" class="anchor" href="#current-live-demo-version-build-17-12062015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Live Demo Version: Build 17, 12/06/2015</h4>
+
+<h4>
+<a id="current-development-version-build-18-12102015" class="anchor" href="#current-development-version-build-18-12102015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Development Version: Build 18, 12/10/2015</h4>
 
 <h5>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status:</h5>
 
 <ul>
-<li>WebRole works for User login/signup. Confirm Email not tested. dlFramework still in development.</li>
-<li>WebAPI is fully working for Trails data. (0 Errors, 0 Warnings) Currently in transition to add hash partitioning sample. User Accounts work 100% with dynamic CORS.</li>
-<li>DataIndexer is set to Trails data schema. Must configure via app settings config file.</li>
+<li>WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.</li>
+<li>WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.</li>
+<li>DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.</li>
 </ul>
 
 <h6>
@@ -82,6 +85,10 @@
 <li>Confirm Email not tested. Manage user account view will be resolved in next update.</li>
 <li>External login providers (Facebook / Twitter / Google / Microsoft) are not implemented yet. Will be added in the coming updates.</li>
 <li>Limitation for Cors is that it must have the correct URI syntax. Do not add "www." if it is not necessary. Future updates will address this.</li>
+<li>Range and Lookup Partition Resolver Initializers are not completed yet. Spillover Resolver is not async.</li>
+<li>Multiple partitioning resolvers requires multiple clients. Current implementation is limited to a single resolver per client.</li>
+<li>External login support and autopopulating data/profile pictures from FB/Twitter accounts will be added in next round of updates.</li>
+<li>Interaction with Blob Storage to upload/download files is not completed. Still needs to be linked up with DocDB.</li>
 </ul>
 
 <h4>
