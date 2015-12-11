@@ -43,6 +43,13 @@ namespace AngularAzureSearch.WebAPI.Helpers
             }
         }
 
+        /// <summary>
+        /// Format Body of an Email to Send via Mail Service.
+        /// </summary>
+        /// <param name="contactName"></param>
+        /// <param name="contactEmail"></param>
+        /// <param name="contactMessage"></param>
+        /// <returns></returns>
         public static string FormatBody(string contactName, string contactEmail, string contactMessage)
         {
             StringWriter stringWriter = new StringWriter();

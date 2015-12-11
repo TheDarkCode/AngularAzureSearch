@@ -23,7 +23,7 @@ namespace AngularAzureSearch.WebAPI.PartitionRepositories
 
         public string[] collections = AppSettingsConfig.MainCollection.Split(',');
 
-        public ItemRepository(int resolverService = 1):base(AppSettingsConfig.Db)
+        public ItemRepository(int resolverService):base(AppSettingsConfig.Db)
         {
             getResolver(resolverService);
         }
