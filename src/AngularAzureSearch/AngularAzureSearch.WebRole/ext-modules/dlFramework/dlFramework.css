@@ -321,6 +321,7 @@ form .row:first-child .floating-label-form-group {
     white-space: nowrap;
     border-radius: 100%;
     vertical-align: bottom;
+    padding-bottom: 5px;
 }
 
 .dl-profile-image-side {
