@@ -20,6 +20,16 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
   - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
   - DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.
 
+######Upcoming Changes (Within Next 5 Builds):
+        1. Apache Cordova Sample Project using WebRole as base.
+        2. Azure ML sample integration to demonstrate how to use custom session parameters to automatically associate a user to a scoring profile or different index. ML web service calls will be made an endpoint in the Web API to avoid CORS issues.
+        3. Demonstrate Azure Search as a Web API endpoint.
+        4. Sample CRUD operations for documents that are partitioned across DocDB collections via Web API.
+        5. Dynamic routing, pagination of DocDB calls, data grids with sorting/filtering/search, and a sample page templates (with parallax) for WebRole.
+        6. Expanded DataIndexer with async I/O for bulk importing documents to DocDB. Dynamic index creation from input JSON schema with configurable option definitions (sortable/filterable, etc based on variable type - ex: string, geojson).
+        7. SignalR sample code in WebAPi project for showing real-time updates.
+        8. External Login Providers (Facebook / Twitter) and 2-factor authentication support (SendGrid/Twilio) via Web API.
+
 ######Current To Do List:
         Mapping Module Additions ::
         1. Adding info boxes, mapType toggle, save (grab existing url, save to scope, export to User factory) / share search function (grab existing url, save to scope, display textbox with value, and select social button with baseUrl - Twitter, FB, Whatsapp, Email, etc), and add (toggleable) custom zoom controls. Also show # of pins if they are stacked close together when zoomed out (port PinClusterer - http://rtsinani.github.io/PinClusterer/).
