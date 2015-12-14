@@ -33,6 +33,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\AngularAzureSearch.WebRole.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -73,6 +74,8 @@
     <Content Include="app\appRouteConfig.js" />
     <Content Include="app\appRun.js" />
     <Content Include="app\controllers\trailsController.js" />
+    <Content Include="app\dialogs\dTrailModalController.js" />
+    <Content Include="app\dialogs\dTrailModalTemplate.html" />
     <Content Include="app\dialogs\dSelectSearchController.js" />
     <Content Include="app\dialogs\dSelectSearchTemplate.html" />
     <Content Include="app\directives\dBasicTablesDirective.js" />
@@ -102,7 +105,9 @@
     <Content Include="app\templates\dBasicTablesTemplate.html" />
     <Content Include="app\templates\dErrorServerTemplate.html" />
     <Content Include="app\templates\dErrorTemplate.html" />
-    <Content Include="app\templates\dFontAwesomeTemplate.html" />
+    <Content Include="app\templates\dFontAwesomeTemplate.html">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="app\templates\dFormElementsTemplate.html" />
     <Content Include="app\templates\dGalleryTemplate.html" />
     <Content Include="app\templates\dGridsTemplate.html" />
@@ -256,7 +261,11 @@
     <Content Include="ext-modules\mapping\mapping.js" />
     <Content Include="ext-modules\userInput\factories\cancelInput.js" />
     <Content Include="ext-modules\userInput\userInput.js" />
+    <Content Include="Scripts\angular-modal-service.js" />
+    <Content Include="Scripts\angular-modal-service.min.js" />
     <Content Include="Scripts\angular-resource.js" />
+    <Content Include="Scripts\dirPagination.js" />
+    <Content Include="Scripts\dirPagination.tpl.html" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\lodash.js" />
     <Content Include="packages.config" />
@@ -286,6 +295,7 @@
     <Content Include="package.json" />
     <None Include="Properties\PublishProfiles\angularazuresearch.pubxml" />
     <Content Include="Scripts\angular-local-storage.min.js" />
+    <Content Include="Scripts\angular-modal-service.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
