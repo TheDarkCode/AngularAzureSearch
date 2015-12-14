@@ -2,8 +2,8 @@
     'use strict';
 
     angular.module('app')
-        .controller('trailsController', ["$scope", "trailService", "authService",
-            function ($scope, trailService, authService) {
+        .controller('trailsController', ["$scope", "trailService", "authService", "ModalService",
+            function ($scope, trailService, authService, ModalService) {
                 
                 $scope.trails = [];
                 $scope.trail = {};
@@ -25,9 +25,22 @@
                     $scope.trail = {};
                     $scope.trailFormIsVisible = true;
                     $scope.dialogTitle = "Add";
+                    ModalService.showModal({
+                        templateUrl: "app/dialogs/dTrailModalTemplate.html",
+                        controller: "dTrailModalController",
+                        inputs: {
+                            "trail": $scope.trail,
+                            "dialogTitle": $scope.dialogTitle
+                        }
+                    }).then(function(modal) {
+                        modal.element.modal();
+                        modal.close.then(function(result) {
+                            submitTrailForm(result.isValid, result.trail);
+                        });
+                    });
                 };
 
-                $scope.submitTrailForm = function (isValid, trail) {
+                function submitTrailForm(isValid, trail) {
                     if (!isValid) {
                         return;
                     }
@@ -58,6 +71,19 @@
                     $scope.dialogTitle = "Edit";
                     $scope.trail = $scope.trails[idx];
                     $scope.trailFormIsVisible = true;
+                    ModalService.showModal({
+                        templateUrl: "app/dialogs/dTrailModalTemplate.html",
+                        controller: "dTrailModalController",
+                        inputs: {
+                            "trail": $scope.trail,
+                            "dialogTitle": $scope.dialogTitle
+                        }
+                    }).then(function (modal) {
+                        modal.element.modal();
+                        modal.close.then(function (result) {
+                            submitTrailForm(result.isValid, result.trail);
+                        });
+                    });
                 };
 
                 $scope.delete = function (idx) {

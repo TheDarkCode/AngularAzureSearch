@@ -5,7 +5,7 @@
 </p>
 
 <div class="row" ng-controller="trailsController">
-    <div ng-class="{'col-md-8': trailFormIsVisible, 'col-md-12': !trailFormIsVisible}">
+    <div ng-class="{'col-md-12': trailFormIsVisible, 'col-md-12': !trailFormIsVisible}">
         <button class="btn btn-success" type="button" ng-click="showAddTrailForm()">
             <span class="glyphicon glyphicon-plus"></span> Add Trail
         </button>
@@ -43,8 +43,8 @@
                                  boundary-links="true">
         </dir-pagination-controls>
     </div>
-    <div class="col-md-4" ng-show="trailFormIsVisible">
-        <!-- Show the form to add a new trail. -->
+    <!-- Show the form to add a new trail. -->
+    <!--<div class="col-md-4" ng-show="trailFormIsVisible">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 {{ dialogTitle }} Trail
@@ -85,5 +85,5 @@
             </div>
         </div>
 
-    </div>
+    </div>-->
 </div>
