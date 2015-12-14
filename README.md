@@ -13,8 +13,8 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
-####Current Live Demo Version: Build 17, 12/06/2015
-####Current Development Version: Build 18, 12/10/2015
+####Current Live Demo Version: Build 19, 12/14/2015
+####Current Development Version: Build 19, 12/14/2015
 #####Status: 
   - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.
   - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
@@ -101,6 +101,12 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 
 ###angular-fullscreen by  Fabio Biondi
 ######https://github.com/fabiobiondi/angular-fullscreen
+
+###angularUtils (pagination) by Michael Bromley
+######https://github.com/michaelbromley/angularUtils
+
+###angular-modal-service by Dave Kerr
+######https://github.com/dwmkerr/angular-modal-service/
 
 ##Helpful Links
 
