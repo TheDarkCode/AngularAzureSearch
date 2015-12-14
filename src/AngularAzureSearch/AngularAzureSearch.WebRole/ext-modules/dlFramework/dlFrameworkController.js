@@ -42,7 +42,7 @@
                     });
                 });
 
-                $scope.$on('FBFullscreen.change', function () {
+                $scope.$on('dlFullscreen.change', function () {
                     $scope.$apply(function () {
                         checkWidth();
                         broadcastMenuState();

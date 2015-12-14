@@ -27,7 +27,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="t in trails |orderBy:sortBy:reverse | filter:search">
+                <tr dir-paginate="t in trails | orderBy:sortBy:reverse | filter:search | itemsPerPage:25">
                     <th scope="row">{{ t.id }}</th>
                     <td>{{ t.name }}</td>
                     <td>{{ t.county }}</td>
@@ -38,6 +38,10 @@
                 </tr>
             </tbody>
         </table>
+        <dir-pagination-controls max-size="8"
+                                 direction-links="true"
+                                 boundary-links="true">
+        </dir-pagination-controls>
     </div>
     <div class="col-md-4" ng-show="trailFormIsVisible">
         <!-- Show the form to add a new trail. -->

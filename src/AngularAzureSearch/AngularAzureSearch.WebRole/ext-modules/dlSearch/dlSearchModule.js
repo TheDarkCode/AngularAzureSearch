@@ -1,5 +1,5 @@
 ﻿(function () {
     "use strict";
 
-    angular.module("dlSearch", ['azureSearch', 'mapping', 'html', 'userInput', 'FBAngular']);
+    angular.module("dlSearch", ['azureSearch', 'mapping', 'html', 'userInput', 'dlFullscreen']);
 })();
