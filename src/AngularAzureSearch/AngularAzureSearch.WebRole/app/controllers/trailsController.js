@@ -68,6 +68,11 @@
                         });
                     }
                 };
+                
+                $scope.sortColumn = function (column) {
+                    $scope.sortBy = column;
+                    $scope.reverse = !$scope.reverse;
+                }
 
                 function hideAllForms() {
                     $scope.trailFormIsVisible = false;
