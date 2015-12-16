@@ -1,0 +1,39 @@
+{
+    "name": "AngularAzureSearch.MobileApp",
+    "version": "0.1.9",
+    "description": "Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "AngularJS",
+        "DocumentDB",
+        "Azure",
+        "Azure Search",
+        "Bing Maps",
+        "Framework"
+    ],
+    "author": "Mark Hamilton | Dryverless",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/TheDarkCode/AngularAzureSearch"
+    },
+    "readme": "git://github.com/TheDarkCode/AngularAzureSearch/README.md",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-bump": "^1.0.0",
+        "gulp-csso": "^1.0.1",
+        "gulp-git": "^1.6.0",
+        "gulp-gzip": "^1.2.0",
+        "gulp-less": "^3.0.5",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-tar": "^1.6.0",
+        "gulp-uglify": "^1.5.1",
+        "gulp-angular-filesort": "^1.1.1",
+        "gulp-angular-templatecache": "^1.8.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-strip-comments": "^1.0.1",
+        "angular-utils-pagination": "^0.9.3"
+    }
+}

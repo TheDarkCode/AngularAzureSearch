@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "dist/dlFramework.css",
+    "inputFiles": [
+      "dist/dlFramework.css"
+    ]
+  },
+  {
+    "outputFileName": "dist/dlFramework.js",
+    "inputFiles": [
+      "dist/dlFramework.js"
+    ]
+  }
+]
