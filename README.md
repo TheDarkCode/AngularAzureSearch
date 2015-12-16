@@ -14,7 +14,7 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
 ####Current Live Demo Version: Build 19, 12/14/2015
-####Current Development Version: Build 19, 12/14/2015
+####Current Development Version: Build 20, 12/15/2015
 #####Status: 
   - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.
   - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
