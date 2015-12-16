@@ -14,21 +14,21 @@ Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
 ####Current Live Demo Version: Build 19, 12/14/2015
-####Current Development Version: Build 20, 12/15/2015
+####Current Development Version: Build 20, 12/16/2015
 #####Status: 
   - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.
   - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
   - DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.
+  - MobileApp is just using the WebRole base currently. It is going to be heavily modified over the next few days. Cors policy in WebAPI must be changed to "*" to let you login via app as-is.
 
 ######Upcoming Changes (Within Next 5 Builds):
-        1. Apache Cordova Sample Project using WebRole as base.
-        2. Azure ML sample integration to demonstrate how to use custom session parameters to automatically associate a user to a scoring profile or different index. ML web service calls will be made an endpoint in the Web API to avoid CORS issues.
-        3. Demonstrate Azure Search as a Web API endpoint.
-        4. Sample CRUD operations for documents that are partitioned across DocDB collections via Web API.
-        5. Dynamic routing, pagination of DocDB calls, data grids with sorting/filtering/search, and a sample page templates (with parallax) for WebRole.
-        6. Expanded DataIndexer with async I/O for bulk importing documents to DocDB. Dynamic index creation from input JSON schema with configurable option definitions (sortable/filterable, etc based on variable type - ex: string, geojson).
-        7. SignalR sample code in WebAPi project for showing real-time updates.
-        8. External Login Providers (Facebook / Twitter) and 2-factor authentication support (SendGrid/Twilio) via Web API.
+        1. Azure ML sample integration to demonstrate how to use custom session parameters to automatically associate a user to a scoring profile or different index. ML web service calls will be made an endpoint in the Web API to avoid CORS issues.
+        2. Demonstrate Azure Search as a Web API endpoint.
+        3. Sample CRUD operations for documents that are partitioned across DocDB collections via Web API.
+        4. Dynamic routing, pagination of DocDB calls, data grids with sorting/filtering/search, and a sample page templates (with parallax) for WebRole.
+        5. Expanded DataIndexer with async I/O for bulk importing documents to DocDB. Dynamic index creation from input JSON schema with configurable option definitions (sortable/filterable, etc based on variable type - ex: string, geojson).
+        6. SignalR sample code in WebAPi project for showing real-time updates.
+        7. External Login Providers (Facebook / Twitter) and 2-factor authentication support (SendGrid/Twilio) via Web API.
 
 ######Current To Do List:
         Mapping Module Additions ::
