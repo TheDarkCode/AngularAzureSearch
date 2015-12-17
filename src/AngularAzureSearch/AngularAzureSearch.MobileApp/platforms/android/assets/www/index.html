@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<!--
+
+ █████╗ ███╗   ██╗ ██████╗ ██╗   ██╗██╗      █████╗ ██████╗
+██╔══██╗████╗  ██║██╔════╝ ██║   ██║██║     ██╔══██╗██╔══██╗
+███████║██╔██╗ ██║██║  ███╗██║   ██║██║     ███████║██████╔╝
+██╔══██║██║╚██╗██║██║   ██║██║   ██║██║     ██╔══██║██╔══██╗
+██║  ██║██║ ╚████║╚██████╔╝╚██████╔╝███████╗██║  ██║██║  ██║
+╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+ █████╗ ███████╗██╗   ██╗██████╗ ███████╗
+██╔══██╗╚══███╔╝██║   ██║██╔══██╗██╔════╝
+███████║  ███╔╝ ██║   ██║██████╔╝█████╗
+██╔══██║ ███╔╝  ██║   ██║██╔══██╗██╔══╝
+██║  ██║███████╗╚██████╔╝██║  ██║███████╗
+╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
+███████╗███████╗ █████╗ ██████╗  ██████╗██╗  ██╗
+██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║
+███████╗█████╗  ███████║██████╔╝██║     ███████║
+╚════██║██╔══╝  ██╔══██║██╔══██╗██║     ██╔══██║
+███████║███████╗██║  ██║██║  ██║╚██████╗██║  ██║
+╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+
+    Base Repository ::
+    https://github.com/TheDarkCode/AngularAzureSearch
+
+    Original Source Code Copyright (c) Liam Cavanagh / Microsoft
+    Author(s):
+        - Liam Cavanagh @ Microsoft / Azure Search Team (https://github.com/liamca/AzureSearchDemos)
+
+    Contributions by:
+    Author(s):
+        - Mark Hamilton @ Dryverless (https://github.com/TheDarkCode)
+        - King Wilder @ Gizmo Beach (https://github.com/kahanu/GolfTracker.DocumentDB/)
+        - Richard J. Leopold (https://github.com/rleopold/DocDbWebApi/)
+        - Adrian Fernandez @ Microsoft (https://github.com/tracker086/DocumentDB.AspNet.Identity)
+        - Ryan CrawCour & Aravind Ramachandran @  Microsoft (https://github.com/Azure/azure-documentdb-dotnet/)
+        - Brett Donohoo (https://github.com/brettdonohoo/angular-parallax)
+
+    Comments included for development. Use minified version for production.
+
+    Current version:: Build 19 / 12/14/2015
+
+-->
+
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--
+
+        Title / META Tags
+
+        TODO ::
+        Update via ngRoute config / ui-router using title set for current view, or dynamic based on search / details
+
+    -->
+
+    <title>Angular Azure Search</title>
+
+    <meta name="description" content="Angular Azure Search - Build 19 - 12/14/2015">
+    <meta name="author" content="Mark Hamilton | Liam Cavanagh - GitHub.com/TheDarkCode/AngularAzureSearch">
+    
+    <!-- Browser Icons (Create your own at: http://www.favicon-generator.org/ - Save extracted .zip contents to root.) -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- External Dependency CSS Files -->
+    <!--<link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+    <link href="Content/angular-gridster.min.css" rel="stylesheet" />
+    <link href="Content/loading-bar.min.css" rel="stylesheet" />
+    <link href="Content/angular-bootstrap-lightbox.min.css" rel="stylesheet" />
+    <link href="Content/xeditable.css" rel="stylesheet" />
+
+    <!-- App Specific CSS Files -->
+    <link href="Content/site.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
+
+
+    <!-- Framework Specific CSS Files -->
+    <link href="ext-modules/dlFramework/dlFramework.css" rel="stylesheet" />
+    <link href="ext-modules/dlMenu/dlMenu.css" rel="stylesheet" />
+    <link href="ext-modules/dlDashboard/dlDashboard.css" rel="stylesheet" />
+    <link href="ext-modules/dlGallery/dlGallery.css" rel="stylesheet" />
+    <link href="ext-modules/dlFooter/dlFooter.css" rel="stylesheet" />
+    <link href="ext-modules/dlPanel/dlPanel.css" rel="stylesheet" />
+    <link href="ext-modules/dlParallax/dlParallax.css" rel="stylesheet" />
+    <link href="ext-modules/dlSearch/dlSearch.css"rel="stylesheet" />
+
+    <!-- Widget Specific CSS Files -->
+    <!--TEMPLATE:: <link href="app/widgets/d****/d****.css" rel="stylesheet" /> -->
+    <!--<link href="app/widgets/dSearch/dSearch.css" rel="stylesheet" />-->
+
+    <link href="Content/spacedout-css.css" rel="stylesheet" />
+    <script src="Scripts/spacedout-js.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    <!-- Modernizr -->
+    <script src="Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body class="container-fluid" ng-controller="appController" style="padding-left: 0px; padding-right: 0px;">
+
+    <div class="so-page-wrapper">
+        <aside class="so-page-menu">
+            <div class="so-menu-content" style="min-width: 320px; color: white;">
+                <!--<dl-footer copyright="Angular Azure Search"
+                           protected-years="2015"
+                           socialname="****"
+                           twitter="****"
+                           linkedin="company/****"
+                           facebook="****"
+                           instagram="****"
+                           angellist="****"></dl-footer>-->
+                <ul class="list-unstyled" style="font-size: 3em; display: inline;">
+                    <li style="display: inline;">
+                        <a href="//twitter.com/****"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="//linkedin.com/company/****"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="//facebook.com/****"><i class="fa fa-facebook"></i></a>
+                    </li>
+                </ul>
+                <!--<div data-dl-menu style="margin-left: -40px;">
+                    <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
+                    <dl-menu-item label="Homes" icon="fa-home" route="homes"></dl-menu-item>
+                    <dl-menu-item label="Login" icon="fa-user" route="login"></dl-menu-item>
+                    <dl-menu-group label="Tables" icon="fa-table">
+                        <dl-menu-item label="Basic Tables" icon="hidden" route="basic-tables"></dl-menu-item>
+                        <dl-menu-item label="Price Tables" icon="hidden" route="price-tables"></dl-menu-item>
+                    </dl-menu-group>
+                    <dl-menu-item label="Typography" icon="fa-font" route="typography"></dl-menu-item>
+                    <dl-menu-group label="Icons" icon="fa-paperclip">
+                        <dl-menu-item label="Font Awesome" icon="fa-pencil" route="font-awesome"></dl-menu-item>
+                    </dl-menu-group>
+                    <dl-menu-item label="Gallery" icon="fa-picture-o" route="gallery"></dl-menu-item>
+                    <dl-menu-item label="UI Kit" icon="fa-briefcase" route="ui-kit"></dl-menu-item>
+                    <dl-menu-group label="Components" icon="fa-magic">
+                        <dl-menu-item label="Form Elements" icon="hidden" route="form-elements"></dl-menu-item>
+                        <dl-menu-item label="Grids" icon="hidden" route="grids"></dl-menu-item>
+                    </dl-menu-group>
+                    <dl-menu-group label="Extras" icon="fa-cubes">
+                        <dl-menu-item label="404 Error" icon="fa-question-circle" route="error"></dl-menu-item>
+                        <dl-menu-item label="500 Error" icon="fa-exclamation-circle" route="error-server"></dl-menu-item>
+                    </dl-menu-group>
+                </div>-->
+            </div>
+        </aside>
+        <div class="so-content-overlay">
+        </div>
+        <div class="so-content">
+            <!--<button ng-if="isAuthenticated" class="btn btn-primary so-menu-toggle textshadow-light-black hidden-xs hidden-sm" style="z-index:9999999999; position: absolute; top: 15px; left: 50%; border: none;">
+                <i class="fa fa-bars"></i>
+            </button>-->
+            <div ng-switch="isAuthenticated">
+                <div ng-switch-default class="sign-in-form">
+                    <style>
+                        body {
+                            height: 100%;
+                            width: 100%;
+                            background: #32383f;
+                            color: white;
+                            text-shadow: 1px 1px rgba(0,0,0,0.6);
+                        }
+                        .so-page-wrapper {
+                            top: 0px; !important
+                        }
+                    </style>
+                    <div style="display: table; height: 100%; width: 100%;">
+                        <div style="display: table-cell; text-align: center; vertical-align: middle; width: 100%; height: 100%;">
+                            <div class="row col-xs-col-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4" style="height: 100%; padding-top: 20px; border: 2px solid rgba(255,255,255,0.2);">
+                                <!--<div class="col-xs-12 col-sm-12 col-md-12 sign-in-form-image-wrapper">
+                                    <div class="sign-in-image-shadow">
+                                        <img class="img-responsive sign-in-form-image" src="apple-icon-152x152.png" />
+                                    </div>
+                                </div>-->
+                                <div class="col-xs-12 col-sm-12 col-md-12 sign-in-form-entry-wrapper">
+                                    <h2 style="font-weight: 900; font-variant: small-caps;">
+                                        Angular Azure Search
+                                    </h2>
+                                    <hr />
+                                    <div>
+                                        <div ng-show="newUser" ng-cloak>
+                                            <d-sign-up-form></d-sign-up-form>
+                                        </div>
+                                        <div ng-show="!newUser" ng-cloak>
+                                            <d-login-form></d-login-form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div ng-switch-when="true">
+                    <dl-framework title="AngularAzureSearch"
+                                  subtitle="Application Framework - Build 19"
+                                  icon-file="apple-icon-152x152.png">
+                        <!-- If strict HTML, use attr forms, if not use dl-menu element form -->
+                        <div data-dl-menu>
+                            <dl-menu-item label="Welcome" icon="fa-home" route="index"></dl-menu-item>
+                            <dl-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dl-menu-item>
+                            <dl-menu-item label="Search" icon="fa-search" route="search"></dl-menu-item>
+                            <dl-menu-group label="Trails" icon="fa-leaf">
+                                <dl-menu-item label="Trails Index" icon="fa-leaf" route="trails-index"></dl-menu-item>
+                                <dl-menu-item label="Manage Trails" icon="fa-wrench" route="managetrails"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-group label="Tables" icon="fa-table">
+                                <dl-menu-item label="Basic Tables" icon="hidden" route="basic-tables"></dl-menu-item>
+                                <dl-menu-item label="Price Tables" icon="hidden" route="price-tables"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-item label="Typography" icon="fa-font" route="typography"></dl-menu-item>
+                            <dl-menu-group label="Icons" icon="fa-paperclip">
+                                <dl-menu-item label="Font Awesome" icon="fa-pencil" route="font-awesome"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-item label="Gallery" icon="fa-picture-o" route="gallery"></dl-menu-item>
+                            <dl-menu-item label="UI Kit" icon="fa-briefcase" route="ui-kit"></dl-menu-item>
+                            <dl-menu-group label="Components" icon="fa-magic">
+                                <dl-menu-item label="Form Elements" icon="hidden" route="form-elements"></dl-menu-item>
+                                <dl-menu-item label="Grids" icon="hidden" route="grids"></dl-menu-item>
+                            </dl-menu-group>
+                            <dl-menu-group label="Extras" icon="fa-cubes">
+                                <dl-menu-item label="404 Error" icon="fa-question-circle" route="error"></dl-menu-item>
+                                <dl-menu-item label="500 Error" icon="fa-exclamation-circle" route="error-server"></dl-menu-item>
+                            </dl-menu-group>
+                            <!--<dl-menu-item label="Trails" icon="fa-tree" route="trails"></dl-menu-item>-->
+                            <!-- MENU TEMPLATE ::
+                                <dl-menu-group label="****" icon="fa-****">
+                                <dl-menu-item label="****" icon="hidden" route="****"></dl-menu-item>
+                            </dl-menu-group>-->
+                            <!--<dl-menu-group label="Nested Menu" icon="fa-bars">
+                                <dl-menu-item label="1st Group" icon="hidden"></dl-menu-item>
+                                <dl-menu-item label="1st Group" icon="hidden"></dl-menu-item>
+                                <dl-menu-item label="1st Group" icon="hidden"></dl-menu-item>
+                                <dl-menu-group label="Group 2" icon="fa-bars">
+                                    <dl-menu-item label="2nd Group" icon="hidden"></dl-menu-item>
+                                    <dl-menu-item label="2nd Group" icon="hidden"></dl-menu-item>
+                                    <dl-menu-item label="2nd Group" icon="hidden"></dl-menu-item>
+                                    <dl-menu-group label="Group 3" icon="fa-bars">
+                                        <dl-menu-item label="3rd Group" icon="hidden"></dl-menu-item>
+                                        <dl-menu-item label="3rd Group" icon="hidden"></dl-menu-item>
+                                        <dl-menu-item label="3rd Group" icon="hidden"></dl-menu-item>
+                                        <dl-menu-group label="Group 4" icon="fa-bars">
+                                            <dl-menu-item label="4th Group" icon="hidden"></dl-menu-item>
+                                            <dl-menu-item label="4th Group" icon="hidden"></dl-menu-item>
+                                            <dl-menu-item label="4th Group" icon="hidden"></dl-menu-item>
+                                        </dl-menu-group>
+                                    </dl-menu-group>
+                                </dl-menu-group>
+                            </dl-menu-group>-->
+                        </div>
+                    </dl-framework>
+                    <!--<dl-footer copyright="Mark Hamilton"
+                               protected-years="2015"
+                               socialname="Mark"
+                               twitter="MarksMars"
+                               linkedin="in/driverlesscars"
+                               angellist="driverlessinnovation"></dl-footer>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--<script type="text/javascript">
+        SpacedOutMenu.install();
+    </script>-->
+
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <!-- Bing Maps API needs to be LOADED before use of mapping if you do dl-maps as a custom framework add-on. -->
+    <!-- Bing Maps map control v7.0 -->
+    <script src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=en-us&s=1"></script>
+
+    <!-- Angular and jQuery Dependencies -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-local-storage.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.min.js"></script>-->
+
+    <script src="Scripts/loading-bar.min.js"></script>
+    <script src="Scripts/angular-touch.min.js"></script>
+    <script src="Scripts/angular-gridster.min.js"></script>
+
+
+    <!-- lodash v3.10.1 -->
+    <script src="Scripts/lodash.js"></script>
+
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="Scripts/ngStorage.min.js"></script>
+    <script src="Scripts/angular-bootstrap-lightbox.min.js"></script>
+    <script src="Scripts/xeditable.min.js"></script>
+    <script src="Scripts/dirPagination.js"></script>
+    <script src="Scripts/angular-modal-service.min.js"></script>
+
+    <!-- Ext Footer Module -->
+    <script src="ext-modules/dlFooter/dlFooterModule.js"></script>
+    <script src="ext-modules/dlFooter/dlFooterController.js"></script>
+    <script src="ext-modules/dlFooter/dlFooterDirective.js"></script>
+
+    <!-- Ext Parallax Module-->
+    <script src="ext-modules/dlParallax/dlParallaxModule.js"></script>
+    <script src="ext-modules/dlParallax/dlParallaxDirective.js"></script>
+    <script src="ext-modules/dlParallax/dlParallaxBackgroundDirective.js"></script>
+
+    <!-- Ext Fullscreen Module -->
+    <script src="ext-modules/dlFullscreen/dlFullscreenModule.js"></script>
+    <script src="ext-modules/dlFullscreen/dlFullscreenFactory.js"></script>
+    <script src="ext-modules/dlFullscreen/dlFullscreenDirective.js"></script>
+
+    <!-- Ext Price Table Module -->
+    <script src="ext-modules/dlPriceTable/dlPriceTableModule.js"></script>
+    <script src="ext-modules/dlPriceTable/dlPriceTableController.js"></script>
+    <script src="ext-modules/dlPriceTable/dlPriceTableDirective.js"></script>
+
+    <!-- Ext Gallery Module -->
+    <script src="ext-modules/dlGallery/dlGalleryModule.js"></script>
+    <script src="ext-modules/dlGallery/dlGalleryController.js"></script>
+    <script src="ext-modules/dlGallery/dlGalleryDirective.js"></script>
+    <!--<script src="ext-modules/dlGallery/dlGalleryItemDirective.js"></script>-->
+
+    <!-- Ext Panel Module -->
+    <script src="ext-modules/dlPanel/dlPanelModule.js"></script>
+    <script src="ext-modules/dlPanel/dlPanelController.js"></script>
+    <script src="ext-modules/dlPanel/dlPanelDirective.js"></script>
+
+    <!-- Ext Menu Module -->
+    <script src="ext-modules/dlMenu/dlMenuModule.js"></script>
+    <script src="ext-modules/dlMenu/dlMenuController.js"></script>
+    <script src="ext-modules/dlMenu/dlMenuDirective.js"></script>
+    <script src="ext-modules/dlMenu/dlMenuItemDirective.js"></script>
+    <script src="ext-modules/dlMenu/dlMenuGroupDirective.js"></script>
+
+    <!-- Ext Search Module -->
+    <script src="ext-modules/dlSearch/dlSearchModule.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchFilters.js"></script>
+    <!--<script src="ext-modules/dlSearch/dlSearchController.js"></script>-->
+    <script src="ext-modules/dlSearch/dlSearchDetailController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchFacetsController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchRepeaterController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchFormController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchMapController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchSortController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchRouteController.js"></script>
+    <script src="ext-modules/dlSearch/dlSearchDirective.js"></script>
+
+    <!-- Ext Dashboard Module -->
+    <script src="ext-modules/dlDashboard/dlDashboardModule.js"></script>
+    <script src="ext-modules/dlDashboard/dlDashboardDirective.js"></script>
+    <script src="ext-modules/dlDashboard/dlWidgetBodyDirective.js"></script>
+
+    <!-- Ext Framework Module -->
+    <script src="ext-modules/dlFramework/dlFrameworkModule.js"></script>
+    <script src="ext-modules/dlFramework/dlFrameworkController.js"></script>
+    <script src="ext-modules/dlFramework/dlFrameworkDirective.js"></script>
+    <script src="ext-modules/dlFramework/dlClickAnywhereDirective.js"></script>
+    <script src="ext-modules/dlFramework/dlUserProfile/dlUserProfileDirective.js"></script>
+    <script src="ext-modules/dlFramework/dlUserProfile/dlUserProfileSmallDirective.js"></script>
+
+    <!-- App Module -->
+    <!---Template:: <script src="app/app****.js"></script>-->
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+    <script src="app/appController.js"></script>
+    <script src="app/controllers/trailsController.js"></script>
+    <script src="app/services/recursionHelper.js"></script>
+    <script src="app/services/searchService.js"></script>
+    <!-- App Auth Services -->
+    <!-- Template:: <script src="app/services/****.js"></script>-->
+    <script src="app/services/authInterceptorService.js"></script>
+    <script src="app/services/authService.js"></script>
+    <script src="app/services/trailService.js"></script>
+    <!--<script src="app/services/tokensManagerService.js"></script>-->
+    <script src="app/appRun.js"></script>
+
+    <!-- App Directives -->
+    <!--Template:: <script src="app/directives/d****Directive.js"></script>-->
+    <script src="app/directives/dIndexDirective.js"></script>
+    <script src="app/directives/dDashboardDirective.js"></script>
+    <!--<script src="app/directives/dHomesDirective.js"></script>-->
+    <!--<script src="app/directives/dTrailsDirective.js"></script>-->
+    <script src="app/directives/dBasicTablesDirective.js"></script>
+    <script src="app/directives/dErrorDirective.js"></script>
+    <script src="app/directives/dErrorServerDirective.js"></script>
+    <script src="app/directives/dFontAwesomeDirective.js"></script>
+    <script src="app/directives/dGridsDirective.js"></script>
+    <script src="app/directives/dFormElementsDirective.js"></script>
+    <script src="app/directives/dPriceTablesDirective.js"></script>
+    <script src="app/directives/dUiKitDirective.js"></script>
+    <script src="app/directives/dTypographyDirective.js"></script>
+    <script src="app/directives/dGalleryDirective.js"></script>
+    <script src="app/directives/dLoginFormDirective.js"></script>
+    <script src="app/directives/dSignUpFormDirective.js"></script>
+    <script src="app/directives/dSearchDirective.js"></script>
+    <script src="app/directives/dTrailsIndexDirective.js"></script>
+    <script src="app/directives/dManageTrailsDirective.js"></script>
+
+    <!-- Widget Directives -->
+    <!--Template:: <script src="app/widgets/d****/d****Directive.js"></script>-->
+    <!--<script src="app/widgets/dSearch/dSearchDirective.js"></script>-->
+
+    <!-- Dialogs -->
+    <!--Template:: <script src="app/dialogs/dSelect****Controller.js"></script>-->
+    <script src="app/dialogs/dSelectSearchController.js"></script>
+    <script src="app/dialogs/dTrailModalController.js"></script>
+
+    <!-- Azure Search Core Module-->
+    <script src="ext-modules/azureSearch/azureSearch.js"></script>
+    <!--<script src="ext-modules/azureSearch/factories/facetUrl.js"></script>
+    <script src="ext-modules/azureSearch/factories/filterFacet.js"></script>
+    <script src="ext-modules/azureSearch/factories/filterUrl.js"></script>
+    <script src="ext-modules/azureSearch/factories/formatFilter.js"></script>
+    <script src="ext-modules/azureSearch/factories/groupFilters.js"></script>
+    <script src="ext-modules/azureSearch/factories/parseFilter.js"></script>
+    <script src="ext-modules/azureSearch/factories/search.js"></script>
+    <script src="ext-modules/azureSearch/factories/suggest.js"></script>
+    <script src="ext-modules/azureSearch/factories/tokenizeFilters.js"></script>-->
+    
+    <!-- Bing Maps Core Module -->
+    <script src="ext-modules/mapping/mapping.js"></script>
+    <!--<script src="ext-modules/mapping/directives/map.js"></script>
+    <script src="ext-modules/mapping/factories/bestView.js"></script>
+    <script src="ext-modules/mapping/factories/currentLocation.js"></script>
+    <script src="ext-modules/mapping/factories/drawPolygon.js"></script>
+    <script src="ext-modules/mapping/factories/searchBounds.js"></script>-->
+    
+    <!-- Anchor Bottom Directive to Auto Resize -->
+    <script src="ext-modules/html/html.js"></script>
+    <!--<script src="ext-modules/html/directives/anchorBottom.js"></script>-->
+    
+    <!-- Cancel Input Factory -->
+    <script src="ext-modules/userInput/userInput.js"></script>
+    <!--<script src="ext-modules/userInput/factories/cancelInput.js"></script>-->
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<div ng-switch-on="theme">
+
+    <div ng-switch-default>
+        <div class="col-md-3 col-lg-3">
+            <div class="panel price panel-{{color}}">
+                <div class="panel-heading text-center">
+                    <h3>{{title}}</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <p class="lead" style="font-size:40px"><strong>{{price}}</strong></p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item" ng-repeat="feature in features">
+                        <i class="fa fa-check text-danger"></i> {{feature}}
+                    </li>
+                </ul>
+                <div class="panel-footer">
+                    <a class="btn btn-lg btn-block btn-{{buttoncolor}}" href="{{route}}">{{buttontext}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-switch-when="custom">
+        <div  class="{{classes}}">
+            <div class="panel price panel-{{color}}">
+                <div class="panel-heading text-center">
+                    <h3>{{title}}</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <p class="lead" style="font-size:40px"><strong>{{price}}</strong></p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item" ng-repeat="feature in features">
+                        <i class="fa fa-check text-danger"></i> {{feature}}
+                    </li>
+                </ul>
+                <div class="panel-footer">
+                    <a class="btn btn-lg btn-block btn-{{buttoncolor}}" href="{{route}}">{{buttontext}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-switch-when="option1">
+        <div class="{{classes}}">
+            <div class="panel price panel-{{color}}">
+                <div class="panel-heading text-center">
+                    <h3>{{title}}</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <p class="lead" style="font-size:40px"><strong>{{price}}</strong></p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item" ng-repeat="feature in features">
+                        <i class="fa fa-check text-danger"></i> {{feature}}
+                    </li>
+                </ul>
+                <div class="panel-footer">
+                    <a class="btn btn-lg btn-block btn-{{buttoncolor}}" href="{{route}}">{{buttontext}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
