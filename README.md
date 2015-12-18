@@ -1,9 +1,13 @@
 # AngularAzureSearch
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/TheDarkCode/AngularAzureSearch/LICENSE.md)
 
-Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).
+Sample full-featured web application containing separate WebRole (Front-End Client), WebAPI (Web API 2 Site using DocumentDB as data store), and Apache Cordova MobileApp using AngularJS / Ionic.
 
-Integrates all of the following technologies: AngularJS, Azure Search, Bing Maps, Web API 2,  Azure DocumentDB.
+This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Apache Cordova, Ionic Framework v1.2, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, Two-Factor Authentication (SendGrid, Twilio).
+
+Builds 25+ will include Azure ML integration to demonstrate matching users to Azure Search scoring profiles.
+
+Once it is ready to declare release worthy, I will create nuget and Visual Studio 2015 template options to allow you to pull in only what pieces you need for your specific implementation. The WebRole / MobileApp projects will be rewritten with Angular 2 as part of a planned rewrite to occur once .NET 5 becomes generally available in Q1 2016.
 
 ####LIVE CLIENT DEMO: https://angularazuresearch.azurewebsites.net/
 #####LOGIN: demo@github.com
