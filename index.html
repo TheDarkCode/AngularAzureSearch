@@ -47,10 +47,10 @@
 <a id="notice-you-must-update-endpoint-uris-prior-to-production-deployments-demo-services-will-throttle-public-users" class="anchor" href="#notice-you-must-update-endpoint-uris-prior-to-production-deployments-demo-services-will-throttle-public-users" aria-hidden="true"><span class="octicon octicon-link"></span></a>NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.</h6>
 
 <h4>
-<a id="current-live-demo-version-build-19-12142015" class="anchor" href="#current-live-demo-version-build-19-12142015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Live Demo Version: Build 19, 12/14/2015</h4>
+<a id="current-live-demo-version-build-21-12182015" class="anchor" href="#current-live-demo-version-build-21-12182015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Live Demo Version: Build 21, 12/18/2015</h4>
 
 <h4>
-<a id="current-development-version-build-20-12162015" class="anchor" href="#current-development-version-build-20-12162015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Development Version: Build 20, 12/16/2015</h4>
+<a id="current-development-version-build-21-12182015" class="anchor" href="#current-development-version-build-21-12182015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Development Version: Build 21, 12/18/2015</h4>
 
 <h5>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status:</h5>
@@ -59,7 +59,7 @@
 <li>WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.</li>
 <li>WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.</li>
 <li>DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.</li>
-<li>MobileApp is just using the WebRole base currently. It is going to be heavily modified over the next few days. Cors policy in WebAPI must be changed to "*" to let you login via app as-is.</li>
+<li>MobileApp is just using the WebRole base currently. It is going to be heavily modified over the next few days. Cors policy in WebAPI must be changed to "*" to let you login via app as-is. Sample Ionic app will included soon.</li>
 </ul>
 
 <h6>
@@ -70,8 +70,8 @@
     3. Sample CRUD operations for documents that are partitioned across DocDB collections via Web API.
     4. Dynamic routing, pagination of DocDB calls, data grids with sorting/filtering/search, and a sample page templates (with parallax) for WebRole.
     5. Expanded DataIndexer with async I/O for bulk importing documents to DocDB. Dynamic index creation from input JSON schema with configurable option definitions (sortable/filterable, etc based on variable type - ex: string, geojson).
-    6. SignalR sample code in WebAPi project for showing real-time updates.
-    7. External Login Providers (Facebook / Twitter) and 2-factor authentication support (SendGrid/Twilio) via Web API.
+    6. External Login Providers (Facebook / Twitter) and 2-factor authentication support (SendGrid/Twilio) via Web API.
+    7. MobileApp integration of Push Notifications via Azure Mobile Services, use of cordova plugins such as camera and gps, and rebuild utilizing a cross between dlFramework/WebRole and Ionic Framework. 
 </code></pre>
 
 <h6>
