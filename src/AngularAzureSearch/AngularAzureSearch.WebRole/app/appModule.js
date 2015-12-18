@@ -9,4 +9,6 @@
         apiUriBase: 'https://githubapi.azurewebsites.net/',
     })
 
+    //.constant('$', window.jQuery);
+
 })();

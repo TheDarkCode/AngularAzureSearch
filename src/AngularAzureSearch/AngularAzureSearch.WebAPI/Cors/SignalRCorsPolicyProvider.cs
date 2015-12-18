@@ -11,7 +11,7 @@ using System.Web.Http.Cors;
 
 namespace AngularAzureSearch.WebAPI.Cors
 {
-    public class MyCustomCorsPolicyProvider : ICorsPolicyProvider
+    public class SignalRCorsPolicyProvider : ICorsPolicyProvider
     {
         /// <summary>
         /// Returns custom CorsPolicy with AllowAnyHeader and AllowAnyMethod set to true by default.
@@ -34,7 +34,7 @@ namespace AngularAzureSearch.WebAPI.Cors
 
             // Get Allowed Origins from Config and split by comma. Can be changed to any character that you chose.
             string[] origins = AppSettingsConfig.CorsPolicyOrigins.Split(',');
-            
+
             // To split by multiple types use the following example as a template:
             // string[] origins = AppSettingsConfig.CorsPolicyOrigins.Split(',','+');
 

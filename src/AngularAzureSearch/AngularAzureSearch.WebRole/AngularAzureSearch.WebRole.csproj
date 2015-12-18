@@ -97,6 +97,7 @@
     <Content Include="app\directives\dTrailsIndexDirective.js" />
     <Content Include="app\directives\dTypographyDirective.js" />
     <Content Include="app\directives\dUiKitDirective.js" />
+    <Content Include="app\factories\signalRHub.js" />
     <Content Include="app\services\recursionHelper.js" />
     <Content Include="app\services\searchService.js" />
     <Content Include="app\services\templateService.js" />
@@ -267,6 +268,8 @@
     <Content Include="Scripts\dirPagination.js" />
     <Content Include="Scripts\dirPagination.tpl.html" />
     <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.0.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.0.min.js" />
     <Content Include="Scripts\lodash.js" />
     <Content Include="packages.config" />
     <Content Include="manifest.json" />
@@ -296,6 +299,7 @@
     <None Include="Properties\PublishProfiles\angularazuresearch.pubxml" />
     <Content Include="Scripts\angular-local-storage.min.js" />
     <Content Include="Scripts\angular-modal-service.min.js.map" />
+    <Content Include="Scripts\underscore-min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -336,8 +340,6 @@
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-bootstrap-lightbox.js" />
     <Content Include="Scripts\angular-bootstrap-lightbox.min.js" />
-    <Content Include="Scripts\angular-fullscreen.js" />
-    <Content Include="Scripts\angular-fullscreen.min.js" />
     <Content Include="Scripts\angular-gridster.min.js" />
     <Content Include="Scripts\angular-masonry.js" />
     <Content Include="Scripts\angular-masonry.min.js" />
@@ -361,6 +363,8 @@
     <Content Include="Scripts\ngStorage.js" />
     <Content Include="Scripts\ngStorage.min.js" />
     <Content Include="Scripts\spacedout-js.js" />
+    <Content Include="Scripts\underscore-min.js" />
+    <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\xeditable.js" />
     <Content Include="Scripts\xeditable.min.js" />
     <Content Include="Web.config" />

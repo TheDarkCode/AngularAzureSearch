@@ -2,8 +2,8 @@
     'use strict';
 
     angular.module('app')
-        .controller('trailsController', ["$scope", "trailService", "authService", "ModalService",
-            function ($scope, trailService, authService, ModalService) {
+        .controller('trailsController', ["$scope", "trailService", "authService", "ModalService", "signalRHub",
+            function ($scope, trailService, authService, ModalService, signalRHub) {
                 
                 $scope.trails = [];
                 $scope.trail = {};
@@ -55,6 +55,9 @@
                     } else {
                         trailService.updateTrail(trail).then(function (data) {
                             $scope.trailFormIsVisible = false;
+                            //var trailIdx = $scope.trails.indexOf(data.id);
+                            var trailIdx = _.findIndex($scope.trails, { id: data.id });
+                            $scope.trails[trailIdx] = data;
                             $scope.trail = {};
                         });
                     }
@@ -103,6 +106,39 @@
                 function hideAllForms() {
                     $scope.trailFormIsVisible = false;
                 }
+
+                // Trail Hub Integration
+
+                // Posted Trail Added to Data
+                signalRHub.on('postNewTrail', function (postedTrail) {
+                    $scope.trails.push(postedTrail);
+
+                    console.log(postedTrail);
+                });
+
+                // Put Trail Added to Data
+                signalRHub.on('putNewTrail', function (putTrail) {
+                    var putIdx = _.findIndex($scope.trails, { id: putTrail.id });
+
+                    console.log(putTrail);
+                    console.log("putIdx: " + putIdx);
+
+                    if (putIdx === undefined) {
+                        $scope.trails.push(putTrail);
+                    }
+                    else {
+                        $scope.trails[putIdx] = putTrail;
+                    }
+                });
+
+                // Remove Deleted Trail from Data
+                signalRHub.on('deleteTrail', function (trailId) {
+                    var deletedIdx = _.findIndex($scope.trails, { id: trailId });
+                    
+                    console.log(trailId);
+
+                    $scope.trails.splice(deletedIdx, 1);
+                });
 
             }]);
 })();

@@ -25,8 +25,12 @@
                         <input type="text" class="form-control" required ng-model="trail.elevation" />
                     </div>
                     <div class="form-group">
-                        <label>Location</label>
-                        <input type="text" class="form-control" required ng-model="trail.location" />
+                        <label>Latitude</label>
+                        <input type="text" class="form-control" required ng-model="trail.location.coordinates[0]" />
+                    </div>
+                    <div class="form-group">
+                        <label>Longitude</label>
+                        <input type="text" class="form-control" required ng-model="trail.location.coordinates[1]" />
                     </div>
                     <div class="form-group">
                         <label>Type</label>
@@ -40,7 +44,7 @@
 
             </div>
             <div class="modal-footer">
-                <button tng-click="close()" class="btn btn-primary" ng-disabled="trailform.$invalid" data-dismiss="modal">Save</button>
+                <button ng-click="close()" class="btn btn-primary" ng-disabled="trailform.$invalid" data-dismiss="modal">Save</button>
                 <button class="btn btn-default" ng-click="cancel()" data-dismiss="modal">Cancel</button>
             </div>
         </div>

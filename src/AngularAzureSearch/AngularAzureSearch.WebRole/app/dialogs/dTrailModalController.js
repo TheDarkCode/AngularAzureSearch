@@ -14,8 +14,11 @@
                     if (confirm("Are you sure you want to save this trail?")) {
                         close({
                             trail: $scope.trail,
-                            isValid: $scope.trailform.$valid
+                            isValid: true
                         }, 500); // close, but give 500ms for bootstrap to animate
+                    }
+                    else {
+                        $scope.cancel();
                     }
                 };
 
