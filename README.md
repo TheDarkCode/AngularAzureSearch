@@ -44,7 +44,6 @@ Once it is ready to declare release worthy, I will create nuget and Visual Studi
         4. Updating to latest versions of angularjs, bootstrap, etc. (Angular 2? Bootstrap 4? Fonts and Icons to be continuously updated in future commits.)
         5. Creating sample with AngularUI Router (ui-router) in place of ngRoute. (Low Priority)
         6. Adding additional commenting. (Continuous)
-        7. Re-adding file merging / compilation (ie: generating a new site.js with full comments). (Will be added by Build 20)
 
 ######Known Issues/Warnings:
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
@@ -112,6 +111,9 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ###angular-modal-service by Dave Kerr
 ######https://github.com/dwmkerr/angular-modal-service/
 
+###MVA-SignalR by Jon Galloway & Brady Gaster, Microsoft
+######https://github.com/jongalloway/MVA-SignalR
+
 ##Helpful Links
 
 ######http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx
@@ -126,3 +128,5 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ####Developing Solutions with Azure DocumentDB:
 ######https://mva.microsoft.com/en-us/training-courses/developing-solutions-with-azure-documentdb-10554
 
+####Lighting Up Real-Time Web Communications with SignalR:
+######https://mva.microsoft.com/en-us/training-courses/lighting-up-real-time-web-communications-with-signalr-8358
