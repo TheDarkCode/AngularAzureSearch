@@ -1,7 +1,4 @@
-﻿using AngularAzureSearch.WebAPI.Entities;
-using Microsoft.Azure.Documents.Client;
-using Microsoft.Azure.Documents;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;

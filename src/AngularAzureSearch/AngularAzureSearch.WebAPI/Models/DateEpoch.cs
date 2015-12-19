@@ -1,10 +1,7 @@
 ﻿using AngularAzureSearch.WebAPI.Helpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
-namespace AngularAzureSearch.WebAPI.Models
+namespace AngularAzureSearch.WebAPI.Entities
 {
     public class DateEpoch
     {

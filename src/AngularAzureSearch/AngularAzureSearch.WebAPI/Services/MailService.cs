@@ -7,7 +7,7 @@ namespace AngularAzureSearch.WebAPI.Services
     public interface IMailService
     {
         /// <summary>
-        /// 
+        /// The method used to send mail.
         /// </summary>
         /// <param name="from">a String that contains the address of the sender</param>
         /// <param name="to">a string that contains the address of the recipient</param>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AngularAzureSearch.WebAPI.Models
+﻿namespace AngularAzureSearch.WebAPI.Entities
 {
     /// <summary>
     /// The geographic region a user is in.

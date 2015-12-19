@@ -1,12 +1,7 @@
 ﻿using Microsoft.Azure.Documents.Client;
-using AngularAzureSearch.WebAPI.Repositories;
 using AngularAzureSearch.WebAPI.PartitionResolvers;
 using AngularAzureSearch.WebAPI.Initializers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Http;
 using AngularAzureSearch.WebAPI.Helpers;
 using Microsoft.Azure.Documents.Partitioning;

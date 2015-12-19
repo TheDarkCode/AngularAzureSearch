@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.Azure.Documents.Client;
 using Microsoft.Azure.Documents.Partitioning;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AngularAzureSearch.WebAPI.PartitionResolvers
 {

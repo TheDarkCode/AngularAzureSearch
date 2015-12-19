@@ -1,11 +1,6 @@
 ﻿using AngularAzureSearch.WebAPI.Services;
 using AngularAzureSearch.WebAPI.Helpers;
 using System;
-using System.IO;
-using System.Net.Mail;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace AngularAzureSearch.WebAPI.Controllers

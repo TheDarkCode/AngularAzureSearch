@@ -3,28 +3,21 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.Azure.Documents.Spatial;
 using Newtonsoft.Json;
 
-namespace AngularAzureSearch.WebAPI.Entities.Trails
+namespace AngularAzureSearch.WebAPI.Entities.Analytic
 {
-    public class Trail : EntityBase
+    public class Analytic : EntityBase
     {
         /// <summary>
         /// Pass the lowercase string name of the class to the base class.
         /// This is used in the repository for storage and querying,
         /// to organize documents by this type name.
-        /// Temporary fix for trails data added.
+        /// Temporary fix for analytic data added.
         /// </summary>
-        public Trail() : base("trail", "trail")
+        public Analytic() : base("analytic", "analytic")
         {
 
         }
 
-        [Required]
-        [JsonProperty("name")]
-        public string Name { get; set; }
-        [JsonProperty("county")]
-        public string County { get; set; }
-        [JsonProperty("elevation")]
-        public Int64 Elevation { get; set; }
         [JsonProperty("location")]
         public Point Location { get; set; }
     }

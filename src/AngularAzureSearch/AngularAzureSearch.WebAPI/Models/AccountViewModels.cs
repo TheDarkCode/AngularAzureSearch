@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace AngularAzureSearch.WebAPI.Models
+namespace AngularAzureSearch.WebAPI.Entities
 {
     // Models returned by AccountController actions.
 

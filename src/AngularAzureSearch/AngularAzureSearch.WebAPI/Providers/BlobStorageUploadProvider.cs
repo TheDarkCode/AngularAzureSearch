@@ -1,21 +1,18 @@
 ﻿using AngularAzureSearch.WebAPI.Helpers;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AngularAzureSearch.WebAPI.Providers
 {
     public class BlobStorageUploadProvider : MultipartFileStreamProvider
     {
-        public List<Models.BlobModels.BlobUploadModel> Uploads { get; set; }
+        public List<Entities.BlobModels.BlobUploadModel> Uploads { get; set; }
 
         public BlobStorageUploadProvider() : base(Path.GetTempPath())
         {
-            Uploads = new List<Models.BlobModels.BlobUploadModel>();
+            Uploads = new List<Entities.BlobModels.BlobUploadModel>();
         }
 
         public override Task ExecutePostProcessingAsync()
@@ -46,7 +43,7 @@ namespace AngularAzureSearch.WebAPI.Providers
                 File.Delete(fileData.LocalFileName);
 
                 // Create blob upload model with properties from blob info
-                var blobUpload = new Models.BlobModels.BlobUploadModel
+                var blobUpload = new Entities.BlobModels.BlobUploadModel
                 {
                     FileName = blob.Name,
                     FileUrl = blob.Uri.AbsoluteUri,

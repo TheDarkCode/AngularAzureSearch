@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Security.Cryptography.X509Certificates;
-using System.Web.Http;
+﻿using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
-using Newtonsoft.Json.Serialization;
 using AngularAzureSearch.WebAPI.Cors;
 using System.Web.Routing;
-using Microsoft.AspNet.SignalR;
 
 namespace AngularAzureSearch.WebAPI
 {

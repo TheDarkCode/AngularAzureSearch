@@ -12,9 +12,40 @@ namespace AngularAzureSearch.WebAPI
 {
     public partial class Startup
     {
+        /// <summary>
+        /// Allows you to use Redis Cache with SignalR.
+        /// </summary>
+        void UseRedisBackplane()
+        {
+            GlobalHost.DependencyResolver.UseRedis("[YOURENDPOINT].redis.cache.windows.net",
+                6379,
+                "[PASSWORD]",
+                "[EVENT NAME]");
+        }
+
+        /// <summary>
+        /// Allows you to use Service Bus with SignalR.
+        /// </summary>
+        void UseServiceBusBackplane()
+        {
+            GlobalHost.DependencyResolver.UseServiceBus("[CONNECTION STRING]", "[TOPIC PREFIX]");
+        }
+
+        /// <summary>
+        /// Allows you to use SQL Server with SignalR.
+        /// </summary>
+        void UseSqlBackplane()
+        {
+            GlobalHost.DependencyResolver.UseSqlServer("[CONNECTION STRING");
+        }
+
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+
+            //UseRedisBackplane();
+            //UseServiceBusBackplane();
+            //UseSqlBackplane();
 
             // Branch the pipeline here for requests that start with "/signalr"
             app.Map("/signalr", map =>

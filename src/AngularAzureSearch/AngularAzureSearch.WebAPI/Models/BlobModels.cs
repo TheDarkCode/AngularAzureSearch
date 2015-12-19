@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
 
-namespace AngularAzureSearch.WebAPI.Models
+namespace AngularAzureSearch.WebAPI.Entities
 {
     public class BlobModels
     {

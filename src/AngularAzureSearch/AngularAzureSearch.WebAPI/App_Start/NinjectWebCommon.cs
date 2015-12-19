@@ -13,7 +13,6 @@ namespace AngularAzureSearch.WebAPI.App_Start
     using Ninject.Web.Common;
     using Services;
     using PartitionRepositories;
-    using Ninject.Activation;
 
     public static class NinjectWebCommon 
     {

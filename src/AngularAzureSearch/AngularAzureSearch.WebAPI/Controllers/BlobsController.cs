@@ -1,12 +1,9 @@
 ﻿using AngularAzureSearch.WebAPI.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Http;
 using System.Web.Http.Description;
 
@@ -48,11 +45,11 @@ namespace AngularAzureSearch.WebAPI.Controllers
             }
         }
 
-        /// <summary>
-        /// Downloads a blob file.
-        /// </summary>
-        /// <param name="blobId">The ID of the blob.</param>
-        /// <returns></returns>
+        // <summary>
+        // Downloads a blob file.
+        // </summary>
+        // <param name="blobId">The ID of the blob.</param>
+        // <returns></returns>
         //public async Task<HttpResponseMessage> GetBlobDownload(int blobId)
         //{
         //    // IMPORTANT: This must return HttpResponseMessage instead of IHttpActionResult

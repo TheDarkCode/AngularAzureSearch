@@ -1,24 +1,20 @@
-﻿using AngularAzureSearch.WebAPI.Helpers;
-using AngularAzureSearch.WebAPI.Providers;
-using System;
+﻿using AngularAzureSearch.WebAPI.Providers;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AngularAzureSearch.WebAPI.Services
 {
     public interface IBlobService
     {
-        Task<List<Models.BlobModels.BlobUploadModel>> UploadBlobs(HttpContent httpContent);
+        Task<List<Entities.BlobModels.BlobUploadModel>> UploadBlobs(HttpContent httpContent);
         //Task<Models.BlobModels.BlobDownloadModel> DownloadBlob(int blobId);
     }
 
     public class BlobService : IBlobService
     {
-        public async Task<List<Models.BlobModels.BlobUploadModel>> UploadBlobs(HttpContent httpContent)
+        public async Task<List<Entities.BlobModels.BlobUploadModel>> UploadBlobs(HttpContent httpContent)
         {
             var blobUploadProvider = new BlobStorageUploadProvider();
 

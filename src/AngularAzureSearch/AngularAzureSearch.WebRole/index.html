@@ -40,7 +40,7 @@
 
     Comments included for development. Use minified version for production.
 
-    Current version:: Build 21 / 12/18/2015
+    Current version:: Build 19 / 12/14/2015
 
 -->
 
@@ -59,7 +59,7 @@
 
     <title>Angular Azure Search</title>
 
-    <meta name="description" content="Angular Azure Search - Build 21 - 12/18/2015">
+    <meta name="description" content="Angular Azure Search - Build 19 - 12/14/2015">
     <meta name="author" content="Mark Hamilton | Liam Cavanagh - GitHub.com/TheDarkCode/AngularAzureSearch">
     
     <!-- Browser Icons (Create your own at: http://www.favicon-generator.org/ - Save extracted .zip contents to root.) -->
@@ -223,7 +223,7 @@
                 </div>
                 <div ng-switch-when="true">
                     <dl-framework title="AngularAzureSearch"
-                                  subtitle="Application Framework - Build 21"
+                                  subtitle="Application Framework - Build 19"
                                   icon-file="apple-icon-152x152.png">
                         <!-- If strict HTML, use attr forms, if not use dl-menu element form -->
                         <div data-dl-menu>
@@ -303,6 +303,9 @@
 
     <!-- Angular and jQuery Dependencies -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    
+    <!-- Underscore.JS -->
+    <script src="Scripts/underscore-min.js"></script>
 
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-local-storage.min.js"></script>
@@ -318,6 +321,10 @@
     <script src="Scripts/angular-touch.min.js"></script>
     <script src="Scripts/angular-gridster.min.js"></script>
 
+    <!-- SignalR Dependency -->
+    <script src="Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <!-- Update to WebAPI URI -->
+    <!--<script src="https://githubapi.azurewebsites.net/signalr/hubs"></script>-->
 
     <!-- lodash v3.10.1 -->
     <script src="Scripts/lodash.js"></script>
@@ -412,6 +419,9 @@
     <script src="app/services/trailService.js"></script>
     <!--<script src="app/services/tokensManagerService.js"></script>-->
     <script src="app/appRun.js"></script>
+    
+    <!-- App Factories -->
+    <script src="app/factories/signalRHub.js"></script>
 
     <!-- App Directives -->
     <!--Template:: <script src="app/directives/d****Directive.js"></script>-->

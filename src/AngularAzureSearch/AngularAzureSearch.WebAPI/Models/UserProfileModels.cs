@@ -1,11 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace AngularAzureSearch.WebAPI.Models
+namespace AngularAzureSearch.WebAPI.Entities
 {
     /// <summary>
     /// Represents a user profile to be stored within DocumentDB.
