@@ -126,3 +126,5 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ####Developing Solutions with Azure DocumentDB:
 ######https://mva.microsoft.com/en-us/training-courses/developing-solutions-with-azure-documentdb-10554
 
+####Lighting Up Real-Time Web Communications with SignalR:
+######https://mva.microsoft.com/en-us/training-courses/lighting-up-real-time-web-communications-with-signalr-8358
