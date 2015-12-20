@@ -32,7 +32,7 @@ Once it is ready to declare release worthy, I will create nuget and Visual Studi
         4. Dynamic routing, pagination of DocDB calls, data grids with sorting/filtering/search, and a sample page templates (with parallax) for WebRole.
         5. Expanded DataIndexer with async I/O for bulk importing documents to DocDB. Dynamic index creation from input JSON schema with configurable option definitions (sortable/filterable, etc based on variable type - ex: string, geojson).
         6. External Login Providers (Facebook / Twitter) and 2-factor authentication support (SendGrid/Twilio) via Web API.
-        7. MobileApp integration of Push Notifications via Azure Mobile Services, use of cordova plugins such as camera and gps, and rebuild utilizing a cross between dlFramework/WebRole and Ionic Framework. 
+        7. MobileApp integration of Push Notifications via Azure Mobile Services, use of cordova plugins such as camera and gps, and rebuild utilizing a cross between dlFramework/WebRole and Ionic Framework.
 
 ######Current To Do List:
         Mapping Module Additions ::
@@ -42,7 +42,7 @@ Once it is ready to declare release worthy, I will create nuget and Visual Studi
 
         Boilerplate ::
         4. Updating to latest versions of angularjs, bootstrap, etc. (Angular 2? Bootstrap 4? Fonts and Icons to be continuously updated in future commits.)
-        5. Creating sample with AngularUI Router (ui-router) in place of ngRoute. (Low Priority)
+        5. Creating sample with AngularUI Router (ui-router) in place of ngRoute. (Part of MobileApp going forward.)
         6. Adding additional commenting. (Continuous)
 
 ######Known Issues/Warnings:
@@ -113,6 +113,9 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 
 ###MVA-SignalR by Jon Galloway & Brady Gaster, Microsoft
 ######https://github.com/jongalloway/MVA-SignalR
+
+###Ionic Framework
+######https://github.com/driftyco/ionic
 
 ##Helpful Links
 
