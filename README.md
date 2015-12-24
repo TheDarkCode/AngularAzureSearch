@@ -18,12 +18,12 @@ Once it is ready to declare release worthy, I will create nuget and Visual Studi
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
 ####Current Live Demo Version: Build 21, 12/18/2015
-####Current Development Version: Build 21, 12/18/2015
+####Current Development Version: Build 22, 12/23/2015
 #####Status: 
   - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.
   - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
   - DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.
-  - MobileApp is just using the WebRole base currently. It is going to be heavily modified over the next few days. Cors policy in WebAPI must be changed to "*" to let you login via app as-is. Sample Ionic app will included soon.
+  - MobileApp to be changed to Ionic framework with Build 22. Cors policy in WebAPI will be updated to reflect changes. Will support Android, iOS, and Win Phone builds.
 
 ######Upcoming Changes (Within Next 5 Builds):
         1. Azure ML sample integration to demonstrate how to use custom session parameters to automatically associate a user to a scoring profile or different index. ML web service calls will be made an endpoint in the Web API to avoid CORS issues.
@@ -32,7 +32,7 @@ Once it is ready to declare release worthy, I will create nuget and Visual Studi
         4. Dynamic routing, pagination of DocDB calls, data grids with sorting/filtering/search, and a sample page templates (with parallax) for WebRole.
         5. Expanded DataIndexer with async I/O for bulk importing documents to DocDB. Dynamic index creation from input JSON schema with configurable option definitions (sortable/filterable, etc based on variable type - ex: string, geojson).
         6. External Login Providers (Facebook / Twitter) and 2-factor authentication support (SendGrid/Twilio) via Web API.
-        7. MobileApp integration of Push Notifications via Azure Mobile Services, use of cordova plugins such as camera and gps, and rebuild utilizing a cross between dlFramework/WebRole and Ionic Framework.
+        7. MobileApp integration of Push Notifications via Azure Mobile Services, use of cordova plugins such as camera and gps.
 
 ######Current To Do List:
         Mapping Module Additions ::
