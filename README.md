@@ -1,5 +1,6 @@
-![AngularAzureSearch](https://raw.githubusercontent.com/TheDarkCode/AngularAzureSearch/master/res/Photoshop/AngularAzureSearch-Logo.png)
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/TheDarkCode/AngularAzureSearch/master/res/Photoshop/AngularAzureSearch-Logo.png" alt="AngularAzureSearch" height="auto" width="75%">
+</p>
 
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/TheDarkCode/AngularAzureSearch/LICENSE.md)
 
