@@ -1,4 +1,6 @@
-# AngularAzureSearch
+![AngularAzureSearch](https://raw.githubusercontent.com/TheDarkCode/AngularAzureSearch/master/res/Photoshop/AngularAzureSearch-Logo.png)
+
+
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/TheDarkCode/AngularAzureSearch/LICENSE.md)
 
 Sample full-featured web application containing separate WebRole (Front-End Client), WebAPI (Web API 2 Site using DocumentDB as data store), and Apache Cordova MobileApp using AngularJS / Ionic.
