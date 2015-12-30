@@ -6,7 +6,7 @@
 
 Sample full-featured web application containing separate WebRole (Front-End Client), WebAPI (Web API 2 Site using DocumentDB as data store), and Apache Cordova MobileApp using AngularJS / Ionic.
 
-This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Apache Cordova, Ionic Framework v1.2, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, Two-Factor Authentication (SendGrid, Twilio).
+This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Apache Cordova, Ionic Framework v1.2, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, and Two-Factor Authentication (SendGrid, Twilio).
 
 Builds 25+ will include Azure ML integration to demonstrate matching users to Azure Search scoring profiles.
 
@@ -125,6 +125,8 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 ######http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx
 ######DocumentDB Documentation: https://msdn.microsoft.com/en-us/library/azure/dn781482.aspx
 ######Azure Search Documentation: https://msdn.microsoft.com/en-us/library/azure/dn798933.aspx
+######Ionic Framework Documentation: http://ionicframework.com/docs/
+######W3C Recommendation on Cross-Origin-Resource-Sharing: http://www.w3.org/TR/cors/
 
 ##Related Microsoft Virtual Academy Courses
 
