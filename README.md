@@ -78,6 +78,12 @@ https://azure.microsoft.com/en-us/pricing/details/documentdb/
 ######Data Transfers Pricing Details
 https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 
+####Generating Mobile App Splash Screen and Icons
+
+While connected to the internet, you should use the following instructions from the Ionic Framework site to auto-generate the appropriately cropped and resized splash and app icons for all the platforms you are deploying to: http://ionicframework.com/docs/cli/icon-splashscreen.html
+
+The TL;DR version is to add the icon and splash screens (renamed to icon.png and splash.png [or psd]) to the "resources" folder at the root of the MobileApp project. Then set your command line or terminal window to the Mobile App project's directory. From there, enter the following commands: "ionic resources --icon" and "ionic resources --splash". The commands will automatically generate the icons and splash screens for all platforms currently added to the project. If it doesn't work, delete the existing icons and splash screens and run the commands again. You must have the Ionic Framework installed via NPM (with the appropriate path set) in order to execute "ionic" prefixed commands.
+
 ##Related GitHub Projects / Credits
 
 ###Azure Search Demos by Liam Cavanagh, Microsoft
