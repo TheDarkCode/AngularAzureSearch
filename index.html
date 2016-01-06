@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
     <title>AngularAzureSearch by TheDarkCode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
+    <section class="page-header">
+      <h1 class="project-name">AngularAzureSearch</h1>
+      <h2 class="project-tagline">Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).</h2>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch" class="btn">View on GitHub</a>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <header>
-          <h1>AngularAzureSearch</h1>
-          <h2>Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).</h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/TheDarkCode/AngularAzureSearch/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/TheDarkCode/AngularAzureSearch/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/TheDarkCode/AngularAzureSearch" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <p align="center">
+    <section class="main-content">
+      <p align="center">
 <img src="https://raw.githubusercontent.com/TheDarkCode/AngularAzureSearch/master/res/Photoshop/AngularAzureSearch-Logo.png" alt="AngularAzureSearch" height="auto" width="75%">
 </p>
 
@@ -39,7 +27,7 @@
 
 <p>Sample full-featured web application containing separate WebRole (Front-End Client), WebAPI (Web API 2 Site using DocumentDB as data store), and Apache Cordova MobileApp using AngularJS / Ionic.</p>
 
-<p>This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Apache Cordova, Ionic Framework v1.2, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, Two-Factor Authentication (SendGrid, Twilio).</p>
+<p>This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Apache Cordova, Ionic Framework v1.2, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, and Two-Factor Authentication (SendGrid, Twilio).</p>
 
 <p>Builds 25+ will include Azure ML integration to demonstrate matching users to Azure Search scoring profiles.</p>
 
@@ -67,7 +55,7 @@
 <a id="current-live-demo-version-build-21-12182015" class="anchor" href="#current-live-demo-version-build-21-12182015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Live Demo Version: Build 21, 12/18/2015</h4>
 
 <h4>
-<a id="current-development-version-build-22-12262015" class="anchor" href="#current-development-version-build-22-12262015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Development Version: Build 22, 12/26/2015</h4>
+<a id="current-development-version-build-225-142016" class="anchor" href="#current-development-version-build-225-142016" aria-hidden="true"><span class="octicon octicon-link"></span></a>Current Development Version: Build 22.5, 1/4/2016</h4>
 
 <h5>
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status:</h5>
@@ -149,6 +137,13 @@
 <a id="data-transfers-pricing-details" class="anchor" href="#data-transfers-pricing-details" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Transfers Pricing Details</h6>
 
 <p><a href="https://azure.microsoft.com/en-us/pricing/details/data-transfers/">https://azure.microsoft.com/en-us/pricing/details/data-transfers/</a></p>
+
+<h4>
+<a id="generating-mobile-app-splash-screen-and-icons" class="anchor" href="#generating-mobile-app-splash-screen-and-icons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generating Mobile App Splash Screen and Icons</h4>
+
+<p>While connected to the internet, you should use the following instructions from the Ionic Framework site to auto-generate the appropriately cropped and resized splash and app icons for all the platforms you are deploying to: <a href="http://ionicframework.com/docs/cli/icon-splashscreen.html">http://ionicframework.com/docs/cli/icon-splashscreen.html</a></p>
+
+<p>The TL;DR version is to add the icon and splash screens (renamed to icon.png and splash.png [or psd]) to the "resources" folder at the root of the MobileApp project. Then set your command line or terminal window to the Mobile App project's directory. From there, enter the following commands: "ionic resources --icon" and "ionic resources --splash". The commands will automatically generate the icons and splash screens for all platforms currently added to the project. If it doesn't work, delete the existing icons and splash screens and run the commands again. You must have the Ionic Framework installed via NPM (with the appropriate path set) in order to execute "ionic" prefixed commands.</p>
 
 <h2>
 <a id="related-github-projects--credits" class="anchor" href="#related-github-projects--credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related GitHub Projects / Credits</h2>
@@ -265,6 +260,14 @@
 <a id="azure-search-documentation-httpsmsdnmicrosoftcomen-uslibraryazuredn798933aspx" class="anchor" href="#azure-search-documentation-httpsmsdnmicrosoftcomen-uslibraryazuredn798933aspx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Azure Search Documentation: <a href="https://msdn.microsoft.com/en-us/library/azure/dn798933.aspx">https://msdn.microsoft.com/en-us/library/azure/dn798933.aspx</a>
 </h6>
 
+<h6>
+<a id="ionic-framework-documentation-httpionicframeworkcomdocs" class="anchor" href="#ionic-framework-documentation-httpionicframeworkcomdocs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ionic Framework Documentation: <a href="http://ionicframework.com/docs/">http://ionicframework.com/docs/</a>
+</h6>
+
+<h6>
+<a id="w3c-recommendation-on-cross-origin-resource-sharing-httpwwww3orgtrcors" class="anchor" href="#w3c-recommendation-on-cross-origin-resource-sharing-httpwwww3orgtrcors" aria-hidden="true"><span class="octicon octicon-link"></span></a>W3C Recommendation on Cross-Origin-Resource-Sharing: <a href="http://www.w3.org/TR/cors/">http://www.w3.org/TR/cors/</a>
+</h6>
+
 <h2>
 <a id="related-microsoft-virtual-academy-courses" class="anchor" href="#related-microsoft-virtual-academy-courses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related Microsoft Virtual Academy Courses</h2>
 
@@ -288,15 +291,15 @@
 <h6>
 <a id="httpsmvamicrosoftcomen-ustraining-courseslighting-up-real-time-web-communications-with-signalr-8358" class="anchor" href="#httpsmvamicrosoftcomen-ustraining-courseslighting-up-real-time-web-communications-with-signalr-8358" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://mva.microsoft.com/en-us/training-courses/lighting-up-real-time-web-communications-with-signalr-8358">https://mva.microsoft.com/en-us/training-courses/lighting-up-real-time-web-communications-with-signalr-8358</a>
 </h6>
-        </section>
 
-        <footer>
-          AngularAzureSearch is maintained by <a href="https://github.com/TheDarkCode">TheDarkCode</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/TheDarkCode/AngularAzureSearch">AngularAzureSearch</a> is maintained by <a href="https://github.com/TheDarkCode">TheDarkCode</a>.</span>
 
-        
-      </div>
-    </div>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
