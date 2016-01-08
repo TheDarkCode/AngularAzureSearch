@@ -28,6 +28,8 @@ Once it is ready to declare release worthy, I will create nuget and Visual Studi
   - DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.
   - MobileApp to be changed to Ionic framework with Build 22. Cors policy in WebAPI will be updated to reflect changes. Will support Android, iOS, and Win Phone builds.
 
+##E-Mail Support: support@dryverless.com
+
 ######Upcoming Changes (Within Next 5 Builds):
         1. Azure ML sample integration to demonstrate how to use custom session parameters to automatically associate a user to a scoring profile or different index. ML web service calls will be made an endpoint in the Web API to avoid CORS issues.
         2. Demonstrate Azure Search as a Web API endpoint.
