@@ -1,0 +1,35 @@
+/* Setup the default font App-wide */
+
+$font-family-base : San Francisco !default;
+$font-src : '../fonts/sanfranciscodisplay-regular-webfont.woff';
+
+$secondary-font-family-base : San Francisco !default;
+$secondary-font-src : '../fonts/sanfranciscodisplay-thin-webfont.woff';
+
+@font-face {
+    font-family: $font-family-base;
+    src: url($font-src) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $secondary-font-family-base;
+    src: url($secondary-font-src) format('woff');
+    font-weight: 200;
+}
+
+body *, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-family-base , Fallback, sans-serif;
+}
+
+.secondary-font {
+  font-family: $secondary-font-family-base , Fallback, sans-serif;
+}
+
+input, button, select, textarea {
+	font-family: $font-family-base , Fallback, sans-serif;
+}
+.bold {font-weight:bold;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+.uppercase {text-transform:uppercase;}

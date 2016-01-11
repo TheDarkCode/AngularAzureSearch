@@ -1,0 +1,226 @@
+// Mixins
+
+// Border Radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Gradient Generator (Top Fade and Bottom Fade) for Cards
+// --------------------------------------------------
+@mixin card-top-down-shadow(){ //eg: 0, 0, 0, 0.5
+  
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.02) 18%, rgba(0,0,0,0) 48%, rgba(255,255,255,0) 49%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.03) 51%, rgba(0,0,0,0.25) 59%, rgba(0,0,0,0.67) 87%, rgba(0,0,0,0.8) 95%, rgba(0,0,0,0.87) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(18%,rgba(0,0,0,0.02)), color-stop(48%,rgba(0,0,0,0)), color-stop(49%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0)), color-stop(51%,rgba(0,0,0,0.03)), color-stop(59%,rgba(0,0,0,0.25)), color-stop(87%,rgba(0,0,0,0.67)), color-stop(95%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.87)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.02) 18%,rgba(0,0,0,0) 48%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.03) 51%,rgba(0,0,0,0.25) 59%,rgba(0,0,0,0.67) 87%,rgba(0,0,0,0.8) 95%,rgba(0,0,0,0.87) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.02) 18%,rgba(0,0,0,0) 48%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.03) 51%,rgba(0,0,0,0.25) 59%,rgba(0,0,0,0.67) 87%,rgba(0,0,0,0.8) 95%,rgba(0,0,0,0.87) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.02) 18%,rgba(0,0,0,0) 48%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.03) 51%,rgba(0,0,0,0.25) 59%,rgba(0,0,0,0.67) 87%,rgba(0,0,0,0.8) 95%,rgba(0,0,0,0.87) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.02) 18%,rgba(0,0,0,0) 48%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.03) 51%,rgba(0,0,0,0.25) 59%,rgba(0,0,0,0.67) 87%,rgba(0,0,0,0.8) 95%,rgba(0,0,0,0.87) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05000000', endColorstr='#de000000',GradientType=0 );
+
+}
+
+@mixin text-color-contrast($color,$method)
+{
+  // $color - the specified color
+  /* 
+  $method the algorithm to find the best contrast. 
+  if the color scheme doesn't go well with the
+  text color (like red background with black text).
+  Switching between "simple" and "w3c" should fix this
+  */
+  @if($method == "simple")
+  {
+    @if(lightness($color) < 51, #FFF, #000){
+    color : transparentize(white, 0.15);
+  };
+    @else {
+    color : transparentize(black, 0.15);
+    }
+  }
+
+  @if($method == "w3c") 
+  {
+    $color-brightness: round((red($color) * 299) + (green($color) * 587) + (blue($color) * 114) / 1000);
+    $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+    
+    @if abs($color-brightness) < ($light-color/2){
+      color : transparentize(white, 0.15);
+    }
+
+    @else {
+      color : transparentize(black, 0.15);
+    }
+  }
+
+}
+
+
+@mixin form_input_transparent($color,$method)
+{
+  // $color - the specified color
+  /* 
+  $method the algorithm to find the best contrast. 
+  if the color scheme doesn't go well with the
+  text color (like red background with black text).
+  Switching between "simple" and "w3c" should fix this
+  */
+  @if($method == "simple")
+  {
+    @if(lightness($color) < 51, #FFF, #000){
+    color : transparentize(white, 0.15);
+    background-color : transparentize(darken($color, 20%), 0.8);
+    border-color : transparentize(white, 0.3);
+  };
+    @else {
+    color : transparentize(black, 0.15);
+    background-color : transparentize(lighten($color, 20%), 0.8);
+    border-color : transparentize(black, 0.3);
+    }
+  }
+
+  @if($method == "w3c") 
+  {
+    $color-brightness: round((red($color) * 299) + (green($color) * 587) + (blue($color) * 114) / 1000);
+    $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+    
+    @if abs($color-brightness) < ($light-color/2){
+      color : transparentize(white, 0.15);
+      background-color : transparentize(black, 0.5);
+      border-color : transparentize(white, 0.3);
+    }
+
+    @else {
+      color : transparentize(black, 0.15);
+      background-color : transparentize(white, 0.5);
+      border-color : transparentize(black, 0.3);
+    }
+  }
+
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+@mixin border-color-contrast($color,$method)
+{
+  // $color - the specified color
+  /* 
+  $method the algorithm to find the best contrast. 
+  if the color scheme doesn't go well with the
+  text color (like red background with black text).
+  Switching between "simple" and "w3c" should fix this
+  */
+  @if($method == "simple")
+  {
+    @if(lightness($color) < 51, #FFF, #000){
+    border-color : transparentize(white, 0.8);
+  };
+    @else {
+    border-color : transparentize(black, 0.8);
+    }
+  }
+
+  @if($method == "w3c") 
+  {
+    $color-brightness: round((red($color) * 299) + (green($color) * 587) + (blue($color) * 114) / 1000);
+    $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+    
+    @if abs($color-brightness) < ($light-color/2){
+      border-color : transparentize(white, 0.8);
+    }
+
+    @else {
+      border-color : transparentize(black, 0.8);
+    }
+  }
+
+}
+
+
+
+@mixin input-placeholder($color, $method) {
+  &::-webkit-input-placeholder {
+    @include text-color-contrast($color, $method);
+  }
+  &:-ms-input-placeholder {
+    @include text-color-contrast($color, $method);
+  }
+  @include text-color-contrast($color, $method);
+}
+
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+// Button Mixins
+// --------------------------------------------------
+
+@mixin button-style($bg-color, $border-color, $active-bg-color, $active-border-color, $color, $opacity) {
+  border-color: $border-color;
+  background: $bg-color;/* The Fallback */
+  background: rgba($bg-color, $opacity);
+  color: $color;
+
+  // Give desktop users something to play with
+  &:hover {
+    color: $color;
+    text-decoration: none;
+  }
+  &.active,
+  &.activated {
+    border-color: $active-border-color;
+    background-color: $active-bg-color;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
+  }
+}
+
+@mixin button-clear($color, $font-size:"") {
+  &.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: $color;
+
+    @if $font-size != "" {
+      font-size: $font-size;
+    }
+  }
+  &.button-icon {
+    border-color: transparent;
+    background: none;
+  }
+}
+
+@mixin button-outline($color, $text-color:"") {
+  &.button-outline {
+    border-color: $color;
+    background: transparent;
+    @if $text-color == "" {
+      $text-color: $color;
+    }
+    color: $text-color;
+    &.active,
+    &.activated {
+      background-color: $color;
+      box-shadow: none;
+      color: #fff;
+    }
+  }
+}

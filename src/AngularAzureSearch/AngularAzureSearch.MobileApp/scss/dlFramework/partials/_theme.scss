@@ -1,0 +1,114 @@
+// Theme Colors (Must be loaded after scss\partials\_colors.scss!)
+
+	/*
+	Colors in this section will dictate 
+	the entire color scheme for all screens.
+	Useful for deciding on a color scheme even before
+	startng the project. 
+
+	$brand-base-color: The major color of your app.
+
+	$brand-analogous-color: The second major color of your app.
+	shouldn't be too far away from $brand-base-color
+
+	$brand-contrast-color: pick a contrast color that's a good
+	fit with $brand-base-color
+
+	$color-algorithm: Two methods are included to determine
+	if the text color on the $brand-* colors should be black
+	or white (best contrast). They're 'w3c' and 'simple'.
+	if the text color doesn't "gel" with your color scheme,
+	try switching between these in your $color-algorithm
+	
+	*/
+
+// Sample Color Scheme
+
+	$brand-base-color: $white;
+	$brand-analogous-color:#ccc;
+	$brand-contrast-color: $clouds;
+	$color-algorithm : w3c;
+
+
+	// CSS Color Classes
+	/*
+	These css classes combine the $brand-base-color, 
+	$brand-analogous-color and $brand-contrast-color.
+	Use these classes in your html and future templates to follow a consistent
+	color scheme you can customize in the future
+	*/
+
+	// When creating your own templates that
+	// will use your brand background color
+	.brand-base-background-color, .bb-bc,
+	.dl-pane.pane
+	{background-color: $brand-base-color; }
+
+	.bar.bar-chat {background-color : darken($brand-base-color, 8%); }
+	
+	.brand-contrast-color {background-color: $brand-contrast-color;}
+
+	.brand-base-text-color, .bb-tc,		//use this for text that has to contrast .brand-base-background-color
+
+	/*
+	    Common Items using the same text-color.
+	    If you need to customize/overide any existing rule here specifically,
+	    Comment it out of this file and copy the rule to its 
+	    scss file.
+	*/
+	.button.brand-base-text-color,
+
+	// sidebar.scss
+	.menu-screen .item-complex .item-content,
+	.menu-screen .item,
+	.item-note.brand-base-text-color, 
+	.menu-screen .group-header,
+	.notifications .notification-title,
+	.notifications .notification-summary,
+	.menu-screen .list.menu-screen-searchbox .item.item-input .placeholder-icon,
+	.data-block .data-block-title, .data-block i,
+
+	// chat.scss
+	.chat-list .notification-title,
+	.chat-list .notification-summary,
+	.tabs.chat-footer-controls .tab-item,
+	ion-footer-bar.chat-footer-bar .button,
+
+	// feed.scss
+	.feed-posted-by,
+	.feed-time-post.brand-base-color,
+	.feed-item.is-quote, .feed-item.is-quote *,
+	.feed-item.is-quote:before,
+
+	// chat-ui.scss
+	.chat-message,
+	.chat-bar-contact-name .contact-title,
+	.chat-text-input[type="text"],
+	.bar.bar-chat .button-clear.button-,
+
+	// form.scss
+	.input-label,
+
+	// typography
+	.text-color-contrast
+	{@include text-color-contrast($brand-base-color, $color-algorithm);}
+
+	.feed-item .feed-stat, .menu-screen .item-complex .item-content,
+	.menu-screen .item, .chat-list .item, .notifications .item 
+	{@include border-color-contrast($brand-base-color, $color-algorithm)}
+
+	.item.item-input input.text-color-contrast, input.text-color-contrast[type="text"].chat-text-input {
+		// input-placeholder($color, $algorithm) - Refer to scss/_mixins.scss
+		@include text-color-contrast($brand-base-color, $color-algorithm);
+		@include input-placeholder($brand-base-color, $color-algorithm);
+	}
+	.item.item-input, .menu-screen .item.item-input
+	{
+		background-color: darken($brand-base-color, 20%)
+	}
+
+	// Generated Colors to go with the two above. don't change unless 
+	// you're comfortable with your own calculated color-values
+
+	$brand-lighter-tint: lighten($brand-base-color, 50%);
+	$brand-darker-tint: darken($brand-base-color, 20%);

@@ -1,0 +1,2 @@
+.button.button-borderless {border:none; border-width: 0;}
+.button.button-transparent {@include button-style($white, none, $silver, $white, $white, 0.1)}

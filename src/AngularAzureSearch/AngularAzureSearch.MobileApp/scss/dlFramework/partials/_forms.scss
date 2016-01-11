@@ -1,0 +1,65 @@
+// Forms Styles
+// Refer to www/templates/forms.html
+
+
+// Use this if you need your form to adhere to the color manager
+.form-dl
+{
+	.item.item-input, .item.item-input input[type="text"],
+	.item.item-input input[type="password"],
+	.item.item-input, .item.item-input .input-label,
+	.item.item-select select,
+	.item.item-input textarea,
+	.item.item-toggle,
+	.item.item-checkbox,
+	.item-content, .item.item-radio, .item.range
+	{
+		
+		background-color: darken($brand-base-color, 8%);
+		@include text-color-contrast($brand-base-color, $color-algorithm);
+		border-color: $brand-contrast-color;
+		@include input-placeholder($brand-base-color, $color-algorithm);
+	}
+	.item.item-input.item-select:after
+	{
+		@include text-color-contrast($brand-base-color, $color-algorithm);
+	}
+	.item.item-input textarea
+	{
+		@include input-placeholder($brand-base-color, $color-algorithm);
+	}
+
+	.item-radio input:checked ~ .item-content {
+		background-color : darken($brand-base-color, 20%);
+	}
+
+
+}
+
+// Use this if you need your form on a white background
+.form-dl-plain
+{
+	background-color: $white;
+	.item.item-input,
+	.item.item-input .input-label,
+	.item.item-input.item-select select,
+	.item.item-input textarea,
+	.item.item-toggle,
+	.item.item-checkbox
+	{
+		&::-webkit-input-placeholder {
+			color: transparentize($mine-shaft, 0.45);
+		}
+			&:-ms-input-placeholder {
+			color: transparentize($mine-shaft, 0.45);
+		}
+		color: transparentize($mine-shaft, 0.45);
+		background-color:$white;
+	}
+	.item.item-select:after
+	{
+		color : transparentize($mine-shaft, 0.7);
+	}
+	
+
+}

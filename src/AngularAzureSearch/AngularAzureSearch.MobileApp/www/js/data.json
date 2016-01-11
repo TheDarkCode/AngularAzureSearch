@@ -1,0 +1,6589 @@
+{
+    "trails":  [
+  {
+    "name": "Abernathy Truck Trail",
+    "county": "Cowlitz",
+    "elevation": 244,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.024563,
+        46.3217756
+      ]
+    },
+    "id": "1502930",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Alger Truck Trail",
+    "county": "Wahkiakum",
+    "elevation": 131,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.4393039,
+        46.3364967
+      ]
+    },
+    "id": "1502981",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Allens Bay Trail",
+    "county": "Clallam",
+    "elevation": 31,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.6735579,
+        48.0470132
+      ]
+    },
+    "id": "1503003",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Beach Trail 5",
+    "county": "Jefferson",
+    "elevation": 8,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.3946413,
+        47.665079
+      ]
+    },
+    "id": "1503214",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Beach Trail 6",
+    "county": "Jefferson",
+    "elevation": 20,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.4040866,
+        47.679801
+      ]
+    },
+    "id": "1503215",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Beach Trail 7",
+    "county": "Jefferson",
+    "elevation": 8,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.407698,
+        47.6861898
+      ]
+    },
+    "id": "1503216",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bear Creek Trail",
+    "county": "Garfield",
+    "elevation": 1721,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.5543496,
+        46.15376
+      ]
+    },
+    "id": "1503234",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bradley Truck Trail",
+    "county": "Wahkiakum",
+    "elevation": 318,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.267348,
+        46.2595536
+      ]
+    },
+    "id": "1503529",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Canteen Trail",
+    "county": "Ferry",
+    "elevation": 864,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.4608336,
+        48.0359933
+      ]
+    },
+    "id": "1503781",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Castle Rock Truck Trail",
+    "county": "Cowlitz",
+    "elevation": 260,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.9856731,
+        46.3381645
+      ]
+    },
+    "id": "1503855",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Davis Trail",
+    "county": "Kittitas",
+    "elevation": 782,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5064569,
+        46.8809595
+      ]
+    },
+    "id": "1504349",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "East and West Truck Trail",
+    "county": "Cowlitz",
+    "elevation": 628,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.070675,
+        46.2887205
+      ]
+    },
+    "id": "1504624",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Elliot Trail",
+    "county": "Pacific",
+    "elevation": 6,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.0448882,
+        46.5984305
+      ]
+    },
+    "id": "1504729",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Georges Peak Trail",
+    "county": "Cowlitz",
+    "elevation": 517,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.5737148,
+        46.0748331
+      ]
+    },
+    "id": "1505112",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Incline Truck Trail",
+    "county": "Wahkiakum",
+    "elevation": 350,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.2173485,
+        46.2973305
+      ]
+    },
+    "id": "1505701",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Intake Trail",
+    "county": "Columbia",
+    "elevation": 1690,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.9296551,
+        46.0626404
+      ]
+    },
+    "id": "1505742",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Little Spur Truck Trail",
+    "county": "Grays Harbor",
+    "elevation": 278,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.2676501,
+        46.9212085
+      ]
+    },
+    "id": "1506230",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mill Creek Truck Trail",
+    "county": "Cowlitz",
+    "elevation": 220,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.2106782,
+        46.2306653
+      ]
+    },
+    "id": "1506699",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mox Chuck Truck Trail",
+    "county": "Grays Harbor",
+    "elevation": 303,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.2412626,
+        47.0153739
+      ]
+    },
+    "id": "1506851",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Creek Truck Trail",
+    "county": "Grays Harbor",
+    "elevation": 428,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.2034811,
+        46.9259308
+      ]
+    },
+    "id": "1507026",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Porter Creek Truck Trail",
+    "county": "Grays Harbor",
+    "elevation": 514,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.212093,
+        46.9431527
+      ]
+    },
+    "id": "1507587",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rattlesnake Trail",
+    "county": "Columbia",
+    "elevation": 1631,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.6790793,
+        46.1776465
+      ]
+    },
+    "id": "1507740",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rock Creek Truck Trail",
+    "county": "Grays Harbor",
+    "elevation": 153,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.3932108,
+        46.8903756
+      ]
+    },
+    "id": "1507853",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Salter Trail",
+    "county": "Columbia",
+    "elevation": 1443,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.6865796,
+        46.2173689
+      ]
+    },
+    "id": "1508061",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sherry Grade",
+    "county": "Asotin",
+    "elevation": 828,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -116.9843168,
+        46.1515454
+      ]
+    },
+    "id": "1508298",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Skamokawa Truck Trail",
+    "county": "Wahkiakum",
+    "elevation": 470,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.3179091,
+        46.3148301
+      ]
+    },
+    "id": "1508383",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "South Sand Point Trail",
+    "county": "Clallam",
+    "elevation": 42,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.6824527,
+        48.1172886
+      ]
+    },
+    "id": "1508564",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Stillwater Truck Trail",
+    "county": "Cowlitz",
+    "elevation": 334,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.0098412,
+        46.3559417
+      ]
+    },
+    "id": "1508746",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Vesta Truck Trail",
+    "county": "Grays Harbor",
+    "elevation": 212,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.494604,
+        46.8578762
+      ]
+    },
+    "id": "1509221",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Wisconsin Truck Trail",
+    "county": "Cowlitz",
+    "elevation": 341,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.1359552,
+        46.2812203
+      ]
+    },
+    "id": "1509599",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Barnes Creek Nature Trail",
+    "county": "King",
+    "elevation": 49,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.3142899,
+        47.3987107
+      ]
+    },
+    "id": "1509870",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Burke Gilman Trail",
+    "county": "King",
+    "elevation": 10,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.2754036,
+        47.7059315
+      ]
+    },
+    "id": "1509897",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Asotin Creek Trail",
+    "county": "Garfield",
+    "elevation": 951,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.4257304,
+        46.1982075
+      ]
+    },
+    "id": "1510004",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Grizzly Bear Trail",
+    "county": "Columbia",
+    "elevation": 1528,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.7554744,
+        46.0101437
+      ]
+    },
+    "id": "1510035",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "East Butte Creek Trail",
+    "county": "Columbia",
+    "elevation": 1045,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.7093596,
+        46.0790338
+      ]
+    },
+    "id": "1510036",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "West Butte Creek Trail",
+    "county": "Columbia",
+    "elevation": 1096,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.7638079,
+        46.0729217
+      ]
+    },
+    "id": "1510037",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Red Hill Gulch Trail",
+    "county": "Asotin",
+    "elevation": 1279,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.3523919,
+        46.1593186
+      ]
+    },
+    "id": "1510134",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "South Asotin Trail",
+    "county": "Asotin",
+    "elevation": 1061,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.3521142,
+        46.1737634
+      ]
+    },
+    "id": "1510135",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Packer Trail",
+    "county": "Garfield",
+    "elevation": 1301,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.5910187,
+        46.0215348
+      ]
+    },
+    "id": "1510184",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "July Ridge Trail",
+    "county": "Garfield",
+    "elevation": 1686,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.504902,
+        46.1007043
+      ]
+    },
+    "id": "1510185",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Melton Creek Trail",
+    "county": "Garfield",
+    "elevation": 1247,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.5693505,
+        46.0895918
+      ]
+    },
+    "id": "1510186",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tucannon River Trail",
+    "county": "Garfield",
+    "elevation": 1204,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.5843514,
+        46.178482
+      ]
+    },
+    "id": "1510196",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sawtooth Trail",
+    "county": "Columbia",
+    "elevation": 1727,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.8429816,
+        46.0198642
+      ]
+    },
+    "id": "1510315",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Dexter Ridge Trail",
+    "county": "Columbia",
+    "elevation": 1663,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.803534,
+        46.0123649
+      ]
+    },
+    "id": "1510316",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Slick Ear Trail",
+    "county": "Columbia",
+    "elevation": 1560,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.7801988,
+        46.0081987
+      ]
+    },
+    "id": "1510317",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Wenatchee Creek Trail",
+    "county": "Asotin",
+    "elevation": 765,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.3860049,
+        46.0834832
+      ]
+    },
+    "id": "1510361",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Indian Tom Trail",
+    "county": "Asotin",
+    "elevation": 972,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.3687816,
+        46.0993171
+      ]
+    },
+    "id": "1510362",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "West Wenatchee Trail",
+    "county": "Asotin",
+    "elevation": 1172,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.4485092,
+        46.0787601
+      ]
+    },
+    "id": "1510364",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Low Saddle Trail",
+    "county": "Asotin",
+    "elevation": 1377,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.4826783,
+        46.0870932
+      ]
+    },
+    "id": "1510365",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Panjab Trail",
+    "county": "Columbia",
+    "elevation": 1274,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.6824129,
+        46.1648684
+      ]
+    },
+    "id": "1510543",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Turkey Creek Trail",
+    "county": "Columbia",
+    "elevation": 1231,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.7124148,
+        46.1504232
+      ]
+    },
+    "id": "1510544",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Meadow Creek Trail",
+    "county": "Columbia",
+    "elevation": 1335,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.7563066,
+        46.1401444
+      ]
+    },
+    "id": "1510545",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Whitman County Nature Trail",
+    "county": "Whitman",
+    "elevation": 584,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.40713,
+        46.9129438
+      ]
+    },
+    "id": "1512991",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "John Wayne Trail",
+    "county": "Whitman",
+    "elevation": 729,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.2496298,
+        47.2290624
+      ]
+    },
+    "id": "1513015",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Albert Camp Trail",
+    "county": "Okanogan",
+    "elevation": 2038,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8928618,
+        48.938209
+      ]
+    },
+    "id": "1515774",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Alexander Trail",
+    "county": "Snohomish",
+    "elevation": 385,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.048475,
+        48.2878814
+      ]
+    },
+    "id": "1515801",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "American Ridge Trail",
+    "county": "Yakima",
+    "elevation": 1747,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2703645,
+        46.9331696
+      ]
+    },
+    "id": "1515853",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Angry Mountain Trail",
+    "county": "Lewis",
+    "elevation": 1494,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5814741,
+        46.5251144
+      ]
+    },
+    "id": "1515906",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Annette Lake Trail",
+    "county": "King",
+    "elevation": 1021,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4737055,
+        47.3703895
+      ]
+    },
+    "id": "1515912",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Antoine Trail",
+    "county": "Okanogan",
+    "elevation": 1511,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.153103,
+        48.7921076
+      ]
+    },
+    "id": "1515924",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Aurora Trail",
+    "county": "Clallam",
+    "elevation": 1178,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.8910343,
+        48.0339746
+      ]
+    },
+    "id": "1515986",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Backbone Ridge Trail",
+    "county": "Lewis",
+    "elevation": 874,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6017553,
+        46.6992782
+      ]
+    },
+    "id": "1516017",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Baldy Trail (historical)",
+    "county": "Clallam",
+    "elevation": 733,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.1910096,
+        47.9334244
+      ]
+    },
+    "id": "1516104",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Beach Trail 1",
+    "county": "Jefferson",
+    "elevation": 4,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.3643597,
+        47.5778579
+      ]
+    },
+    "id": "1516206",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Beach Trail 2",
+    "county": "Jefferson",
+    "elevation": 4,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.3682491,
+        47.5909133
+      ]
+    },
+    "id": "1516207",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bean Creek Trail",
+    "county": "Skamania",
+    "elevation": 850,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0359243,
+        46.219001
+      ]
+    },
+    "id": "1516213",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bear Creek Mountain Trail",
+    "county": "Yakima",
+    "elevation": 1784,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2925803,
+        46.5248389
+      ]
+    },
+    "id": "1516260",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bear Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1261,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2845344,
+        47.1109472
+      ]
+    },
+    "id": "1516262",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bear Mountain Trail (historical)",
+    "county": "Clallam",
+    "elevation": 606,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.0435073,
+        47.972035
+      ]
+    },
+    "id": "1516284",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Beaver Lake Trail",
+    "county": "Okanogan",
+    "elevation": 1647,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.872015,
+        48.4676473
+      ]
+    },
+    "id": "1516341",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Beaver Ridge Trail",
+    "county": "Okanogan",
+    "elevation": 1246,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.0230973,
+        48.8351679
+      ]
+    },
+    "id": "1516348",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bernhardt Trail",
+    "county": "Okanogan",
+    "elevation": 1875,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9428568,
+        48.6454249
+      ]
+    },
+    "id": "1516437",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Big Creek Trail",
+    "county": "Lewis",
+    "elevation": 1227,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9100994,
+        46.6873316
+      ]
+    },
+    "id": "1516498",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Big Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1615,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2789797,
+        47.1562251
+      ]
+    },
+    "id": "1516499",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Big Peak Trail",
+    "county": "Yakima",
+    "elevation": 1662,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3523059,
+        46.6773366
+      ]
+    },
+    "id": "1516536",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bingham Creek Trail",
+    "county": "Mason",
+    "elevation": 118,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.3784923,
+        47.2092592
+      ]
+    },
+    "id": "1516568",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bismarck Trail",
+    "county": "Yakima",
+    "elevation": 1876,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2925841,
+        46.7553917
+      ]
+    },
+    "id": "1516588",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Black Pine Basin Trail",
+    "county": "Okanogan",
+    "elevation": 1290,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.4339871,
+        48.6570856
+      ]
+    },
+    "id": "1516620",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Blankenship Meadows Trail",
+    "county": "Yakima",
+    "elevation": 1490,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3461957,
+        46.7403914
+      ]
+    },
+    "id": "1516645",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Blewett Summit Trail",
+    "county": "Kittitas",
+    "elevation": 1466,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6928589,
+        47.3612328
+      ]
+    },
+    "id": "1516651",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bluff Lake Trail",
+    "county": "Lewis",
+    "elevation": 1490,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5306416,
+        46.6373356
+      ]
+    },
+    "id": "1516725",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bodie Mountain Trail",
+    "county": "Ferry",
+    "elevation": 1552,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.8130899,
+        48.794054
+      ]
+    },
+    "id": "1516749",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bodie Tonata Creek Trail",
+    "county": "Ferry",
+    "elevation": 1551,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.8242025,
+        48.8510013
+      ]
+    },
+    "id": "1516750",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bogachiel Trail",
+    "county": "Clallam",
+    "elevation": 575,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.9379767,
+        47.9381405
+      ]
+    },
+    "id": "1516758",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bogachiel-Hoh Trail",
+    "county": "Jefferson",
+    "elevation": 903,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.0540867,
+        47.859528
+      ]
+    },
+    "id": "1516759",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bonaparte Trail",
+    "county": "Okanogan",
+    "elevation": 1751,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.1192126,
+        48.8012755
+      ]
+    },
+    "id": "1516783",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bone Lake Trail",
+    "county": "King",
+    "elevation": 942,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6428772,
+        47.1701073
+      ]
+    },
+    "id": "1516786",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Boulder Lake Trail",
+    "county": "Clallam",
+    "elevation": 998,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.7263065,
+        47.9728656
+      ]
+    },
+    "id": "1516849",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Boundary Trail",
+    "county": "Pierce",
+    "elevation": 1350,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9126051,
+        46.9373279
+      ]
+    },
+    "id": "1516876",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Boundary Trail",
+    "county": "Lewis",
+    "elevation": 1355,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5236984,
+        46.7351121
+      ]
+    },
+    "id": "1516877",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Boundary Trail",
+    "county": "Okanogan",
+    "elevation": 2156,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.4189944,
+        48.9495865
+      ]
+    },
+    "id": "1516878",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Brush Creek Trail",
+    "county": "Skamania",
+    "elevation": 585,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7711875,
+        45.7706725
+      ]
+    },
+    "id": "1517008",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bumping Lake Trail",
+    "county": "Yakima",
+    "elevation": 1117,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.386753,
+        46.8048352
+      ]
+    },
+    "id": "1517092",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Calamity Peak Trail",
+    "county": "Skamania",
+    "elevation": 1171,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0836989,
+        45.9115026
+      ]
+    },
+    "id": "1517216",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Camp Creek Ridge Trail (historical)",
+    "county": "Snohomish",
+    "elevation": 1454,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2376059,
+        48.1342781
+      ]
+    },
+    "id": "1517271",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Canyon Creek Hoh Trail",
+    "county": "Clallam",
+    "elevation": 1081,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.7835276,
+        47.890087
+      ]
+    },
+    "id": "1517359",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Canyon Creek Trail",
+    "county": "Skamania",
+    "elevation": 451,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.1564788,
+        45.8923354
+      ]
+    },
+    "id": "1517363",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Carbon Trail",
+    "county": "Pierce",
+    "elevation": 984,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.783713,
+        47.0339945
+      ]
+    },
+    "id": "1517389",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cascade Crest Trail",
+    "county": "Kittitas",
+    "elevation": 1144,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4306497,
+        47.3131675
+      ]
+    },
+    "id": "1517444",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Castle Mountain Trail",
+    "county": "Pierce",
+    "elevation": 1790,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4553686,
+        46.9937225
+      ]
+    },
+    "id": "1517471",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cathedral Driveway",
+    "county": "Okanogan",
+    "elevation": 2014,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9517431,
+        48.548202
+      ]
+    },
+    "id": "1517495",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cavanaugh-Oso Truck Trail",
+    "county": "Skagit",
+    "elevation": 339,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9470829,
+        48.2981608
+      ]
+    },
+    "id": "1517508",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cedar Creek Trail",
+    "county": "Skamania",
+    "elevation": 841,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8103562,
+        45.8059498
+      ]
+    },
+    "id": "1517558",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Chopaka Mountain Trail",
+    "county": "Okanogan",
+    "elevation": 1758,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8142482,
+        48.9440431
+      ]
+    },
+    "id": "1517745",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Christoff Trail",
+    "county": "King",
+    "elevation": 922,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6345434,
+        47.1659409
+      ]
+    },
+    "id": "1517758",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Clark Ridge Trail",
+    "county": "Okanogan",
+    "elevation": 1982,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8970214,
+        48.6443141
+      ]
+    },
+    "id": "1517812",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Clear Fork Trail",
+    "county": "Lewis",
+    "elevation": 1135,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4692516,
+        46.6334473
+      ]
+    },
+    "id": "1517831",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Clear Lost Trail",
+    "county": "Lewis",
+    "elevation": 1417,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4836961,
+        46.6195585
+      ]
+    },
+    "id": "1517840",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Clearwater Trail",
+    "county": "Pierce",
+    "elevation": 661,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7806578,
+        47.0612165
+      ]
+    },
+    "id": "1517848",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Clink Trail (historical)",
+    "county": "Clallam",
+    "elevation": 381,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.1054541,
+        47.994813
+      ]
+    },
+    "id": "1517862",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cloquallum Truck Trail",
+    "county": "Mason",
+    "elevation": 164,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.2715431,
+        47.1134278
+      ]
+    },
+    "id": "1517871",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Clutch Trail",
+    "county": "Okanogan",
+    "elevation": 1881,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9356404,
+        48.9112636
+      ]
+    },
+    "id": "1517880",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cobey Trail (historical)",
+    "county": "Okanogan",
+    "elevation": 1348,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.9144783,
+        48.6187717
+      ]
+    },
+    "id": "1517904",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Colchuck Trail",
+    "county": "Chelan",
+    "elevation": 1563,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.8389772,
+        47.4981743
+      ]
+    },
+    "id": "1517920",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Coldwater Trail",
+    "county": "Skamania",
+    "elevation": 1223,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.2198211,
+        46.2978876
+      ]
+    },
+    "id": "1517942",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cooper Pass Trail",
+    "county": "Kittitas",
+    "elevation": 754,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2423162,
+        47.4095583
+      ]
+    },
+    "id": "1518058",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cortright Creek Trail",
+    "county": "Lewis",
+    "elevation": 1583,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4461964,
+        46.6876135
+      ]
+    },
+    "id": "1518133",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cougar Valley Trail",
+    "county": "Yakima",
+    "elevation": 1677,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3834233,
+        47.0192791
+      ]
+    },
+    "id": "1518194",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cougar Way",
+    "county": "Skamania",
+    "elevation": 1115,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6792455,
+        45.9040065
+      ]
+    },
+    "id": "1518195",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "County Line Trail",
+    "county": "Chelan",
+    "elevation": 1856,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.841475,
+        47.4192859
+      ]
+    },
+    "id": "1518205",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cowlitz Trail",
+    "county": "Lewis",
+    "elevation": 1338,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4200853,
+        46.7137244
+      ]
+    },
+    "id": "1518231",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Coxit Creek Trail (historical)",
+    "county": "Okanogan",
+    "elevation": 1251,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.7997968,
+        48.687926
+      ]
+    },
+    "id": "1518237",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Coyote Trail",
+    "county": "Lewis",
+    "elevation": 1836,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4650837,
+        46.5481707
+      ]
+    },
+    "id": "1518257",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cramer Lake Trail",
+    "county": "Yakima",
+    "elevation": 1500,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3684173,
+        46.6765031
+      ]
+    },
+    "id": "1518268",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Crow Lake Trail",
+    "county": "Yakima",
+    "elevation": 1694,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3423106,
+        46.9634464
+      ]
+    },
+    "id": "1518355",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Daisy Trail",
+    "county": "Ferry",
+    "elevation": 1413,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.5102894,
+        48.3693332
+      ]
+    },
+    "id": "1518457",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Dalles Ridge Trail",
+    "county": "Pierce",
+    "elevation": 1746,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4939809,
+        47.0323331
+      ]
+    },
+    "id": "1518464",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Dark Meadows Trail",
+    "county": "Yakima",
+    "elevation": 1454,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3903618,
+        46.6545588
+      ]
+    },
+    "id": "1518486",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Davis Peak Lookout Trail",
+    "county": "Kittitas",
+    "elevation": 1383,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0850912,
+        47.4328936
+      ]
+    },
+    "id": "1518512",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Deadfall Trail",
+    "county": "Clallam",
+    "elevation": 777,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.9871141,
+        47.8956462
+      ]
+    },
+    "id": "1518537",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Deer Creek Truck Trail",
+    "county": "Skagit",
+    "elevation": 368,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9720853,
+        48.3428839
+      ]
+    },
+    "id": "1518626",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Deer Lake Cutoff",
+    "county": "Clallam",
+    "elevation": 1156,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.8529748,
+        47.9314751
+      ]
+    },
+    "id": "1518636",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Deer Lake Trail",
+    "county": "Clallam",
+    "elevation": 886,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.8213077,
+        47.937031
+      ]
+    },
+    "id": "1518639",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Deer Park Trail",
+    "county": "Okanogan",
+    "elevation": 1810,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8928615,
+        48.9234864
+      ]
+    },
+    "id": "1518652",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Denney Trail",
+    "county": "Okanogan",
+    "elevation": 1192,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.9458736,
+        48.9960123
+      ]
+    },
+    "id": "1518674",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Devils Gulch Trail",
+    "county": "Chelan",
+    "elevation": 1026,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.4792409,
+        47.3279026
+      ]
+    },
+    "id": "1518710",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Dewey Lake Trail",
+    "county": "Yakima",
+    "elevation": 1205,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4486991,
+        46.8495566
+      ]
+    },
+    "id": "1518738",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Dickey Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1269,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7936924,
+        47.2881763
+      ]
+    },
+    "id": "1518767",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Dirty Face Trail (historical)",
+    "county": "Clallam",
+    "elevation": 937,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.0751725,
+        47.909813
+      ]
+    },
+    "id": "1518786",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Divide Camp Trail",
+    "county": "Skamania",
+    "elevation": 1589,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5659174,
+        46.2562306
+      ]
+    },
+    "id": "1518809",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Divide Trail",
+    "county": "King",
+    "elevation": 1422,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5598181,
+        47.1531649
+      ]
+    },
+    "id": "1518815",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Domerie Peak Trail",
+    "county": "Kittitas",
+    "elevation": 1431,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1523119,
+        47.2803937
+      ]
+    },
+    "id": "1518857",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Driveway Butte Trail",
+    "county": "Okanogan",
+    "elevation": 1536,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5239895,
+        48.6190287
+      ]
+    },
+    "id": "1518923",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Drop Creek Spur Trail",
+    "county": "Kittitas",
+    "elevation": 1812,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5586854,
+        47.257624
+      ]
+    },
+    "id": "1518928",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Dry Creek Trail",
+    "county": "Lewis",
+    "elevation": 1198,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7150873,
+        46.5342792
+      ]
+    },
+    "id": "1518964",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Dugout Lookout Trail (historical)",
+    "county": "Okanogan",
+    "elevation": 1348,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.9230864,
+        48.4951591
+      ]
+    },
+    "id": "1518996",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Duncan Hill Trail",
+    "county": "Chelan",
+    "elevation": 2067,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6489855,
+        48.0462413
+      ]
+    },
+    "id": "1519004",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Early Winters Trail",
+    "county": "Okanogan",
+    "elevation": 1661,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6573254,
+        48.5270817
+      ]
+    },
+    "id": "1519069",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "East Bank Trail",
+    "county": "Whatcom",
+    "elevation": 503,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0376215,
+        48.8129087
+      ]
+    },
+    "id": "1519071",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "East Crater Trail",
+    "county": "Skamania",
+    "elevation": 1319,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7659146,
+        45.9865047
+      ]
+    },
+    "id": "1519079",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Echo Lake Truck Trail",
+    "county": "Snohomish",
+    "elevation": 552,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8406809,
+        48.020657
+      ]
+    },
+    "id": "1519171",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Elwha River Trail",
+    "county": "Clallam",
+    "elevation": 518,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.4665697,
+        47.8345336
+      ]
+    },
+    "id": "1519325",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Empire Drive Trail",
+    "county": "Ferry",
+    "elevation": 1426,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.8008669,
+        48.7732196
+      ]
+    },
+    "id": "1519342",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Escondido Trail",
+    "county": "Kittitas",
+    "elevation": 1283,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2106499,
+        47.4870583
+      ]
+    },
+    "id": "1519377",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Falls Creek Trail",
+    "county": "Skamania",
+    "elevation": 731,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8864713,
+        45.9142819
+      ]
+    },
+    "id": "1519470",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Fawn Lake Trail",
+    "county": "Cowlitz",
+    "elevation": 1290,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.2534336,
+        46.3167761
+      ]
+    },
+    "id": "1519484",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Fawns Mill Trail",
+    "county": "Okanogan",
+    "elevation": 830,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.9067063,
+        48.989344
+      ]
+    },
+    "id": "1519487",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ferry Lake Trail",
+    "county": "Ferry",
+    "elevation": 1008,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.7686393,
+        48.5312721
+      ]
+    },
+    "id": "1519504",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Fifes Ridge Trail",
+    "county": "Yakima",
+    "elevation": 1134,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2903654,
+        46.9726138
+      ]
+    },
+    "id": "1519515",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Finney Creek Trail",
+    "county": "Skagit",
+    "elevation": 531,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8026382,
+        48.4048325
+      ]
+    },
+    "id": "1519538",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Finney Peak Trail",
+    "county": "Skagit",
+    "elevation": 1078,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7551368,
+        48.4070555
+      ]
+    },
+    "id": "1519542",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Fire Creek Trail (historical)",
+    "county": "Snohomish",
+    "elevation": 1631,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1703827,
+        48.1512259
+      ]
+    },
+    "id": "1519555",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Fire Creek Way (historical)",
+    "county": "Snohomish",
+    "elevation": 970,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2220503,
+        48.150668
+      ]
+    },
+    "id": "1519556",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "First Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1377,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6089638,
+        47.2184569
+      ]
+    },
+    "id": "1519568",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Fishhook Flats Trail",
+    "county": "Kittitas",
+    "elevation": 1285,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0084159,
+        47.1076191
+      ]
+    },
+    "id": "1519617",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Five Thousand Thirty Trail",
+    "county": "Lewis",
+    "elevation": 1420,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5998087,
+        46.5837244
+      ]
+    },
+    "id": "1519623",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Flip-O-Way Trail",
+    "county": "Pierce",
+    "elevation": 1329,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7292673,
+        47.0642727
+      ]
+    },
+    "id": "1519652",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Frailey Mountain Truck Trail",
+    "county": "Skagit",
+    "elevation": 658,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0334751,
+        48.3087155
+      ]
+    },
+    "id": "1519763",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Frost Mountain Lookout Trail",
+    "county": "Kittitas",
+    "elevation": 1560,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0095265,
+        47.0745636
+      ]
+    },
+    "id": "1519835",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Funk Mountain Trail (historical)",
+    "county": "Okanogan",
+    "elevation": 1229,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.7792379,
+        48.621815
+      ]
+    },
+    "id": "1519852",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Gardner Mountain Trail",
+    "county": "King",
+    "elevation": 1375,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5228734,
+        47.3562217
+      ]
+    },
+    "id": "1519898",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Gee Point Trail",
+    "county": "Skagit",
+    "elevation": 1017,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8293061,
+        48.4170546
+      ]
+    },
+    "id": "1519917",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Glacier Lake Trail",
+    "county": "Lewis",
+    "elevation": 703,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6034191,
+        46.5437249
+      ]
+    },
+    "id": "1519985",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Glacier Ridge Trail",
+    "county": "Snohomish",
+    "elevation": 1488,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1792715,
+        48.1320583
+      ]
+    },
+    "id": "1519991",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Gnat Flat Trail",
+    "county": "Kittitas",
+    "elevation": 1241,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.9248026,
+        47.0959537
+      ]
+    },
+    "id": "1520013",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Goat Creek Trail",
+    "county": "Yakima",
+    "elevation": 1280,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2486972,
+        46.9209477
+      ]
+    },
+    "id": "1520028",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Goat Peak Trail",
+    "county": "Kittitas",
+    "elevation": 1020,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1820336,
+        47.2017822
+      ]
+    },
+    "id": "1520055",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Goat Point Trail",
+    "county": "Skamania",
+    "elevation": 693,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7345206,
+        45.7951172
+      ]
+    },
+    "id": "1520057",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Gold Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1686,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.9850801,
+        46.9712309
+      ]
+    },
+    "id": "1520091",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Golden Harvest Trail",
+    "county": "Ferry",
+    "elevation": 877,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.7669733,
+        48.5768281
+      ]
+    },
+    "id": "1520114",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Golden Stairway Trail",
+    "county": "Okanogan",
+    "elevation": 1950,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9575772,
+        48.5659799
+      ]
+    },
+    "id": "1520119",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Goodrich Trail",
+    "county": "Ferry",
+    "elevation": 1271,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.7403103,
+        48.8246111
+      ]
+    },
+    "id": "1520140",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Goose Prairie Trail",
+    "county": "Yakima",
+    "elevation": 1505,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3100865,
+        46.885947
+      ]
+    },
+    "id": "1520151",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Granite Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1492,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.215922,
+        47.117615
+      ]
+    },
+    "id": "1520216",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Granite Trail",
+    "county": "Okanogan",
+    "elevation": 1434,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8628487,
+        48.5115363
+      ]
+    },
+    "id": "1520240",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Green Leaf Trail",
+    "county": "Skamania",
+    "elevation": 841,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.064808,
+        45.7709486
+      ]
+    },
+    "id": "1520301",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Greenwater Trail",
+    "county": "Pierce",
+    "elevation": 1169,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4278688,
+        47.0353896
+      ]
+    },
+    "id": "1520343",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hansen Creek Trail",
+    "county": "King",
+    "elevation": 1001,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5284292,
+        47.3670549
+      ]
+    },
+    "id": "1520517",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Happy Lake Ridge Trail",
+    "county": "Clallam",
+    "elevation": 1289,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.6471374,
+        48.0045331
+      ]
+    },
+    "id": "1520528",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hicks Butte Trail",
+    "county": "Kittitas",
+    "elevation": 1520,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0453618,
+        47.1320627
+      ]
+    },
+    "id": "1520743",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hidden Lake Trail",
+    "county": "Skagit",
+    "elevation": 1695,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2034504,
+        48.5081788
+      ]
+    },
+    "id": "1520760",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "High Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1619,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5125723,
+        47.2195692
+      ]
+    },
+    "id": "1520776",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Highline Trail",
+    "county": "Yakima",
+    "elevation": 1797,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4853609,
+        46.2645651
+      ]
+    },
+    "id": "1520798",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hogback Trail",
+    "county": "Yakima",
+    "elevation": 1599,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3678611,
+        46.6331703
+      ]
+    },
+    "id": "1520838",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hoh River Trail",
+    "county": "Clallam",
+    "elevation": 325,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.7199145,
+        47.8842542
+      ]
+    },
+    "id": "1520847",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Homes Trail",
+    "county": "Skamania",
+    "elevation": 799,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6086883,
+        45.8595631
+      ]
+    },
+    "id": "1520879",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Horseshoe Ridge Trail",
+    "county": "Skamania",
+    "elevation": 999,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.1289784,
+        45.9367795
+      ]
+    },
+    "id": "1520970",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Howard Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1614,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5181297,
+        47.2887355
+      ]
+    },
+    "id": "1520990",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Huckleberry Trail",
+    "county": "Skamania",
+    "elevation": 855,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8348018,
+        45.8276162
+      ]
+    },
+    "id": "1521039",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hunters Trail",
+    "county": "Chelan",
+    "elevation": 1757,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5912051,
+        47.9112388
+      ]
+    },
+    "id": "1521082",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hurricane Hill Trail",
+    "county": "Clallam",
+    "elevation": 1460,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.555467,
+        47.9975895
+      ]
+    },
+    "id": "1521093",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Icicle Trail",
+    "county": "Chelan",
+    "elevation": 1163,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6998098,
+        47.5673431
+      ]
+    },
+    "id": "1521126",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Indian Creek Trail",
+    "county": "Lewis",
+    "elevation": 1630,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3575847,
+        46.7331691
+      ]
+    },
+    "id": "1521182",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ipsut Creek Trail",
+    "county": "Pierce",
+    "elevation": 1039,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8448249,
+        46.9609392
+      ]
+    },
+    "id": "1521223",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Iron Bear Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1077,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7081367,
+        47.3517882
+      ]
+    },
+    "id": "1521233",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ironstone Mountain Trail",
+    "county": "Yakima",
+    "elevation": 1822,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2753606,
+        46.6915037
+      ]
+    },
+    "id": "1521252",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Jack Mountain Trail",
+    "county": "Whatcom",
+    "elevation": 1209,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.9992848,
+        48.733464
+      ]
+    },
+    "id": "1521293",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Jolly Mountain Lookout Trail",
+    "county": "Kittitas",
+    "elevation": 1417,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0470339,
+        47.397061
+      ]
+    },
+    "id": "1521452",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Jordan Creek Trail",
+    "county": "Lewis",
+    "elevation": 1133,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5756403,
+        46.5048369
+      ]
+    },
+    "id": "1521470",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Jug Lake Trail",
+    "county": "Lewis",
+    "elevation": 1471,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4198078,
+        46.734002
+      ]
+    },
+    "id": "1521492",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Kachess Ridge Trail",
+    "county": "Kittitas",
+    "elevation": 1314,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1887024,
+        47.3117817
+      ]
+    },
+    "id": "1521540",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Kaner Flat Trail",
+    "county": "Kittitas",
+    "elevation": 1463,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0678606,
+        47.0162292
+      ]
+    },
+    "id": "1521563",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Kelly Butte Trail",
+    "county": "King",
+    "elevation": 1064,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4950939,
+        47.1820553
+      ]
+    },
+    "id": "1521596",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Kennedy Ridge Trail",
+    "county": "Snohomish",
+    "elevation": 1352,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1756602,
+        48.1253917
+      ]
+    },
+    "id": "1521617",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Kincaid Trail",
+    "county": "Lewis",
+    "elevation": 1660,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4609193,
+        46.7276128
+      ]
+    },
+    "id": "1521673",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Klickitat Trail",
+    "county": "Lewis",
+    "elevation": 1431,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7481423,
+        46.482613
+      ]
+    },
+    "id": "1521729",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lake Creek Trail",
+    "county": "Clallam",
+    "elevation": 526,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.40324,
+        48.0339796
+      ]
+    },
+    "id": "1521849",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lake Michael Trail",
+    "county": "Kittitas",
+    "elevation": 1420,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0887034,
+        47.4831708
+      ]
+    },
+    "id": "1521854",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lake Stuart Trail",
+    "county": "Chelan",
+    "elevation": 1507,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.8678666,
+        47.4973405
+      ]
+    },
+    "id": "1521859",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lava Butte Trail",
+    "county": "Skamania",
+    "elevation": 817,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8967498,
+        45.9453928
+      ]
+    },
+    "id": "1521944",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Laws Trail",
+    "county": "Ferry",
+    "elevation": 1232,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.7714222,
+        48.8054435
+      ]
+    },
+    "id": "1521953",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lester Trail",
+    "county": "King",
+    "elevation": 917,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5628743,
+        47.1917759
+      ]
+    },
+    "id": "1522037",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lillian River Trail",
+    "county": "Clallam",
+    "elevation": 625,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.5085188,
+        47.9428674
+      ]
+    },
+    "id": "1522081",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lily Basin Trail",
+    "county": "Lewis",
+    "elevation": 1954,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4745279,
+        46.51706
+      ]
+    },
+    "id": "1522094",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Little Baldy Trail",
+    "county": "Skamania",
+    "elevation": 1029,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5970214,
+        45.8534521
+      ]
+    },
+    "id": "1522156",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Little Creek Basin Trail",
+    "county": "Kittitas",
+    "elevation": 1306,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1423092,
+        47.1448386
+      ]
+    },
+    "id": "1522197",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Little Huckleberry Trail",
+    "county": "Skamania",
+    "elevation": 1055,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6881337,
+        45.8828953
+      ]
+    },
+    "id": "1522238",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Little Quilcene Trail (historical)",
+    "county": "Clallam",
+    "elevation": 825,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.0418384,
+        47.9092573
+      ]
+    },
+    "id": "1522290",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Little River Trail",
+    "county": "Clallam",
+    "elevation": 1321,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.5129648,
+        47.9837009
+      ]
+    },
+    "id": "1522295",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Little White Salmon Trail",
+    "county": "Klickitat",
+    "elevation": 816,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5800781,
+        45.8917858
+      ]
+    },
+    "id": "1522324",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Little Wildcat Trail",
+    "county": "Yakima",
+    "elevation": 1567,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2623052,
+        46.7120591
+      ]
+    },
+    "id": "1522326",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Log Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1117,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2667576,
+        47.1703919
+      ]
+    },
+    "id": "1522353",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Long Draw Trail",
+    "county": "Okanogan",
+    "elevation": 2059,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8995294,
+        48.983766
+      ]
+    },
+    "id": "1522391",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Long Ridge Trail",
+    "county": "Clallam",
+    "elevation": 1507,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.5162953,
+        47.8898114
+      ]
+    },
+    "id": "1522407",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Long Swamp Trail",
+    "county": "Okanogan",
+    "elevation": 1668,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9750854,
+        48.8645953
+      ]
+    },
+    "id": "1522411",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lost Creek Ridge Trail (historical)",
+    "county": "Snohomish",
+    "elevation": 1730,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2923299,
+        48.1173323
+      ]
+    },
+    "id": "1522476",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lost Lake Trail",
+    "county": "Pierce",
+    "elevation": 1564,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4834254,
+        47.050111
+      ]
+    },
+    "id": "1522498",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lovers Lane",
+    "county": "Clallam",
+    "elevation": 530,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.8510312,
+        47.9561973
+      ]
+    },
+    "id": "1522524",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lusk Creek Trail",
+    "county": "Skamania",
+    "elevation": 1140,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6614681,
+        45.9217845
+      ]
+    },
+    "id": "1522584",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Maggie Creek Trail",
+    "county": "Pierce",
+    "elevation": 1273,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4050912,
+        47.0731677
+      ]
+    },
+    "id": "1522634",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Magnet Creek Trail",
+    "county": "Chelan",
+    "elevation": 1108,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6325809,
+        47.4054002
+      ]
+    },
+    "id": "1522639",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Manastash Ridge Trail",
+    "county": "Kittitas",
+    "elevation": 1703,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1450863,
+        47.0984498
+      ]
+    },
+    "id": "1522673",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Marias Creek Trail",
+    "county": "Okanogan",
+    "elevation": 985,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.9269837,
+        48.9146174
+      ]
+    },
+    "id": "1522732",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Maynard Burn Way (historical)",
+    "county": "Clallam",
+    "elevation": 1678,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.1618413,
+        47.9053687
+      ]
+    },
+    "id": "1522824",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "McAllister Trail",
+    "county": "Yakima",
+    "elevation": 1419,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3089722,
+        46.6895589
+      ]
+    },
+    "id": "1522844",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "McCay Trail",
+    "county": "Okanogan",
+    "elevation": 1482,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8845193,
+        48.5984807
+      ]
+    },
+    "id": "1522862",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Meadow Mountain Trail",
+    "county": "Snohomish",
+    "elevation": 1601,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2862197,
+        48.1823336
+      ]
+    },
+    "id": "1522973",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Meadow Mountain Way (historical)",
+    "county": "Snohomish",
+    "elevation": 1800,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.220384,
+        48.1703908
+      ]
+    },
+    "id": "1522974",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Middle Fork Trail",
+    "county": "Yakima",
+    "elevation": 1165,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3203675,
+        47.0651134
+      ]
+    },
+    "id": "1523094",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Middle Fork Trail",
+    "county": "King",
+    "elevation": 473,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4473166,
+        47.4942789
+      ]
+    },
+    "id": "1523095",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Middle Shaser Trail",
+    "county": "Chelan",
+    "elevation": 1241,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6984152,
+        47.3848437
+      ]
+    },
+    "id": "1523107",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mill Creek Trail",
+    "county": "Okanogan",
+    "elevation": 1426,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.1828267,
+        48.7854401
+      ]
+    },
+    "id": "1523168",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mill Creek Trail",
+    "county": "Whatcom",
+    "elevation": 1282,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7837215,
+        48.6956898
+      ]
+    },
+    "id": "1523169",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mill Ingalls Creek Trail",
+    "county": "Chelan",
+    "elevation": 1509,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7334187,
+        47.4678984
+      ]
+    },
+    "id": "1523170",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Miller Peak Trail",
+    "county": "Kittitas",
+    "elevation": 1592,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7564723,
+        47.3831763
+      ]
+    },
+    "id": "1523186",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Miners Creek Trail (historical)",
+    "county": "Snohomish",
+    "elevation": 1674,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.9945466,
+        48.1990128
+      ]
+    },
+    "id": "1523230",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mink Lake Trail",
+    "county": "Clallam",
+    "elevation": 970,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.8707533,
+        47.9431414
+      ]
+    },
+    "id": "1523241",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Minnie Meadows Trail",
+    "county": "Yakima",
+    "elevation": 1630,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.282303,
+        46.5637274
+      ]
+    },
+    "id": "1523249",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mission Ridge Trail",
+    "county": "Chelan",
+    "elevation": 1456,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.4556285,
+        47.3123474
+      ]
+    },
+    "id": "1523281",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Monument Creek Trail",
+    "county": "Okanogan",
+    "elevation": 1962,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.4867686,
+        48.740695
+      ]
+    },
+    "id": "1523336",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mount Aix Trail",
+    "county": "Yakima",
+    "elevation": 1545,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2925849,
+        46.8059472
+      ]
+    },
+    "id": "1523418",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mount Cliffty Trail",
+    "county": "Kittitas",
+    "elevation": 1417,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1861982,
+        47.0778935
+      ]
+    },
+    "id": "1523422",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mount Defiance Trail",
+    "county": "King",
+    "elevation": 1347,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5550974,
+        47.4301098
+      ]
+    },
+    "id": "1523423",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mount Jupiter Trail",
+    "county": "Jefferson",
+    "elevation": 985,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.9943291,
+        47.6981472
+      ]
+    },
+    "id": "1523428",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mount Washington Trail",
+    "county": "Skagit",
+    "elevation": 634,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0993113,
+        48.3028813
+      ]
+    },
+    "id": "1523434",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mount Zion Trail (historical)",
+    "county": "Clallam",
+    "elevation": 1068,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.9890592,
+        47.9087017
+      ]
+    },
+    "id": "1523435",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Muckamuck Trail",
+    "county": "Okanogan",
+    "elevation": 1241,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8431299,
+        48.6334812
+      ]
+    },
+    "id": "1523462",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Muddy River Trail",
+    "county": "Skamania",
+    "elevation": 683,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0150896,
+        46.1867791
+      ]
+    },
+    "id": "1523498",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Naches Trail",
+    "county": "Kittitas",
+    "elevation": 1222,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.321479,
+        47.0870578
+      ]
+    },
+    "id": "1523554",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Naneum Meadow Trail",
+    "county": "Kittitas",
+    "elevation": 1645,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5531303,
+        47.2804018
+      ]
+    },
+    "id": "1523567",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Nealey Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1825,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5461848,
+        47.2467908
+      ]
+    },
+    "id": "1523594",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ned Hill Trail (historical)",
+    "county": "Clallam",
+    "elevation": 768,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.1826775,
+        47.9728689
+      ]
+    },
+    "id": "1523598",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Nestor Peak Trail",
+    "county": "Skamania",
+    "elevation": 573,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6281315,
+        45.8140073
+      ]
+    },
+    "id": "1523627",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Nile Ridge Trail",
+    "county": "Yakima",
+    "elevation": 1220,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2309184,
+        46.884837
+      ]
+    },
+    "id": "1523663",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Soleduck River Trail",
+    "county": "Clallam",
+    "elevation": 642,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.8207544,
+        48.0061978
+      ]
+    },
+    "id": "1523847",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Taneum Trail",
+    "county": "Kittitas",
+    "elevation": 1196,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0873072,
+        47.1212286
+      ]
+    },
+    "id": "1523856",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Tieton Trail",
+    "county": "Yakima",
+    "elevation": 974,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3486934,
+        46.590671
+      ]
+    },
+    "id": "1523862",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Toats Creek Trail",
+    "county": "Okanogan",
+    "elevation": 1422,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8320257,
+        48.9070973
+      ]
+    },
+    "id": "1523865",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Trail",
+    "county": "Kittitas",
+    "elevation": 1013,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.9761931,
+        47.1223418
+      ]
+    },
+    "id": "1523870",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Trail",
+    "county": "Okanogan",
+    "elevation": 1270,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.2072726,
+        48.7451583
+      ]
+    },
+    "id": "1523871",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Ridge Trail",
+    "county": "Kittitas",
+    "elevation": 1104,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1473099,
+        47.1726163
+      ]
+    },
+    "id": "1523904",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Shaser Trail",
+    "county": "Chelan",
+    "elevation": 1546,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7159165,
+        47.4098434
+      ]
+    },
+    "id": "1523908",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Twentymile Peak Trail",
+    "county": "Okanogan",
+    "elevation": 1968,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9795284,
+        48.770426
+      ]
+    },
+    "id": "1523915",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Northern Loop Trail",
+    "county": "Pierce",
+    "elevation": 1744,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7578769,
+        46.9581622
+      ]
+    },
+    "id": "1523919",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Observation Peak Trail",
+    "county": "Skamania",
+    "elevation": 862,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0103631,
+        45.9034477
+      ]
+    },
+    "id": "1523964",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Oklahoma Trail",
+    "county": "Skamania",
+    "elevation": 915,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6217452,
+        45.900674
+      ]
+    },
+    "id": "1523984",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Old Ellensburg Trail",
+    "county": "Kittitas",
+    "elevation": 1667,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5142412,
+        47.3029022
+      ]
+    },
+    "id": "1524001",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Osborne Mountain Trail",
+    "county": "Lewis",
+    "elevation": 1405,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9659366,
+        46.7131644
+      ]
+    },
+    "id": "1524086",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Oso Truck Trail",
+    "county": "Skagit",
+    "elevation": 326,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9318051,
+        48.3073279
+      ]
+    },
+    "id": "1524092",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Owl Creek Spur Trail",
+    "county": "Kittitas",
+    "elevation": 1691,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5653526,
+        47.2679017
+      ]
+    },
+    "id": "1524120",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Packwood Lake Trail",
+    "county": "Lewis",
+    "elevation": 965,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5889755,
+        46.6012243
+      ]
+    },
+    "id": "1524135",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Panther Creek Spur",
+    "county": "Whatcom",
+    "elevation": 876,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0106718,
+        48.6523518
+      ]
+    },
+    "id": "1524176",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Panther Creek Trail",
+    "county": "Whatcom",
+    "elevation": 991,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0273393,
+        48.6629072
+      ]
+    },
+    "id": "1524177",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Paradise Trail",
+    "county": "Skamania",
+    "elevation": 905,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.968418,
+        45.9515032
+      ]
+    },
+    "id": "1524194",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Park Creek Pass Trail",
+    "county": "Chelan",
+    "elevation": 1200,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.93132,
+        48.46245
+      ]
+    },
+    "id": "1524206",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pass Trail",
+    "county": "Clallam",
+    "elevation": 347,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.1668692,
+        47.9064704
+      ]
+    },
+    "id": "1524242",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Paul Peak Trail",
+    "county": "Pierce",
+    "elevation": 1170,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9062157,
+        46.9228838
+      ]
+    },
+    "id": "1524260",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pear Butte Trail",
+    "county": "Yakima",
+    "elevation": 1845,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3167516,
+        46.7798359
+      ]
+    },
+    "id": "1524274",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pearrygin Trail",
+    "county": "Okanogan",
+    "elevation": 1578,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.0536914,
+        48.5298679
+      ]
+    },
+    "id": "1524285",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Peterson Trail",
+    "county": "Stevens",
+    "elevation": 1072,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.596364,
+        48.7871346
+      ]
+    },
+    "id": "1524366",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pierce Mountain Way",
+    "county": "Whatcom",
+    "elevation": 1097,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.073454,
+        48.7442963
+      ]
+    },
+    "id": "1524413",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pine Creek Trail",
+    "county": "Skamania",
+    "elevation": 1190,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.1303718,
+        46.1906666
+      ]
+    },
+    "id": "1524443",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pompey Peak Trail",
+    "county": "Lewis",
+    "elevation": 1576,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7425869,
+        46.5028906
+      ]
+    },
+    "id": "1524564",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pratt Lake Trail",
+    "county": "King",
+    "elevation": 1107,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5095392,
+        47.4337225
+      ]
+    },
+    "id": "1524624",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pretty Bird Trail (historical)",
+    "county": "Okanogan",
+    "elevation": 1197,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8967404,
+        48.5459804
+      ]
+    },
+    "id": "1524637",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Purcell Mountain Trail",
+    "county": "Lewis",
+    "elevation": 1204,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8384245,
+        46.5548336
+      ]
+    },
+    "id": "1524697",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pyramid Lake Trail",
+    "county": "Whatcom",
+    "elevation": 584,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1345657,
+        48.701517
+      ]
+    },
+    "id": "1524718",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pyramid Mountain Trail",
+    "county": "Clallam",
+    "elevation": 251,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.8377001,
+        48.0686976
+      ]
+    },
+    "id": "1524721",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pyramid Peak Trail",
+    "county": "Kittitas",
+    "elevation": 1120,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3381461,
+        47.0976131
+      ]
+    },
+    "id": "1524726",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Quartz Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1197,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0895281,
+        47.0376177
+      ]
+    },
+    "id": "1524743",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ragan Way Trail",
+    "county": "Kittitas",
+    "elevation": 1762,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.519795,
+        47.2367912
+      ]
+    },
+    "id": "1524802",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rainbow Lake Trail",
+    "county": "Chelan",
+    "elevation": 1534,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7312138,
+        48.3934683
+      ]
+    },
+    "id": "1524825",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rattlesnake Trail",
+    "county": "Yakima",
+    "elevation": 1608,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2923055,
+        46.7090033
+      ]
+    },
+    "id": "1524903",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ray Trail (historical)",
+    "county": "Okanogan",
+    "elevation": 1327,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8172944,
+        48.6065369
+      ]
+    },
+    "id": "1524913",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Red Hill Trail",
+    "county": "Chelan",
+    "elevation": 937,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5361896,
+        47.4115126
+      ]
+    },
+    "id": "1524935",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Red Mountain Trail",
+    "county": "Kittitas",
+    "elevation": 890,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1181467,
+        47.4028934
+      ]
+    },
+    "id": "1524950",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Richmond Mine Trail",
+    "county": "Yakima",
+    "elevation": 1320,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2578632,
+        46.8684476
+      ]
+    },
+    "id": "1525030",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ridge Trail",
+    "county": "Skamania",
+    "elevation": 1186,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0764762,
+        45.8862251
+      ]
+    },
+    "id": "1525042",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rock Creek Trail",
+    "county": "Skamania",
+    "elevation": 664,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9920281,
+        45.7712268
+      ]
+    },
+    "id": "1525132",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rock Creek Trail",
+    "county": "King",
+    "elevation": 1103,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5328729,
+        47.1753878
+      ]
+    },
+    "id": "1525133",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rooster Comb Trail",
+    "county": "King",
+    "elevation": 721,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5398181,
+        47.2145542
+      ]
+    },
+    "id": "1525207",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Round the Mountain Trail",
+    "county": "Skamania",
+    "elevation": 1857,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5309164,
+        46.166787
+      ]
+    },
+    "id": "1525244",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Royal Creek Trail",
+    "county": "Kittitas",
+    "elevation": 1278,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.2082296,
+        47.858702
+      ]
+    },
+    "id": "1525264",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ruby Creek Trail",
+    "county": "Chelan",
+    "elevation": 1063,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6217479,
+        47.4270668
+      ]
+    },
+    "id": "1525275",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Saint Helens Way",
+    "county": "Skamania",
+    "elevation": 968,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.1728725,
+        46.1470553
+      ]
+    },
+    "id": "1525359",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sand Lake Trail",
+    "county": "Lewis",
+    "elevation": 1652,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4311955,
+        46.6370587
+      ]
+    },
+    "id": "1525418",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sand Ridge Trail",
+    "county": "Yakima",
+    "elevation": 1493,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3284169,
+        46.6928922
+      ]
+    },
+    "id": "1525422",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sarsapkin Creek Trail (historical)",
+    "county": "Okanogan",
+    "elevation": 1388,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.767853,
+        48.7351483
+      ]
+    },
+    "id": "1525438",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sasse Mountain Trail",
+    "county": "Kittitas",
+    "elevation": 1639,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.0678665,
+        47.3426168
+      ]
+    },
+    "id": "1525441",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sawmill Ridge Trail",
+    "county": "King",
+    "elevation": 843,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4464821,
+        47.1776116
+      ]
+    },
+    "id": "1525459",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Seventeenmile Trail",
+    "county": "Ferry",
+    "elevation": 1033,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.6380758,
+        48.4648865
+      ]
+    },
+    "id": "1525594",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sheep Lake Trail",
+    "county": "Lewis",
+    "elevation": 1570,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5020317,
+        46.7709453
+      ]
+    },
+    "id": "1525642",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Shellrock Lake Trail",
+    "county": "Yakima",
+    "elevation": 1483,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3339723,
+        46.6748367
+      ]
+    },
+    "id": "1525659",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Shoe Lake Trail",
+    "county": "Yakima",
+    "elevation": 1469,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3895271,
+        46.5692821
+      ]
+    },
+    "id": "1525694",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Shrew Creek Trail",
+    "county": "Okanogan",
+    "elevation": 1543,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9106295,
+        48.533758
+      ]
+    },
+    "id": "1525716",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Silver Creek Trail",
+    "county": "Lewis",
+    "elevation": 1387,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8423173,
+        46.6589989
+      ]
+    },
+    "id": "1525769",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Siouxon Trail",
+    "county": "Skamania",
+    "elevation": 365,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.1628687,
+        45.9520568
+      ]
+    },
+    "id": "1525821",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Skyline Trail (historical)",
+    "county": "Jefferson",
+    "elevation": 1475,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.6532381,
+        47.6903654
+      ]
+    },
+    "id": "1525902",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Smith Creek Butte Trail",
+    "county": "Skamania",
+    "elevation": 914,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0445352,
+        46.1920566
+      ]
+    },
+    "id": "1525977",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Smith Creek Trail",
+    "county": "Skamania",
+    "elevation": 664,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0967601,
+        46.2270557
+      ]
+    },
+    "id": "1525978",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Snag Creek Trail",
+    "county": "Skamania",
+    "elevation": 616,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.037585,
+        45.7731709
+      ]
+    },
+    "id": "1525998",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Snow Lakes Trail",
+    "county": "Chelan",
+    "elevation": 1191,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7178641,
+        47.5123429
+      ]
+    },
+    "id": "1526037",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Snowshoe Butte Trail",
+    "county": "King",
+    "elevation": 830,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3931485,
+        47.2042789
+      ]
+    },
+    "id": "1526050",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Snyder Trail",
+    "county": "Okanogan",
+    "elevation": 1341,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.9239239,
+        48.6479386
+      ]
+    },
+    "id": "1526072",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Soda Peaks Trail",
+    "county": "Skamania",
+    "elevation": 900,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0142519,
+        45.8706702
+      ]
+    },
+    "id": "1526081",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Soleduck Trail",
+    "county": "Clallam",
+    "elevation": 743,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.7751957,
+        47.9361983
+      ]
+    },
+    "id": "1526103",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sourdough Lookout Trail",
+    "county": "Whatcom",
+    "elevation": 1167,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1317888,
+        48.7298508
+      ]
+    },
+    "id": "1526127",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "South Fork Trail",
+    "county": "Yakima",
+    "elevation": 1334,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.2850889,
+        47.0506694
+      ]
+    },
+    "id": "1526275",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "South Fork Trail",
+    "county": "Okanogan",
+    "elevation": 1360,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8317465,
+        48.832095
+      ]
+    },
+    "id": "1526276",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "South Point Trail",
+    "county": "Lewis",
+    "elevation": 1581,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6484192,
+        46.515947
+      ]
+    },
+    "id": "1526305",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "South Side Trail",
+    "county": "Okanogan",
+    "elevation": 1876,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.112268,
+        48.7796068
+      ]
+    },
+    "id": "1526318",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "South Twentymile Trail",
+    "county": "Okanogan",
+    "elevation": 1965,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.0400839,
+        48.6787577
+      ]
+    },
+    "id": "1526323",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Spar Tree Trail",
+    "county": "Skagit",
+    "elevation": 471,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0609762,
+        48.3042705
+      ]
+    },
+    "id": "1526332",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Squilchuck Trail",
+    "county": "Chelan",
+    "elevation": 1674,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.4167379,
+        47.2981812
+      ]
+    },
+    "id": "1526464",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Stevenson Ridge Trail",
+    "county": "Skamania",
+    "elevation": 815,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9200812,
+        45.7653939
+      ]
+    },
+    "id": "1526556",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Storm King Trail",
+    "county": "Ferry",
+    "elevation": 1545,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.7966992,
+        48.7262739
+      ]
+    },
+    "id": "1526598",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sulphur Mountain Way (historical)",
+    "county": "Snohomish",
+    "elevation": 1090,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.1687174,
+        48.2459503
+      ]
+    },
+    "id": "1526698",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Summit Lake Trail",
+    "county": "Pierce",
+    "elevation": 1520,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8403822,
+        47.0601048
+      ]
+    },
+    "id": "1526721",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Summit Trail",
+    "county": "Kittitas",
+    "elevation": 1818,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.9631351,
+        46.972898
+      ]
+    },
+    "id": "1526728",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Sun Top Trail",
+    "county": "Pierce",
+    "elevation": 1591,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5898171,
+        47.0126091
+      ]
+    },
+    "id": "1526734",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Swamp Lake Trail",
+    "county": "Yakima",
+    "elevation": 1288,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3964758,
+        46.8315017
+      ]
+    },
+    "id": "1526830",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Swan Lake Trail",
+    "county": "Ferry",
+    "elevation": 1016,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.8322509,
+        48.4871044
+      ]
+    },
+    "id": "1526836",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Table Mountain Trail",
+    "county": "Skamania",
+    "elevation": 1510,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6731401,
+        46.241784
+      ]
+    },
+    "id": "1526887",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tatoosh Trail",
+    "county": "Lewis",
+    "elevation": 1541,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6650895,
+        46.672889
+      ]
+    },
+    "id": "1526952",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Teanaway Wilson Stock Trail",
+    "county": "Kittitas",
+    "elevation": 1625,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6070194,
+        47.2290125
+      ]
+    },
+    "id": "1526966",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tenmile Trail",
+    "county": "Ferry",
+    "elevation": 963,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.763639,
+        48.5221053
+      ]
+    },
+    "id": "1527006",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Terry Trail",
+    "county": "Stevens",
+    "elevation": 1032,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.5263602,
+        48.9482513
+      ]
+    },
+    "id": "1527017",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Thirtymile Trail",
+    "county": "Okanogan",
+    "elevation": 1791,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9789734,
+        48.800149
+      ]
+    },
+    "id": "1527098",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Three Brothers Trail",
+    "county": "Chelan",
+    "elevation": 1411,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7445284,
+        47.4128986
+      ]
+    },
+    "id": "1527137",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Three Peaks Trail",
+    "county": "Lewis",
+    "elevation": 1230,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5653641,
+        46.6095578
+      ]
+    },
+    "id": "1527160",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tieton Meadows Trail",
+    "county": "Yakima",
+    "elevation": 1282,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.356193,
+        46.5528937
+      ]
+    },
+    "id": "1527202",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tiffany Lake Trail",
+    "county": "Okanogan",
+    "elevation": 1939,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9084117,
+        48.6720919
+      ]
+    },
+    "id": "1527209",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Freezeout Trail",
+    "county": "Okanogan",
+    "elevation": 1968,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.901189,
+        48.6651475
+      ]
+    },
+    "id": "1527212",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tiptop Mount Lillian Trail",
+    "county": "Chelan",
+    "elevation": 1312,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5725788,
+        47.3904011
+      ]
+    },
+    "id": "1527257",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Toutle River Trail",
+    "county": "Cowlitz",
+    "elevation": 1199,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.2595431,
+        46.1939985
+      ]
+    },
+    "id": "1527326",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tronsen Creek Trail",
+    "county": "Chelan",
+    "elevation": 1569,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5406314,
+        47.3242906
+      ]
+    },
+    "id": "1527391",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tubal Cain Mine Trail",
+    "county": "Jefferson",
+    "elevation": 844,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.0993398,
+        47.9078686
+      ]
+    },
+    "id": "1527428",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tunnel Trail",
+    "county": "Okanogan",
+    "elevation": 1559,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.848129,
+        48.6026478
+      ]
+    },
+    "id": "1527469",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Twentyeight Mile Creek Trail",
+    "county": "Pierce",
+    "elevation": 1338,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5134265,
+        47.085666
+      ]
+    },
+    "id": "1527501",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Twentymile Trail",
+    "county": "Okanogan",
+    "elevation": 1319,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.0403626,
+        48.7120912
+      ]
+    },
+    "id": "1527507",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Twin Sisters Trail",
+    "county": "Yakima",
+    "elevation": 1446,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3614738,
+        46.7476134
+      ]
+    },
+    "id": "1527562",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Union Creek Trail",
+    "county": "Yakima",
+    "elevation": 1316,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.3978668,
+        46.946779
+      ]
+    },
+    "id": "1527611",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Upper Hoh River Trail",
+    "county": "Kittitas",
+    "elevation": 277,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.7838049,
+        47.8764759
+      ]
+    },
+    "id": "1527633",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Waptus Pass Trail",
+    "county": "Kittitas",
+    "elevation": 1220,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.180094,
+        47.492892
+      ]
+    },
+    "id": "1527798",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Washougal Trail",
+    "county": "Skamania",
+    "elevation": 582,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.1273098,
+        45.7692815
+      ]
+    },
+    "id": "1527839",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "West Fork Methow Trail",
+    "county": "Okanogan",
+    "elevation": 1083,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.6601055,
+        48.6426368
+      ]
+    },
+    "id": "1527960",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "West Sand Creek Trail",
+    "county": "Chelan",
+    "elevation": 1002,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5678577,
+        47.427901
+      ]
+    },
+    "id": "1527999",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "White Mountain Trail (historical)",
+    "county": "Ferry",
+    "elevation": 1680,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.4814017,
+        48.4976696
+      ]
+    },
+    "id": "1528071",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Willame Trail",
+    "county": "Lewis",
+    "elevation": 1269,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7781462,
+        46.6045555
+      ]
+    },
+    "id": "1528163",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Windy Trail",
+    "county": "Okanogan",
+    "elevation": 2183,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9642525,
+        48.9098745
+      ]
+    },
+    "id": "1528242",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Zig Zag Trail",
+    "county": "Skamania",
+    "elevation": 1188,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.099532,
+        45.8448365
+      ]
+    },
+    "id": "1528377",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Four Point Trail",
+    "county": "Okanogan",
+    "elevation": 1710,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8809157,
+        48.8776518
+      ]
+    },
+    "id": "1528885",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Keenan Meadows Trail",
+    "county": "Klickitat",
+    "elevation": 1465,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.9734139,
+        47.0309532
+      ]
+    },
+    "id": "1528892",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Manastash Lake Trail",
+    "county": "Kittitas",
+    "elevation": 1430,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.9450797,
+        47.019287
+      ]
+    },
+    "id": "1528893",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Bogachiel Trail",
+    "county": "Jefferson",
+    "elevation": 100,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.2604811,
+        47.8803578
+      ]
+    },
+    "id": "1528933",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cedar Flats Nature Trail",
+    "county": "Skamania",
+    "elevation": 406,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0164772,
+        46.1090018
+      ]
+    },
+    "id": "1529179",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Wildcat Trail",
+    "county": "Skamania",
+    "elevation": 795,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9567548,
+        46.1787244
+      ]
+    },
+    "id": "1529193",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rugged Ridge Trail",
+    "county": "Clallam",
+    "elevation": 525,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -124.1621477,
+        47.926748
+      ]
+    },
+    "id": "1529218",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Twentymile Trail",
+    "county": "Okanogan",
+    "elevation": 1690,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.0650862,
+        48.7284798
+      ]
+    },
+    "id": "1529233",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Lake Trail",
+    "county": "Lewis",
+    "elevation": 1477,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4234188,
+        46.7281686
+      ]
+    },
+    "id": "1529281",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "French Creek Trail",
+    "county": "Skamania",
+    "elevation": 949,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7778636,
+        46.2603931
+      ]
+    },
+    "id": "1529286",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Kalama River Trail",
+    "county": "Cowlitz",
+    "elevation": 912,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.2687094,
+        46.1614987
+      ]
+    },
+    "id": "1529296",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Angel Pass Trail",
+    "county": "Okanogan",
+    "elevation": 1406,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.8428535,
+        48.6707034
+      ]
+    },
+    "id": "1529312",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Twentymile Trail",
+    "county": "Okanogan",
+    "elevation": 1708,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9745276,
+        48.7434809
+      ]
+    },
+    "id": "1529315",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Smarty Creek Trail",
+    "county": "Okanogan",
+    "elevation": 1686,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9800833,
+        48.7395919
+      ]
+    },
+    "id": "1529318",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Summit Trail",
+    "county": "Okanogan",
+    "elevation": 2255,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9275787,
+        48.6562584
+      ]
+    },
+    "id": "1529319",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Blue Buck Trail",
+    "county": "Okanogan",
+    "elevation": 1628,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.990078,
+        48.5390349
+      ]
+    },
+    "id": "1529344",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "South Fork Trail",
+    "county": "Okanogan",
+    "elevation": 1724,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9845229,
+        48.5665352
+      ]
+    },
+    "id": "1529345",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Pearrygin Trail",
+    "county": "Okanogan",
+    "elevation": 1717,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -119.9923011,
+        48.5693128
+      ]
+    },
+    "id": "1529346",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hall Creek Road",
+    "county": "Okanogan",
+    "elevation": 1059,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.5155699,
+        48.4851685
+      ]
+    },
+    "id": "1529380",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Thirteenmile Hiking Trail",
+    "county": "Okanogan",
+    "elevation": 759,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.7208586,
+        48.4890507
+      ]
+    },
+    "id": "1529381",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Thirteenmile Road",
+    "county": "Okanogan",
+    "elevation": 946,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.6914127,
+        48.4909961
+      ]
+    },
+    "id": "1529382",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Rattlesnake Road",
+    "county": "Okanogan",
+    "elevation": 1061,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.8083615,
+        48.4876602
+      ]
+    },
+    "id": "1529386",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Grey Rock Trail",
+    "county": "Yakima",
+    "elevation": 1917,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.082022,
+        46.58373
+      ]
+    },
+    "id": "1529405",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Independence Pass Interpretive Trail",
+    "county": "Skamania",
+    "elevation": 1243,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.0948164,
+        46.2851112
+      ]
+    },
+    "id": "1529595",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Hinkle Tinkle Trail",
+    "county": "Lewis",
+    "elevation": 956,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.6531446,
+        46.6653893
+      ]
+    },
+    "id": "1529644",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Devils Backbone Trailbike Loop Trail",
+    "county": "Chelan",
+    "elevation": 698,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.2956407,
+        47.9576345
+      ]
+    },
+    "id": "1529693",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Cedar Creek Trail",
+    "county": "Okanogan",
+    "elevation": 709,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.4631533,
+        48.5895856
+      ]
+    },
+    "id": "1529940",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Goat Peak Trail",
+    "county": "Okanogan",
+    "elevation": 1374,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.3967626,
+        48.6201422
+      ]
+    },
+    "id": "1529943",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Twentymile Trail",
+    "county": "Okanogan",
+    "elevation": 1005,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.09842,
+        48.702646
+      ]
+    },
+    "id": "1529944",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Wagonroad Trail",
+    "county": "King",
+    "elevation": 723,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4375943,
+        47.4181676
+      ]
+    },
+    "id": "1530029",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Naches Pass-Greenwater Trail",
+    "county": "King",
+    "elevation": 784,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.4659257,
+        47.0959446
+      ]
+    },
+    "id": "1530057",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ridge Trail",
+    "county": "Skamania",
+    "elevation": 991,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8764721,
+        45.9776149
+      ]
+    },
+    "id": "1530234",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Higley Trail",
+    "county": "Grays Harbor",
+    "elevation": 592,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -123.9137906,
+        47.4984191
+      ]
+    },
+    "id": "1530376",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Davis Mountain Trail",
+    "county": "Lewis",
+    "elevation": 1130,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8092573,
+        46.5634448
+      ]
+    },
+    "id": "1531434",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Naneum Wilson Trail",
+    "county": "Kittitas",
+    "elevation": 1881,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.5459068,
+        47.2404021
+      ]
+    },
+    "id": "1531481",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Smooth Ridge Trail",
+    "county": "Columbia",
+    "elevation": 1526,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.6438,
+        46.0312564
+      ]
+    },
+    "id": "1531516",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Crooked Creek Trail",
+    "county": "Garfield",
+    "elevation": 741,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.5757398,
+        46.0423687
+      ]
+    },
+    "id": "1531605",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Maple Mountain Trail",
+    "county": "Okanogan",
+    "elevation": 1461,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -118.8644792,
+        48.7176621
+      ]
+    },
+    "id": "1531613",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Long Hollow Trail",
+    "county": "Whitman",
+    "elevation": 315,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.6176958,
+        46.7101577
+      ]
+    },
+    "id": "1531659",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Mount Misery Trail",
+    "county": "Columbia",
+    "elevation": 1739,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -117.6274096,
+        46.1579252
+      ]
+    },
+    "id": "1533271",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Tiger Mountain Trail",
+    "county": "King",
+    "elevation": 666,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.9903953,
+        47.4976017
+      ]
+    },
+    "id": "1533416",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Moraine Trail",
+    "county": "Pierce",
+    "elevation": 1740,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.739261,
+        46.7962198
+      ]
+    },
+    "id": "1533591",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Skyline Trail",
+    "county": "Pierce",
+    "elevation": 1924,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.7220383,
+        46.7976089
+      ]
+    },
+    "id": "1533617",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Wonderland Trail",
+    "county": "Pierce",
+    "elevation": 1053,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.8839925,
+        46.9206617
+      ]
+    },
+    "id": "1533645",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Falls Creek Trail",
+    "county": "Okanogan",
+    "elevation": 1504,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.2684272,
+        48.7401436
+      ]
+    },
+    "id": "1534459",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Maple Pass Trail",
+    "county": "Chelan",
+    "elevation": 2042,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.7661,
+        48.5005
+      ]
+    },
+    "id": "2094646",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "North Fork Bridge Creek Trail",
+    "county": "Chelan",
+    "elevation": 786,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -120.843558,
+        48.456701
+      ]
+    },
+    "id": "2554720",
+    "docType": "trail",
+    "type": "trail"
+  },
+  {
+    "name": "Ira Spring Trail",
+    "county": "King",
+    "elevation": 1139,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -121.5658665,
+        47.4234418
+      ]
+    },
+    "id": "2742050",
+    "docType": "trail",
+    "type": "trail"
+  }
+]
+}

@@ -1,0 +1,1 @@
+D:\Source\GitHub\AngularAzureSearch\src\AngularAzureSearch\AngularAzureSearch.WebAPI\obj\Debug\AngularAzureSearch.WebAPI.csprojResolveAssemblyReference.cache

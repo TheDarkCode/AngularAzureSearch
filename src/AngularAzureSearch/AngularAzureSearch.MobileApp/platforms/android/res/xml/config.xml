@@ -1,31 +1,94 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget defaultlocale="en-US" id="io.cordova.myappc8bb8e" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
+<widget id="com.visitusa.mobileapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Keyboard">
+        <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
+        <param name="onload" value="true" />
+    </feature>
     <allow-intent href="market:*" />
-    <icon density="ldpi" src="res/icons/android/icon-36-ldpi.png" />
-    <icon density="mdpi" src="res/icons/android/icon-48-mdpi.png" />
-    <icon density="hdpi" src="res/icons/android/icon-72-hdpi.png" />
-    <icon density="xhdpi" src="res/icons/android/icon-96-xhdpi.png" />
-    <splash density="land-hdpi" src="res/screens/android/screen-hdpi-landscape.png" />
-    <splash density="land-ldpi" src="res/screens/android/screen-ldpi-landscape.png" />
-    <splash density="land-mdpi" src="res/screens/android/screen-mdpi-landscape.png" />
-    <splash density="land-xhdpi" src="res/screens/android/screen-xhdpi-landscape.png" />
-    <splash density="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
-    <splash density="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
-    <splash density="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
-    <splash density="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
-    <name>AngularAzureSearch.MobileApp</name>
-    <description>A blank project that uses Apache Cordova to help you build an app that targets multiple mobile platforms: Android, iOS, Windows, and Windows Phone.</description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">Apache Cordova Team </author>
+    <icon density="ldpi" src="resources\android\icon\drawable-ldpi-icon.png" />
+    <icon density="mdpi" src="resources\android\icon\drawable-mdpi-icon.png" />
+    <icon density="hdpi" src="resources\android\icon\drawable-hdpi-icon.png" />
+    <icon density="xhdpi" src="resources\android\icon\drawable-xhdpi-icon.png" />
+    <icon density="xxhdpi" src="resources\android\icon\drawable-xxhdpi-icon.png" />
+    <icon density="xxxhdpi" src="resources\android\icon\drawable-xxxhdpi-icon.png" />
+    <splash density="land-ldpi" src="resources\android\splash\drawable-land-ldpi-screen.png" />
+    <splash density="land-mdpi" src="resources\android\splash\drawable-land-mdpi-screen.png" />
+    <splash density="land-hdpi" src="resources\android\splash\drawable-land-hdpi-screen.png" />
+    <splash density="land-xhdpi" src="resources\android\splash\drawable-land-xhdpi-screen.png" />
+    <splash density="land-xxhdpi" src="resources\android\splash\drawable-land-xxhdpi-screen.png" />
+    <splash density="land-xxxhdpi" src="resources\android\splash\drawable-land-xxxhdpi-screen.png" />
+    <splash density="port-ldpi" src="resources\android\splash\drawable-port-ldpi-screen.png" />
+    <splash density="port-mdpi" src="resources\android\splash\drawable-port-mdpi-screen.png" />
+    <splash density="port-hdpi" src="resources\android\splash\drawable-port-hdpi-screen.png" />
+    <splash density="port-xhdpi" src="resources\android\splash\drawable-port-xhdpi-screen.png" />
+    <splash density="port-xxhdpi" src="resources\android\splash\drawable-port-xxhdpi-screen.png" />
+    <splash density="port-xxxhdpi" src="resources\android\splash\drawable-port-xxxhdpi-screen.png" />
+    <name>AngularAzureSearch</name>
+    <description>
+        AngularAzureSearch Demo MobileApp
+    </description>
+    <author email="mark@mark-hamilton.com" href="https://www.GitHub.com/TheDarkCode/AngularAzureSearch">
+        Mark Hamilton
+    </author>
     <content src="index.html" />
-    <access origin="*" />
-    <vs:features />
+    <preference name="phonegap-version" value="cli-5.3.3" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-installLocation" value="auto" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="windows-target-version" value="8.1" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
+    <gap:splash gap:platform="blackberry" src="www/res/screen/blackberry/screen-225.png" />
+    <gap:splash gap:platform="ios" height="480" src="www/res/screen/ios/screen-iphone-portrait.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="www/res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="www/res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+    <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
+    <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
+    <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
+    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
