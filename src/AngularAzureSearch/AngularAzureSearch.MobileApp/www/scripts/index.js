@@ -16,7 +16,7 @@
 
     //function loadMap() {
     //    var map = new Microsoft.Maps.Map(document.getElementById("map"), {
-    //        credentials: "YOUR BING MAPS KEY"
+    //        credentials: "AhbdrWF_V91fRpekZhb1kgBWAB-hoUDfCPgrhxnQjGFECd2oJXHBxu2dqt7PFKAc"
     //    });
     //}
 

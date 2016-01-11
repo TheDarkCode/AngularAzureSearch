@@ -8,7 +8,13 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.myappc8bb8e"
+            "PACKAGE_NAME": "com.angularazuresearch.mobileapp"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.angularazuresearch.mobileapp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.angularazuresearch.mobileapp"
         }
     },
     "dependent_plugins": {}
