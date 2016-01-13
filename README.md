@@ -21,7 +21,7 @@ Once it is ready to declare release worthy, I will create nuget and Visual Studi
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
 ####Current Live Demo Version: Build 21, 12/18/2015
-####Current Development Version: Build 22.5, 1/4/2016
+####Current Development Version: Build 23, 1/12/2016
 #####Status: 
   - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.
   - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
