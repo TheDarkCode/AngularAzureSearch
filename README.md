@@ -21,8 +21,9 @@ Once it is ready to declare release worthy, I will create nuget and Visual Studi
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
 ####Current Live Demo Version: Build 21, 12/18/2015
-####Current Development Version: Build 23, 1/12/2016
+####Current Development Version: Build 23, 1/15/2016
 #####Status: 
+  - Build 22 is going to be skipped for upload. Progress was stalled while other projects took priority during end-December / start-January. Build 23-25 will be up by end of January 2016.
   - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.
   - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
   - DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.
