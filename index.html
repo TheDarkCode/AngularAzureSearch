@@ -153,11 +153,23 @@
 <p><a href="https://azure.microsoft.com/en-us/pricing/details/data-transfers/">https://azure.microsoft.com/en-us/pricing/details/data-transfers/</a></p>
 
 <h4>
-<a id="generating-mobile-app-splash-screen-and-icons" class="anchor" href="#generating-mobile-app-splash-screen-and-icons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generating Mobile App Splash Screen and Icons</h4>
+<a id="generating-mobile-app-splash-screen-and-icons-for-iosandroid" class="anchor" href="#generating-mobile-app-splash-screen-and-icons-for-iosandroid" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generating Mobile App Splash Screen and Icons for iOS/Android</h4>
 
 <p>While connected to the internet, you should use the following instructions from the Ionic Framework site to auto-generate the appropriately cropped and resized splash and app icons for all the platforms you are deploying to: <a href="http://ionicframework.com/docs/cli/icon-splashscreen.html">http://ionicframework.com/docs/cli/icon-splashscreen.html</a></p>
 
 <p>The TL;DR version is to add the icon and splash screens (renamed to icon.png and splash.png [or psd]) to the "resources" folder at the root of the MobileApp project. Then set your command line or terminal window to the Mobile App project's directory. From there, enter the following commands: "ionic resources --icon" and "ionic resources --splash". The commands will automatically generate the icons and splash screens for all platforms currently added to the project. If it doesn't work, delete the existing icons and splash screens and run the commands again. You must have the Ionic Framework installed via NPM (with the appropriate path set) in order to execute "ionic" prefixed commands.</p>
+
+<h5>
+<a id="note-regarding-cordova--ionic-and-windows-10-universal-app" class="anchor" href="#note-regarding-cordova--ionic-and-windows-10-universal-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note Regarding Cordova / Ionic and Windows 10 Universal App</h5>
+
+<p>If you going to deploy to Windows 10, be aware that the Ionic generator does not support Windows. Thus, you must use an alternative media generator or export the icon/splash via your usual photo editor. One issue that does come up on Windows 10 desktops is that the app may crash during the transition phase between the splash screen being shown and the starter page. You must comment out this line in app.js to prevent this crash, but only when deploying/building for Windows:</p>
+
+<pre><code>   if (window.cordova &amp;&amp; window.cordova.plugins.Keyboard) {
+     if (ionic.Platform.platform() != 'windows'){
+              cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+     }
+   }
+</code></pre>
 
 <h2>
 <a id="related-github-projects--credits" class="anchor" href="#related-github-projects--credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related GitHub Projects / Credits</h2>
