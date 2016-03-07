@@ -63,6 +63,27 @@ While connected to the internet, you should use the following instructions from 
 
 The TL;DR version is to add the icon and splash screens (renamed to icon.png and splash.png [or psd]) to the "resources" folder at the root of the MobileApp project. Then set your command line or terminal window to the Mobile App project's directory. From there, enter the following commands: "ionic resources --icon" and "ionic resources --splash". The commands will automatically generate the icons and splash screens for all platforms currently added to the project. If it doesn't work, delete the existing icons and splash screens and run the commands again. You must have the Ionic Framework installed via NPM (with the appropriate path set) in order to execute "ionic" prefixed commands.
 
+#####How User Data Appears on DocDB Server:
+```json
+{
+  "id": "463b5add-3abb-482c-8f72-9f199203e22b",
+  "UserName": "demo@github.com",
+  "Email": "demo@github.com",
+  "EmailConfirmed": true,
+  "PasswordHash": "AMZO39oQGu9eUtMcy8gho6oPxETXQ8OPmeju7JEVMeHW7LgQi/hcnEATX7294xfBKg==",
+  "SecurityStamp": "31a3e067-7508-41c4-acd5-d4311da67b2c",
+  "PhoneNumber": null,
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEnd": "0001-01-01T00:00:00+00:00",
+  "LockoutEnabled": false,
+  "AccessFailedCount": 0,
+  "Logins": [],
+  "Claims": [],
+  "Roles": []
+}
+```
+
 #####Note Regarding Cordova / Ionic and Windows 10 Universal App
 
 If you going to deploy to Windows 10, be aware that the Ionic generator does not support Windows. Thus, you must use an alternative media generator or export the icon/splash via your usual photo editor. One issue that does come up on Windows 10 desktops is that the app may crash during the transition phase between the splash screen being shown and the starter page. You must comment out this line in app.js to prevent this crash, but only when deploying/building for Windows:
