@@ -8,11 +8,11 @@ Sample full-featured web application containing separate WebRole (Front-End Clie
 
 This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Apache Cordova, Ionic Framework v1.2, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, and Two-Factor Authentication (SendGrid, Twilio).
 
-####LIVE CLIENT DEMO (CURRENTLY OFFLINE): https://angularazuresearch.azurewebsites.net/
+####LIVE CLIENT DEMO: https://angularazuresearch.azurewebsites.net/
 #####LOGIN: demo@github.com
 #####PASSWORD: $Ecret123
 
-####LIVE API DEMO (CURRENTLY OFFLINE): https://githubapi.azurewebsites.net/
+####LIVE API DEMO: https://githubapi.azurewebsites.net/
 
 ######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
