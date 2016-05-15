@@ -1,34 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>AngularAzureSearch by TheDarkCode</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>AngularAzureSearch</h1>
-        <p>Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).</p>
+    <section class="page-header">
+      <h1 class="project-name">AngularAzureSearch</h1>
+      <h2 class="project-tagline">Sample full-featured web application containing separate WebRole (Front-End Client) and WebAPI (Web API 2 Site using DocumentDB as data store).</h2>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch" class="btn">View on GitHub</a>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/TheDarkCode/AngularAzureSearch/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <p class="view"><a href="https://github.com/TheDarkCode/AngularAzureSearch">View the Project on GitHub <small>TheDarkCode/AngularAzureSearch</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/TheDarkCode/AngularAzureSearch/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/TheDarkCode/AngularAzureSearch/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/TheDarkCode/AngularAzureSearch">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p align="center">
+    <section class="main-content">
+      <p align="center">
 <img src="https://raw.githubusercontent.com/TheDarkCode/AngularAzureSearch/master/res/Photoshop/AngularAzureSearch-Logo.png" alt="AngularAzureSearch" height="auto" width="75%">
 </p>
 
@@ -128,6 +119,27 @@
 <p>While connected to the internet, you should use the following instructions from the Ionic Framework site to auto-generate the appropriately cropped and resized splash and app icons for all the platforms you are deploying to: <a href="http://ionicframework.com/docs/cli/icon-splashscreen.html">http://ionicframework.com/docs/cli/icon-splashscreen.html</a></p>
 
 <p>The TL;DR version is to add the icon and splash screens (renamed to icon.png and splash.png [or psd]) to the "resources" folder at the root of the MobileApp project. Then set your command line or terminal window to the Mobile App project's directory. From there, enter the following commands: "ionic resources --icon" and "ionic resources --splash". The commands will automatically generate the icons and splash screens for all platforms currently added to the project. If it doesn't work, delete the existing icons and splash screens and run the commands again. You must have the Ionic Framework installed via NPM (with the appropriate path set) in order to execute "ionic" prefixed commands.</p>
+
+<h5>
+<a id="how-user-data-appears-on-docdb-server" class="anchor" href="#how-user-data-appears-on-docdb-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How User Data Appears on DocDB Server:</h5>
+
+<div class="highlight highlight-source-json"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>463b5add-3abb-482c-8f72-9f199203e22b<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>UserName<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>demo@github.com<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>Email<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>demo@github.com<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>EmailConfirmed<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>PasswordHash<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>AMZO39oQGu9eUtMcy8gho6oPxETXQ8OPmeju7JEVMeHW7LgQi/hcnEATX7294xfBKg==<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>SecurityStamp<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>31a3e067-7508-41c4-acd5-d4311da67b2c<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>PhoneNumber<span class="pl-pds">"</span></span>: <span class="pl-c1">null</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>PhoneNumberConfirmed<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>TwoFactorEnabled<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>LockoutEnd<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>0001-01-01T00:00:00+00:00<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>LockoutEnabled<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>AccessFailedCount<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+  <span class="pl-s"><span class="pl-pds">"</span>Logins<span class="pl-pds">"</span></span>: [],
+  <span class="pl-s"><span class="pl-pds">"</span>Claims<span class="pl-pds">"</span></span>: [],
+  <span class="pl-s"><span class="pl-pds">"</span>Roles<span class="pl-pds">"</span></span>: []
+}</pre></div>
 
 <h5>
 <a id="note-regarding-cordova--ionic-and-windows-10-universal-app" class="anchor" href="#note-regarding-cordova--ionic-and-windows-10-universal-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note Regarding Cordova / Ionic and Windows 10 Universal App</h5>
@@ -287,13 +299,15 @@
 <h6>
 <a id="httpsmvamicrosoftcomen-ustraining-courseslighting-up-real-time-web-communications-with-signalr-8358" class="anchor" href="#httpsmvamicrosoftcomen-ustraining-courseslighting-up-real-time-web-communications-with-signalr-8358" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://mva.microsoft.com/en-us/training-courses/lighting-up-real-time-web-communications-with-signalr-8358">https://mva.microsoft.com/en-us/training-courses/lighting-up-real-time-web-communications-with-signalr-8358</a>
 </h6>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/TheDarkCode">TheDarkCode</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/TheDarkCode/AngularAzureSearch">AngularAzureSearch</a> is maintained by <a href="https://github.com/TheDarkCode">TheDarkCode</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    </section>
+
+  
   </body>
 </html>
