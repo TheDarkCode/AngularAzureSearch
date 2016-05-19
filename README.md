@@ -1,3 +1,5 @@
+<h2 align="center">This project is being merged with <a href="https://github.com/TheDarkCode/SwiftDotNet">SwiftDotNet</a>.</h2>
+<hr />
 <p align="center">
 <img src="https://raw.githubusercontent.com/TheDarkCode/AngularAzureSearch/master/res/Photoshop/AngularAzureSearch-Logo.png" alt="AngularAzureSearch" height="auto" width="75%">
 </p>
