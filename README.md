@@ -8,7 +8,7 @@
 
 Sample full-featured web application containing separate WebRole (Front-End Client), WebAPI (Web API 2 Site using DocumentDB as data store), and Apache Cordova MobileApp using AngularJS / Ionic.
 
-This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Apache Cordova, Ionic Framework v1.2, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, and Two-Factor Authentication (SendGrid, Twilio).
+This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, and Two-Factor Authentication (SendGrid, Twilio).
 
 ####LIVE CLIENT DEMO: https://angularazuresearch.azurewebsites.net/
 #####LOGIN: demo@github.com
@@ -22,10 +22,9 @@ This project's goal is to integrate best practices across multiple projects util
 ####Current Development Version: Build 23, 1/15/2016
 #####Status: 
   - Progress is currently on hold. Extended work is being converted into a new project.
-  - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.
-  - WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.
-  - DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.
-  - MobileApp to be changed to Ionic framework with Build 22. Cors policy in WebAPI will be updated to reflect changes. Will support Android, iOS, and Win Phone builds.
+  - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not enabled in demo.
+  - WebAPI is fully working for Trails data and User accounts.
+  - DataIndexer is set to Trails data schema. Must configure via app settings config file.
 
 ##E-Mail Support: support@dryverless.com
 
@@ -85,16 +84,6 @@ The TL;DR version is to add the icon and splash screens (renamed to icon.png and
   "Roles": []
 }
 ```
-
-#####Note Regarding Cordova / Ionic and Windows 10 Universal App
-
-If you going to deploy to Windows 10, be aware that the Ionic generator does not support Windows. Thus, you must use an alternative media generator or export the icon/splash via your usual photo editor. One issue that does come up on Windows 10 desktops is that the app may crash during the transition phase between the splash screen being shown and the starter page. You must comment out this line in app.js to prevent this crash, but only when deploying/building for Windows:
-
-       if (window.cordova && window.cordova.plugins.Keyboard) {
-         if (ionic.Platform.platform() != 'windows'){
-                  cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-         }
-       }
 
 ##Related GitHub Projects / Credits
 
