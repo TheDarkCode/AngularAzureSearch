@@ -19,7 +19,12 @@
     </section>
 
     <section class="main-content">
-      <p align="center">
+      <h2 align="center">
+<a id="this-project-is-being-merged-with-swiftdotnet" class="anchor" href="#this-project-is-being-merged-with-swiftdotnet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>This project is being merged with <a href="https://github.com/TheDarkCode/SwiftDotNet">SwiftDotNet</a>.</h2>
+
+<hr>
+
+<p align="center">
 <img src="https://raw.githubusercontent.com/TheDarkCode/AngularAzureSearch/master/res/Photoshop/AngularAzureSearch-Logo.png" alt="AngularAzureSearch" height="auto" width="75%">
 </p>
 
@@ -27,7 +32,7 @@
 
 <p>Sample full-featured web application containing separate WebRole (Front-End Client), WebAPI (Web API 2 Site using DocumentDB as data store), and Apache Cordova MobileApp using AngularJS / Ionic.</p>
 
-<p>This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Apache Cordova, Ionic Framework v1.2, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, and Two-Factor Authentication (SendGrid, Twilio).</p>
+<p>This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, and Two-Factor Authentication (SendGrid, Twilio).</p>
 
 <h4>
 <a id="live-client-demo-httpsangularazuresearchazurewebsitesnet" class="anchor" href="#live-client-demo-httpsangularazuresearchazurewebsitesnet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LIVE CLIENT DEMO: <a href="https://angularazuresearch.azurewebsites.net/">https://angularazuresearch.azurewebsites.net/</a>
@@ -58,10 +63,9 @@
 
 <ul>
 <li>Progress is currently on hold. Extended work is being converted into a new project.</li>
-<li>WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not tested. dlFramework still in development.</li>
-<li>WebAPI is fully working for Trails data and User accounts. (0 Errors, 0 Warnings) Support for dynamic partitioning is in-progress.</li>
-<li>DataIndexer is set to Trails data schema. Must configure via app settings config file. Will support bulk import in next update.</li>
-<li>MobileApp to be changed to Ionic framework with Build 22. Cors policy in WebAPI will be updated to reflect changes. Will support Android, iOS, and Win Phone builds.</li>
+<li>WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not enabled in demo.</li>
+<li>WebAPI is fully working for Trails data and User accounts.</li>
+<li>DataIndexer is set to Trails data schema. Must configure via app settings config file.</li>
 </ul>
 
 <h2>
@@ -140,18 +144,6 @@
   <span class="pl-s"><span class="pl-pds">"</span>Claims<span class="pl-pds">"</span></span>: [],
   <span class="pl-s"><span class="pl-pds">"</span>Roles<span class="pl-pds">"</span></span>: []
 }</pre></div>
-
-<h5>
-<a id="note-regarding-cordova--ionic-and-windows-10-universal-app" class="anchor" href="#note-regarding-cordova--ionic-and-windows-10-universal-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note Regarding Cordova / Ionic and Windows 10 Universal App</h5>
-
-<p>If you going to deploy to Windows 10, be aware that the Ionic generator does not support Windows. Thus, you must use an alternative media generator or export the icon/splash via your usual photo editor. One issue that does come up on Windows 10 desktops is that the app may crash during the transition phase between the splash screen being shown and the starter page. You must comment out this line in app.js to prevent this crash, but only when deploying/building for Windows:</p>
-
-<pre><code>   if (window.cordova &amp;&amp; window.cordova.plugins.Keyboard) {
-     if (ionic.Platform.platform() != 'windows'){
-              cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-     }
-   }
-</code></pre>
 
 <h2>
 <a id="related-github-projects--credits" class="anchor" href="#related-github-projects--credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related GitHub Projects / Credits</h2>
