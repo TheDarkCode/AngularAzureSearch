@@ -10,25 +10,25 @@ Sample full-featured web application containing separate WebRole (Front-End Clie
 
 This project's goal is to integrate best practices across multiple projects utilizing the following frameworks and feature sets: AngularJS v1.4.3+, Azure Search, Bing Maps, ASP.NET MVC 5 / Web API 2,  Azure DocumentDB, Real Time Updates (SignalR), ASP.NET Identity / OWIN, Dynamic Cross Origin Resource Sharing (CORS), Dependency Injection (Ninject), Dynamic Multi-Tenant Data Partitioning (Hash/Managed Hash/Range/Lookup/Spillover), Azure Blob Storage, and Two-Factor Authentication (SendGrid, Twilio).
 
-####LIVE CLIENT DEMO: https://angularazuresearch.azurewebsites.net/
-#####LOGIN: demo@github.com
-#####PASSWORD: $Ecret123
+#### LIVE CLIENT DEMO: https://angularazuresearch.azurewebsites.net/
+##### LOGIN: demo@github.com
+##### PASSWORD: $Ecret123
 
-####LIVE API DEMO: https://githubapi.azurewebsites.net/
+#### LIVE API DEMO: https://githubapi.azurewebsites.net/
 
-######NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
+###### NOTICE: YOU MUST UPDATE ENDPOINT URIs PRIOR TO PRODUCTION DEPLOYMENTS. DEMO SERVICES WILL THROTTLE PUBLIC USERS.
 
-####Current Live Demo Version: Build 21, 12/18/2015
-####Current Development Version: Build 23, 1/15/2016
-#####Status: 
+#### Current Live Demo Version: Build 21, 12/18/2015
+#### Current Development Version: Build 23, 1/15/2016
+##### Status: 
   - Progress is currently on hold. Extended work is being converted into a new project.
   - WebRole works for User login/signup and Trails data CRUD operations. Confirm Email not enabled in demo.
   - WebAPI is fully working for Trails data and User accounts.
   - DataIndexer is set to Trails data schema. Must configure via app settings config file.
 
-##E-Mail Support: support@dryverless.com
+## E-Mail Support: support@dryverless.com
 
-######Known Issues/Warnings:
+###### Known Issues/Warnings:
   - dlMenu animations do not render properly in all instances. Delayed in some cases.
   - Url still contains filters and orderby parameters after leaving Homes page.
   - Confirm Email not tested. Manage user account view will be resolved in next update.
@@ -39,32 +39,32 @@ This project's goal is to integrate best practices across multiple projects util
   - External login support and autopopulating data/profile pictures from FB/Twitter accounts will be added in next round of updates.
   - Interaction with Blob Storage to upload/download files is not completed. Still needs to be linked up with DocDB.
 
-####Azure Service Requirements for Deployment
+#### Azure Service Requirements for Deployment
 
 You must configure the project with your own Azure Search Keys, Azure DocumentDB Database Connection Information, and Bing Maps API Keys.
 
-######If you are new to Azure, you can get a free trial at the following link: 
+###### If you are new to Azure, you can get a free trial at the following link: 
 https://azure.microsoft.com/en-us/pricing/free-trial/
 
-######Bing Maps API (10k transactions/mo for free)
+###### Bing Maps API (10k transactions/mo for free)
 http://www.microsoft.com/maps/Licensing/licensing.aspx#mainTab2
 
-######Azure Search Service are free excluding outbound data transfers (3 data connections / indexes / indexers, 50 MB Total Storage, 10,000 Documents).
+###### Azure Search Service are free excluding outbound data transfers (3 data connections / indexes / indexers, 50 MB Total Storage, 10,000 Documents).
 https://azure.microsoft.com/en-us/pricing/details/search/
 
-######Azure DocumentDB requires at least an S1 plan ($25/mo = 250 RU/sec, 10 GB Storage) for each collection used (even empty ones).
+###### Azure DocumentDB requires at least an S1 plan ($25/mo = 250 RU/sec, 10 GB Storage) for each collection used (even empty ones).
 https://azure.microsoft.com/en-us/pricing/details/documentdb/
 
-######Data Transfers Pricing Details
+###### Data Transfers Pricing Details
 https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 
-####Generating Mobile App Splash Screen and Icons for iOS/Android
+#### Generating Mobile App Splash Screen and Icons for iOS/Android
 
 While connected to the internet, you should use the following instructions from the Ionic Framework site to auto-generate the appropriately cropped and resized splash and app icons for all the platforms you are deploying to: http://ionicframework.com/docs/cli/icon-splashscreen.html
 
 The TL;DR version is to add the icon and splash screens (renamed to icon.png and splash.png [or psd]) to the "resources" folder at the root of the MobileApp project. Then set your command line or terminal window to the Mobile App project's directory. From there, enter the following commands: "ionic resources --icon" and "ionic resources --splash". The commands will automatically generate the icons and splash screens for all platforms currently added to the project. If it doesn't work, delete the existing icons and splash screens and run the commands again. You must have the Ionic Framework installed via NPM (with the appropriate path set) in order to execute "ionic" prefixed commands.
 
-#####How User Data Appears on DocDB Server:
+##### How User Data Appears on DocDB Server:
 ```json
 {
   "id": "463b5add-3abb-482c-8f72-9f199203e22b",
@@ -85,63 +85,63 @@ The TL;DR version is to add the icon and splash screens (renamed to icon.png and
 }
 ```
 
-##Related GitHub Projects / Credits
+## Related GitHub Projects / Credits
 
-###Azure Search Demos by Liam Cavanagh, Microsoft
-######https://github.com/liamca/AzureSearchDemos
-######http://azure.microsoft.com/en-us/documentation/services/search/
+### Azure Search Demos by Liam Cavanagh, Microsoft
+###### https://github.com/liamca/AzureSearchDemos
+###### http://azure.microsoft.com/en-us/documentation/services/search/
 
-###DocumentDb with Web API by Richard J. Leopold
-######https://github.com/rleopold/DocDbWebApi/
-######(Article found here: http://4rjl.net/post/azure-documentdb-with-web-api)
+### DocumentDb with Web API by Richard J. Leopold
+###### https://github.com/rleopold/DocDbWebApi/
+###### (Article found here: http://4rjl.net/post/azure-documentdb-with-web-api)
 
-###DocumentDB.AspNet.Identity by Adrian Fernandez, Microsoft
-######https://github.com/tracker086/DocumentDB.AspNet.Identity
+### DocumentDB.AspNet.Identity by Adrian Fernandez, Microsoft
+###### https://github.com/tracker086/DocumentDB.AspNet.Identity
 
-###GolfTracker.DocumentDB by King Wilder, Gizmo Beach
-######https://github.com/kahanu/GolfTracker.DocumentDB/
-######(Video / Article Series found here: http://www.nosqlcentral.net/Story/Details/videos/kahanu/1-documentdb-golf-tracker-overview)
+### GolfTracker.DocumentDB by King Wilder, Gizmo Beach
+###### https://github.com/kahanu/GolfTracker.DocumentDB/
+###### (Video / Article Series found here: http://www.nosqlcentral.net/Story/Details/videos/kahanu/1-documentdb-golf-tracker-overview)
 
-###azure-documentdb-dotnet by Ryan CrawCour & Aravind Ramachandran, Microsoft
-######https://github.com/Azure/azure-documentdb-dotnet/
-######(Article found here: https://azure.microsoft.com/en-us/documentation/articles/documentdb-sharding/)
+### azure-documentdb-dotnet by Ryan CrawCour & Aravind Ramachandran, Microsoft
+###### https://github.com/Azure/azure-documentdb-dotnet/
+###### (Article found here: https://azure.microsoft.com/en-us/documentation/articles/documentdb-sharding/)
 
-###angular-parallax by Brett Donohoo 
-######https://github.com/brettdonohoo/angular-parallax
+### angular-parallax by Brett Donohoo 
+###### https://github.com/brettdonohoo/angular-parallax
 
-###MailService by James Bisiar
-######https://github.com/bisiar
+### MailService by James Bisiar
+###### https://github.com/bisiar
 
-###angular-fullscreen by  Fabio Biondi
-######https://github.com/fabiobiondi/angular-fullscreen
+### angular-fullscreen by  Fabio Biondi
+###### https://github.com/fabiobiondi/angular-fullscreen
 
-###angularUtils (pagination) by Michael Bromley
-######https://github.com/michaelbromley/angularUtils
+### angularUtils (pagination) by Michael Bromley
+###### https://github.com/michaelbromley/angularUtils
 
-###angular-modal-service by Dave Kerr
-######https://github.com/dwmkerr/angular-modal-service/
+### angular-modal-service by Dave Kerr
+###### https://github.com/dwmkerr/angular-modal-service/
 
-###MVA-SignalR by Jon Galloway & Brady Gaster, Microsoft
-######https://github.com/jongalloway/MVA-SignalR
+### MVA-SignalR by Jon Galloway & Brady Gaster, Microsoft
+###### https://github.com/jongalloway/MVA-SignalR
 
-###Ionic Framework
-######https://github.com/driftyco/ionic
+### Ionic Framework
+###### https://github.com/driftyco/ionic
 
-##Helpful Links
+## Helpful Links
 
-######http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx
-######DocumentDB Documentation: https://msdn.microsoft.com/en-us/library/azure/dn781482.aspx
-######Azure Search Documentation: https://msdn.microsoft.com/en-us/library/azure/dn798933.aspx
-######Ionic Framework Documentation: http://ionicframework.com/docs/
-######W3C Recommendation on Cross-Origin-Resource-Sharing: http://www.w3.org/TR/cors/
+###### http://blogs.msdn.com/b/documentdb/archive/2014/12/03/scaling-a-multi-tenant-application-with-azure-documentdb.aspx
+###### DocumentDB Documentation: https://msdn.microsoft.com/en-us/library/azure/dn781482.aspx
+###### Azure Search Documentation: https://msdn.microsoft.com/en-us/library/azure/dn798933.aspx
+###### Ionic Framework Documentation: http://ionicframework.com/docs/
+###### W3C Recommendation on Cross-Origin-Resource-Sharing: http://www.w3.org/TR/cors/
 
-##Related Microsoft Virtual Academy Courses
+## Related Microsoft Virtual Academy Courses
 
-####Adding Microsoft Azure Search to Your Websites and Apps:
-######https://mva.microsoft.com/en-us/training-courses/adding-microsoft-azure-search-to-your-websites-and-apps-10540
+#### Adding Microsoft Azure Search to Your Websites and Apps:
+###### https://mva.microsoft.com/en-us/training-courses/adding-microsoft-azure-search-to-your-websites-and-apps-10540
 
-####Developing Solutions with Azure DocumentDB:
-######https://mva.microsoft.com/en-us/training-courses/developing-solutions-with-azure-documentdb-10554
+#### Developing Solutions with Azure DocumentDB:
+###### https://mva.microsoft.com/en-us/training-courses/developing-solutions-with-azure-documentdb-10554
 
-####Lighting Up Real-Time Web Communications with SignalR:
-######https://mva.microsoft.com/en-us/training-courses/lighting-up-real-time-web-communications-with-signalr-8358
+#### Lighting Up Real-Time Web Communications with SignalR:
+###### https://mva.microsoft.com/en-us/training-courses/lighting-up-real-time-web-communications-with-signalr-8358
